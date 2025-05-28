@@ -1,0 +1,198 @@
+package proj.selekcjanatur;
+
+import java.util.*;
+
+public class Symulacja {
+    private final int kolumny;
+    private final int wiersze;
+
+    private final List<Czlowiek> ludzie = new ArrayList<>();
+    private final Set<Jedzenie> jedzenie = new HashSet<>();
+
+    private final Random random = new Random();
+    private int licznikDodawaniaJedzenia = 0;
+
+    private final boolean[][] zajete;
+
+    private static final List<int[]> KIERUNKI = new ArrayList<>(Arrays.asList(
+            new int[]{1, 0},
+            new int[]{-1, 0},
+            new int[]{0, 1},
+            new int[]{0, -1},
+            new int[]{1, 1},
+            new int[]{-1, -1},
+            new int[]{1, -1},
+            new int[]{-1, 1}
+    ));
+
+
+    public Symulacja(int kolumny, int wiersze) {
+        this.kolumny = kolumny;
+        this.wiersze = wiersze;
+        this.zajete = new boolean[wiersze][kolumny];
+
+        dodajLosowychLudzi(50);
+        dodajLosoweJedzenie(100);
+    }
+
+    public List<Czlowiek> getLudzie() {
+        return ludzie;
+    }
+
+    public Set<Jedzenie> getJedzenie() {
+        return jedzenie;
+    }
+
+    public void dodajLosowychLudzi(int liczba) {
+        for (int i = 0; i < liczba; i++) {
+            Czlowiek cz;
+            int x = random.nextInt(kolumny);
+            int y = random.nextInt(wiersze);
+            if (random.nextBoolean()) {
+                cz = new Mezczyzna(x, y);
+            } else {
+                cz = new Kobieta(x, y);
+            }
+            cz.wiek = random.nextInt(33) + 18;
+            ludzie.add(cz);
+        }
+    }
+
+    public void dodajLosoweJedzenie(int liczba) {
+        int dodane = 0;
+        while (dodane < liczba) {
+            int x = random.nextInt(kolumny);
+            int y = random.nextInt(wiersze);
+            Jedzenie nowe = new Jedzenie(x, y);
+            if (jedzenie.add(nowe)) {
+                dodane++;
+            }
+        }
+    }
+
+    public void aktualizuj() {
+        licznikDodawaniaJedzenia++;
+        if (licznikDodawaniaJedzenia >= 3) {
+            dodajLosoweJedzenie(3);
+            licznikDodawaniaJedzenia = 0;
+        }
+
+        // Wyczyszczenie zajętości
+        for (int y = 0; y < wiersze; y++) {
+            Arrays.fill(zajete[y], false);
+        }
+
+        List<Czlowiek> nowi = new ArrayList<>();
+
+        // Aktualizacja stanu ludzi
+        for (Czlowiek cz : ludzie) {
+            if (cz.zywy) {
+                cz.aktualizuj();
+            }
+        }
+
+        // Ruch i rozmnażanie
+        Iterator<Czlowiek> it = ludzie.iterator();
+        while (it.hasNext()) {
+            Czlowiek cz = it.next();
+            if (!cz.zywy) {
+                it.remove();
+                continue;
+            }
+
+            wykonajRuch(cz, zajete);
+
+            if (cz.mozeRozmnazac()) {
+                for (Czlowiek inny : ludzie) {
+                    if (inny == cz || !inny.zywy || !inny.mozeRozmnazac()) continue;
+                    if (cz.czyMezczyzna() == inny.czyMezczyzna()) continue;
+
+                    if (Math.abs(cz.x - inny.x) <= 1 && Math.abs(cz.y - inny.y) <= 1) {
+                        Czlowiek dziecko = cz.rozmnazajZ(inny);
+                        nowi.add(dziecko);
+                        cz.poziomGlodu *= 0.5f;
+                        inny.poziomGlodu *= 0.5f;
+                        cz.czasOdRozmnazania = 0;
+                        inny.czasOdRozmnazania = 0;
+                        break;
+                    }
+                }
+            }
+        }
+
+        ludzie.addAll(nowi);
+    }
+
+    private void wykonajRuch(Czlowiek cz, boolean[][] zajete) {
+        Czlowiek partner = znajdzPartnera(cz);
+        Jedzenie jedzenie = (partner == null) ? znajdzNajblizszeJedzenie(cz) : null;
+
+        int dx = 0, dy = 0;
+        if (partner != null) {
+            dx = Integer.compare(partner.x, cz.x);
+            dy = Integer.compare(partner.y, cz.y);
+        } else if (jedzenie != null) {
+            dx = Integer.compare(jedzenie.x, cz.x);
+            dy = Integer.compare(jedzenie.y, cz.y);
+        }
+
+        int kroki = 1 + App.random.nextInt(0, cz.predkosc()+1);
+
+        for (int i = 0; i < kroki; i++) {
+            int nowyX = Math.max(0, Math.min(kolumny - 1, cz.x + dx));
+            int nowyY = Math.max(0, Math.min(wiersze - 1, cz.y + dy));
+
+            if (!zajete[nowyY][nowyX]) {
+                przemiescSieNaPole(cz, nowyX, nowyY, zajete);
+            } else {
+                Collections.shuffle(KIERUNKI);
+                for (int[] dir : KIERUNKI) {
+                    int sx = cz.x + dir[0];
+                    int sy = cz.y + dir[1];
+                    if (sx >= 0 && sx < kolumny && sy >= 0 && sy < wiersze && !zajete[sy][sx]) {
+                        przemiescSieNaPole(cz, sx, sy, zajete);
+                        break;
+                    }
+                }
+            }
+
+            if (partner != null && (!partner.zywy || cz.x == partner.x && cz.y == partner.y)) break;
+            if (jedzenie != null && (cz.x == jedzenie.x && cz.y == jedzenie.y)) break;
+        }
+    }
+
+
+    private Czlowiek znajdzPartnera(Czlowiek cz) {
+        return ludzie.stream()
+                .filter(p -> p != cz && p.zywy && p.mozeRozmnazac() && cz.czyMezczyzna() != p.czyMezczyzna())
+                .min(Comparator.comparingInt(p -> Math.abs(p.x - cz.x) + Math.abs(p.y - cz.y)))
+                .filter(p -> Math.abs(p.x - cz.x) + Math.abs(p.y - cz.y) <= cz.zasiegWzroku())
+                .orElse(null);
+    }
+
+    private Jedzenie znajdzNajblizszeJedzenie(Czlowiek cz) {
+        return jedzenie.stream()
+                .min(Comparator.comparingInt(j -> Math.abs(j.x - cz.x) + Math.abs(j.y - cz.y)))
+                .filter(j -> Math.abs(j.x - cz.x) + Math.abs(j.y - cz.y) <= cz.zasiegWzroku())
+                .orElse(null);
+    }
+
+    private Jedzenie znajdzJedzenieNaPolu(int x, int y) {
+        for (Jedzenie j : jedzenie) {
+            if (j.x == x && j.y == y) return j;
+        }
+        return null;
+    }
+
+    private void przemiescSieNaPole(Czlowiek cz, int x, int y, boolean[][] zajete) {
+        cz.x = x;
+        cz.y = y;
+        zajete[y][x] = true;
+
+        Jedzenie jedzenie = znajdzJedzenieNaPolu(x, y);
+        if (jedzenie != null) {
+            cz.zjedz(jedzenie);
+            this.jedzenie.remove(jedzenie);
+        }
+    }
+}
