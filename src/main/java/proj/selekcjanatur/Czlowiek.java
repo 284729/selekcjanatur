@@ -60,7 +60,7 @@ public abstract class Czlowiek {
         // Szansa rośnie z wiekiem
         float szansa = (wiek - 70) * 0.01f;
 
-        return Math.random() < szansa;
+        return App.random.nextFloat() < szansa;
     }
 
     public Czlowiek rozmnazajZ(Czlowiek inny) {
@@ -69,7 +69,7 @@ public abstract class Czlowiek {
                 : new Kobieta(x, y);
 
         for (int i = 0; i < geny.length; i++) {
-            dziecko.geny[i] = Math.random() < 0.5
+            dziecko.geny[i] = App.random.nextBoolean()
                     ? this.geny[i].odziedzicz()
                     : inny.geny[i].odziedzicz();
         }

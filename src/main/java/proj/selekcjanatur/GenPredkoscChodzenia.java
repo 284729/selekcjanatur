@@ -18,8 +18,8 @@ public class GenPredkoscChodzenia implements Gen {
 
     @Override
     public Gen odziedzicz() {
-        float mutacja = (float) (Math.random() * 1.5 - 0.75); // -0.75 do +0.75
-        float nowa = Math.max(1, Math.min(3, wartosc + mutacja));
+        var mutacja = App.random.nextFloat(-0.75f, 0.75f);
+        var nowa = Math.max(1, Math.min(3, wartosc + mutacja));
         return new GenPredkoscChodzenia(nowa);
     }
 }

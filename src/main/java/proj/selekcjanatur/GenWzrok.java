@@ -18,8 +18,8 @@ public class GenWzrok implements Gen {
 
     @Override
     public Gen odziedzicz() {
-        float mutacja = (float) (Math.random() * 2 - 1); // -1 do +1
-        float nowa = Math.max(1, Math.min(10, wartosc + mutacja));
+        var mutacja = App.random.nextFloat(-1, 1);
+        var nowa = Math.max(1, Math.min(10, wartosc + mutacja));
         return new GenWzrok(nowa);
     }
 }

@@ -9,7 +9,6 @@ public class Symulacja {
     private final List<Czlowiek> ludzie = new ArrayList<>();
     private final Set<Jedzenie> jedzenie = new HashSet<>();
 
-    private final Random random = new Random();
     private int licznikDodawaniaJedzenia = 0;
 
     private final boolean[][] zajete;
@@ -43,26 +42,26 @@ public class Symulacja {
         return jedzenie;
     }
 
-    public void dodajLosowychLudzi(int liczba) {
-        for (int i = 0; i < liczba; i++) {
+    public void dodajLosowychLudzi(int ile) {
+        for (int i = 0; i < ile; i++) {
             Czlowiek cz;
-            int x = random.nextInt(kolumny);
-            int y = random.nextInt(wiersze);
-            if (random.nextBoolean()) {
+            int x = App.random.nextInt(kolumny);
+            int y = App.random.nextInt(wiersze);
+            if (App.random.nextBoolean()) {
                 cz = new Mezczyzna(x, y);
             } else {
                 cz = new Kobieta(x, y);
             }
-            cz.wiek = random.nextInt(33) + 18;
+            cz.wiek = App.random.nextInt(18, 51);
             ludzie.add(cz);
         }
     }
 
-    public void dodajLosoweJedzenie(int liczba) {
+    public void dodajLosoweJedzenie(int ile) {
         int dodane = 0;
-        while (dodane < liczba) {
-            int x = random.nextInt(kolumny);
-            int y = random.nextInt(wiersze);
+        while (dodane < ile) {
+            int x = App.random.nextInt(kolumny);
+            int y = App.random.nextInt(wiersze);
             Jedzenie nowe = new Jedzenie(x, y);
             if (jedzenie.add(nowe)) {
                 dodane++;
@@ -100,7 +99,7 @@ public class Symulacja {
                 continue;
             }
 
-            wykonajRuch(cz, zajete);
+            wykonajRuch(cz);
 
             if (cz.mozeRozmnazac()) {
                 for (Czlowiek inny : ludzie) {
@@ -123,7 +122,7 @@ public class Symulacja {
         ludzie.addAll(nowi);
     }
 
-    private void wykonajRuch(Czlowiek cz, boolean[][] zajete) {
+    private void wykonajRuch(Czlowiek cz) {
         Czlowiek partner = znajdzPartnera(cz);
         Jedzenie jedzenie = (partner == null) ? znajdzNajblizszeJedzenie(cz) : null;
 
@@ -143,14 +142,14 @@ public class Symulacja {
             int nowyY = Math.max(0, Math.min(wiersze - 1, cz.y + dy));
 
             if (!zajete[nowyY][nowyX]) {
-                przemiescSieNaPole(cz, nowyX, nowyY, zajete);
+                przemiescSieNaPole(cz, nowyX, nowyY);
             } else {
                 Collections.shuffle(KIERUNKI);
                 for (int[] dir : KIERUNKI) {
                     int sx = cz.x + dir[0];
                     int sy = cz.y + dir[1];
                     if (sx >= 0 && sx < kolumny && sy >= 0 && sy < wiersze && !zajete[sy][sx]) {
-                        przemiescSieNaPole(cz, sx, sy, zajete);
+                        przemiescSieNaPole(cz, sx, sy);
                         break;
                     }
                 }
@@ -184,7 +183,7 @@ public class Symulacja {
         return null;
     }
 
-    private void przemiescSieNaPole(Czlowiek cz, int x, int y, boolean[][] zajete) {
+    private void przemiescSieNaPole(Czlowiek cz, int x, int y) {
         cz.x = x;
         cz.y = y;
         zajete[y][x] = true;
