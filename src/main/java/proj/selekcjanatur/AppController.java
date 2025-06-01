@@ -46,7 +46,7 @@ public class AppController {
         symulacja = new Symulacja(KOLUMNY, WIERSZE);
 
         Timeline timeline = new Timeline(
-                new KeyFrame(Duration.millis(500), event -> {
+                new KeyFrame(Duration.millis(250), event -> {
                     symulacja.aktualizuj();
                     rysujPlansze();
                 })

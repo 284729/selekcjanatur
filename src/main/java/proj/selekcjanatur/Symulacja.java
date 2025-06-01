@@ -9,6 +9,7 @@ public class Symulacja {
     private final List<Czlowiek> ludzie = new ArrayList<>();
     private final Set<Jedzenie> jedzenie = new HashSet<>();
 
+    private int licznikKlatek = 0;
     private int licznikDodawaniaJedzenia = 0;
 
     private final boolean[][] zajete;
@@ -70,18 +71,28 @@ public class Symulacja {
     }
 
     public void aktualizuj() {
+        // Aktualizacja stanu tylko co 3 klatki
+        licznikKlatek++;
+        if (licznikKlatek >= 3) {
+            aktualizujStan();
+            licznikKlatek = 0;
+        }
+
+        // Wykonaj pojedynczy krok dla każdego człowieka
+        for (Czlowiek cz : ludzie) {
+            if (cz.zywy && cz.powinnienSieRuszyc(licznikKlatek)) {
+                wykonajRuch(cz);
+            }
+        }
+    }
+
+    private void aktualizujStan() {
+        // Dodawanie jedzenia co pewien czas
         licznikDodawaniaJedzenia++;
         if (licznikDodawaniaJedzenia >= 3) {
             dodajLosoweJedzenie(3);
             licznikDodawaniaJedzenia = 0;
         }
-
-        // Wyczyszczenie zajętości
-        for (int y = 0; y < wiersze; y++) {
-            Arrays.fill(zajete[y], false);
-        }
-
-        List<Czlowiek> nowi = new ArrayList<>();
 
         // Aktualizacja stanu ludzi
         for (Czlowiek cz : ludzie) {
@@ -90,7 +101,8 @@ public class Symulacja {
             }
         }
 
-        // Ruch i rozmnażanie
+        // Rozmnażanie
+        List<Czlowiek> nowi = new ArrayList<>();
         Iterator<Czlowiek> it = ludzie.iterator();
         while (it.hasNext()) {
             Czlowiek cz = it.next();
@@ -98,8 +110,6 @@ public class Symulacja {
                 it.remove();
                 continue;
             }
-
-            wykonajRuch(cz);
 
             if (cz.mozeRozmnazac()) {
                 for (Czlowiek inny : ludzie) {
@@ -118,7 +128,6 @@ public class Symulacja {
                 }
             }
         }
-
         ludzie.addAll(nowi);
     }
 
@@ -135,31 +144,23 @@ public class Symulacja {
             dy = Integer.compare(jedzenie.y, cz.y);
         }
 
-        int kroki = 1 + App.random.nextInt(0, cz.predkosc()+1);
+        int nowyX = Math.max(0, Math.min(kolumny - 1, cz.x + dx));
+        int nowyY = Math.max(0, Math.min(wiersze - 1, cz.y + dy));
 
-        for (int i = 0; i < kroki; i++) {
-            int nowyX = Math.max(0, Math.min(kolumny - 1, cz.x + dx));
-            int nowyY = Math.max(0, Math.min(wiersze - 1, cz.y + dy));
-
-            if (!zajete[nowyY][nowyX]) {
-                przemiescSieNaPole(cz, nowyX, nowyY);
-            } else {
-                Collections.shuffle(KIERUNKI);
-                for (int[] dir : KIERUNKI) {
-                    int sx = cz.x + dir[0];
-                    int sy = cz.y + dir[1];
-                    if (sx >= 0 && sx < kolumny && sy >= 0 && sy < wiersze && !zajete[sy][sx]) {
-                        przemiescSieNaPole(cz, sx, sy);
-                        break;
-                    }
+        if (!zajete[nowyY][nowyX]) {
+            przemiescSieNaPole(cz, nowyX, nowyY);
+        } else {
+            Collections.shuffle(KIERUNKI);
+            for (int[] dir : KIERUNKI) {
+                int sx = cz.x + dir[0];
+                int sy = cz.y + dir[1];
+                if (sx >= 0 && sx < kolumny && sy >= 0 && sy < wiersze && !zajete[sy][sx]) {
+                    przemiescSieNaPole(cz, sx, sy);
+                    break;
                 }
             }
-
-            if (partner != null && (!partner.zywy || cz.x == partner.x && cz.y == partner.y)) break;
-            if (jedzenie != null && (cz.x == jedzenie.x && cz.y == jedzenie.y)) break;
         }
     }
-
 
     private Czlowiek znajdzPartnera(Czlowiek cz) {
         return ludzie.stream()
@@ -184,6 +185,7 @@ public class Symulacja {
     }
 
     private void przemiescSieNaPole(Czlowiek cz, int x, int y) {
+        zajete[cz.y][cz.x] = false;
         cz.x = x;
         cz.y = y;
         zajete[y][x] = true;

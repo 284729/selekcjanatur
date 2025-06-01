@@ -46,6 +46,17 @@ public abstract class Czlowiek {
         }
     }
 
+    public boolean powinnienSieRuszyc(int klatki) {
+        // Prędkość określa jak często się porusza:
+        // 1 - co 3 klatki, 2 - co 2, 3 - co 1
+        return switch (predkosc()) {
+            case 1 -> klatki % 3 == 0;
+            case 2 -> klatki % 2 == 0;
+            case 3 -> true;
+            default -> false;
+        };
+    }
+
     public abstract boolean mozeRozmnazac();
 
     public void zjedz(Jedzenie jedzenie) {
