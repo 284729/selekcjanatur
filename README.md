@@ -59,6 +59,6 @@ cd selekcjanatur
 
 ## 👨‍💻 Autorzy
 
-Projekt edukacyjny stworzony do eksperymentów z programowaniem i sztuczną ewolucją.
-Autorzy: Michał Kowalewski, Krystian Szydłowski, Mateusz Sobański
-Licencja: MIT
+Projekt edukacyjny stworzony do eksperymentów z programowaniem i sztuczną ewolucją.  
+Autorzy: Michał Kowalewski, Krystian Szydłowski, Mateusz Sobański  
+Licencja: MIT  
