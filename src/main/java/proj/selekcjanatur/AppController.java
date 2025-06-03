@@ -9,8 +9,8 @@ import javafx.scene.layout.*;
 import javafx.util.Duration;
 
 public class AppController {
-    private static final int KOLUMNY = 64;
-    private static final int WIERSZE = 36;
+    private static final int KOLUMNY = Symulacja.szerokosc;
+    private static final int WIERSZE = Symulacja.wysokosc;
 
     @FXML
     private GridPane grid;

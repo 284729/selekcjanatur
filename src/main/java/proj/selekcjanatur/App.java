@@ -3,7 +3,7 @@ package proj.selekcjanatur;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
-import javafx.scene.layout.GridPane;
+import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
 import java.util.Random;
@@ -13,10 +13,10 @@ public class App extends Application {
 
     @Override
     public void start(Stage stage) throws Exception {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("grid-view.fxml"));
-        GridPane root = loader.load();
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("start-view.fxml"));
+        VBox root = loader.load();
         stage.setScene(new Scene(root));
-        stage.setTitle("Selekcja Naturalna - Symulacja");
+        stage.setTitle("Ustawienia Symulacji");
         stage.show();
     }
 

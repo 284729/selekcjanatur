@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox spacing="15" alignment="CENTER" xmlns:fx="http://javafx.com/fxml" fx:controller="proj.selekcjanatur.StartController">
+    <padding>
+        <Insets top="20" right="20" bottom="20" left="20"/>
+    </padding>
+
+    <Label text="Parametry Symulacji" style="-fx-font-size: 16pt;"/>
+
+    <Label text="Szerokość planszy"/>
+    <Slider fx:id="sliderWidth" min="5" max="100" value="20" showTickLabels="true" showTickMarks="true" majorTickUnit="20"/>
+    <Label fx:id="labelWidth" text="20"/>
+
+    <Label text="Wysokość planszy"/>
+    <Slider fx:id="sliderHeight" min="5" max="100" value="20" showTickLabels="true" showTickMarks="true" majorTickUnit="20"/>
+    <Label fx:id="labelHeight" text="20"/>
+
+    <Label text="Liczba ludzi"/>
+    <Slider fx:id="sliderPeople" min="0" max="1000" value="25" showTickLabels="true" showTickMarks="true" majorTickUnit="250"/>
+    <Label fx:id="labelPeople" text="10"/>
+
+    <Label text="Jedzenie (startowe)"/>
+    <Slider fx:id="sliderFood" min="0" max="100" value="30" showTickLabels="true" showTickMarks="true" majorTickUnit="20"/>
+    <Label fx:id="labelFood" text="30"/>
+
+    <Label text="Jedzenie na turę"/>
+    <Slider fx:id="sliderFoodPerTick" min="0" max="50" value="15" showTickLabels="true" showTickMarks="true" majorTickUnit="10"/>
+    <Label fx:id="labelFoodPerTick" text="5"/>
+
+    <Button text="Start symulacji" onAction="#startSimulation"/>
+</VBox>

@@ -6,6 +6,20 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 
 public class Symulacja {
+    public static int szerokosc;
+    public static int wysokosc;
+    public static int liczbaLudzi;
+    public static int poczatkoweJedzenie;
+    public static int jedzenieNaTick;
+
+    public static void ustawParametry(int w, int h, int l, int j, int jt) {
+        szerokosc = w;
+        wysokosc = h;
+        liczbaLudzi = l;
+        poczatkoweJedzenie = j;
+        jedzenieNaTick = jt;
+    }
+
     private final int kolumny;
     private final int wiersze;
 
@@ -36,8 +50,8 @@ public class Symulacja {
         this.wiersze = wiersze;
         this.zajete = new boolean[wiersze][kolumny];
 
-        dodajLosowychLudzi(1);
-        dodajLosoweJedzenie(1);
+        dodajLosowychLudzi(liczbaLudzi);
+        dodajLosoweJedzenie(poczatkoweJedzenie);
     }
 
     private void dodajDoDziennika(String zdarzenie) {
@@ -101,7 +115,7 @@ public class Symulacja {
         // Dodawanie jedzenia co pewien czas
         licznikDodawaniaJedzenia++;
         if (licznikDodawaniaJedzenia >= 3) {
-            dodajLosoweJedzenie(0);
+            dodajLosoweJedzenie(jedzenieNaTick);
             licznikDodawaniaJedzenia = 0;
         }
 
