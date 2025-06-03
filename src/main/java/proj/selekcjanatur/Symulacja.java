@@ -1,6 +1,9 @@
 package proj.selekcjanatur;
 
 import java.util.*;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
 
 public class Symulacja {
     private final int kolumny;
@@ -8,6 +11,8 @@ public class Symulacja {
 
     private final List<Czlowiek> ludzie = new ArrayList<>();
     private final Set<Jedzenie> jedzenie = new HashSet<>();
+    private static final List<String> dziennikZdarzen = new ArrayList<>(); // Dziennik zdarzeń
+
 
     private int licznikKlatek = 0;
     private int licznikDodawaniaJedzenia = 0;
@@ -31,8 +36,12 @@ public class Symulacja {
         this.wiersze = wiersze;
         this.zajete = new boolean[wiersze][kolumny];
 
-        dodajLosowychLudzi(50);
-        dodajLosoweJedzenie(100);
+        dodajLosowychLudzi(1);
+        dodajLosoweJedzenie(1);
+    }
+
+    private void dodajDoDziennika(String zdarzenie) {
+        dziennikZdarzen.add(zdarzenie);
     }
 
     public List<Czlowiek> getLudzie() {
@@ -55,6 +64,7 @@ public class Symulacja {
             }
             cz.wiek = App.random.nextInt(18, 51);
             ludzie.add(cz);
+            dodajDoDziennika("Dodano człowieka: " + cz);
         }
     }
 
@@ -66,6 +76,7 @@ public class Symulacja {
             Jedzenie nowe = new Jedzenie(x, y);
             if (jedzenie.add(nowe)) {
                 dodane++;
+                dodajDoDziennika("Dodano jedzenie na pozycji: (" + x + ", " + y + ")");
             }
         }
     }
@@ -90,7 +101,7 @@ public class Symulacja {
         // Dodawanie jedzenia co pewien czas
         licznikDodawaniaJedzenia++;
         if (licznikDodawaniaJedzenia >= 3) {
-            dodajLosoweJedzenie(3);
+            dodajLosoweJedzenie(0);
             licznikDodawaniaJedzenia = 0;
         }
 
@@ -123,6 +134,8 @@ public class Symulacja {
                         inny.poziomGlodu *= 0.5f;
                         cz.czasOdRozmnazania = 0;
                         inny.czasOdRozmnazania = 0;
+
+                        dodajDoDziennika("Rozmnożenie: " + cz + " i " + inny + " -> " + dziecko);
                         break;
                     }
                 }
@@ -190,10 +203,23 @@ public class Symulacja {
         cz.y = y;
         zajete[y][x] = true;
 
+        dodajDoDziennika("Człowiek " + cz + " przemieścił się na pozycję: (" + x + ", " + y + ")");
+
         Jedzenie jedzenie = znajdzJedzenieNaPolu(x, y);
         if (jedzenie != null) {
             cz.zjedz(jedzenie);
             this.jedzenie.remove(jedzenie);
         }
+    }
+    public static void zapiszDziennikDoPliku(String nazwaPliku) {
+        try {
+            Files.write(Path.of(nazwaPliku), dziennikZdarzen);
+            System.out.println("Dziennik zdarzeń zapisano do pliku: " + nazwaPliku);
+        } catch (IOException e) {
+            System.err.println("Nie udało się zapisać dziennika zdarzeń do pliku: " + e.getMessage());
+        }
+    }
+    public boolean czySymulacjaZakonczona() {
+        return ludzie.isEmpty();
     }
 }

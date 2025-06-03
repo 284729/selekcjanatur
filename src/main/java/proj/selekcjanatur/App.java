@@ -22,5 +22,6 @@ public class App extends Application {
 
     public static void main(String[] args) {
         launch(args);
+        Symulacja.zapiszDziennikDoPliku("dziennik_zdarzen.txt");
     }
 }

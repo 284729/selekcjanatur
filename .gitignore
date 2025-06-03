@@ -33,3 +33,5 @@ build/
 
 ### Mac OS ###
 .DS_Store
+# Ignorowanie dziennika_zdarzeń.txt
+dziennik_zdarzen.txt

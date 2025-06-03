@@ -2,7 +2,9 @@ package proj.selekcjanatur;
 
 import javafx.animation.KeyFrame;
 import javafx.animation.Timeline;
+import javafx.application.Platform;
 import javafx.fxml.FXML;
+import javafx.scene.control.Alert;
 import javafx.scene.layout.*;
 import javafx.util.Duration;
 
@@ -16,6 +18,7 @@ public class AppController {
     private final Pane[][] komorki = new Pane[WIERSZE][KOLUMNY];
 
     private Symulacja symulacja;
+    private Timeline timeline;
 
     public void initialize() {
         // Tworzenie siatki
@@ -45,10 +48,16 @@ public class AppController {
 
         symulacja = new Symulacja(KOLUMNY, WIERSZE);
 
-        Timeline timeline = new Timeline(
+        timeline = new Timeline(
                 new KeyFrame(Duration.millis(250), event -> {
                     symulacja.aktualizuj();
                     rysujPlansze();
+
+
+                    if (symulacja.czySymulacjaZakonczona()) {
+                        timeline.stop();
+                        pokazOknoZakonczenia();
+                    }
                 })
         );
         timeline.setCycleCount(Timeline.INDEFINITE);
@@ -77,5 +86,16 @@ public class AppController {
                 komorki[cz.y][cz.x].setStyle("-fx-background-color: " + kolor + ";");
             }
         }
+    }
+    private void pokazOknoZakonczenia() {
+        Platform.runLater(() -> {
+            Alert alert = new Alert(Alert.AlertType.INFORMATION);
+            alert.setTitle("Symulacja zakończona");
+            alert.setHeaderText(null);
+            alert.setContentText("Symulacja zakończyła się, ponieważ liczba ludzi wynosi 0.");
+            alert.showAndWait();
+            Symulacja.zapiszDziennikDoPliku("dziennik_zdarzen.txt");
+            System.exit(0); // Zakończenie programu
+        });
     }
 }
