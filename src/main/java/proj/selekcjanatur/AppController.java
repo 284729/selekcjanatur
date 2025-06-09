@@ -5,6 +5,7 @@ import javafx.animation.Timeline;
 import javafx.application.Platform;
 import javafx.fxml.FXML;
 import javafx.scene.control.Alert;
+import javafx.scene.control.Button;
 import javafx.scene.layout.*;
 import javafx.util.Duration;
 
@@ -19,6 +20,11 @@ public class AppController {
 
     private Symulacja symulacja;
     private Timeline timeline;
+
+    @FXML
+    private Button pauseButton;
+
+    private boolean pauza = false;
 
     public void initialize() {
         // Tworzenie siatki
@@ -97,5 +103,17 @@ public class AppController {
             Symulacja.zapiszDziennikDoPliku("dziennik_zdarzen.txt");
             System.exit(0); // Zakończenie programu
         });
+    }
+
+    @FXML
+    private void togglePause() {
+        pauza = !pauza;
+        if (pauza) {
+            pauseButton.setText("Wznów");
+            timeline.pause();
+        } else {
+            pauseButton.setText("Pauza");
+            timeline.play();
+        }
     }
 }

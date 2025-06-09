@@ -6,7 +6,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Label;
 import javafx.scene.control.Slider;
-import javafx.scene.layout.GridPane;
+import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
 
 public class StartController {
@@ -60,10 +60,10 @@ public class StartController {
 
         try {
             FXMLLoader loader = new FXMLLoader(getClass().getResource("grid-view.fxml"));
-            GridPane gridPane = loader.load();
+            BorderPane gridView = loader.load();
 
             Stage stage = (Stage) sliderWidth.getScene().getWindow();
-            stage.setScene(new Scene(gridPane));
+            stage.setScene(new Scene(gridView));
             stage.setTitle("Selekcja Naturalna - Symulacja");
         } catch (Exception e) {
             e.printStackTrace();
