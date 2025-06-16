@@ -18,13 +18,15 @@ public class AppController {
 
     private final Pane[][] komorki = new Pane[WIERSZE][KOLUMNY];
 
-    private Symulacja symulacja;
+    private InterfejsSymulacji symulacja;
     private Timeline timeline;
 
     @FXML
     private Button pauseButton;
 
     private boolean pauza = false;
+
+    public static boolean PLIK = false;
 
     public void initialize() {
         // Tworzenie siatki
@@ -52,22 +54,29 @@ public class AppController {
             }
         }
 
-        symulacja = new Symulacja(KOLUMNY, WIERSZE);
+        try {
+            symulacja = PLIK ? new SymulacjaPlik("dziennik_zdarzen.txt") : new Symulacja(KOLUMNY, WIERSZE);
 
-        timeline = new Timeline(
-                new KeyFrame(Duration.millis(250), event -> {
-                    symulacja.aktualizuj();
-                    rysujPlansze();
+            timeline = new Timeline(
+                    new KeyFrame(Duration.millis(250), event -> {
+                        symulacja.aktualizuj();
+                        rysujPlansze();
 
-
-                    if (symulacja.czySymulacjaZakonczona()) {
-                        timeline.stop();
-                        pokazOknoZakonczenia();
-                    }
-                })
-        );
-        timeline.setCycleCount(Timeline.INDEFINITE);
-        timeline.play();
+                        if (symulacja.czySymulacjaZakonczona()) {
+                            timeline.stop();
+                            pokazOknoZakonczenia();
+                        }
+                    })
+            );
+            timeline.setCycleCount(Timeline.INDEFINITE);
+            timeline.play();
+        } catch (Exception e) {
+            e.printStackTrace();
+            var alert = new Alert(Alert.AlertType.ERROR);
+            alert.setTitle("Błąd odczytania pliku dziennik_zdarzen.txt");
+            alert.setContentText(e.getMessage());
+            alert.showAndWait();
+        }
     }
 
     private void rysujPlansze() {
@@ -95,12 +104,16 @@ public class AppController {
     }
     private void pokazOknoZakonczenia() {
         Platform.runLater(() -> {
-            Alert alert = new Alert(Alert.AlertType.INFORMATION);
+            var alert = new Alert(Alert.AlertType.INFORMATION);
             alert.setTitle("Symulacja zakończona");
             alert.setHeaderText(null);
-            alert.setContentText("Symulacja zakończyła się, ponieważ liczba ludzi wynosi 0.");
+            if (PLIK) {
+                alert.setContentText("Wszystkie zdarzenia z pliku zostały odtworzone.");
+            } else {
+                alert.setContentText("Symulacja zakończyła się, ponieważ liczba ludzi wynosi 0.");
+            }
             alert.showAndWait();
-            Symulacja.zapiszDziennikDoPliku("dziennik_zdarzen.txt");
+            if (!PLIK) Symulacja.zapiszDziennikDoPliku("dziennik_zdarzen.txt");
             System.exit(0); // Zakończenie programu
         });
     }

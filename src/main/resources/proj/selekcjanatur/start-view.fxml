@@ -31,5 +31,8 @@
     <Slider fx:id="sliderFoodPerTick" min="0" max="50" value="15" showTickLabels="true" showTickMarks="true" majorTickUnit="10"/>
     <Label fx:id="labelFoodPerTick" text="5"/>
 
-    <Button text="Start symulacji" onAction="#startSimulation"/>
+    <HBox spacing="15">
+        <Button text="Start symulacji" onAction="#startSimulation"/>
+        <Button text="Odtwórz z pliku" onAction="#replayFromFile"/>
+    </HBox>
 </VBox>

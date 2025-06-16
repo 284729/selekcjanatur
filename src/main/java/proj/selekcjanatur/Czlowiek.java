@@ -8,12 +8,17 @@ public abstract class Czlowiek {
 
     protected Gen[] geny = new Gen[3];
 
+    private static int globalneId = 0;
+    public final int id;
+
     public Czlowiek(int x, int y) {
         this.x = x;
         this.y = y;
         this.geny[0] = new GenWzrok();
         this.geny[1] = new GenPredkoscChodzenia();
         this.geny[2] = new GenZapotrzebowanieEnergetyczne();
+
+        this.id = globalneId++;
     }
 
     protected int wiek = 0; // liczba cykli od urodzenia
@@ -86,5 +91,10 @@ public abstract class Czlowiek {
         }
 
         return dziecko;
+    }
+
+    @Override
+    public String toString() {
+        return getClass().getSimpleName() + "@" + id;
     }
 }

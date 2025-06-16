@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 
-public class Symulacja {
+public class Symulacja implements InterfejsSymulacji {
     public static int szerokosc;
     public static int wysokosc;
     public static int liczbaLudzi;
@@ -26,7 +26,6 @@ public class Symulacja {
     private final List<Czlowiek> ludzie = new ArrayList<>();
     private final Set<Jedzenie> jedzenie = new HashSet<>();
     private static final List<String> dziennikZdarzen = new ArrayList<>(); // Dziennik zdarzeń
-
 
     private int licznikKlatek = 0;
     private int licznikDodawaniaJedzenia = 0;
@@ -50,6 +49,7 @@ public class Symulacja {
         this.wiersze = wiersze;
         this.zajete = new boolean[wiersze][kolumny];
 
+        dodajDoDziennika("ROZMIAR;" + kolumny + ";" + wiersze);
         dodajLosowychLudzi(liczbaLudzi);
         dodajLosoweJedzenie(poczatkoweJedzenie);
     }
@@ -66,7 +66,7 @@ public class Symulacja {
         return jedzenie;
     }
 
-    public void dodajLosowychLudzi(int ile) {
+    private void dodajLosowychLudzi(int ile) {
         for (int i = 0; i < ile; i++) {
             Czlowiek cz;
             int x = App.random.nextInt(kolumny);
@@ -78,11 +78,12 @@ public class Symulacja {
             }
             cz.wiek = App.random.nextInt(18, 51);
             ludzie.add(cz);
-            dodajDoDziennika("Dodano człowieka: " + cz);
+            zajete[cz.y][cz.x] = true;
+            dodajDoDziennika("DODANIE_CZLOWIEKA;" + cz + ";" + cz.czyMezczyzna() + ";" + x + ";" + y + ";" + cz.wiek);
         }
     }
 
-    public void dodajLosoweJedzenie(int ile) {
+    private void dodajLosoweJedzenie(int ile) {
         int dodane = 0;
         while (dodane < ile) {
             int x = App.random.nextInt(kolumny);
@@ -90,17 +91,17 @@ public class Symulacja {
             Jedzenie nowe = new Jedzenie(x, y);
             if (jedzenie.add(nowe)) {
                 dodane++;
-                dodajDoDziennika("Dodano jedzenie na pozycji: (" + x + ", " + y + ")");
+                dodajDoDziennika("DODANIE_JEDZENIA;" + x + ";" + y);
             }
         }
     }
 
     public void aktualizuj() {
+        dodajDoDziennika("KLATKA;" + licznikKlatek);
         // Aktualizacja stanu tylko co 3 klatki
         licznikKlatek++;
-        if (licznikKlatek >= 3) {
+        if (licznikKlatek % 3 == 0) {
             aktualizujStan();
-            licznikKlatek = 0;
         }
 
         // Wykonaj pojedynczy krok dla każdego człowieka
@@ -133,6 +134,8 @@ public class Symulacja {
             Czlowiek cz = it.next();
             if (!cz.zywy) {
                 it.remove();
+                zajete[cz.y][cz.x] = false;
+                dodajDoDziennika("SMIERC;" + cz + ";" + cz.x + ";" + cz.y + ";" + cz.wiek);
                 continue;
             }
 
@@ -149,7 +152,9 @@ public class Symulacja {
                         cz.czasOdRozmnazania = 0;
                         inny.czasOdRozmnazania = 0;
 
-                        dodajDoDziennika("Rozmnożenie: " + cz + " i " + inny + " -> " + dziecko);
+                        dodajDoDziennika("ROZMNOZENIE;" + cz + ";" + inny + ";"
+                                + dziecko + ";" + dziecko.czyMezczyzna() + ";" + dziecko.x + ";" + dziecko.y);
+
                         break;
                     }
                 }
@@ -213,19 +218,22 @@ public class Symulacja {
 
     private void przemiescSieNaPole(Czlowiek cz, int x, int y) {
         zajete[cz.y][cz.x] = false;
+        dodajDoDziennika("PRZEMIESZCZENIE;" + cz + ";" + cz.x + ";" + cz.y + ";" + x + ";" + y);
+
         cz.x = x;
         cz.y = y;
         zajete[y][x] = true;
-
-        dodajDoDziennika("Człowiek " + cz + " przemieścił się na pozycję: (" + x + ", " + y + ")");
 
         Jedzenie jedzenie = znajdzJedzenieNaPolu(x, y);
         if (jedzenie != null) {
             cz.zjedz(jedzenie);
             this.jedzenie.remove(jedzenie);
+            dodajDoDziennika("ZJEDZONO;" + x + ";" + y);
         }
     }
+
     public static void zapiszDziennikDoPliku(String nazwaPliku) {
+        if (dziennikZdarzen.isEmpty()) return;
         try {
             Files.write(Path.of(nazwaPliku), dziennikZdarzen);
             System.out.println("Dziennik zdarzeń zapisano do pliku: " + nazwaPliku);
@@ -233,6 +241,7 @@ public class Symulacja {
             System.err.println("Nie udało się zapisać dziennika zdarzeń do pliku: " + e.getMessage());
         }
     }
+
     public boolean czySymulacjaZakonczona() {
         return ludzie.isEmpty();
     }

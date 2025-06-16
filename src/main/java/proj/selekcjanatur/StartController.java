@@ -9,6 +9,11 @@ import javafx.scene.control.Slider;
 import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+
 public class StartController {
 
     @FXML private Slider sliderWidth, sliderHeight, sliderPeople, sliderFood, sliderFoodPerTick;
@@ -67,6 +72,41 @@ public class StartController {
             stage.setTitle("Selekcja Naturalna - Symulacja");
         } catch (Exception e) {
             e.printStackTrace();
+        }
+    }
+
+    @FXML
+    private void replayFromFile() {
+        var path = Path.of("dziennik_zdarzen.txt");
+        try (BufferedReader reader = Files.newBufferedReader(path)) {
+            var linia = reader.readLine();
+            var dane = linia == null ? null : linia.split(";");
+            if (linia == null || !dane[0].equals("ROZMIAR")) {
+                var alert = new Alert(Alert.AlertType.ERROR);
+                alert.setTitle("Błądny format pliku");
+                alert.setContentText("Plik nie jest poprawnym zapisem symulacji");
+                alert.showAndWait();
+                return;
+            }
+
+            var kolumny = Integer.parseInt(dane[1]);
+            var wiersze = Integer.parseInt(dane[2]);
+            Symulacja.szerokosc = kolumny;
+            Symulacja.wysokosc = wiersze;
+            AppController.PLIK = true;
+
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("grid-view.fxml"));
+            BorderPane gridView = loader.load();
+
+            Stage stage = (Stage) sliderWidth.getScene().getWindow();
+            stage.setScene(new Scene(gridView));
+            stage.setTitle("Selekcja Naturalna - Odtworzenie symulacji z pliku");
+        } catch (IOException e) {
+            e.printStackTrace();
+            var alert = new Alert(Alert.AlertType.ERROR);
+            alert.setTitle("Błąd odczytania pliku dziennik_zdarzen.txt");
+            alert.setContentText(e.getMessage());
+            alert.showAndWait();
         }
     }
 }
