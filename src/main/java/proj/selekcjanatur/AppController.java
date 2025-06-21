@@ -1,5 +1,8 @@
 package proj.selekcjanatur;
 
+import java.awt.Point;
+import java.util.HashSet;
+import java.util.Set;
 import javafx.animation.KeyFrame;
 import javafx.animation.Timeline;
 import javafx.application.Platform;
@@ -46,9 +49,9 @@ public class AppController {
 
         for (int y = 0; y < WIERSZE; y++) {
             for (int x = 0; x < KOLUMNY; x++) {
-                Pane cell = new Pane();
+                StackPane cell = new StackPane();
                 cell.setPrefSize(20, 20);
-                cell.setStyle("-fx-background-color: white; -fx-border-color: gray; -fx-border-width: 0.25;");
+                cell.setStyle("-fx-background-color: transparent; -fx-border-color: gray; -fx-border-width: 0.25;");
                 grid.add(cell, x, y);
                 komorki[y][x] = cell;
             }
@@ -80,29 +83,50 @@ public class AppController {
     }
 
     private void rysujPlansze() {
-        // Reset wszystkich komórek
+        // Wyczyść wszystkie komórki - aby uniknąć nakładania/duplikaci się elementów
         for (int y = 0; y < WIERSZE; y++) {
             for (int x = 0; x < KOLUMNY; x++) {
-                komorki[y][x].setStyle("-fx-background-color: white; -fx-border-color: gray; -fx-border-width: 0.25;");
+                komorki[y][x].getChildren().clear();
             }
         }
 
-        // Rysowanie jedzenia
-        for (Jedzenie j : symulacja.getJedzenie()) {
-            komorki[j.y][j.x].setStyle("-fx-background-color: darkgreen; -fx-border-color: gray; -fx-border-width: 0.25;");
-        }
-
-        // Rysowanie ludzi
+        //Zajęte pola
+        Set<Point> polaLudzi = new HashSet<>();
         for (Czlowiek cz : symulacja.getLudzie()) {
+            polaLudzi.add(new Point(cz.x, cz.y));
+        }
+
+        //Rysuj jedzenie
+        for (Jedzenie j : symulacja.getJedzenie()) {
+            if (polaLudzi.contains(new Point(j.x, j.y))) continue;
+
+            Region jedzenie = new Region();
+            jedzenie.setPrefSize(10, 10);
+            jedzenie.setStyle("-fx-background-color: darkgreen;");
+
+            komorki[j.y][j.x].getChildren().add(jedzenie);
+        }
+        //Rysuj ludzi
+        for (Czlowiek cz : symulacja.getLudzie()) {
+            Region kolko = new Region();
+            kolko.setPrefSize(16, 16);
+
             String kolor = cz.czyMezczyzna() ? "blue" : "pink";
-            if (cz.jestDzieckiem()) {
-                komorki[cz.y][cz.x].setStyle("-fx-background-color: linear-gradient(from 0% 0% to 0% 100%, yellow 50%, " + kolor + " 50%);");
-            } else {
-                komorki[cz.y][cz.x].setStyle("-fx-background-color: " + kolor + ";");
-            }
+            String border = cz.jestDzieckiem() ? "yellow" : "transparent";
+
+            kolko.setStyle(
+                    "-fx-background-color: " + kolor + ";" +
+                            "-fx-background-radius: 50%;" +
+                            "-fx-border-radius: 50%;" +
+                            "-fx-border-color: " + border + ";" +
+                            "-fx-border-width: 2;"
+            );
+
+            komorki[cz.y][cz.x].getChildren().add(kolko);
         }
     }
-    private void pokazOknoZakonczenia() {
+
+        private void pokazOknoZakonczenia() {
         Platform.runLater(() -> {
             var alert = new Alert(Alert.AlertType.INFORMATION);
             alert.setTitle("Symulacja zakończona");

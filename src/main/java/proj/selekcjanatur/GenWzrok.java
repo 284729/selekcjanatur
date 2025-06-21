@@ -7,7 +7,7 @@ public class GenWzrok implements Gen {
         this.wartosc = App.random.nextInt(1, 11);
     }
 
-    private GenWzrok(float wartosc) {
+    GenWzrok(float wartosc) {
         this.wartosc = wartosc;
     }
 
