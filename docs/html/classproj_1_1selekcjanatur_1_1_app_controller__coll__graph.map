@@ -1,0 +1,5 @@
+<map id="proj.selekcjanatur.AppController" name="proj.selekcjanatur.AppController">
+<area shape="rect" id="Node000001" title="Główny kontroler zarządzający interfejsem i logiką symulacji." alt="" coords="22,248,222,531"/>
+<area shape="rect" id="Node000002" href="$interfaceproj_1_1selekcjanatur_1_1_interfejs_symulacji.html" title="Główny interfejs systemu symulacji ewolucyjnej." alt="" coords="5,5,239,176"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="125,176,125,232,120,232,120,176"/>
+</map>

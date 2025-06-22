@@ -1,0 +1,7 @@
+<map id="proj.selekcjanatur.Czlowiek.mozeRozmnazac" name="proj.selekcjanatur.Czlowiek.mozeRozmnazac">
+<area shape="rect" id="Node000001" title="Sprawdza możliwość rozmnożenia." alt="" coords="623,5,840,48"/>
+<area shape="rect" id="Node000002" href="$classproj_1_1selekcjanatur_1_1_symulacja.html#af140417936a5d3f7ca9c02af9dbb2814" title="Aktualizuje stan symulacji (co 3 klatki)" alt="" coords="301,13,575,40"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="607,29,576,29,576,24,607,24"/>
+<area shape="rect" id="Node000003" href="$classproj_1_1selekcjanatur_1_1_symulacja.html#adec9a02326fa916fa822eddad509050f" title="Aktualizuje stan symulacji o jeden krok." alt="" coords="5,13,253,40"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="285,29,253,29,253,24,285,24"/>
+</map>

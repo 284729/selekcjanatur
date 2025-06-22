@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="pl">
+  <compounddef id="dir_e2770082773a9212f1ab93d6b3059d3d" kind="dir">
+    <compoundname>src/main/resources/proj/selekcjanatur</compoundname>
+    <innerfile refid="grid-view_8fxml">grid-view.fxml</innerfile>
+    <innerfile refid="start-view_8fxml">start-view.fxml</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/main/resources/proj/selekcjanatur/"/>
+  </compounddef>
+</doxygen>

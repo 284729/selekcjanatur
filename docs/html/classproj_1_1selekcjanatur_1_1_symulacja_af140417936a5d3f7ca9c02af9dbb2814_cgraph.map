@@ -1,0 +1,18 @@
+<map id="proj.selekcjanatur.Symulacja.aktualizujStan" name="proj.selekcjanatur.Symulacja.aktualizujStan">
+<area shape="rect" id="Node000001" title="Aktualizuje stan symulacji (co 3 klatki)" alt="" coords="5,131,280,157"/>
+<area shape="rect" id="Node000002" href="$classproj_1_1selekcjanatur_1_1_czlowiek.html#ac88bbff18c715a98a16d48103b3b495b" title="Sprawdza płeć człowieka." alt="" coords="351,5,558,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="174,128,327,64,365,51,367,56,329,69,176,132"/>
+<area shape="rect" id="Node000003" href="$classproj_1_1selekcjanatur_1_1_symulacja.html#adca30037183a0fade601724dd9b8f1bd" title="Dodaje wpis do dziennika zdarzeń" alt="" coords="629,93,852,136"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="205,127,264,116,327,108,399,104,454,104,581,108,614,109,614,114,581,113,454,109,399,109,328,113,265,122,206,133"/>
+<area shape="rect" id="Node000004" href="$classproj_1_1selekcjanatur_1_1_symulacja.html#ab361a78b8ca5a29d85b023553d4490f5" title="Dodaje losowe jedzenie na planszę" alt="" coords="343,123,566,165"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="280,141,328,141,328,147,280,147"/>
+<area shape="rect" id="Node000005" href="$classproj_1_1selekcjanatur_1_1_czlowiek.html#a104718c5aefe504867235fa48c03a645" title="Sprawdza możliwość rozmnożenia." alt="" coords="346,189,563,232"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="209,155,337,183,336,188,208,161"/>
+<area shape="rect" id="Node000006" href="$classproj_1_1selekcjanatur_1_1_czlowiek.html#ac542fecf860b53af21ee3063be486d27" title="Rozmnaża się z innym człowiekiem." alt="" coords="328,256,581,283"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="166,156,236,198,281,222,329,241,352,249,351,254,327,247,279,226,234,203,163,160"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="566,130,613,125,614,130,567,135"/>
+<area shape="rect" id="Node000007" href="$classproj_1_1selekcjanatur_1_1_czlowiek.html#a341bb3b95da388b296452c4155c1c773" title="Konstruktor tworzący nowego człowieka." alt="" coords="648,219,833,261"/>
+<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="581,254,632,248,633,254,582,259"/>
+<area shape="rect" id="Node000008" href="$interfaceproj_1_1selekcjanatur_1_1_gen.html#a7dbd3fed6d9dee504bf8217028b50493" title="Tworzy nowy gen poprzez dziedziczenie z mutacją" alt="" coords="632,285,849,312"/>
+<area shape="poly" id="edge8_Node000006_Node000008" title=" " alt="" coords="582,280,617,283,616,289,581,285"/>
+</map>

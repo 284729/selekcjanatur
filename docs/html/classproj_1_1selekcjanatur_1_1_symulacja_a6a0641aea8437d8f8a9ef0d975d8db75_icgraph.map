@@ -1,0 +1,5 @@
+<map id="proj.selekcjanatur.Symulacja.ustawParametry" name="proj.selekcjanatur.Symulacja.ustawParametry">
+<area shape="rect" id="Node000001" title="Ustawia globalne parametry symulacji." alt="" coords="222,5,449,48"/>
+<area shape="rect" id="Node000002" href="$classproj_1_1selekcjanatur_1_1_start_controller.html#adef8290b0feaebf73d01894af5e102e3" title="Uruchamia nową symulację z wybranymi parametrami." alt="" coords="5,5,174,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="206,29,174,29,174,24,206,24"/>
+</map>

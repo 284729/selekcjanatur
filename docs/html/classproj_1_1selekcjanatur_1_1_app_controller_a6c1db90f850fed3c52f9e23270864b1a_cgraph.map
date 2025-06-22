@@ -1,0 +1,5 @@
+<map id="proj.selekcjanatur.AppController.pokazOknoZakonczenia" name="proj.selekcjanatur.AppController.pokazOknoZakonczenia">
+<area shape="rect" id="Node000001" title="Wyświetla okno dialogowe po zakończeniu symulacji." alt="" coords="5,5,251,48"/>
+<area shape="rect" id="Node000002" href="$classproj_1_1selekcjanatur_1_1_symulacja.html#a30d65d41391f815284bbdce9ab12beb9" title="Zapisuje dziennik zdarzeń do pliku." alt="" coords="299,5,529,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="251,24,283,24,283,29,251,29"/>
+</map>

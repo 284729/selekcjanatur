@@ -1,0 +1,110 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="pl">
+  <compounddef id="interfaceproj_1_1selekcjanatur_1_1_gen" kind="interface" language="Java" prot="public">
+    <compoundname>proj::selekcjanatur::Gen</compoundname>
+    <derivedcompoundref refid="classproj_1_1selekcjanatur_1_1_gen_predkosc_chodzenia" prot="public" virt="non-virtual">proj.selekcjanatur.GenPredkoscChodzenia</derivedcompoundref>
+    <derivedcompoundref refid="classproj_1_1selekcjanatur_1_1_gen_wzrok" prot="public" virt="non-virtual">proj.selekcjanatur.GenWzrok</derivedcompoundref>
+    <derivedcompoundref refid="classproj_1_1selekcjanatur_1_1_gen_zapotrzebowanie_energetyczne" prot="public" virt="non-virtual">proj.selekcjanatur.GenZapotrzebowanieEnergetyczne</derivedcompoundref>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="interfaceproj_1_1selekcjanatur_1_1_gen_1ab2b013ae8d6ad91c73fdb8ec97f37c94" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float proj.selekcjanatur.Gen.wartosc</definition>
+        <argsstring>()</argsstring>
+        <name>wartosc</name>
+        <qualifiedname>proj.selekcjanatur.Gen.wartosc</qualifiedname>
+        <reimplementedby refid="classproj_1_1selekcjanatur_1_1_gen_predkosc_chodzenia_1a5a2e8c5c92648cd0fbd48ed3b3e79d48">wartosc</reimplementedby>
+        <reimplementedby refid="classproj_1_1selekcjanatur_1_1_gen_wzrok_1a2c2e4e3feabb475013319b27f6af596a">wartosc</reimplementedby>
+        <reimplementedby refid="classproj_1_1selekcjanatur_1_1_gen_zapotrzebowanie_energetyczne_1afd421547690d3ea2c7a15eaea3cf1e08">wartosc</reimplementedby>
+        <briefdescription>
+<para>Pobiera aktualną wartość cechy genetycznej. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Wartość liczbowa genu (zależna od implementacji)</para>
+</simplesect>
+Wartość może być stała lub zmieniać się w czasie, w zależności od konkretnej implementacji genu.</para>
+<para>Przykład: <programlisting><codeline><highlight class="normal">Gen<sp/>wzrok<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>GenWzrok();</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>zasieg<sp/>=<sp/>wzrok.wartosc();<sp/></highlight><highlight class="comment">//<sp/>np.<sp/>2.5f</highlight></codeline>
+</programlisting> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/proj/selekcjanatur/Gen.java" line="30" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="interfaceproj_1_1selekcjanatur_1_1_gen_1a7dbd3fed6d9dee504bf8217028b50493" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interfaceproj_1_1selekcjanatur_1_1_gen" kindref="compound">Gen</ref></type>
+        <definition>Gen proj.selekcjanatur.Gen.odziedzicz</definition>
+        <argsstring>()</argsstring>
+        <name>odziedzicz</name>
+        <qualifiedname>proj.selekcjanatur.Gen.odziedzicz</qualifiedname>
+        <reimplementedby refid="classproj_1_1selekcjanatur_1_1_gen_predkosc_chodzenia_1ac1c84739c1c813099f3d0b351c9a6487">odziedzicz</reimplementedby>
+        <reimplementedby refid="classproj_1_1selekcjanatur_1_1_gen_wzrok_1a78a8ef7be1ae0cbe718d1428e44f639c">odziedzicz</reimplementedby>
+        <reimplementedby refid="classproj_1_1selekcjanatur_1_1_gen_zapotrzebowanie_energetyczne_1a283348bd55e17df0fe1345785d138c95">odziedzicz</reimplementedby>
+        <briefdescription>
+<para>Tworzy nowy gen poprzez dziedziczenie z mutacją </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Nowa instancja genu potomnego</para>
+</simplesect>
+Metoda powinna:<orderedlist>
+<listitem><para>Skopiować podstawowe cechy genu rodzica</para>
+</listitem><listitem><para>Zastosować losową mutację (zmianę wartości)</para>
+</listitem><listitem><para>Zwrócić nową instancję genu</para>
+</listitem></orderedlist>
+</para>
+<para>Przykład: <programlisting><codeline><highlight class="normal">Gen<sp/>oryginalny<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>GenPredkoscChodzenia();</highlight></codeline>
+<codeline><highlight class="normal">Gen<sp/>potomny<sp/>=<sp/>oryginalny.odziedzicz();<sp/></highlight><highlight class="comment">//<sp/>nowa<sp/>instancja<sp/>z<sp/>mutacją</highlight></codeline>
+</programlisting> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/proj/selekcjanatur/Gen.java" line="47" column="9"/>
+        <referencedby refid="classproj_1_1selekcjanatur_1_1_czlowiek_1ac542fecf860b53af21ee3063be486d27" compoundref="_czlowiek_8java" startline="169" endline="181">proj.selekcjanatur.Czlowiek.rozmnazajZ</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Interfejs reprezentujący gen w symulacji ewolucyjnej. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Definiuje podstawowe operacje jakie musi implementować każdy gen:<itemizedlist>
+<listitem><para>Dostęp do swojej wartości</para>
+</listitem><listitem><para>Mechanizm dziedziczenia z możliwością mutacji </para>
+</listitem></itemizedlist>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>proj.selekcjanatur.Gen</label>
+        <link refid="interfaceproj_1_1selekcjanatur_1_1_gen"/>
+      </node>
+      <node id="2">
+        <label>proj.selekcjanatur.GenPredkoscChodzenia</label>
+        <link refid="classproj_1_1selekcjanatur_1_1_gen_predkosc_chodzenia"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>proj.selekcjanatur.GenWzrok</label>
+        <link refid="classproj_1_1selekcjanatur_1_1_gen_wzrok"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>proj.selekcjanatur.GenZapotrzebowanieEnergetyczne</label>
+        <link refid="classproj_1_1selekcjanatur_1_1_gen_zapotrzebowanie_energetyczne"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>proj.selekcjanatur.Gen</label>
+        <link refid="interfaceproj_1_1selekcjanatur_1_1_gen"/>
+      </node>
+    </collaborationgraph>
+    <location file="src/main/java/proj/selekcjanatur/Gen.java" line="16" column="18" bodyfile="src/main/java/proj/selekcjanatur/Gen.java" bodystart="16" bodyend="48"/>
+    <listofallmembers>
+      <member refid="interfaceproj_1_1selekcjanatur_1_1_gen_1a7dbd3fed6d9dee504bf8217028b50493" prot="public" virt="non-virtual"><scope>proj::selekcjanatur::Gen</scope><name>odziedzicz</name></member>
+      <member refid="interfaceproj_1_1selekcjanatur_1_1_gen_1ab2b013ae8d6ad91c73fdb8ec97f37c94" prot="public" virt="non-virtual"><scope>proj::selekcjanatur::Gen</scope><name>wartosc</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

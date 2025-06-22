@@ -1,0 +1,5 @@
+<map id="proj.selekcjanatur.GenPredkoscChodzenia.odziedzicz" name="proj.selekcjanatur.GenPredkoscChodzenia.odziedzicz">
+<area shape="rect" id="Node000001" title="Tworzy nowy gen poprzez dziedziczenie z mutacją" alt="" coords="5,5,212,48"/>
+<area shape="rect" id="Node000002" href="$classproj_1_1selekcjanatur_1_1_gen_predkosc_chodzenia.html#a8e6bad25e15b11e69b650089dd2849b5" title="Konstruktor losujący początkową wartość genu." alt="" coords="260,5,488,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="212,24,244,24,244,29,212,29"/>
+</map>

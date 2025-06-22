@@ -1,0 +1,9 @@
+<map id="Graficzna hierarchia klas" name="Graficzna hierarchia klas">
+<area shape="rect" id="Node000000" href="$interfaceproj_1_1selekcjanatur_1_1_gen.html" title="Interfejs reprezentujący gen w symulacji ewolucyjnej." alt="" coords="5,72,157,99"/>
+<area shape="rect" id="Node000001" href="$classproj_1_1selekcjanatur_1_1_gen_predkosc_chodzenia.html" title="Klasa implementująca gen prędkości chodzenia." alt="" coords="227,5,433,48"/>
+<area shape="poly" id="edge4_Node000000_Node000001" title=" " alt="" coords="155,65,236,46,237,51,156,70"/>
+<area shape="rect" id="Node000002" href="$classproj_1_1selekcjanatur_1_1_gen_wzrok.html" title="Klasa implementująca gen zasięgu wzroku." alt="" coords="235,72,424,99"/>
+<area shape="poly" id="edge5_Node000000_Node000002" title=" " alt="" coords="172,83,235,83,235,88,172,88"/>
+<area shape="rect" id="Node000003" href="$classproj_1_1selekcjanatur_1_1_gen_zapotrzebowanie_energetyczne.html" title="Klasa implementująca gen zapotrzebowania energetycznego." alt="" coords="205,123,455,165"/>
+<area shape="poly" id="edge6_Node000000_Node000003" title=" " alt="" coords="156,100,237,119,236,125,155,105"/>
+</map>

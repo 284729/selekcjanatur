@@ -1,0 +1,489 @@
+\doxysection{Dokumentacja klasy proj.\+selekcjanatur.\+Czlowiek}
+\hypertarget{classproj_1_1selekcjanatur_1_1_czlowiek}{}\label{classproj_1_1selekcjanatur_1_1_czlowiek}\index{proj.selekcjanatur.Czlowiek@{proj.selekcjanatur.Czlowiek}}
+
+
+Abstrakcyjna klasa reprezentująca człowieka w symulacji ewolucyjnej.  
+
+
+
+
+Diagram dziedziczenia dla proj.\+selekcjanatur.\+Czlowiek\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classproj_1_1selekcjanatur_1_1_czlowiek__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Diagram współpracy dla proj.\+selekcjanatur.\+Czlowiek\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classproj_1_1selekcjanatur_1_1_czlowiek__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classproj_1_1selekcjanatur_1_1_czlowiek_a341bb3b95da388b296452c4155c1c773}{Czlowiek}} (int \mbox{\hyperlink{classproj_1_1selekcjanatur_1_1_czlowiek_ac4d6409fa9719e64741b67bbfcdaf573}{x}}, int \mbox{\hyperlink{classproj_1_1selekcjanatur_1_1_czlowiek_a59322ad4d7324f586e2acd03edd858ce}{y}})
+\begin{DoxyCompactList}\small\item\em Konstruktor tworzący nowego człowieka. \end{DoxyCompactList}\item 
+boolean \mbox{\hyperlink{classproj_1_1selekcjanatur_1_1_czlowiek_a7eb1b9e51b6766279f0f2b7d0dd9b119}{jest\+Dzieckiem}} ()
+\begin{DoxyCompactList}\small\item\em Sprawdza czy człowiek jest dzieckiem. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classproj_1_1selekcjanatur_1_1_czlowiek_aabd1eb0726b65fce7b6bab1f894904cf}{zasieg\+Wzroku}} ()
+\begin{DoxyCompactList}\small\item\em Oblicza zasięg wzroku na podstawie genów. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classproj_1_1selekcjanatur_1_1_czlowiek_a485073a3fc648b9a3ca7ecdec405516e}{predkosc}} ()
+\begin{DoxyCompactList}\small\item\em Oblicza prędkość poruszania na podstawie genów. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classproj_1_1selekcjanatur_1_1_czlowiek_a53d97caac471e136d612c2eb28f02c2d}{zuzycie\+Energii}} ()
+\begin{DoxyCompactList}\small\item\em Oblicza zużycie energii na cykl. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classproj_1_1selekcjanatur_1_1_czlowiek_aff9d2620e2407154927841859a6c98af}{aktualizuj}} ()
+\begin{DoxyCompactList}\small\item\em Aktualizuje stan człowieka w każdym cyklu symulacji. \end{DoxyCompactList}\item 
+boolean \mbox{\hyperlink{classproj_1_1selekcjanatur_1_1_czlowiek_a9cce002ea96f19fe0eb88606d174e464}{powinnien\+Sie\+Ruszyc}} (int klatki)
+\begin{DoxyCompactList}\small\item\em Decyduje czy człowiek powinien się poruszyć w danej klatce. \end{DoxyCompactList}\item 
+abstract boolean \mbox{\hyperlink{classproj_1_1selekcjanatur_1_1_czlowiek_a104718c5aefe504867235fa48c03a645}{moze\+Rozmnazac}} ()
+\begin{DoxyCompactList}\small\item\em Sprawdza możliwość rozmnożenia. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classproj_1_1selekcjanatur_1_1_czlowiek_a19de94d2ab10d64910307b71bf45ed2e}{zjedz}} (\mbox{\hyperlink{classproj_1_1selekcjanatur_1_1_jedzenie}{Jedzenie}} jedzenie)
+\begin{DoxyCompactList}\small\item\em Zjada podane jedzenie. \end{DoxyCompactList}\item 
+abstract boolean \mbox{\hyperlink{classproj_1_1selekcjanatur_1_1_czlowiek_ac88bbff18c715a98a16d48103b3b495b}{czy\+Mezczyzna}} ()
+\begin{DoxyCompactList}\small\item\em Sprawdza płeć człowieka. \end{DoxyCompactList}\item 
+boolean \mbox{\hyperlink{classproj_1_1selekcjanatur_1_1_czlowiek_a877a9787e423b1279430dc1f952fea04}{czy\+Umiera\+Ze\+Starosci}} ()
+\begin{DoxyCompactList}\small\item\em Sprawdza czy człowiek umiera ze starości. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classproj_1_1selekcjanatur_1_1_czlowiek}{Czlowiek}} \mbox{\hyperlink{classproj_1_1selekcjanatur_1_1_czlowiek_ac542fecf860b53af21ee3063be486d27}{rozmnazajZ}} (\mbox{\hyperlink{classproj_1_1selekcjanatur_1_1_czlowiek}{Czlowiek}} inny)
+\begin{DoxyCompactList}\small\item\em Rozmnaża się z innym człowiekiem. \end{DoxyCompactList}\item 
+String \mbox{\hyperlink{classproj_1_1selekcjanatur_1_1_czlowiek_ac5cd794f090024daf3dd37da3ced3a6f}{to\+String}} ()
+\begin{DoxyCompactList}\small\item\em Reprezentacja tekstowa człowieka. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Atrybuty publiczne}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classproj_1_1selekcjanatur_1_1_czlowiek_ac4d6409fa9719e64741b67bbfcdaf573}{x}}
+\begin{DoxyCompactList}\small\item\em Pozycja x na planszy. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classproj_1_1selekcjanatur_1_1_czlowiek_a59322ad4d7324f586e2acd03edd858ce}{y}}
+\begin{DoxyCompactList}\small\item\em Pozycja y na planszy. \end{DoxyCompactList}\item 
+final int \mbox{\hyperlink{classproj_1_1selekcjanatur_1_1_czlowiek_a024b3bcb3c470bb8d8ad482646689263}{id}}
+\begin{DoxyCompactList}\small\item\em Unikalny identyfikator człowieka. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Atrybuty chronione}
+\begin{DoxyCompactItemize}
+\item 
+boolean \mbox{\hyperlink{classproj_1_1selekcjanatur_1_1_czlowiek_ae4932e671627f16ed55cf0b377aed889}{zywy}} = true
+\begin{DoxyCompactList}\small\item\em Flaga określająca czy człowiek jest żywy. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classproj_1_1selekcjanatur_1_1_czlowiek_adc5b716c39bd2e6292460bcf9048eea3}{poziom\+Glodu}} = 100
+\begin{DoxyCompactList}\small\item\em Poziom głodu (0-\/100) \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classproj_1_1selekcjanatur_1_1_czlowiek_ad0e705573c19c5416636ee0fd457cf7a}{czas\+Od\+Rozmnazania}} = 20
+\begin{DoxyCompactList}\small\item\em Liczba cykli od ostatniego rozmnożenia. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{interfaceproj_1_1selekcjanatur_1_1_gen}{Gen}}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classproj_1_1selekcjanatur_1_1_czlowiek_a582845c239e55cf178e6e9ca22ee0639}{geny}} = new \mbox{\hyperlink{interfaceproj_1_1selekcjanatur_1_1_gen}{Gen}}\mbox{[}3\mbox{]}
+\begin{DoxyCompactList}\small\item\em Tablica genów człowieka (wzrok, prędkość, metabolizm) \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classproj_1_1selekcjanatur_1_1_czlowiek_a816cfb8471e36f40a415ce3184398033}{wiek}} = 0
+\begin{DoxyCompactList}\small\item\em Wiek człowieka w cyklach symulacji. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Statyczne atrybuty prywatne}
+\begin{DoxyCompactItemize}
+\item 
+static int \mbox{\hyperlink{classproj_1_1selekcjanatur_1_1_czlowiek_a509bb922ddb9fd50f424b988e350e17f}{globalne\+Id}} = 0
+\begin{DoxyCompactList}\small\item\em Licznik globalny do generowania unikalnych ID. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Opis szczegółowy}
+Abstrakcyjna klasa reprezentująca człowieka w symulacji ewolucyjnej. 
+
+Klasa zawiera podstawowe mechanizmy\+:
+\begin{DoxyItemize}
+\item Śledzenie stanu życiowego
+\item Zarządzanie głodem i energią
+\item Mechanizmy rozmnażania
+\item Dziedziczenie genów
+\item Starzenie się i śmierć 
+\end{DoxyItemize}
+
+\label{doc-constructors}
+\Hypertarget{classproj_1_1selekcjanatur_1_1_czlowiek_doc-constructors}
+\doxysubsection{Dokumentacja konstruktora i destruktora}
+\Hypertarget{classproj_1_1selekcjanatur_1_1_czlowiek_a341bb3b95da388b296452c4155c1c773}\index{proj.selekcjanatur.Czlowiek@{proj.selekcjanatur.Czlowiek}!Czlowiek@{Czlowiek}}
+\index{Czlowiek@{Czlowiek}!proj.selekcjanatur.Czlowiek@{proj.selekcjanatur.Czlowiek}}
+\doxysubsubsection{\texorpdfstring{Czlowiek()}{Czlowiek()}}
+{\footnotesize\ttfamily \label{classproj_1_1selekcjanatur_1_1_czlowiek_a341bb3b95da388b296452c4155c1c773} 
+proj.\+selekcjanatur.\+Czlowiek.\+Czlowiek (\begin{DoxyParamCaption}\item[{int}]{x}{, }\item[{int}]{y}{}\end{DoxyParamCaption})}
+
+
+
+Konstruktor tworzący nowego człowieka. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em x} & Pozycja startowa x \\
+\hline
+{\em y} & Pozycja startowa y \\
+\hline
+\end{DoxyParams}
+Oto graf wywoływań tej funkcji\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classproj_1_1selekcjanatur_1_1_czlowiek_a341bb3b95da388b296452c4155c1c773_icgraph}
+\end{center}
+\end{figure}
+
+
+\label{doc-func-members}
+\Hypertarget{classproj_1_1selekcjanatur_1_1_czlowiek_doc-func-members}
+\doxysubsection{Dokumentacja funkcji składowych}
+\Hypertarget{classproj_1_1selekcjanatur_1_1_czlowiek_aff9d2620e2407154927841859a6c98af}\index{proj.selekcjanatur.Czlowiek@{proj.selekcjanatur.Czlowiek}!aktualizuj@{aktualizuj}}
+\index{aktualizuj@{aktualizuj}!proj.selekcjanatur.Czlowiek@{proj.selekcjanatur.Czlowiek}}
+\doxysubsubsection{\texorpdfstring{aktualizuj()}{aktualizuj()}}
+{\footnotesize\ttfamily \label{classproj_1_1selekcjanatur_1_1_czlowiek_aff9d2620e2407154927841859a6c98af} 
+void proj.\+selekcjanatur.\+Czlowiek.\+aktualizuj (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Aktualizuje stan człowieka w każdym cyklu symulacji. 
+
+Zwiększa wiek, zmniejsza poziom energii, sprawdza warunki śmierci z głodu i starości Oto graf wywołań dla tej funkcji\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classproj_1_1selekcjanatur_1_1_czlowiek_aff9d2620e2407154927841859a6c98af_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classproj_1_1selekcjanatur_1_1_czlowiek_ac88bbff18c715a98a16d48103b3b495b}\index{proj.selekcjanatur.Czlowiek@{proj.selekcjanatur.Czlowiek}!czyMezczyzna@{czyMezczyzna}}
+\index{czyMezczyzna@{czyMezczyzna}!proj.selekcjanatur.Czlowiek@{proj.selekcjanatur.Czlowiek}}
+\doxysubsubsection{\texorpdfstring{czyMezczyzna()}{czyMezczyzna()}}
+{\footnotesize\ttfamily \label{classproj_1_1selekcjanatur_1_1_czlowiek_ac88bbff18c715a98a16d48103b3b495b} 
+abstract boolean proj.\+selekcjanatur.\+Czlowiek.\+czy\+Mezczyzna (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+
+
+Sprawdza płeć człowieka. 
+
+\begin{DoxyReturn}{Zwraca}
+true jeśli to mężczyzna 
+\end{DoxyReturn}
+
+
+Reimplementowana w \mbox{\hyperlink{classproj_1_1selekcjanatur_1_1_kobieta_acf6cab99fe158694c65d666cfee653e3}{proj.\+selekcjanatur.\+Kobieta}} i \mbox{\hyperlink{classproj_1_1selekcjanatur_1_1_mezczyzna_a99278a265802d4c1b952b84dc3bb46f5}{proj.\+selekcjanatur.\+Mezczyzna}}.
+
+Oto graf wywoływań tej funkcji\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classproj_1_1selekcjanatur_1_1_czlowiek_ac88bbff18c715a98a16d48103b3b495b_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classproj_1_1selekcjanatur_1_1_czlowiek_a877a9787e423b1279430dc1f952fea04}\index{proj.selekcjanatur.Czlowiek@{proj.selekcjanatur.Czlowiek}!czyUmieraZeStarosci@{czyUmieraZeStarosci}}
+\index{czyUmieraZeStarosci@{czyUmieraZeStarosci}!proj.selekcjanatur.Czlowiek@{proj.selekcjanatur.Czlowiek}}
+\doxysubsubsection{\texorpdfstring{czyUmieraZeStarosci()}{czyUmieraZeStarosci()}}
+{\footnotesize\ttfamily \label{classproj_1_1selekcjanatur_1_1_czlowiek_a877a9787e423b1279430dc1f952fea04} 
+boolean proj.\+selekcjanatur.\+Czlowiek.\+czy\+Umiera\+Ze\+Starosci (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Sprawdza czy człowiek umiera ze starości. 
+
+\begin{DoxyReturn}{Zwraca}
+true jeśli umiera
+\end{DoxyReturn}
+Szansa rośnie liniowo od wieku 70 cykli\+:
+\begin{DoxyItemize}
+\item 70 cykli\+: 0\% szansy
+\item 100 cykli\+: 30\% szansy
+\item 170 cykli\+: 100\% szansy 
+\end{DoxyItemize}Oto graf wywoływań tej funkcji\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classproj_1_1selekcjanatur_1_1_czlowiek_a877a9787e423b1279430dc1f952fea04_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classproj_1_1selekcjanatur_1_1_czlowiek_a7eb1b9e51b6766279f0f2b7d0dd9b119}\index{proj.selekcjanatur.Czlowiek@{proj.selekcjanatur.Czlowiek}!jestDzieckiem@{jestDzieckiem}}
+\index{jestDzieckiem@{jestDzieckiem}!proj.selekcjanatur.Czlowiek@{proj.selekcjanatur.Czlowiek}}
+\doxysubsubsection{\texorpdfstring{jestDzieckiem()}{jestDzieckiem()}}
+{\footnotesize\ttfamily \label{classproj_1_1selekcjanatur_1_1_czlowiek_a7eb1b9e51b6766279f0f2b7d0dd9b119} 
+boolean proj.\+selekcjanatur.\+Czlowiek.\+jest\+Dzieckiem (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Sprawdza czy człowiek jest dzieckiem. 
+
+\begin{DoxyReturn}{Zwraca}
+true jeśli wiek \texorpdfstring{$<$}{<} 18 cykli 
+\end{DoxyReturn}
+Oto graf wywoływań tej funkcji\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classproj_1_1selekcjanatur_1_1_czlowiek_a7eb1b9e51b6766279f0f2b7d0dd9b119_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classproj_1_1selekcjanatur_1_1_czlowiek_a104718c5aefe504867235fa48c03a645}\index{proj.selekcjanatur.Czlowiek@{proj.selekcjanatur.Czlowiek}!mozeRozmnazac@{mozeRozmnazac}}
+\index{mozeRozmnazac@{mozeRozmnazac}!proj.selekcjanatur.Czlowiek@{proj.selekcjanatur.Czlowiek}}
+\doxysubsubsection{\texorpdfstring{mozeRozmnazac()}{mozeRozmnazac()}}
+{\footnotesize\ttfamily \label{classproj_1_1selekcjanatur_1_1_czlowiek_a104718c5aefe504867235fa48c03a645} 
+abstract boolean proj.\+selekcjanatur.\+Czlowiek.\+moze\+Rozmnazac (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+
+
+Sprawdza możliwość rozmnożenia. 
+
+\begin{DoxyReturn}{Zwraca}
+true jeśli może się rozmnożyć 
+\end{DoxyReturn}
+
+
+Reimplementowana w \mbox{\hyperlink{classproj_1_1selekcjanatur_1_1_kobieta_a2a0a9cd3a3bc1e439e1c5c278381a9d3}{proj.\+selekcjanatur.\+Kobieta}} i \mbox{\hyperlink{classproj_1_1selekcjanatur_1_1_mezczyzna_a6252640fd21d46c66daf76ce143dcf6a}{proj.\+selekcjanatur.\+Mezczyzna}}.
+
+Oto graf wywoływań tej funkcji\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classproj_1_1selekcjanatur_1_1_czlowiek_a104718c5aefe504867235fa48c03a645_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classproj_1_1selekcjanatur_1_1_czlowiek_a9cce002ea96f19fe0eb88606d174e464}\index{proj.selekcjanatur.Czlowiek@{proj.selekcjanatur.Czlowiek}!powinnienSieRuszyc@{powinnienSieRuszyc}}
+\index{powinnienSieRuszyc@{powinnienSieRuszyc}!proj.selekcjanatur.Czlowiek@{proj.selekcjanatur.Czlowiek}}
+\doxysubsubsection{\texorpdfstring{powinnienSieRuszyc()}{powinnienSieRuszyc()}}
+{\footnotesize\ttfamily \label{classproj_1_1selekcjanatur_1_1_czlowiek_a9cce002ea96f19fe0eb88606d174e464} 
+boolean proj.\+selekcjanatur.\+Czlowiek.\+powinnien\+Sie\+Ruszyc (\begin{DoxyParamCaption}\item[{int}]{klatki}{}\end{DoxyParamCaption})}
+
+
+
+Decyduje czy człowiek powinien się poruszyć w danej klatce. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em klatki} & Numer klatki symulacji \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+true jeśli powinien się poruszyć 
+\end{DoxyReturn}
+Oto graf wywołań dla tej funkcji\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classproj_1_1selekcjanatur_1_1_czlowiek_a9cce002ea96f19fe0eb88606d174e464_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classproj_1_1selekcjanatur_1_1_czlowiek_a485073a3fc648b9a3ca7ecdec405516e}\index{proj.selekcjanatur.Czlowiek@{proj.selekcjanatur.Czlowiek}!predkosc@{predkosc}}
+\index{predkosc@{predkosc}!proj.selekcjanatur.Czlowiek@{proj.selekcjanatur.Czlowiek}}
+\doxysubsubsection{\texorpdfstring{predkosc()}{predkosc()}}
+{\footnotesize\ttfamily \label{classproj_1_1selekcjanatur_1_1_czlowiek_a485073a3fc648b9a3ca7ecdec405516e} 
+int proj.\+selekcjanatur.\+Czlowiek.\+predkosc (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Oblicza prędkość poruszania na podstawie genów. 
+
+\begin{DoxyReturn}{Zwraca}
+Prędkość (1-\/3) 
+\end{DoxyReturn}
+Oto graf wywoływań tej funkcji\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classproj_1_1selekcjanatur_1_1_czlowiek_a485073a3fc648b9a3ca7ecdec405516e_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classproj_1_1selekcjanatur_1_1_czlowiek_ac542fecf860b53af21ee3063be486d27}\index{proj.selekcjanatur.Czlowiek@{proj.selekcjanatur.Czlowiek}!rozmnazajZ@{rozmnazajZ}}
+\index{rozmnazajZ@{rozmnazajZ}!proj.selekcjanatur.Czlowiek@{proj.selekcjanatur.Czlowiek}}
+\doxysubsubsection{\texorpdfstring{rozmnazajZ()}{rozmnazajZ()}}
+{\footnotesize\ttfamily \label{classproj_1_1selekcjanatur_1_1_czlowiek_ac542fecf860b53af21ee3063be486d27} 
+\mbox{\hyperlink{classproj_1_1selekcjanatur_1_1_czlowiek}{Czlowiek}} proj.\+selekcjanatur.\+Czlowiek.\+rozmnazajZ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classproj_1_1selekcjanatur_1_1_czlowiek}{Czlowiek}}}]{inny}{}\end{DoxyParamCaption})}
+
+
+
+Rozmnaża się z innym człowiekiem. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em inny} & Drugi rodzic \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+Nowy człowiek (dziecko)
+\end{DoxyReturn}
+Dziecko dziedziczy losowo geny od rodziców, powstaje w pozycji pierwszego rodzica Oto graf wywołań dla tej funkcji\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classproj_1_1selekcjanatur_1_1_czlowiek_ac542fecf860b53af21ee3063be486d27_cgraph}
+\end{center}
+\end{figure}
+Oto graf wywoływań tej funkcji\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classproj_1_1selekcjanatur_1_1_czlowiek_ac542fecf860b53af21ee3063be486d27_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classproj_1_1selekcjanatur_1_1_czlowiek_ac5cd794f090024daf3dd37da3ced3a6f}\index{proj.selekcjanatur.Czlowiek@{proj.selekcjanatur.Czlowiek}!toString@{toString}}
+\index{toString@{toString}!proj.selekcjanatur.Czlowiek@{proj.selekcjanatur.Czlowiek}}
+\doxysubsubsection{\texorpdfstring{toString()}{toString()}}
+{\footnotesize\ttfamily \label{classproj_1_1selekcjanatur_1_1_czlowiek_ac5cd794f090024daf3dd37da3ced3a6f} 
+String proj.\+selekcjanatur.\+Czlowiek.\+to\+String (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Reprezentacja tekstowa człowieka. 
+
+\begin{DoxyReturn}{Zwraca}
+String w formacie "{}\+Klasa@\+ID"{} 
+\end{DoxyReturn}
+\Hypertarget{classproj_1_1selekcjanatur_1_1_czlowiek_aabd1eb0726b65fce7b6bab1f894904cf}\index{proj.selekcjanatur.Czlowiek@{proj.selekcjanatur.Czlowiek}!zasiegWzroku@{zasiegWzroku}}
+\index{zasiegWzroku@{zasiegWzroku}!proj.selekcjanatur.Czlowiek@{proj.selekcjanatur.Czlowiek}}
+\doxysubsubsection{\texorpdfstring{zasiegWzroku()}{zasiegWzroku()}}
+{\footnotesize\ttfamily \label{classproj_1_1selekcjanatur_1_1_czlowiek_aabd1eb0726b65fce7b6bab1f894904cf} 
+int proj.\+selekcjanatur.\+Czlowiek.\+zasieg\+Wzroku (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Oblicza zasięg wzroku na podstawie genów. 
+
+\begin{DoxyReturn}{Zwraca}
+Zasięg wzroku w komórkach 
+\end{DoxyReturn}
+Oto graf wywoływań tej funkcji\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classproj_1_1selekcjanatur_1_1_czlowiek_aabd1eb0726b65fce7b6bab1f894904cf_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classproj_1_1selekcjanatur_1_1_czlowiek_a19de94d2ab10d64910307b71bf45ed2e}\index{proj.selekcjanatur.Czlowiek@{proj.selekcjanatur.Czlowiek}!zjedz@{zjedz}}
+\index{zjedz@{zjedz}!proj.selekcjanatur.Czlowiek@{proj.selekcjanatur.Czlowiek}}
+\doxysubsubsection{\texorpdfstring{zjedz()}{zjedz()}}
+{\footnotesize\ttfamily \label{classproj_1_1selekcjanatur_1_1_czlowiek_a19de94d2ab10d64910307b71bf45ed2e} 
+void proj.\+selekcjanatur.\+Czlowiek.\+zjedz (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classproj_1_1selekcjanatur_1_1_jedzenie}{Jedzenie}}}]{jedzenie}{}\end{DoxyParamCaption})}
+
+
+
+Zjada podane jedzenie. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em jedzenie} & Obiekt jedzenia do spożycia \\
+\hline
+\end{DoxyParams}
+Oto graf wywoływań tej funkcji\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classproj_1_1selekcjanatur_1_1_czlowiek_a19de94d2ab10d64910307b71bf45ed2e_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classproj_1_1selekcjanatur_1_1_czlowiek_a53d97caac471e136d612c2eb28f02c2d}\index{proj.selekcjanatur.Czlowiek@{proj.selekcjanatur.Czlowiek}!zuzycieEnergii@{zuzycieEnergii}}
+\index{zuzycieEnergii@{zuzycieEnergii}!proj.selekcjanatur.Czlowiek@{proj.selekcjanatur.Czlowiek}}
+\doxysubsubsection{\texorpdfstring{zuzycieEnergii()}{zuzycieEnergii()}}
+{\footnotesize\ttfamily \label{classproj_1_1selekcjanatur_1_1_czlowiek_a53d97caac471e136d612c2eb28f02c2d} 
+float proj.\+selekcjanatur.\+Czlowiek.\+zuzycie\+Energii (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Oblicza zużycie energii na cykl. 
+
+\begin{DoxyReturn}{Zwraca}
+Wartość zużycia energii 
+\end{DoxyReturn}
+Oto graf wywoływań tej funkcji\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classproj_1_1selekcjanatur_1_1_czlowiek_a53d97caac471e136d612c2eb28f02c2d_icgraph}
+\end{center}
+\end{figure}
+
+
+\label{doc-variable-members}
+\Hypertarget{classproj_1_1selekcjanatur_1_1_czlowiek_doc-variable-members}
+\doxysubsection{Dokumentacja atrybutów składowych}
+\Hypertarget{classproj_1_1selekcjanatur_1_1_czlowiek_ad0e705573c19c5416636ee0fd457cf7a}\index{proj.selekcjanatur.Czlowiek@{proj.selekcjanatur.Czlowiek}!czasOdRozmnazania@{czasOdRozmnazania}}
+\index{czasOdRozmnazania@{czasOdRozmnazania}!proj.selekcjanatur.Czlowiek@{proj.selekcjanatur.Czlowiek}}
+\doxysubsubsection{\texorpdfstring{czasOdRozmnazania}{czasOdRozmnazania}}
+{\footnotesize\ttfamily \label{classproj_1_1selekcjanatur_1_1_czlowiek_ad0e705573c19c5416636ee0fd457cf7a} 
+int proj.\+selekcjanatur.\+Czlowiek.\+czas\+Od\+Rozmnazania = 20\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Liczba cykli od ostatniego rozmnożenia. 
+
+\Hypertarget{classproj_1_1selekcjanatur_1_1_czlowiek_a582845c239e55cf178e6e9ca22ee0639}\index{proj.selekcjanatur.Czlowiek@{proj.selekcjanatur.Czlowiek}!geny@{geny}}
+\index{geny@{geny}!proj.selekcjanatur.Czlowiek@{proj.selekcjanatur.Czlowiek}}
+\doxysubsubsection{\texorpdfstring{geny}{geny}}
+{\footnotesize\ttfamily \label{classproj_1_1selekcjanatur_1_1_czlowiek_a582845c239e55cf178e6e9ca22ee0639} 
+\mbox{\hyperlink{interfaceproj_1_1selekcjanatur_1_1_gen}{Gen}} \mbox{[}$\,$\mbox{]} proj.\+selekcjanatur.\+Czlowiek.\+geny = new \mbox{\hyperlink{interfaceproj_1_1selekcjanatur_1_1_gen}{Gen}}\mbox{[}3\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Tablica genów człowieka (wzrok, prędkość, metabolizm) 
+
+\Hypertarget{classproj_1_1selekcjanatur_1_1_czlowiek_a509bb922ddb9fd50f424b988e350e17f}\index{proj.selekcjanatur.Czlowiek@{proj.selekcjanatur.Czlowiek}!globalneId@{globalneId}}
+\index{globalneId@{globalneId}!proj.selekcjanatur.Czlowiek@{proj.selekcjanatur.Czlowiek}}
+\doxysubsubsection{\texorpdfstring{globalneId}{globalneId}}
+{\footnotesize\ttfamily \label{classproj_1_1selekcjanatur_1_1_czlowiek_a509bb922ddb9fd50f424b988e350e17f} 
+int proj.\+selekcjanatur.\+Czlowiek.\+globalne\+Id = 0\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Licznik globalny do generowania unikalnych ID. 
+
+\Hypertarget{classproj_1_1selekcjanatur_1_1_czlowiek_a024b3bcb3c470bb8d8ad482646689263}\index{proj.selekcjanatur.Czlowiek@{proj.selekcjanatur.Czlowiek}!id@{id}}
+\index{id@{id}!proj.selekcjanatur.Czlowiek@{proj.selekcjanatur.Czlowiek}}
+\doxysubsubsection{\texorpdfstring{id}{id}}
+{\footnotesize\ttfamily \label{classproj_1_1selekcjanatur_1_1_czlowiek_a024b3bcb3c470bb8d8ad482646689263} 
+final int proj.\+selekcjanatur.\+Czlowiek.\+id}
+
+
+
+Unikalny identyfikator człowieka. 
+
+\Hypertarget{classproj_1_1selekcjanatur_1_1_czlowiek_adc5b716c39bd2e6292460bcf9048eea3}\index{proj.selekcjanatur.Czlowiek@{proj.selekcjanatur.Czlowiek}!poziomGlodu@{poziomGlodu}}
+\index{poziomGlodu@{poziomGlodu}!proj.selekcjanatur.Czlowiek@{proj.selekcjanatur.Czlowiek}}
+\doxysubsubsection{\texorpdfstring{poziomGlodu}{poziomGlodu}}
+{\footnotesize\ttfamily \label{classproj_1_1selekcjanatur_1_1_czlowiek_adc5b716c39bd2e6292460bcf9048eea3} 
+float proj.\+selekcjanatur.\+Czlowiek.\+poziom\+Glodu = 100\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Poziom głodu (0-\/100) 
+
+\Hypertarget{classproj_1_1selekcjanatur_1_1_czlowiek_a816cfb8471e36f40a415ce3184398033}\index{proj.selekcjanatur.Czlowiek@{proj.selekcjanatur.Czlowiek}!wiek@{wiek}}
+\index{wiek@{wiek}!proj.selekcjanatur.Czlowiek@{proj.selekcjanatur.Czlowiek}}
+\doxysubsubsection{\texorpdfstring{wiek}{wiek}}
+{\footnotesize\ttfamily \label{classproj_1_1selekcjanatur_1_1_czlowiek_a816cfb8471e36f40a415ce3184398033} 
+int proj.\+selekcjanatur.\+Czlowiek.\+wiek = 0\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Wiek człowieka w cyklach symulacji. 
+
+\Hypertarget{classproj_1_1selekcjanatur_1_1_czlowiek_ac4d6409fa9719e64741b67bbfcdaf573}\index{proj.selekcjanatur.Czlowiek@{proj.selekcjanatur.Czlowiek}!x@{x}}
+\index{x@{x}!proj.selekcjanatur.Czlowiek@{proj.selekcjanatur.Czlowiek}}
+\doxysubsubsection{\texorpdfstring{x}{x}}
+{\footnotesize\ttfamily \label{classproj_1_1selekcjanatur_1_1_czlowiek_ac4d6409fa9719e64741b67bbfcdaf573} 
+int proj.\+selekcjanatur.\+Czlowiek.\+x}
+
+
+
+Pozycja x na planszy. 
+
+\Hypertarget{classproj_1_1selekcjanatur_1_1_czlowiek_a59322ad4d7324f586e2acd03edd858ce}\index{proj.selekcjanatur.Czlowiek@{proj.selekcjanatur.Czlowiek}!y@{y}}
+\index{y@{y}!proj.selekcjanatur.Czlowiek@{proj.selekcjanatur.Czlowiek}}
+\doxysubsubsection{\texorpdfstring{y}{y}}
+{\footnotesize\ttfamily \label{classproj_1_1selekcjanatur_1_1_czlowiek_a59322ad4d7324f586e2acd03edd858ce} 
+int proj.\+selekcjanatur.\+Czlowiek.\+y}
+
+
+
+Pozycja y na planszy. 
+
+\Hypertarget{classproj_1_1selekcjanatur_1_1_czlowiek_ae4932e671627f16ed55cf0b377aed889}\index{proj.selekcjanatur.Czlowiek@{proj.selekcjanatur.Czlowiek}!zywy@{zywy}}
+\index{zywy@{zywy}!proj.selekcjanatur.Czlowiek@{proj.selekcjanatur.Czlowiek}}
+\doxysubsubsection{\texorpdfstring{zywy}{zywy}}
+{\footnotesize\ttfamily \label{classproj_1_1selekcjanatur_1_1_czlowiek_ae4932e671627f16ed55cf0b377aed889} 
+boolean proj.\+selekcjanatur.\+Czlowiek.\+zywy = true\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Flaga określająca czy człowiek jest żywy. 
+
+
+
+Dokumentacja dla tej klasy została wygenerowana z pliku\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/proj/selekcjanatur/\mbox{\hyperlink{_czlowiek_8java}{Czlowiek.\+java}}\end{DoxyCompactItemize}

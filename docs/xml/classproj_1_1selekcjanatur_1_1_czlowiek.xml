@@ -1,0 +1,608 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="pl">
+  <compounddef id="classproj_1_1selekcjanatur_1_1_czlowiek" kind="class" language="Java" prot="public" abstract="yes">
+    <compoundname>proj::selekcjanatur::Czlowiek</compoundname>
+    <derivedcompoundref refid="classproj_1_1selekcjanatur_1_1_kobieta" prot="public" virt="non-virtual">proj.selekcjanatur.Kobieta</derivedcompoundref>
+    <derivedcompoundref refid="classproj_1_1selekcjanatur_1_1_mezczyzna" prot="public" virt="non-virtual">proj.selekcjanatur.Mezczyzna</derivedcompoundref>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classproj_1_1selekcjanatur_1_1_czlowiek_1ac4d6409fa9719e64741b67bbfcdaf573" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int proj.selekcjanatur.Czlowiek.x</definition>
+        <argsstring></argsstring>
+        <name>x</name>
+        <qualifiedname>proj.selekcjanatur.Czlowiek.x</qualifiedname>
+        <briefdescription>
+<para>Pozycja x na planszy. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/proj/selekcjanatur/Czlowiek.java" line="21" column="16" bodyfile="src/main/java/proj/selekcjanatur/Czlowiek.java" bodystart="21" bodyend="-1"/>
+        <referencedby refid="classproj_1_1selekcjanatur_1_1_symulacja_1af140417936a5d3f7ca9c02af9dbb2814" compoundref="_symulacja_8java" startline="201" endline="247">proj.selekcjanatur.Symulacja.aktualizujStan</referencedby>
+        <referencedby refid="classproj_1_1selekcjanatur_1_1_czlowiek_1a341bb3b95da388b296452c4155c1c773" compoundref="_czlowiek_8java" startline="49" endline="57">proj.selekcjanatur.Czlowiek.Czlowiek</referencedby>
+        <referencedby refid="classproj_1_1selekcjanatur_1_1_symulacja_1a2728068a09ceb38515acafb5547d86b3" compoundref="_symulacja_8java" startline="137" endline="152">proj.selekcjanatur.Symulacja.dodajLosowychLudzi</referencedby>
+        <referencedby refid="classproj_1_1selekcjanatur_1_1_kobieta_1ab20a08ab86b96cb78f5163a71e06c49c" compoundref="_kobieta_8java" startline="29" endline="32">proj.selekcjanatur.Kobieta.Kobieta</referencedby>
+        <referencedby refid="classproj_1_1selekcjanatur_1_1_mezczyzna_1a78b2079ac649e0e0600864a25b899f90" compoundref="_mezczyzna_8java" startline="29" endline="31">proj.selekcjanatur.Mezczyzna.Mezczyzna</referencedby>
+        <referencedby refid="classproj_1_1selekcjanatur_1_1_symulacja_1a1d1661b0578afad91d9b4807d8122e39" compoundref="_symulacja_8java" startline="328" endline="342">proj.selekcjanatur.Symulacja.przemiescSieNaPole</referencedby>
+        <referencedby refid="classproj_1_1selekcjanatur_1_1_czlowiek_1ac542fecf860b53af21ee3063be486d27" compoundref="_czlowiek_8java" startline="169" endline="181">proj.selekcjanatur.Czlowiek.rozmnazajZ</referencedby>
+        <referencedby refid="classproj_1_1selekcjanatur_1_1_symulacja_1a52f53070719050f572593ac7c6908ebd" compoundref="_symulacja_8java" startline="253" endline="282">proj.selekcjanatur.Symulacja.wykonajRuch</referencedby>
+        <referencedby refid="classproj_1_1selekcjanatur_1_1_symulacja_1a09362c7d34ee3e4c0ffd46d4b3c8bd17" compoundref="_symulacja_8java" startline="302" endline="307">proj.selekcjanatur.Symulacja.znajdzNajblizszeJedzenie</referencedby>
+        <referencedby refid="classproj_1_1selekcjanatur_1_1_symulacja_1a308b1488a3d7d83887fc3aea6c4ca4ee" compoundref="_symulacja_8java" startline="289" endline="295">proj.selekcjanatur.Symulacja.znajdzPartnera</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classproj_1_1selekcjanatur_1_1_czlowiek_1a59322ad4d7324f586e2acd03edd858ce" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int proj.selekcjanatur.Czlowiek.y</definition>
+        <argsstring></argsstring>
+        <name>y</name>
+        <qualifiedname>proj.selekcjanatur.Czlowiek.y</qualifiedname>
+        <briefdescription>
+<para>Pozycja y na planszy. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/proj/selekcjanatur/Czlowiek.java" line="24" column="16" bodyfile="src/main/java/proj/selekcjanatur/Czlowiek.java" bodystart="24" bodyend="-1"/>
+        <referencedby refid="classproj_1_1selekcjanatur_1_1_symulacja_1af140417936a5d3f7ca9c02af9dbb2814" compoundref="_symulacja_8java" startline="201" endline="247">proj.selekcjanatur.Symulacja.aktualizujStan</referencedby>
+        <referencedby refid="classproj_1_1selekcjanatur_1_1_czlowiek_1a341bb3b95da388b296452c4155c1c773" compoundref="_czlowiek_8java" startline="49" endline="57">proj.selekcjanatur.Czlowiek.Czlowiek</referencedby>
+        <referencedby refid="classproj_1_1selekcjanatur_1_1_symulacja_1a2728068a09ceb38515acafb5547d86b3" compoundref="_symulacja_8java" startline="137" endline="152">proj.selekcjanatur.Symulacja.dodajLosowychLudzi</referencedby>
+        <referencedby refid="classproj_1_1selekcjanatur_1_1_kobieta_1ab20a08ab86b96cb78f5163a71e06c49c" compoundref="_kobieta_8java" startline="29" endline="32">proj.selekcjanatur.Kobieta.Kobieta</referencedby>
+        <referencedby refid="classproj_1_1selekcjanatur_1_1_mezczyzna_1a78b2079ac649e0e0600864a25b899f90" compoundref="_mezczyzna_8java" startline="29" endline="31">proj.selekcjanatur.Mezczyzna.Mezczyzna</referencedby>
+        <referencedby refid="classproj_1_1selekcjanatur_1_1_symulacja_1a1d1661b0578afad91d9b4807d8122e39" compoundref="_symulacja_8java" startline="328" endline="342">proj.selekcjanatur.Symulacja.przemiescSieNaPole</referencedby>
+        <referencedby refid="classproj_1_1selekcjanatur_1_1_czlowiek_1ac542fecf860b53af21ee3063be486d27" compoundref="_czlowiek_8java" startline="169" endline="181">proj.selekcjanatur.Czlowiek.rozmnazajZ</referencedby>
+        <referencedby refid="classproj_1_1selekcjanatur_1_1_symulacja_1a52f53070719050f572593ac7c6908ebd" compoundref="_symulacja_8java" startline="253" endline="282">proj.selekcjanatur.Symulacja.wykonajRuch</referencedby>
+        <referencedby refid="classproj_1_1selekcjanatur_1_1_symulacja_1a09362c7d34ee3e4c0ffd46d4b3c8bd17" compoundref="_symulacja_8java" startline="302" endline="307">proj.selekcjanatur.Symulacja.znajdzNajblizszeJedzenie</referencedby>
+        <referencedby refid="classproj_1_1selekcjanatur_1_1_symulacja_1a308b1488a3d7d83887fc3aea6c4ca4ee" compoundref="_symulacja_8java" startline="289" endline="295">proj.selekcjanatur.Symulacja.znajdzPartnera</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classproj_1_1selekcjanatur_1_1_czlowiek_1a024b3bcb3c470bb8d8ad482646689263" prot="public" static="no" mutable="no">
+        <type>final int</type>
+        <definition>final int proj.selekcjanatur.Czlowiek.id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <qualifiedname>proj.selekcjanatur.Czlowiek.id</qualifiedname>
+        <briefdescription>
+<para>Unikalny identyfikator człowieka. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/proj/selekcjanatur/Czlowiek.java" line="42" column="22" bodyfile="src/main/java/proj/selekcjanatur/Czlowiek.java" bodystart="42" bodyend="-1"/>
+        <referencedby refid="classproj_1_1selekcjanatur_1_1_czlowiek_1ac5cd794f090024daf3dd37da3ced3a6f" compoundref="_czlowiek_8java" startline="188" endline="190">proj.selekcjanatur.Czlowiek.toString</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classproj_1_1selekcjanatur_1_1_czlowiek_1ae4932e671627f16ed55cf0b377aed889" prot="protected" static="no" mutable="no">
+        <type>boolean</type>
+        <definition>boolean proj.selekcjanatur.Czlowiek.zywy</definition>
+        <argsstring></argsstring>
+        <name>zywy</name>
+        <qualifiedname>proj.selekcjanatur.Czlowiek.zywy</qualifiedname>
+        <initializer>= true</initializer>
+        <briefdescription>
+<para>Flaga określająca czy człowiek jest żywy. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/proj/selekcjanatur/Czlowiek.java" line="27" column="23" bodyfile="src/main/java/proj/selekcjanatur/Czlowiek.java" bodystart="27" bodyend="-1"/>
+        <referencedby refid="classproj_1_1selekcjanatur_1_1_czlowiek_1aff9d2620e2407154927841859a6c98af" compoundref="_czlowiek_8java" startline="100" endline="110">proj.selekcjanatur.Czlowiek.aktualizuj</referencedby>
+        <referencedby refid="classproj_1_1selekcjanatur_1_1_symulacja_1af140417936a5d3f7ca9c02af9dbb2814" compoundref="_symulacja_8java" startline="201" endline="247">proj.selekcjanatur.Symulacja.aktualizujStan</referencedby>
+        <referencedby refid="classproj_1_1selekcjanatur_1_1_symulacja_1a308b1488a3d7d83887fc3aea6c4ca4ee" compoundref="_symulacja_8java" startline="289" endline="295">proj.selekcjanatur.Symulacja.znajdzPartnera</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classproj_1_1selekcjanatur_1_1_czlowiek_1adc5b716c39bd2e6292460bcf9048eea3" prot="protected" static="no" mutable="no">
+        <type>float</type>
+        <definition>float proj.selekcjanatur.Czlowiek.poziomGlodu</definition>
+        <argsstring></argsstring>
+        <name>poziomGlodu</name>
+        <qualifiedname>proj.selekcjanatur.Czlowiek.poziomGlodu</qualifiedname>
+        <initializer>= 100</initializer>
+        <briefdescription>
+<para>Poziom głodu (0-100) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/proj/selekcjanatur/Czlowiek.java" line="30" column="21" bodyfile="src/main/java/proj/selekcjanatur/Czlowiek.java" bodystart="30" bodyend="-1"/>
+        <referencedby refid="classproj_1_1selekcjanatur_1_1_czlowiek_1aff9d2620e2407154927841859a6c98af" compoundref="_czlowiek_8java" startline="100" endline="110">proj.selekcjanatur.Czlowiek.aktualizuj</referencedby>
+        <referencedby refid="classproj_1_1selekcjanatur_1_1_kobieta_1a2a0a9cd3a3bc1e439e1c5c278381a9d3" compoundref="_kobieta_8java" startline="54" endline="57">proj.selekcjanatur.Kobieta.mozeRozmnazac</referencedby>
+        <referencedby refid="classproj_1_1selekcjanatur_1_1_mezczyzna_1a6252640fd21d46c66daf76ce143dcf6a" compoundref="_mezczyzna_8java" startline="54" endline="57">proj.selekcjanatur.Mezczyzna.mozeRozmnazac</referencedby>
+        <referencedby refid="classproj_1_1selekcjanatur_1_1_czlowiek_1a19de94d2ab10d64910307b71bf45ed2e" compoundref="_czlowiek_8java" startline="136" endline="138">proj.selekcjanatur.Czlowiek.zjedz</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classproj_1_1selekcjanatur_1_1_czlowiek_1ad0e705573c19c5416636ee0fd457cf7a" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int proj.selekcjanatur.Czlowiek.czasOdRozmnazania</definition>
+        <argsstring></argsstring>
+        <name>czasOdRozmnazania</name>
+        <qualifiedname>proj.selekcjanatur.Czlowiek.czasOdRozmnazania</qualifiedname>
+        <initializer>= 20</initializer>
+        <briefdescription>
+<para>Liczba cykli od ostatniego rozmnożenia. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/proj/selekcjanatur/Czlowiek.java" line="33" column="19" bodyfile="src/main/java/proj/selekcjanatur/Czlowiek.java" bodystart="33" bodyend="-1"/>
+        <referencedby refid="classproj_1_1selekcjanatur_1_1_czlowiek_1aff9d2620e2407154927841859a6c98af" compoundref="_czlowiek_8java" startline="100" endline="110">proj.selekcjanatur.Czlowiek.aktualizuj</referencedby>
+        <referencedby refid="classproj_1_1selekcjanatur_1_1_kobieta_1a2a0a9cd3a3bc1e439e1c5c278381a9d3" compoundref="_kobieta_8java" startline="54" endline="57">proj.selekcjanatur.Kobieta.mozeRozmnazac</referencedby>
+        <referencedby refid="classproj_1_1selekcjanatur_1_1_mezczyzna_1a6252640fd21d46c66daf76ce143dcf6a" compoundref="_mezczyzna_8java" startline="54" endline="57">proj.selekcjanatur.Mezczyzna.mozeRozmnazac</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classproj_1_1selekcjanatur_1_1_czlowiek_1a582845c239e55cf178e6e9ca22ee0639" prot="protected" static="no" mutable="no">
+        <type><ref refid="interfaceproj_1_1selekcjanatur_1_1_gen" kindref="compound">Gen</ref>[]</type>
+        <definition>Gen [] proj.selekcjanatur.Czlowiek.geny</definition>
+        <argsstring></argsstring>
+        <name>geny</name>
+        <qualifiedname>proj.selekcjanatur.Czlowiek.geny</qualifiedname>
+        <initializer>= new <ref refid="interfaceproj_1_1selekcjanatur_1_1_gen" kindref="compound">Gen</ref>[3]</initializer>
+        <briefdescription>
+<para>Tablica genów człowieka (wzrok, prędkość, metabolizm) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/proj/selekcjanatur/Czlowiek.java" line="36" column="19" bodyfile="src/main/java/proj/selekcjanatur/Czlowiek.java" bodystart="36" bodyend="-1"/>
+        <referencedby refid="classproj_1_1selekcjanatur_1_1_kobieta_1ab20a08ab86b96cb78f5163a71e06c49c" compoundref="_kobieta_8java" startline="29" endline="32">proj.selekcjanatur.Kobieta.Kobieta</referencedby>
+        <referencedby refid="classproj_1_1selekcjanatur_1_1_czlowiek_1a485073a3fc648b9a3ca7ecdec405516e" compoundref="_czlowiek_8java" startline="82" endline="84">proj.selekcjanatur.Czlowiek.predkosc</referencedby>
+        <referencedby refid="classproj_1_1selekcjanatur_1_1_czlowiek_1ac542fecf860b53af21ee3063be486d27" compoundref="_czlowiek_8java" startline="169" endline="181">proj.selekcjanatur.Czlowiek.rozmnazajZ</referencedby>
+        <referencedby refid="classproj_1_1selekcjanatur_1_1_czlowiek_1aabd1eb0726b65fce7b6bab1f894904cf" compoundref="_czlowiek_8java" startline="74" endline="76">proj.selekcjanatur.Czlowiek.zasiegWzroku</referencedby>
+        <referencedby refid="classproj_1_1selekcjanatur_1_1_czlowiek_1a53d97caac471e136d612c2eb28f02c2d" compoundref="_czlowiek_8java" startline="90" endline="92">proj.selekcjanatur.Czlowiek.zuzycieEnergii</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classproj_1_1selekcjanatur_1_1_czlowiek_1a816cfb8471e36f40a415ce3184398033" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int proj.selekcjanatur.Czlowiek.wiek</definition>
+        <argsstring></argsstring>
+        <name>wiek</name>
+        <qualifiedname>proj.selekcjanatur.Czlowiek.wiek</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+<para>Wiek człowieka w cyklach symulacji. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/proj/selekcjanatur/Czlowiek.java" line="60" column="19" bodyfile="src/main/java/proj/selekcjanatur/Czlowiek.java" bodystart="60" bodyend="-1"/>
+        <referencedby refid="classproj_1_1selekcjanatur_1_1_czlowiek_1aff9d2620e2407154927841859a6c98af" compoundref="_czlowiek_8java" startline="100" endline="110">proj.selekcjanatur.Czlowiek.aktualizuj</referencedby>
+        <referencedby refid="classproj_1_1selekcjanatur_1_1_symulacja_1af140417936a5d3f7ca9c02af9dbb2814" compoundref="_symulacja_8java" startline="201" endline="247">proj.selekcjanatur.Symulacja.aktualizujStan</referencedby>
+        <referencedby refid="classproj_1_1selekcjanatur_1_1_czlowiek_1a877a9787e423b1279430dc1f952fea04" compoundref="_czlowiek_8java" startline="155" endline="159">proj.selekcjanatur.Czlowiek.czyUmieraZeStarosci</referencedby>
+        <referencedby refid="classproj_1_1selekcjanatur_1_1_symulacja_1a2728068a09ceb38515acafb5547d86b3" compoundref="_symulacja_8java" startline="137" endline="152">proj.selekcjanatur.Symulacja.dodajLosowychLudzi</referencedby>
+        <referencedby refid="classproj_1_1selekcjanatur_1_1_czlowiek_1a7eb1b9e51b6766279f0f2b7d0dd9b119" compoundref="_czlowiek_8java" startline="66" endline="68">proj.selekcjanatur.Czlowiek.jestDzieckiem</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classproj_1_1selekcjanatur_1_1_czlowiek_1a509bb922ddb9fd50f424b988e350e17f" prot="private" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int proj.selekcjanatur.Czlowiek.globalneId</definition>
+        <argsstring></argsstring>
+        <name>globalneId</name>
+        <qualifiedname>proj.selekcjanatur.Czlowiek.globalneId</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+<para>Licznik globalny do generowania unikalnych ID. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/proj/selekcjanatur/Czlowiek.java" line="39" column="24" bodyfile="src/main/java/proj/selekcjanatur/Czlowiek.java" bodystart="39" bodyend="-1"/>
+        <referencedby refid="classproj_1_1selekcjanatur_1_1_czlowiek_1a341bb3b95da388b296452c4155c1c773" compoundref="_czlowiek_8java" startline="49" endline="57">proj.selekcjanatur.Czlowiek.Czlowiek</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classproj_1_1selekcjanatur_1_1_czlowiek_1a341bb3b95da388b296452c4155c1c773" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>proj.selekcjanatur.Czlowiek.Czlowiek</definition>
+        <argsstring>(int x, int y)</argsstring>
+        <name>Czlowiek</name>
+        <qualifiedname>proj.selekcjanatur.Czlowiek.Czlowiek</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+<para>Konstruktor tworzący nowego człowieka. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pozycja startowa x </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pozycja startowa y </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/proj/selekcjanatur/Czlowiek.java" line="49" column="12" bodyfile="src/main/java/proj/selekcjanatur/Czlowiek.java" bodystart="49" bodyend="57"/>
+        <references refid="classproj_1_1selekcjanatur_1_1_czlowiek_1a509bb922ddb9fd50f424b988e350e17f" compoundref="_czlowiek_8java" startline="39">proj.selekcjanatur.Czlowiek.globalneId</references>
+        <references refid="classproj_1_1selekcjanatur_1_1_czlowiek_1ac4d6409fa9719e64741b67bbfcdaf573" compoundref="_czlowiek_8java" startline="21">proj.selekcjanatur.Czlowiek.x</references>
+        <references refid="classproj_1_1selekcjanatur_1_1_czlowiek_1a59322ad4d7324f586e2acd03edd858ce" compoundref="_czlowiek_8java" startline="24">proj.selekcjanatur.Czlowiek.y</references>
+        <referencedby refid="classproj_1_1selekcjanatur_1_1_czlowiek_1ac542fecf860b53af21ee3063be486d27" compoundref="_czlowiek_8java" startline="169" endline="181">proj.selekcjanatur.Czlowiek.rozmnazajZ</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classproj_1_1selekcjanatur_1_1_czlowiek_1a7eb1b9e51b6766279f0f2b7d0dd9b119" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean proj.selekcjanatur.Czlowiek.jestDzieckiem</definition>
+        <argsstring>()</argsstring>
+        <name>jestDzieckiem</name>
+        <qualifiedname>proj.selekcjanatur.Czlowiek.jestDzieckiem</qualifiedname>
+        <briefdescription>
+<para>Sprawdza czy człowiek jest dzieckiem. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true jeśli wiek &lt; 18 cykli </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/proj/selekcjanatur/Czlowiek.java" line="66" column="20" bodyfile="src/main/java/proj/selekcjanatur/Czlowiek.java" bodystart="66" bodyend="68"/>
+        <references refid="classproj_1_1selekcjanatur_1_1_czlowiek_1a816cfb8471e36f40a415ce3184398033" compoundref="_czlowiek_8java" startline="60">proj.selekcjanatur.Czlowiek.wiek</references>
+        <referencedby refid="classproj_1_1selekcjanatur_1_1_kobieta_1a2a0a9cd3a3bc1e439e1c5c278381a9d3" compoundref="_kobieta_8java" startline="54" endline="57">proj.selekcjanatur.Kobieta.mozeRozmnazac</referencedby>
+        <referencedby refid="classproj_1_1selekcjanatur_1_1_mezczyzna_1a6252640fd21d46c66daf76ce143dcf6a" compoundref="_mezczyzna_8java" startline="54" endline="57">proj.selekcjanatur.Mezczyzna.mozeRozmnazac</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classproj_1_1selekcjanatur_1_1_czlowiek_1aabd1eb0726b65fce7b6bab1f894904cf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int proj.selekcjanatur.Czlowiek.zasiegWzroku</definition>
+        <argsstring>()</argsstring>
+        <name>zasiegWzroku</name>
+        <qualifiedname>proj.selekcjanatur.Czlowiek.zasiegWzroku</qualifiedname>
+        <briefdescription>
+<para>Oblicza zasięg wzroku na podstawie genów. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Zasięg wzroku w komórkach </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/proj/selekcjanatur/Czlowiek.java" line="74" column="16" bodyfile="src/main/java/proj/selekcjanatur/Czlowiek.java" bodystart="74" bodyend="76"/>
+        <references refid="classproj_1_1selekcjanatur_1_1_czlowiek_1a582845c239e55cf178e6e9ca22ee0639" compoundref="_czlowiek_8java" startline="36">proj.selekcjanatur.Czlowiek.geny</references>
+        <referencedby refid="classproj_1_1selekcjanatur_1_1_symulacja_1a09362c7d34ee3e4c0ffd46d4b3c8bd17" compoundref="_symulacja_8java" startline="302" endline="307">proj.selekcjanatur.Symulacja.znajdzNajblizszeJedzenie</referencedby>
+        <referencedby refid="classproj_1_1selekcjanatur_1_1_symulacja_1a308b1488a3d7d83887fc3aea6c4ca4ee" compoundref="_symulacja_8java" startline="289" endline="295">proj.selekcjanatur.Symulacja.znajdzPartnera</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classproj_1_1selekcjanatur_1_1_czlowiek_1a485073a3fc648b9a3ca7ecdec405516e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int proj.selekcjanatur.Czlowiek.predkosc</definition>
+        <argsstring>()</argsstring>
+        <name>predkosc</name>
+        <qualifiedname>proj.selekcjanatur.Czlowiek.predkosc</qualifiedname>
+        <briefdescription>
+<para>Oblicza prędkość poruszania na podstawie genów. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Prędkość (1-3) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/proj/selekcjanatur/Czlowiek.java" line="82" column="16" bodyfile="src/main/java/proj/selekcjanatur/Czlowiek.java" bodystart="82" bodyend="84"/>
+        <references refid="classproj_1_1selekcjanatur_1_1_czlowiek_1a582845c239e55cf178e6e9ca22ee0639" compoundref="_czlowiek_8java" startline="36">proj.selekcjanatur.Czlowiek.geny</references>
+        <referencedby refid="classproj_1_1selekcjanatur_1_1_czlowiek_1a9cce002ea96f19fe0eb88606d174e464" compoundref="_czlowiek_8java" startline="117" endline="124">proj.selekcjanatur.Czlowiek.powinnienSieRuszyc</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classproj_1_1selekcjanatur_1_1_czlowiek_1a53d97caac471e136d612c2eb28f02c2d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float proj.selekcjanatur.Czlowiek.zuzycieEnergii</definition>
+        <argsstring>()</argsstring>
+        <name>zuzycieEnergii</name>
+        <qualifiedname>proj.selekcjanatur.Czlowiek.zuzycieEnergii</qualifiedname>
+        <briefdescription>
+<para>Oblicza zużycie energii na cykl. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Wartość zużycia energii </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/proj/selekcjanatur/Czlowiek.java" line="90" column="18" bodyfile="src/main/java/proj/selekcjanatur/Czlowiek.java" bodystart="90" bodyend="92"/>
+        <references refid="classproj_1_1selekcjanatur_1_1_czlowiek_1a582845c239e55cf178e6e9ca22ee0639" compoundref="_czlowiek_8java" startline="36">proj.selekcjanatur.Czlowiek.geny</references>
+        <referencedby refid="classproj_1_1selekcjanatur_1_1_czlowiek_1aff9d2620e2407154927841859a6c98af" compoundref="_czlowiek_8java" startline="100" endline="110">proj.selekcjanatur.Czlowiek.aktualizuj</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classproj_1_1selekcjanatur_1_1_czlowiek_1aff9d2620e2407154927841859a6c98af" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void proj.selekcjanatur.Czlowiek.aktualizuj</definition>
+        <argsstring>()</argsstring>
+        <name>aktualizuj</name>
+        <qualifiedname>proj.selekcjanatur.Czlowiek.aktualizuj</qualifiedname>
+        <briefdescription>
+<para>Aktualizuje stan człowieka w każdym cyklu symulacji. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Zwiększa wiek, zmniejsza poziom energii, sprawdza warunki śmierci z głodu i starości </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/proj/selekcjanatur/Czlowiek.java" line="100" column="17" bodyfile="src/main/java/proj/selekcjanatur/Czlowiek.java" bodystart="100" bodyend="110"/>
+        <references refid="classproj_1_1selekcjanatur_1_1_czlowiek_1ad0e705573c19c5416636ee0fd457cf7a" compoundref="_czlowiek_8java" startline="33">proj.selekcjanatur.Czlowiek.czasOdRozmnazania</references>
+        <references refid="classproj_1_1selekcjanatur_1_1_czlowiek_1a877a9787e423b1279430dc1f952fea04" compoundref="_czlowiek_8java" startline="155" endline="159">proj.selekcjanatur.Czlowiek.czyUmieraZeStarosci</references>
+        <references refid="classproj_1_1selekcjanatur_1_1_czlowiek_1adc5b716c39bd2e6292460bcf9048eea3" compoundref="_czlowiek_8java" startline="30">proj.selekcjanatur.Czlowiek.poziomGlodu</references>
+        <references refid="classproj_1_1selekcjanatur_1_1_czlowiek_1a816cfb8471e36f40a415ce3184398033" compoundref="_czlowiek_8java" startline="60">proj.selekcjanatur.Czlowiek.wiek</references>
+        <references refid="classproj_1_1selekcjanatur_1_1_czlowiek_1a53d97caac471e136d612c2eb28f02c2d" compoundref="_czlowiek_8java" startline="90" endline="92">proj.selekcjanatur.Czlowiek.zuzycieEnergii</references>
+        <references refid="classproj_1_1selekcjanatur_1_1_czlowiek_1ae4932e671627f16ed55cf0b377aed889" compoundref="_czlowiek_8java" startline="27">proj.selekcjanatur.Czlowiek.zywy</references>
+      </memberdef>
+      <memberdef kind="function" id="classproj_1_1selekcjanatur_1_1_czlowiek_1a9cce002ea96f19fe0eb88606d174e464" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean proj.selekcjanatur.Czlowiek.powinnienSieRuszyc</definition>
+        <argsstring>(int klatki)</argsstring>
+        <name>powinnienSieRuszyc</name>
+        <qualifiedname>proj.selekcjanatur.Czlowiek.powinnienSieRuszyc</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>klatki</declname>
+        </param>
+        <briefdescription>
+<para>Decyduje czy człowiek powinien się poruszyć w danej klatce. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>klatki</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Numer klatki symulacji </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true jeśli powinien się poruszyć </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/proj/selekcjanatur/Czlowiek.java" line="117" column="20" bodyfile="src/main/java/proj/selekcjanatur/Czlowiek.java" bodystart="117" bodyend="124"/>
+        <references refid="classproj_1_1selekcjanatur_1_1_czlowiek_1a485073a3fc648b9a3ca7ecdec405516e" compoundref="_czlowiek_8java" startline="82" endline="84">proj.selekcjanatur.Czlowiek.predkosc</references>
+      </memberdef>
+      <memberdef kind="function" id="classproj_1_1selekcjanatur_1_1_czlowiek_1a104718c5aefe504867235fa48c03a645" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>abstract boolean</type>
+        <definition>abstract boolean proj.selekcjanatur.Czlowiek.mozeRozmnazac</definition>
+        <argsstring>()</argsstring>
+        <name>mozeRozmnazac</name>
+        <qualifiedname>proj.selekcjanatur.Czlowiek.mozeRozmnazac</qualifiedname>
+        <reimplementedby refid="classproj_1_1selekcjanatur_1_1_kobieta_1a2a0a9cd3a3bc1e439e1c5c278381a9d3">mozeRozmnazac</reimplementedby>
+        <reimplementedby refid="classproj_1_1selekcjanatur_1_1_mezczyzna_1a6252640fd21d46c66daf76ce143dcf6a">mozeRozmnazac</reimplementedby>
+        <briefdescription>
+<para>Sprawdza możliwość rozmnożenia. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true jeśli może się rozmnożyć </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/proj/selekcjanatur/Czlowiek.java" line="130" column="29"/>
+        <referencedby refid="classproj_1_1selekcjanatur_1_1_symulacja_1af140417936a5d3f7ca9c02af9dbb2814" compoundref="_symulacja_8java" startline="201" endline="247">proj.selekcjanatur.Symulacja.aktualizujStan</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classproj_1_1selekcjanatur_1_1_czlowiek_1a19de94d2ab10d64910307b71bf45ed2e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void proj.selekcjanatur.Czlowiek.zjedz</definition>
+        <argsstring>(Jedzenie jedzenie)</argsstring>
+        <name>zjedz</name>
+        <qualifiedname>proj.selekcjanatur.Czlowiek.zjedz</qualifiedname>
+        <param>
+          <type><ref refid="classproj_1_1selekcjanatur_1_1_jedzenie" kindref="compound">Jedzenie</ref></type>
+          <declname>jedzenie</declname>
+        </param>
+        <briefdescription>
+<para>Zjada podane jedzenie. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>jedzenie</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Obiekt jedzenia do spożycia </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/proj/selekcjanatur/Czlowiek.java" line="136" column="17" bodyfile="src/main/java/proj/selekcjanatur/Czlowiek.java" bodystart="136" bodyend="138"/>
+        <references refid="classproj_1_1selekcjanatur_1_1_czlowiek_1adc5b716c39bd2e6292460bcf9048eea3" compoundref="_czlowiek_8java" startline="30">proj.selekcjanatur.Czlowiek.poziomGlodu</references>
+        <references refid="classproj_1_1selekcjanatur_1_1_jedzenie_1aba56f863335ddaf87115729096d41bb0" compoundref="_jedzenie_8java" startline="35">proj.selekcjanatur.Jedzenie.wartosc</references>
+        <referencedby refid="classproj_1_1selekcjanatur_1_1_symulacja_1a1d1661b0578afad91d9b4807d8122e39" compoundref="_symulacja_8java" startline="328" endline="342">proj.selekcjanatur.Symulacja.przemiescSieNaPole</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classproj_1_1selekcjanatur_1_1_czlowiek_1ac88bbff18c715a98a16d48103b3b495b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>abstract boolean</type>
+        <definition>abstract boolean proj.selekcjanatur.Czlowiek.czyMezczyzna</definition>
+        <argsstring>()</argsstring>
+        <name>czyMezczyzna</name>
+        <qualifiedname>proj.selekcjanatur.Czlowiek.czyMezczyzna</qualifiedname>
+        <reimplementedby refid="classproj_1_1selekcjanatur_1_1_kobieta_1acf6cab99fe158694c65d666cfee653e3">czyMezczyzna</reimplementedby>
+        <reimplementedby refid="classproj_1_1selekcjanatur_1_1_mezczyzna_1a99278a265802d4c1b952b84dc3bb46f5">czyMezczyzna</reimplementedby>
+        <briefdescription>
+<para>Sprawdza płeć człowieka. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true jeśli to mężczyzna </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/proj/selekcjanatur/Czlowiek.java" line="144" column="29"/>
+        <referencedby refid="classproj_1_1selekcjanatur_1_1_symulacja_1af140417936a5d3f7ca9c02af9dbb2814" compoundref="_symulacja_8java" startline="201" endline="247">proj.selekcjanatur.Symulacja.aktualizujStan</referencedby>
+        <referencedby refid="classproj_1_1selekcjanatur_1_1_symulacja_1a2728068a09ceb38515acafb5547d86b3" compoundref="_symulacja_8java" startline="137" endline="152">proj.selekcjanatur.Symulacja.dodajLosowychLudzi</referencedby>
+        <referencedby refid="classproj_1_1selekcjanatur_1_1_symulacja_1a308b1488a3d7d83887fc3aea6c4ca4ee" compoundref="_symulacja_8java" startline="289" endline="295">proj.selekcjanatur.Symulacja.znajdzPartnera</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classproj_1_1selekcjanatur_1_1_czlowiek_1a877a9787e423b1279430dc1f952fea04" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean proj.selekcjanatur.Czlowiek.czyUmieraZeStarosci</definition>
+        <argsstring>()</argsstring>
+        <name>czyUmieraZeStarosci</name>
+        <qualifiedname>proj.selekcjanatur.Czlowiek.czyUmieraZeStarosci</qualifiedname>
+        <briefdescription>
+<para>Sprawdza czy człowiek umiera ze starości. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true jeśli umiera</para>
+</simplesect>
+Szansa rośnie liniowo od wieku 70 cykli:<itemizedlist>
+<listitem><para>70 cykli: 0% szansy</para>
+</listitem><listitem><para>100 cykli: 30% szansy</para>
+</listitem><listitem><para>170 cykli: 100% szansy </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/proj/selekcjanatur/Czlowiek.java" line="155" column="20" bodyfile="src/main/java/proj/selekcjanatur/Czlowiek.java" bodystart="155" bodyend="159"/>
+        <references refid="classproj_1_1selekcjanatur_1_1_app_1ad267df574f9f99d0adf41d333bf4823a" compoundref="_app_8java" startline="32">proj.selekcjanatur.App.random</references>
+        <references refid="classproj_1_1selekcjanatur_1_1_czlowiek_1a816cfb8471e36f40a415ce3184398033" compoundref="_czlowiek_8java" startline="60">proj.selekcjanatur.Czlowiek.wiek</references>
+        <referencedby refid="classproj_1_1selekcjanatur_1_1_czlowiek_1aff9d2620e2407154927841859a6c98af" compoundref="_czlowiek_8java" startline="100" endline="110">proj.selekcjanatur.Czlowiek.aktualizuj</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classproj_1_1selekcjanatur_1_1_czlowiek_1ac542fecf860b53af21ee3063be486d27" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classproj_1_1selekcjanatur_1_1_czlowiek" kindref="compound">Czlowiek</ref></type>
+        <definition>Czlowiek proj.selekcjanatur.Czlowiek.rozmnazajZ</definition>
+        <argsstring>(Czlowiek inny)</argsstring>
+        <name>rozmnazajZ</name>
+        <qualifiedname>proj.selekcjanatur.Czlowiek.rozmnazajZ</qualifiedname>
+        <param>
+          <type><ref refid="classproj_1_1selekcjanatur_1_1_czlowiek" kindref="compound">Czlowiek</ref></type>
+          <declname>inny</declname>
+        </param>
+        <briefdescription>
+<para>Rozmnaża się z innym człowiekiem. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>inny</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Drugi rodzic </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Nowy człowiek (dziecko)</para>
+</simplesect>
+Dziecko dziedziczy losowo geny od rodziców, powstaje w pozycji pierwszego rodzica </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/proj/selekcjanatur/Czlowiek.java" line="169" column="21" bodyfile="src/main/java/proj/selekcjanatur/Czlowiek.java" bodystart="169" bodyend="181"/>
+        <references refid="classproj_1_1selekcjanatur_1_1_czlowiek_1a341bb3b95da388b296452c4155c1c773" compoundref="_czlowiek_8java" startline="49" endline="57">proj.selekcjanatur.Czlowiek.Czlowiek</references>
+        <references refid="classproj_1_1selekcjanatur_1_1_czlowiek_1a582845c239e55cf178e6e9ca22ee0639" compoundref="_czlowiek_8java" startline="36">proj.selekcjanatur.Czlowiek.geny</references>
+        <references refid="interfaceproj_1_1selekcjanatur_1_1_gen_1a7dbd3fed6d9dee504bf8217028b50493">proj.selekcjanatur.Gen.odziedzicz</references>
+        <references refid="classproj_1_1selekcjanatur_1_1_app_1ad267df574f9f99d0adf41d333bf4823a" compoundref="_app_8java" startline="32">proj.selekcjanatur.App.random</references>
+        <references refid="classproj_1_1selekcjanatur_1_1_czlowiek_1ac4d6409fa9719e64741b67bbfcdaf573" compoundref="_czlowiek_8java" startline="21">proj.selekcjanatur.Czlowiek.x</references>
+        <references refid="classproj_1_1selekcjanatur_1_1_czlowiek_1a59322ad4d7324f586e2acd03edd858ce" compoundref="_czlowiek_8java" startline="24">proj.selekcjanatur.Czlowiek.y</references>
+        <referencedby refid="classproj_1_1selekcjanatur_1_1_symulacja_1af140417936a5d3f7ca9c02af9dbb2814" compoundref="_symulacja_8java" startline="201" endline="247">proj.selekcjanatur.Symulacja.aktualizujStan</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classproj_1_1selekcjanatur_1_1_czlowiek_1ac5cd794f090024daf3dd37da3ced3a6f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String proj.selekcjanatur.Czlowiek.toString</definition>
+        <argsstring>()</argsstring>
+        <name>toString</name>
+        <qualifiedname>proj.selekcjanatur.Czlowiek.toString</qualifiedname>
+        <briefdescription>
+<para>Reprezentacja tekstowa człowieka. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>String w formacie &quot;Klasa@ID&quot; </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/proj/selekcjanatur/Czlowiek.java" line="188" column="19" bodyfile="src/main/java/proj/selekcjanatur/Czlowiek.java" bodystart="188" bodyend="190"/>
+        <references refid="classproj_1_1selekcjanatur_1_1_czlowiek_1a024b3bcb3c470bb8d8ad482646689263" compoundref="_czlowiek_8java" startline="42">proj.selekcjanatur.Czlowiek.id</references>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Abstrakcyjna klasa reprezentująca człowieka w symulacji ewolucyjnej. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Klasa zawiera podstawowe mechanizmy:<itemizedlist>
+<listitem><para>Śledzenie stanu życiowego</para>
+</listitem><listitem><para>Zarządzanie głodem i energią</para>
+</listitem><listitem><para>Mechanizmy rozmnażania</para>
+</listitem><listitem><para>Dziedziczenie genów</para>
+</listitem><listitem><para>Starzenie się i śmierć </para>
+</listitem></itemizedlist>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>proj.selekcjanatur.Czlowiek</label>
+        <link refid="classproj_1_1selekcjanatur_1_1_czlowiek"/>
+      </node>
+      <node id="2">
+        <label>proj.selekcjanatur.Kobieta</label>
+        <link refid="classproj_1_1selekcjanatur_1_1_kobieta"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>proj.selekcjanatur.Mezczyzna</label>
+        <link refid="classproj_1_1selekcjanatur_1_1_mezczyzna"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>proj.selekcjanatur.Czlowiek</label>
+        <link refid="classproj_1_1selekcjanatur_1_1_czlowiek"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>#geny</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>proj.selekcjanatur.Gen</label>
+        <link refid="interfaceproj_1_1selekcjanatur_1_1_gen"/>
+      </node>
+    </collaborationgraph>
+    <location file="src/main/java/proj/selekcjanatur/Czlowiek.java" line="19" column="17" bodyfile="src/main/java/proj/selekcjanatur/Czlowiek.java" bodystart="19" bodyend="191"/>
+    <listofallmembers>
+      <member refid="classproj_1_1selekcjanatur_1_1_czlowiek_1aff9d2620e2407154927841859a6c98af" prot="public" virt="non-virtual"><scope>proj::selekcjanatur::Czlowiek</scope><name>aktualizuj</name></member>
+      <member refid="classproj_1_1selekcjanatur_1_1_czlowiek_1ad0e705573c19c5416636ee0fd457cf7a" prot="protected" virt="non-virtual"><scope>proj::selekcjanatur::Czlowiek</scope><name>czasOdRozmnazania</name></member>
+      <member refid="classproj_1_1selekcjanatur_1_1_czlowiek_1a341bb3b95da388b296452c4155c1c773" prot="public" virt="non-virtual"><scope>proj::selekcjanatur::Czlowiek</scope><name>Czlowiek</name></member>
+      <member refid="classproj_1_1selekcjanatur_1_1_czlowiek_1ac88bbff18c715a98a16d48103b3b495b" prot="public" virt="non-virtual"><scope>proj::selekcjanatur::Czlowiek</scope><name>czyMezczyzna</name></member>
+      <member refid="classproj_1_1selekcjanatur_1_1_czlowiek_1a877a9787e423b1279430dc1f952fea04" prot="public" virt="non-virtual"><scope>proj::selekcjanatur::Czlowiek</scope><name>czyUmieraZeStarosci</name></member>
+      <member refid="classproj_1_1selekcjanatur_1_1_czlowiek_1a582845c239e55cf178e6e9ca22ee0639" prot="protected" virt="non-virtual"><scope>proj::selekcjanatur::Czlowiek</scope><name>geny</name></member>
+      <member refid="classproj_1_1selekcjanatur_1_1_czlowiek_1a509bb922ddb9fd50f424b988e350e17f" prot="private" virt="non-virtual"><scope>proj::selekcjanatur::Czlowiek</scope><name>globalneId</name></member>
+      <member refid="classproj_1_1selekcjanatur_1_1_czlowiek_1a024b3bcb3c470bb8d8ad482646689263" prot="public" virt="non-virtual"><scope>proj::selekcjanatur::Czlowiek</scope><name>id</name></member>
+      <member refid="classproj_1_1selekcjanatur_1_1_czlowiek_1a7eb1b9e51b6766279f0f2b7d0dd9b119" prot="public" virt="non-virtual"><scope>proj::selekcjanatur::Czlowiek</scope><name>jestDzieckiem</name></member>
+      <member refid="classproj_1_1selekcjanatur_1_1_czlowiek_1a104718c5aefe504867235fa48c03a645" prot="public" virt="non-virtual"><scope>proj::selekcjanatur::Czlowiek</scope><name>mozeRozmnazac</name></member>
+      <member refid="classproj_1_1selekcjanatur_1_1_czlowiek_1a9cce002ea96f19fe0eb88606d174e464" prot="public" virt="non-virtual"><scope>proj::selekcjanatur::Czlowiek</scope><name>powinnienSieRuszyc</name></member>
+      <member refid="classproj_1_1selekcjanatur_1_1_czlowiek_1adc5b716c39bd2e6292460bcf9048eea3" prot="protected" virt="non-virtual"><scope>proj::selekcjanatur::Czlowiek</scope><name>poziomGlodu</name></member>
+      <member refid="classproj_1_1selekcjanatur_1_1_czlowiek_1a485073a3fc648b9a3ca7ecdec405516e" prot="public" virt="non-virtual"><scope>proj::selekcjanatur::Czlowiek</scope><name>predkosc</name></member>
+      <member refid="classproj_1_1selekcjanatur_1_1_czlowiek_1ac542fecf860b53af21ee3063be486d27" prot="public" virt="non-virtual"><scope>proj::selekcjanatur::Czlowiek</scope><name>rozmnazajZ</name></member>
+      <member refid="classproj_1_1selekcjanatur_1_1_czlowiek_1ac5cd794f090024daf3dd37da3ced3a6f" prot="public" virt="non-virtual"><scope>proj::selekcjanatur::Czlowiek</scope><name>toString</name></member>
+      <member refid="classproj_1_1selekcjanatur_1_1_czlowiek_1a816cfb8471e36f40a415ce3184398033" prot="protected" virt="non-virtual"><scope>proj::selekcjanatur::Czlowiek</scope><name>wiek</name></member>
+      <member refid="classproj_1_1selekcjanatur_1_1_czlowiek_1ac4d6409fa9719e64741b67bbfcdaf573" prot="public" virt="non-virtual"><scope>proj::selekcjanatur::Czlowiek</scope><name>x</name></member>
+      <member refid="classproj_1_1selekcjanatur_1_1_czlowiek_1a59322ad4d7324f586e2acd03edd858ce" prot="public" virt="non-virtual"><scope>proj::selekcjanatur::Czlowiek</scope><name>y</name></member>
+      <member refid="classproj_1_1selekcjanatur_1_1_czlowiek_1aabd1eb0726b65fce7b6bab1f894904cf" prot="public" virt="non-virtual"><scope>proj::selekcjanatur::Czlowiek</scope><name>zasiegWzroku</name></member>
+      <member refid="classproj_1_1selekcjanatur_1_1_czlowiek_1a19de94d2ab10d64910307b71bf45ed2e" prot="public" virt="non-virtual"><scope>proj::selekcjanatur::Czlowiek</scope><name>zjedz</name></member>
+      <member refid="classproj_1_1selekcjanatur_1_1_czlowiek_1a53d97caac471e136d612c2eb28f02c2d" prot="public" virt="non-virtual"><scope>proj::selekcjanatur::Czlowiek</scope><name>zuzycieEnergii</name></member>
+      <member refid="classproj_1_1selekcjanatur_1_1_czlowiek_1ae4932e671627f16ed55cf0b377aed889" prot="protected" virt="non-virtual"><scope>proj::selekcjanatur::Czlowiek</scope><name>zywy</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

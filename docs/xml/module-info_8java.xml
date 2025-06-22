@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="pl">
+  <compounddef id="module-info_8java" kind="file" language="Java">
+    <compoundname>module-info.java</compoundname>
+    <innernamespace refid="namespacejava_1_1lang">java::lang</innernamespace>
+    <sectiondef kind="var">
+      <memberdef kind="variable" id="module-info_8java_1add25d10e8a75b66efa64df2e17590256" prot="package" static="no" mutable="no">
+        <type>module proj.</type>
+        <definition>exports proj selekcjanatur</definition>
+        <argsstring></argsstring>
+        <name>selekcjanatur</name>
+        <initializer>{
+    
+    requires javafx.controls</initializer>
+        <briefdescription>
+<para>Eksportuje główny pakiet aplikacji. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/module-info.java" line="13" column="12" bodyfile="src/main/java/module-info.java" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="module-info_8java_1a117eda8ba0873252e84664f43161eb62" prot="package" static="no" mutable="no">
+        <type>requires javafx.</type>
+        <definition>opens proj selekcjanatur to javafx fxml</definition>
+        <argsstring></argsstring>
+        <name>fxml</name>
+        <briefdescription>
+<para>Wymaga modułu FXML JavaFX. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Udostępnia pakiety do refleksji dla JavaFX FXML. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/module-info.java" line="18" column="20" bodyfile="src/main/java/module-info.java" bodystart="18" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Deklaracja modułu Java dla aplikacji Symulacja Selekcji Naturalnej. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal">module<sp/><ref refid="namespaceproj_1_1selekcjanatur" kindref="compound">proj.selekcjanatur</ref><sp/>{</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>requires<sp/>javafx.controls;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>requires<sp/>javafx.fxml;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>opens<sp/><ref refid="namespaceproj_1_1selekcjanatur" kindref="compound">proj.selekcjanatur</ref><sp/>to<sp/>javafx.fxml;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>exports<sp/>proj.selekcjanatur;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="src/main/java/module-info.java"/>
+  </compounddef>
+</doxygen>

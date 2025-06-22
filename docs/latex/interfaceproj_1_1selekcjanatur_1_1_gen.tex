@@ -1,0 +1,113 @@
+\doxysection{Dokumentacja interfejsu proj.\+selekcjanatur.\+Gen}
+\hypertarget{interfaceproj_1_1selekcjanatur_1_1_gen}{}\label{interfaceproj_1_1selekcjanatur_1_1_gen}\index{proj.selekcjanatur.Gen@{proj.selekcjanatur.Gen}}
+
+
+Interfejs reprezentujący gen w symulacji ewolucyjnej.  
+
+
+
+
+Diagram dziedziczenia dla proj.\+selekcjanatur.\+Gen\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{interfaceproj_1_1selekcjanatur_1_1_gen__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Diagram współpracy dla proj.\+selekcjanatur.\+Gen\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=186pt]{interfaceproj_1_1selekcjanatur_1_1_gen__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{interfaceproj_1_1selekcjanatur_1_1_gen_ab2b013ae8d6ad91c73fdb8ec97f37c94}{wartosc}} ()
+\begin{DoxyCompactList}\small\item\em Pobiera aktualną wartość cechy genetycznej. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{interfaceproj_1_1selekcjanatur_1_1_gen}{Gen}} \mbox{\hyperlink{interfaceproj_1_1selekcjanatur_1_1_gen_a7dbd3fed6d9dee504bf8217028b50493}{odziedzicz}} ()
+\begin{DoxyCompactList}\small\item\em Tworzy nowy gen poprzez dziedziczenie z mutacją \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Opis szczegółowy}
+Interfejs reprezentujący gen w symulacji ewolucyjnej. 
+
+Definiuje podstawowe operacje jakie musi implementować każdy gen\+:
+\begin{DoxyItemize}
+\item Dostęp do swojej wartości
+\item Mechanizm dziedziczenia z możliwością mutacji 
+\end{DoxyItemize}
+
+\label{doc-func-members}
+\Hypertarget{interfaceproj_1_1selekcjanatur_1_1_gen_doc-func-members}
+\doxysubsection{Dokumentacja funkcji składowych}
+\Hypertarget{interfaceproj_1_1selekcjanatur_1_1_gen_a7dbd3fed6d9dee504bf8217028b50493}\index{proj.selekcjanatur.Gen@{proj.selekcjanatur.Gen}!odziedzicz@{odziedzicz}}
+\index{odziedzicz@{odziedzicz}!proj.selekcjanatur.Gen@{proj.selekcjanatur.Gen}}
+\doxysubsubsection{\texorpdfstring{odziedzicz()}{odziedzicz()}}
+{\footnotesize\ttfamily \label{interfaceproj_1_1selekcjanatur_1_1_gen_a7dbd3fed6d9dee504bf8217028b50493} 
+\mbox{\hyperlink{interfaceproj_1_1selekcjanatur_1_1_gen}{Gen}} proj.\+selekcjanatur.\+Gen.\+odziedzicz (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Tworzy nowy gen poprzez dziedziczenie z mutacją 
+
+\begin{DoxyReturn}{Zwraca}
+Nowa instancja genu potomnego
+\end{DoxyReturn}
+Metoda powinna\+:
+\begin{DoxyEnumerate}
+\item Skopiować podstawowe cechy genu rodzica
+\item Zastosować losową mutację (zmianę wartości)
+\item Zwrócić nową instancję genu
+\end{DoxyEnumerate}
+
+Przykład\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Gen\ oryginalny\ =\ \textcolor{keyword}{new}\ GenPredkoscChodzenia();}
+\DoxyCodeLine{Gen\ potomny\ =\ oryginalny.odziedzicz();\ \textcolor{comment}{//\ nowa\ instancja\ z\ mutacją}}
+
+\end{DoxyCode}
+ 
+
+Implementowany w \mbox{\hyperlink{classproj_1_1selekcjanatur_1_1_gen_predkosc_chodzenia_ac1c84739c1c813099f3d0b351c9a6487}{proj.\+selekcjanatur.\+Gen\+Predkosc\+Chodzenia}}, \mbox{\hyperlink{classproj_1_1selekcjanatur_1_1_gen_wzrok_a78a8ef7be1ae0cbe718d1428e44f639c}{proj.\+selekcjanatur.\+Gen\+Wzrok}} i \mbox{\hyperlink{classproj_1_1selekcjanatur_1_1_gen_zapotrzebowanie_energetyczne_a283348bd55e17df0fe1345785d138c95}{proj.\+selekcjanatur.\+Gen\+Zapotrzebowanie\+Energetyczne}}.
+
+Oto graf wywoływań tej funkcji\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{interfaceproj_1_1selekcjanatur_1_1_gen_a7dbd3fed6d9dee504bf8217028b50493_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{interfaceproj_1_1selekcjanatur_1_1_gen_ab2b013ae8d6ad91c73fdb8ec97f37c94}\index{proj.selekcjanatur.Gen@{proj.selekcjanatur.Gen}!wartosc@{wartosc}}
+\index{wartosc@{wartosc}!proj.selekcjanatur.Gen@{proj.selekcjanatur.Gen}}
+\doxysubsubsection{\texorpdfstring{wartosc()}{wartosc()}}
+{\footnotesize\ttfamily \label{interfaceproj_1_1selekcjanatur_1_1_gen_ab2b013ae8d6ad91c73fdb8ec97f37c94} 
+float proj.\+selekcjanatur.\+Gen.\+wartosc (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Pobiera aktualną wartość cechy genetycznej. 
+
+\begin{DoxyReturn}{Zwraca}
+Wartość liczbowa genu (zależna od implementacji)
+\end{DoxyReturn}
+Wartość może być stała lub zmieniać się w czasie, w zależności od konkretnej implementacji genu.
+
+Przykład\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Gen\ wzrok\ =\ \textcolor{keyword}{new}\ GenWzrok();}
+\DoxyCodeLine{\textcolor{keywordtype}{float}\ zasieg\ =\ wzrok.wartosc();\ \textcolor{comment}{//\ np.\ 2.5f}}
+
+\end{DoxyCode}
+ 
+
+Implementowany w \mbox{\hyperlink{classproj_1_1selekcjanatur_1_1_gen_predkosc_chodzenia_a5a2e8c5c92648cd0fbd48ed3b3e79d48}{proj.\+selekcjanatur.\+Gen\+Predkosc\+Chodzenia}}, \mbox{\hyperlink{classproj_1_1selekcjanatur_1_1_gen_wzrok_a2c2e4e3feabb475013319b27f6af596a}{proj.\+selekcjanatur.\+Gen\+Wzrok}} i \mbox{\hyperlink{classproj_1_1selekcjanatur_1_1_gen_zapotrzebowanie_energetyczne_afd421547690d3ea2c7a15eaea3cf1e08}{proj.\+selekcjanatur.\+Gen\+Zapotrzebowanie\+Energetyczne}}.
+
+
+
+Dokumentacja dla tego interfejsu została wygenerowana z pliku\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/proj/selekcjanatur/\mbox{\hyperlink{_gen_8java}{Gen.\+java}}\end{DoxyCompactItemize}

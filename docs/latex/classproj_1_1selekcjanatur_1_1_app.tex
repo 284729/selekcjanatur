@@ -1,0 +1,112 @@
+\doxysection{Dokumentacja klasy proj.\+selekcjanatur.\+App}
+\hypertarget{classproj_1_1selekcjanatur_1_1_app}{}\label{classproj_1_1selekcjanatur_1_1_app}\index{proj.selekcjanatur.App@{proj.selekcjanatur.App}}
+
+
+Główna klasa aplikacji dziedzicząca po Application z Java\+FX.  
+
+
+
+
+Diagram dziedziczenia dla proj.\+selekcjanatur.\+App\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=197pt]{classproj_1_1selekcjanatur_1_1_app__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Diagram współpracy dla proj.\+selekcjanatur.\+App\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=197pt]{classproj_1_1selekcjanatur_1_1_app__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classproj_1_1selekcjanatur_1_1_app_ae2849dc6abb758adce6cf1f28cd43d40}{start}} (Stage stage)  throws Exception 
+\begin{DoxyCompactList}\small\item\em Metoda startująca aplikację Java\+FX. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Statyczne metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classproj_1_1selekcjanatur_1_1_app_a5b449f0612c86ffe7eaa088a307e9a3b}{main}} (String\mbox{[}$\,$\mbox{]} args)
+\begin{DoxyCompactList}\small\item\em Główna metoda uruchamiająca aplikację. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Statyczne atrybuty publiczne}
+\begin{DoxyCompactItemize}
+\item 
+static Random \mbox{\hyperlink{classproj_1_1selekcjanatur_1_1_app_ad267df574f9f99d0adf41d333bf4823a}{random}} = new Random()
+\begin{DoxyCompactList}\small\item\em Współdzielony generator liczb pseudolosowych. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Opis szczegółowy}
+Główna klasa aplikacji dziedzicząca po Application z Java\+FX. 
+
+Klasa odpowiedzialna za inicjalizację interfejsu użytkownika oraz uruchomienie symulacji. 
+
+\label{doc-func-members}
+\Hypertarget{classproj_1_1selekcjanatur_1_1_app_doc-func-members}
+\doxysubsection{Dokumentacja funkcji składowych}
+\Hypertarget{classproj_1_1selekcjanatur_1_1_app_a5b449f0612c86ffe7eaa088a307e9a3b}\index{proj.selekcjanatur.App@{proj.selekcjanatur.App}!main@{main}}
+\index{main@{main}!proj.selekcjanatur.App@{proj.selekcjanatur.App}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily \label{classproj_1_1selekcjanatur_1_1_app_a5b449f0612c86ffe7eaa088a307e9a3b} 
+void proj.\+selekcjanatur.\+App.\+main (\begin{DoxyParamCaption}\item[{String\mbox{[}$\,$\mbox{]}}]{args}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Główna metoda uruchamiająca aplikację. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em args} & Argumenty wiersza poleceń (niewykorzystywane).\\
+\hline
+\end{DoxyParams}
+Po zamknięciu aplikacji, jeśli nie zapisano do pliku, automatycznie zapisuje dziennik zdarzeń. Oto graf wywołań dla tej funkcji\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classproj_1_1selekcjanatur_1_1_app_a5b449f0612c86ffe7eaa088a307e9a3b_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classproj_1_1selekcjanatur_1_1_app_ae2849dc6abb758adce6cf1f28cd43d40}\index{proj.selekcjanatur.App@{proj.selekcjanatur.App}!start@{start}}
+\index{start@{start}!proj.selekcjanatur.App@{proj.selekcjanatur.App}}
+\doxysubsubsection{\texorpdfstring{start()}{start()}}
+{\footnotesize\ttfamily \label{classproj_1_1selekcjanatur_1_1_app_ae2849dc6abb758adce6cf1f28cd43d40} 
+void proj.\+selekcjanatur.\+App.\+start (\begin{DoxyParamCaption}\item[{Stage}]{stage}{}\end{DoxyParamCaption}) throws Exception}
+
+
+
+Metoda startująca aplikację Java\+FX. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em stage} & Główny kontener okna aplikacji. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Wyjątki}
+{\em Exception} & Może wyrzucić wyjątek przy problemach z ładowaniem FXML.\\
+\hline
+\end{DoxyExceptions}
+Ładuje plik FXML z interfejsem użytkownika, ustawia scenę i tytuł okna, a następnie je wyświetla. 
+
+\label{doc-variable-members}
+\Hypertarget{classproj_1_1selekcjanatur_1_1_app_doc-variable-members}
+\doxysubsection{Dokumentacja atrybutów składowych}
+\Hypertarget{classproj_1_1selekcjanatur_1_1_app_ad267df574f9f99d0adf41d333bf4823a}\index{proj.selekcjanatur.App@{proj.selekcjanatur.App}!random@{random}}
+\index{random@{random}!proj.selekcjanatur.App@{proj.selekcjanatur.App}}
+\doxysubsubsection{\texorpdfstring{random}{random}}
+{\footnotesize\ttfamily \label{classproj_1_1selekcjanatur_1_1_app_ad267df574f9f99d0adf41d333bf4823a} 
+Random proj.\+selekcjanatur.\+App.\+random = new Random()\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Współdzielony generator liczb pseudolosowych. 
+
+Używany w całej aplikacji do generowania losowych wartości. 
+
+Dokumentacja dla tej klasy została wygenerowana z pliku\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/proj/selekcjanatur/\mbox{\hyperlink{_app_8java}{App.\+java}}\end{DoxyCompactItemize}

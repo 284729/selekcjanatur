@@ -1,0 +1,9 @@
+<map id="proj.selekcjanatur.Czlowiek.zjedz" name="proj.selekcjanatur.Czlowiek.zjedz">
+<area shape="rect" id="Node000001" title="Zjada podane jedzenie." alt="" coords="920,13,1137,40"/>
+<area shape="rect" id="Node000002" href="$classproj_1_1selekcjanatur_1_1_symulacja.html#a1d1661b0578afad91d9b4807d8122e39" title="Przenosi człowieka na nowe pole." alt="" coords="620,5,872,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="905,29,873,29,873,24,905,24"/>
+<area shape="rect" id="Node000003" href="$classproj_1_1selekcjanatur_1_1_symulacja.html#a52f53070719050f572593ac7c6908ebd" title="Wykonuje ruch dla danego człowieka." alt="" coords="301,13,572,40"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="604,29,573,29,573,24,604,24"/>
+<area shape="rect" id="Node000004" href="$classproj_1_1selekcjanatur_1_1_symulacja.html#adec9a02326fa916fa822eddad509050f" title="Aktualizuje stan symulacji o jeden krok." alt="" coords="5,13,253,40"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="285,29,253,29,253,24,285,24"/>
+</map>

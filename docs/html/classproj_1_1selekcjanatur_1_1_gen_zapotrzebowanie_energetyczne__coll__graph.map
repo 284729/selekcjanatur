@@ -1,0 +1,5 @@
+<map id="proj.selekcjanatur.GenZapotrzebowanieEnergetyczne" name="proj.selekcjanatur.GenZapotrzebowanieEnergetyczne">
+<area shape="rect" id="Node000001" title="Klasa implementująca gen zapotrzebowania energetycznego." alt="" coords="5,144,245,309"/>
+<area shape="rect" id="Node000002" href="$interfaceproj_1_1selekcjanatur_1_1_gen.html" title="Interfejs reprezentujący gen w symulacji ewolucyjnej." alt="" coords="55,5,196,96"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="128,111,128,144,122,144,122,111"/>
+</map>

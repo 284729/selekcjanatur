@@ -1,0 +1,25 @@
+var classproj_1_1selekcjanatur_1_1_czlowiek =
+[
+    [ "Czlowiek", "classproj_1_1selekcjanatur_1_1_czlowiek.html#a341bb3b95da388b296452c4155c1c773", null ],
+    [ "aktualizuj", "classproj_1_1selekcjanatur_1_1_czlowiek.html#aff9d2620e2407154927841859a6c98af", null ],
+    [ "czyMezczyzna", "classproj_1_1selekcjanatur_1_1_czlowiek.html#ac88bbff18c715a98a16d48103b3b495b", null ],
+    [ "czyUmieraZeStarosci", "classproj_1_1selekcjanatur_1_1_czlowiek.html#a877a9787e423b1279430dc1f952fea04", null ],
+    [ "jestDzieckiem", "classproj_1_1selekcjanatur_1_1_czlowiek.html#a7eb1b9e51b6766279f0f2b7d0dd9b119", null ],
+    [ "mozeRozmnazac", "classproj_1_1selekcjanatur_1_1_czlowiek.html#a104718c5aefe504867235fa48c03a645", null ],
+    [ "powinnienSieRuszyc", "classproj_1_1selekcjanatur_1_1_czlowiek.html#a9cce002ea96f19fe0eb88606d174e464", null ],
+    [ "predkosc", "classproj_1_1selekcjanatur_1_1_czlowiek.html#a485073a3fc648b9a3ca7ecdec405516e", null ],
+    [ "rozmnazajZ", "classproj_1_1selekcjanatur_1_1_czlowiek.html#ac542fecf860b53af21ee3063be486d27", null ],
+    [ "toString", "classproj_1_1selekcjanatur_1_1_czlowiek.html#ac5cd794f090024daf3dd37da3ced3a6f", null ],
+    [ "zasiegWzroku", "classproj_1_1selekcjanatur_1_1_czlowiek.html#aabd1eb0726b65fce7b6bab1f894904cf", null ],
+    [ "zjedz", "classproj_1_1selekcjanatur_1_1_czlowiek.html#a19de94d2ab10d64910307b71bf45ed2e", null ],
+    [ "zuzycieEnergii", "classproj_1_1selekcjanatur_1_1_czlowiek.html#a53d97caac471e136d612c2eb28f02c2d", null ],
+    [ "czasOdRozmnazania", "classproj_1_1selekcjanatur_1_1_czlowiek.html#ad0e705573c19c5416636ee0fd457cf7a", null ],
+    [ "geny", "classproj_1_1selekcjanatur_1_1_czlowiek.html#a582845c239e55cf178e6e9ca22ee0639", null ],
+    [ "globalneId", "classproj_1_1selekcjanatur_1_1_czlowiek.html#a509bb922ddb9fd50f424b988e350e17f", null ],
+    [ "id", "classproj_1_1selekcjanatur_1_1_czlowiek.html#a024b3bcb3c470bb8d8ad482646689263", null ],
+    [ "poziomGlodu", "classproj_1_1selekcjanatur_1_1_czlowiek.html#adc5b716c39bd2e6292460bcf9048eea3", null ],
+    [ "wiek", "classproj_1_1selekcjanatur_1_1_czlowiek.html#a816cfb8471e36f40a415ce3184398033", null ],
+    [ "x", "classproj_1_1selekcjanatur_1_1_czlowiek.html#ac4d6409fa9719e64741b67bbfcdaf573", null ],
+    [ "y", "classproj_1_1selekcjanatur_1_1_czlowiek.html#a59322ad4d7324f586e2acd03edd858ce", null ],
+    [ "zywy", "classproj_1_1selekcjanatur_1_1_czlowiek.html#ae4932e671627f16ed55cf0b377aed889", null ]
+];

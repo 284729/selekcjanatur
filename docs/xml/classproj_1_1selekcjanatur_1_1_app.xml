@@ -1,0 +1,146 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="pl">
+  <compounddef id="classproj_1_1selekcjanatur_1_1_app" kind="class" language="Java" prot="public">
+    <compoundname>proj::selekcjanatur::App</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Application</basecompoundref>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classproj_1_1selekcjanatur_1_1_app_1ad267df574f9f99d0adf41d333bf4823a" prot="public" static="yes" mutable="no">
+        <type>Random</type>
+        <definition>Random proj.selekcjanatur.App.random</definition>
+        <argsstring></argsstring>
+        <name>random</name>
+        <qualifiedname>proj.selekcjanatur.App.random</qualifiedname>
+        <initializer>= new Random()</initializer>
+        <briefdescription>
+<para>Współdzielony generator liczb pseudolosowych. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Używany w całej aplikacji do generowania losowych wartości. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/proj/selekcjanatur/App.java" line="32" column="26" bodyfile="src/main/java/proj/selekcjanatur/App.java" bodystart="32" bodyend="-1"/>
+        <referencedby refid="classproj_1_1selekcjanatur_1_1_czlowiek_1a877a9787e423b1279430dc1f952fea04" compoundref="_czlowiek_8java" startline="155" endline="159">proj.selekcjanatur.Czlowiek.czyUmieraZeStarosci</referencedby>
+        <referencedby refid="classproj_1_1selekcjanatur_1_1_symulacja_1ab361a78b8ca5a29d85b023553d4490f5" compoundref="_symulacja_8java" startline="158" endline="169">proj.selekcjanatur.Symulacja.dodajLosoweJedzenie</referencedby>
+        <referencedby refid="classproj_1_1selekcjanatur_1_1_symulacja_1a2728068a09ceb38515acafb5547d86b3" compoundref="_symulacja_8java" startline="137" endline="152">proj.selekcjanatur.Symulacja.dodajLosowychLudzi</referencedby>
+        <referencedby refid="classproj_1_1selekcjanatur_1_1_gen_predkosc_chodzenia_1a8e6bad25e15b11e69b650089dd2849b5" compoundref="_gen_predkosc_chodzenia_8java" startline="32" endline="34">proj.selekcjanatur.GenPredkoscChodzenia.GenPredkoscChodzenia</referencedby>
+        <referencedby refid="classproj_1_1selekcjanatur_1_1_gen_wzrok_1ae792ef922168b72adacb551ee3163a8b" compoundref="_gen_wzrok_8java" startline="32" endline="34">proj.selekcjanatur.GenWzrok.GenWzrok</referencedby>
+        <referencedby refid="classproj_1_1selekcjanatur_1_1_gen_zapotrzebowanie_energetyczne_1ae40faf3665048819b8179c5eaa72e344" compoundref="_gen_zapotrzebowanie_energetyczne_8java" startline="31" endline="33">proj.selekcjanatur.GenZapotrzebowanieEnergetyczne.GenZapotrzebowanieEnergetyczne</referencedby>
+        <referencedby refid="classproj_1_1selekcjanatur_1_1_jedzenie_1a0a32d35b4201fd65bcde3ecadae055cf" compoundref="_jedzenie_8java" startline="45" endline="49">proj.selekcjanatur.Jedzenie.Jedzenie</referencedby>
+        <referencedby refid="classproj_1_1selekcjanatur_1_1_kobieta_1ab20a08ab86b96cb78f5163a71e06c49c" compoundref="_kobieta_8java" startline="29" endline="32">proj.selekcjanatur.Kobieta.Kobieta</referencedby>
+        <referencedby refid="classproj_1_1selekcjanatur_1_1_gen_predkosc_chodzenia_1ac1c84739c1c813099f3d0b351c9a6487" compoundref="_gen_predkosc_chodzenia_8java" startline="70" endline="74">proj.selekcjanatur.GenPredkoscChodzenia.odziedzicz</referencedby>
+        <referencedby refid="classproj_1_1selekcjanatur_1_1_gen_wzrok_1a78a8ef7be1ae0cbe718d1428e44f639c" compoundref="_gen_wzrok_8java" startline="70" endline="74">proj.selekcjanatur.GenWzrok.odziedzicz</referencedby>
+        <referencedby refid="classproj_1_1selekcjanatur_1_1_gen_zapotrzebowanie_energetyczne_1a283348bd55e17df0fe1345785d138c95" compoundref="_gen_zapotrzebowanie_energetyczne_8java" startline="67" endline="71">proj.selekcjanatur.GenZapotrzebowanieEnergetyczne.odziedzicz</referencedby>
+        <referencedby refid="classproj_1_1selekcjanatur_1_1_czlowiek_1ac542fecf860b53af21ee3063be486d27" compoundref="_czlowiek_8java" startline="169" endline="181">proj.selekcjanatur.Czlowiek.rozmnazajZ</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classproj_1_1selekcjanatur_1_1_app_1ae2849dc6abb758adce6cf1f28cd43d40" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void proj.selekcjanatur.App.start</definition>
+        <argsstring>(Stage stage)</argsstring>
+        <name>start</name>
+        <qualifiedname>proj.selekcjanatur.App.start</qualifiedname>
+        <param>
+          <type>Stage</type>
+          <declname>stage</declname>
+        </param>
+        <exceptions> throws Exception </exceptions>
+        <briefdescription>
+<para>Metoda startująca aplikację JavaFX. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>stage</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Główny kontener okna aplikacji. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>Exception</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Może wyrzucić wyjątek przy problemach z ładowaniem FXML.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+Ładuje plik FXML z interfejsem użytkownika, ustawia scenę i tytuł okna, a następnie je wyświetla. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/proj/selekcjanatur/App.java" line="43" column="17" bodyfile="src/main/java/proj/selekcjanatur/App.java" bodystart="43" bodyend="49"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classproj_1_1selekcjanatur_1_1_app_1a5b449f0612c86ffe7eaa088a307e9a3b" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void proj.selekcjanatur.App.main</definition>
+        <argsstring>(String[] args)</argsstring>
+        <name>main</name>
+        <qualifiedname>proj.selekcjanatur.App.main</qualifiedname>
+        <param>
+          <type>String[]</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+<para>Główna metoda uruchamiająca aplikację. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>args</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Argumenty wiersza poleceń (niewykorzystywane).</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+Po zamknięciu aplikacji, jeśli nie zapisano do pliku, automatycznie zapisuje dziennik zdarzeń. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/proj/selekcjanatur/App.java" line="58" column="24" bodyfile="src/main/java/proj/selekcjanatur/App.java" bodystart="58" bodyend="61"/>
+        <references refid="classproj_1_1selekcjanatur_1_1_app_controller_1a126b2a6a1a53efdb82999b73dc9ca21d" compoundref="_app_controller_8java" startline="55">proj.selekcjanatur.AppController.PLIK</references>
+        <references refid="classproj_1_1selekcjanatur_1_1_symulacja_1a30d65d41391f815284bbdce9ab12beb9" compoundref="_symulacja_8java" startline="348" endline="356">proj.selekcjanatur.Symulacja.zapiszDziennikDoPliku</references>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Główna klasa aplikacji dziedzicząca po Application z JavaFX. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Klasa odpowiedzialna za inicjalizację interfejsu użytkownika oraz uruchomienie symulacji. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Application</label>
+      </node>
+      <node id="1">
+        <label>proj.selekcjanatur.App</label>
+        <link refid="classproj_1_1selekcjanatur_1_1_app"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>Application</label>
+      </node>
+      <node id="1">
+        <label>proj.selekcjanatur.App</label>
+        <link refid="classproj_1_1selekcjanatur_1_1_app"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="src/main/java/proj/selekcjanatur/App.java" line="27" column="7" bodyfile="src/main/java/proj/selekcjanatur/App.java" bodystart="27" bodyend="62"/>
+    <listofallmembers>
+      <member refid="classproj_1_1selekcjanatur_1_1_app_1a5b449f0612c86ffe7eaa088a307e9a3b" prot="public" virt="non-virtual"><scope>proj::selekcjanatur::App</scope><name>main</name></member>
+      <member refid="classproj_1_1selekcjanatur_1_1_app_1ad267df574f9f99d0adf41d333bf4823a" prot="public" virt="non-virtual"><scope>proj::selekcjanatur::App</scope><name>random</name></member>
+      <member refid="classproj_1_1selekcjanatur_1_1_app_1ae2849dc6abb758adce6cf1f28cd43d40" prot="public" virt="non-virtual"><scope>proj::selekcjanatur::App</scope><name>start</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

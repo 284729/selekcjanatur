@@ -1,0 +1,172 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="pl">
+  <compounddef id="classproj_1_1selekcjanatur_1_1_gen_zapotrzebowanie_energetyczne" kind="class" language="Java" prot="public">
+    <compoundname>proj::selekcjanatur::GenZapotrzebowanieEnergetyczne</compoundname>
+    <basecompoundref refid="interfaceproj_1_1selekcjanatur_1_1_gen" prot="public" virt="non-virtual">proj.selekcjanatur.Gen</basecompoundref>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classproj_1_1selekcjanatur_1_1_gen_zapotrzebowanie_energetyczne_1a6f92daa3d49d10ca3b4dae6f11e52a36" prot="private" static="no" mutable="no">
+        <type>final float</type>
+        <definition>final float proj.selekcjanatur.GenZapotrzebowanieEnergetyczne.wartosc</definition>
+        <argsstring></argsstring>
+        <name>wartosc</name>
+        <qualifiedname>proj.selekcjanatur.GenZapotrzebowanieEnergetyczne.wartosc</qualifiedname>
+        <briefdescription>
+<para>Przechowuje wartość genu metabolizmu. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Wartość określa procentowy ubytek energii na cykl symulacji </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/proj/selekcjanatur/GenZapotrzebowanieEnergetyczne.java" line="25" column="25" bodyfile="src/main/java/proj/selekcjanatur/GenZapotrzebowanieEnergetyczne.java" bodystart="25" bodyend="-1"/>
+        <referencedby refid="classproj_1_1selekcjanatur_1_1_gen_zapotrzebowanie_energetyczne_1a064321ada51f7fb8bef1c810789afeca" compoundref="_gen_zapotrzebowanie_energetyczne_8java" startline="39" endline="41">proj.selekcjanatur.GenZapotrzebowanieEnergetyczne.GenZapotrzebowanieEnergetyczne</referencedby>
+        <referencedby refid="classproj_1_1selekcjanatur_1_1_gen_zapotrzebowanie_energetyczne_1a283348bd55e17df0fe1345785d138c95" compoundref="_gen_zapotrzebowanie_energetyczne_8java" startline="67" endline="71">proj.selekcjanatur.GenZapotrzebowanieEnergetyczne.odziedzicz</referencedby>
+        <referencedby refid="classproj_1_1selekcjanatur_1_1_gen_zapotrzebowanie_energetyczne_1afd421547690d3ea2c7a15eaea3cf1e08" compoundref="_gen_zapotrzebowanie_energetyczne_8java" startline="48" endline="50">proj.selekcjanatur.GenZapotrzebowanieEnergetyczne.wartosc</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classproj_1_1selekcjanatur_1_1_gen_zapotrzebowanie_energetyczne_1ae40faf3665048819b8179c5eaa72e344" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>proj.selekcjanatur.GenZapotrzebowanieEnergetyczne.GenZapotrzebowanieEnergetyczne</definition>
+        <argsstring>()</argsstring>
+        <name>GenZapotrzebowanieEnergetyczne</name>
+        <qualifiedname>proj.selekcjanatur.GenZapotrzebowanieEnergetyczne.GenZapotrzebowanieEnergetyczne</qualifiedname>
+        <briefdescription>
+<para>Konstruktor losujący początkową wartość genu. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Generuje wartość zmiennoprzecinkową z przedziału 5-20 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/proj/selekcjanatur/GenZapotrzebowanieEnergetyczne.java" line="31" column="12" bodyfile="src/main/java/proj/selekcjanatur/GenZapotrzebowanieEnergetyczne.java" bodystart="31" bodyend="33"/>
+        <references refid="classproj_1_1selekcjanatur_1_1_app_1ad267df574f9f99d0adf41d333bf4823a" compoundref="_app_8java" startline="32">proj.selekcjanatur.App.random</references>
+        <referencedby refid="classproj_1_1selekcjanatur_1_1_gen_zapotrzebowanie_energetyczne_1a283348bd55e17df0fe1345785d138c95" compoundref="_gen_zapotrzebowanie_energetyczne_8java" startline="67" endline="71">proj.selekcjanatur.GenZapotrzebowanieEnergetyczne.odziedzicz</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classproj_1_1selekcjanatur_1_1_gen_zapotrzebowanie_energetyczne_1a064321ada51f7fb8bef1c810789afeca" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>proj.selekcjanatur.GenZapotrzebowanieEnergetyczne.GenZapotrzebowanieEnergetyczne</definition>
+        <argsstring>(float wartosc)</argsstring>
+        <name>GenZapotrzebowanieEnergetyczne</name>
+        <qualifiedname>proj.selekcjanatur.GenZapotrzebowanieEnergetyczne.GenZapotrzebowanieEnergetyczne</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>wartosc</declname>
+        </param>
+        <briefdescription>
+<para>Konstruktor z określeniem konkretnej wartości. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>wartosc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Początkowa wartość genu (minimalna wartość to 5) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/proj/selekcjanatur/GenZapotrzebowanieEnergetyczne.java" line="39" column="12" bodyfile="src/main/java/proj/selekcjanatur/GenZapotrzebowanieEnergetyczne.java" bodystart="39" bodyend="41"/>
+        <references refid="classproj_1_1selekcjanatur_1_1_gen_zapotrzebowanie_energetyczne_1a6f92daa3d49d10ca3b4dae6f11e52a36" compoundref="_gen_zapotrzebowanie_energetyczne_8java" startline="25">proj.selekcjanatur.GenZapotrzebowanieEnergetyczne.wartosc</references>
+      </memberdef>
+      <memberdef kind="function" id="classproj_1_1selekcjanatur_1_1_gen_zapotrzebowanie_energetyczne_1afd421547690d3ea2c7a15eaea3cf1e08" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float proj.selekcjanatur.GenZapotrzebowanieEnergetyczne.wartosc</definition>
+        <argsstring>()</argsstring>
+        <name>wartosc</name>
+        <qualifiedname>proj.selekcjanatur.GenZapotrzebowanieEnergetyczne.wartosc</qualifiedname>
+        <reimplements refid="interfaceproj_1_1selekcjanatur_1_1_gen_1ab2b013ae8d6ad91c73fdb8ec97f37c94">wartosc</reimplements>
+        <briefdescription>
+<para>Zwraca aktualną wartość genu. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Wartość zapotrzebowania energetycznego </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/proj/selekcjanatur/GenZapotrzebowanieEnergetyczne.java" line="48" column="18" bodyfile="src/main/java/proj/selekcjanatur/GenZapotrzebowanieEnergetyczne.java" bodystart="48" bodyend="50"/>
+        <references refid="classproj_1_1selekcjanatur_1_1_gen_zapotrzebowanie_energetyczne_1a6f92daa3d49d10ca3b4dae6f11e52a36" compoundref="_gen_zapotrzebowanie_energetyczne_8java" startline="25">proj.selekcjanatur.GenZapotrzebowanieEnergetyczne.wartosc</references>
+      </memberdef>
+      <memberdef kind="function" id="classproj_1_1selekcjanatur_1_1_gen_zapotrzebowanie_energetyczne_1a283348bd55e17df0fe1345785d138c95" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="interfaceproj_1_1selekcjanatur_1_1_gen" kindref="compound">Gen</ref></type>
+        <definition>Gen proj.selekcjanatur.GenZapotrzebowanieEnergetyczne.odziedzicz</definition>
+        <argsstring>()</argsstring>
+        <name>odziedzicz</name>
+        <qualifiedname>proj.selekcjanatur.GenZapotrzebowanieEnergetyczne.odziedzicz</qualifiedname>
+        <reimplements refid="interfaceproj_1_1selekcjanatur_1_1_gen_1a7dbd3fed6d9dee504bf8217028b50493">odziedzicz</reimplements>
+        <briefdescription>
+<para>Tworzy nowy gen poprzez dziedziczenie z mutacją </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Nowa instancja <ref refid="classproj_1_1selekcjanatur_1_1_gen_zapotrzebowanie_energetyczne" kindref="compound">GenZapotrzebowanieEnergetyczne</ref></para>
+</simplesect>
+Algorytm działania:<orderedlist>
+<listitem><para>Losuje mutację z zakresu -5 do +7 (asymetrycznie)</para>
+</listitem><listitem><para>Dodaje mutację do obecnej wartości</para>
+</listitem><listitem><para>Gwarantuje minimalną wartość 5</para>
+</listitem><listitem><para>Zwraca nowy gen z zmutowaną wartością</para>
+</listitem></orderedlist>
+</para>
+<para><simplesect kind="note"><para>Mutacja jest celowo asymetryczna - większa szansa na zwiększenie metabolizmu niż na jego zmniejszenie, co symuluje ewolucyjną tendencję do zwiększania aktywności organizmów. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/proj/selekcjanatur/GenZapotrzebowanieEnergetyczne.java" line="67" column="16" bodyfile="src/main/java/proj/selekcjanatur/GenZapotrzebowanieEnergetyczne.java" bodystart="67" bodyend="71"/>
+        <references refid="classproj_1_1selekcjanatur_1_1_gen_zapotrzebowanie_energetyczne_1ae40faf3665048819b8179c5eaa72e344" compoundref="_gen_zapotrzebowanie_energetyczne_8java" startline="31" endline="33">proj.selekcjanatur.GenZapotrzebowanieEnergetyczne.GenZapotrzebowanieEnergetyczne</references>
+        <references refid="classproj_1_1selekcjanatur_1_1_app_1ad267df574f9f99d0adf41d333bf4823a" compoundref="_app_8java" startline="32">proj.selekcjanatur.App.random</references>
+        <references refid="classproj_1_1selekcjanatur_1_1_gen_zapotrzebowanie_energetyczne_1a6f92daa3d49d10ca3b4dae6f11e52a36" compoundref="_gen_zapotrzebowanie_energetyczne_8java" startline="25">proj.selekcjanatur.GenZapotrzebowanieEnergetyczne.wartosc</references>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Klasa implementująca gen zapotrzebowania energetycznego. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><ref refid="interfaceproj_1_1selekcjanatur_1_1_gen" kindref="compound">Gen</ref> określa ile energii człowiek traci w każdym cyklu symulacji. Wartość genu reprezentuje procentowy ubytek energii na cykl:<itemizedlist>
+<listitem><para>Niższe wartości: organizm oszczędniejszy (dłużej przeżyje bez jedzenia)</para>
+</listitem><listitem><para>Wyższe wartości: szybsze zużycie energii (większa potrzeba jedzenia)</para>
+</listitem></itemizedlist>
+</para>
+<para>Dziedziczenie odbywa się z asymetryczną mutacją (-5 do +7), przy czym minimalna wartość wynosi 5 (organizm nie może być całkowicie bierny). </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>proj.selekcjanatur.GenZapotrzebowanieEnergetyczne</label>
+        <link refid="classproj_1_1selekcjanatur_1_1_gen_zapotrzebowanie_energetyczne"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>proj.selekcjanatur.Gen</label>
+        <link refid="interfaceproj_1_1selekcjanatur_1_1_gen"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>proj.selekcjanatur.GenZapotrzebowanieEnergetyczne</label>
+        <link refid="classproj_1_1selekcjanatur_1_1_gen_zapotrzebowanie_energetyczne"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>proj.selekcjanatur.Gen</label>
+        <link refid="interfaceproj_1_1selekcjanatur_1_1_gen"/>
+      </node>
+    </collaborationgraph>
+    <location file="src/main/java/proj/selekcjanatur/GenZapotrzebowanieEnergetyczne.java" line="20" column="7" bodyfile="src/main/java/proj/selekcjanatur/GenZapotrzebowanieEnergetyczne.java" bodystart="20" bodyend="72"/>
+    <listofallmembers>
+      <member refid="classproj_1_1selekcjanatur_1_1_gen_zapotrzebowanie_energetyczne_1ae40faf3665048819b8179c5eaa72e344" prot="public" virt="non-virtual"><scope>proj::selekcjanatur::GenZapotrzebowanieEnergetyczne</scope><name>GenZapotrzebowanieEnergetyczne</name></member>
+      <member refid="classproj_1_1selekcjanatur_1_1_gen_zapotrzebowanie_energetyczne_1a064321ada51f7fb8bef1c810789afeca" prot="public" virt="non-virtual"><scope>proj::selekcjanatur::GenZapotrzebowanieEnergetyczne</scope><name>GenZapotrzebowanieEnergetyczne</name></member>
+      <member refid="classproj_1_1selekcjanatur_1_1_gen_zapotrzebowanie_energetyczne_1a283348bd55e17df0fe1345785d138c95" prot="public" virt="non-virtual"><scope>proj::selekcjanatur::GenZapotrzebowanieEnergetyczne</scope><name>odziedzicz</name></member>
+      <member refid="classproj_1_1selekcjanatur_1_1_gen_zapotrzebowanie_energetyczne_1a6f92daa3d49d10ca3b4dae6f11e52a36" prot="private" virt="non-virtual"><scope>proj::selekcjanatur::GenZapotrzebowanieEnergetyczne</scope><name>wartosc</name></member>
+      <member refid="classproj_1_1selekcjanatur_1_1_gen_zapotrzebowanie_energetyczne_1afd421547690d3ea2c7a15eaea3cf1e08" prot="public" virt="non-virtual"><scope>proj::selekcjanatur::GenZapotrzebowanieEnergetyczne</scope><name>wartosc</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

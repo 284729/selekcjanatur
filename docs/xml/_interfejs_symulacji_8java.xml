@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="pl">
+  <compounddef id="_interfejs_symulacji_8java" kind="file" language="Java">
+    <compoundname>InterfejsSymulacji.java</compoundname>
+    <includes local="no">java.util.List</includes>
+    <includes local="no">java.util.Set</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>src/main/java/proj/selekcjanatur/InterfejsSymulacji.java</label>
+        <link refid="_interfejs_symulacji_8java"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>java.util.List</label>
+      </node>
+      <node id="3">
+        <label>java.util.Set</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="interfaceproj_1_1selekcjanatur_1_1_interfejs_symulacji" prot="public">proj::selekcjanatur::InterfejsSymulacji</innerclass>
+    <innernamespace refid="namespaceproj_1_1selekcjanatur">proj::selekcjanatur</innernamespace>
+    <briefdescription>
+<para>Interfejs definiujący podstawowe operacje symulacji ewolucyjnej. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keyword">package<sp/></highlight><highlight class="normal">proj.selekcjanatur;</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>java.util.List;</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>java.util.Set;</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21" refid="interfaceproj_1_1selekcjanatur_1_1_interfejs_symulacji" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">interface<sp/></highlight><highlight class="normal"><ref refid="interfaceproj_1_1selekcjanatur_1_1_interfejs_symulacji" kindref="compound">InterfejsSymulacji</ref><sp/>{</highlight></codeline>
+<codeline lineno="29" refid="interfaceproj_1_1selekcjanatur_1_1_interfejs_symulacji_1abd9c98677e97fa36f0126a04bb0baeba" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="interfaceproj_1_1selekcjanatur_1_1_interfejs_symulacji_1abd9c98677e97fa36f0126a04bb0baeba" kindref="member">aktualizuj</ref>();</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37" refid="interfaceproj_1_1selekcjanatur_1_1_interfejs_symulacji_1a42c8bbee1a48204a12ea333621bca0d5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>List&lt;Czlowiek&gt;<sp/><ref refid="interfaceproj_1_1selekcjanatur_1_1_interfejs_symulacji_1a42c8bbee1a48204a12ea333621bca0d5" kindref="member">getLudzie</ref>();</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45" refid="interfaceproj_1_1selekcjanatur_1_1_interfejs_symulacji_1aa64fcf541377293e9ace7cbabb3f5c62" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>Set&lt;Jedzenie&gt;<sp/><ref refid="interfaceproj_1_1selekcjanatur_1_1_interfejs_symulacji_1aa64fcf541377293e9ace7cbabb3f5c62" kindref="member">getJedzenie</ref>();</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55" refid="interfaceproj_1_1selekcjanatur_1_1_interfejs_symulacji_1a4537fd530e9fb26e34a029f9de374f9e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">boolean</highlight><highlight class="normal"><sp/><ref refid="interfaceproj_1_1selekcjanatur_1_1_interfejs_symulacji_1a4537fd530e9fb26e34a029f9de374f9e" kindref="member">czySymulacjaZakonczona</ref>();</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57" refid="interfaceproj_1_1selekcjanatur_1_1_interfejs_symulacji_1a7e2ab50886fc205455480e6015060caa" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">boolean</highlight><highlight class="normal"><sp/><ref refid="interfaceproj_1_1selekcjanatur_1_1_interfejs_symulacji_1a7e2ab50886fc205455480e6015060caa" kindref="member">czySymulacjaZakonczena</ref>();</highlight></codeline>
+<codeline lineno="58"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="src/main/java/proj/selekcjanatur/InterfejsSymulacji.java"/>
+  </compounddef>
+</doxygen>

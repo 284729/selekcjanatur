@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="pl">
+  <compounddef id="dir_7e66381ed7cbf1db0c622dca65685572" kind="dir">
+    <compoundname>src/main/java/proj/selekcjanatur</compoundname>
+    <innerfile refid="_app_8java">App.java</innerfile>
+    <innerfile refid="_app_controller_8java">AppController.java</innerfile>
+    <innerfile refid="_czlowiek_8java">Czlowiek.java</innerfile>
+    <innerfile refid="_gen_8java">Gen.java</innerfile>
+    <innerfile refid="_gen_predkosc_chodzenia_8java">GenPredkoscChodzenia.java</innerfile>
+    <innerfile refid="_gen_wzrok_8java">GenWzrok.java</innerfile>
+    <innerfile refid="_gen_zapotrzebowanie_energetyczne_8java">GenZapotrzebowanieEnergetyczne.java</innerfile>
+    <innerfile refid="_interfejs_symulacji_8java">InterfejsSymulacji.java</innerfile>
+    <innerfile refid="_jedzenie_8java">Jedzenie.java</innerfile>
+    <innerfile refid="_kobieta_8java">Kobieta.java</innerfile>
+    <innerfile refid="_mezczyzna_8java">Mezczyzna.java</innerfile>
+    <innerfile refid="_start_controller_8java">StartController.java</innerfile>
+    <innerfile refid="_symulacja_8java">Symulacja.java</innerfile>
+    <innerfile refid="_symulacja_plik_8java">SymulacjaPlik.java</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/main/java/proj/selekcjanatur/"/>
+  </compounddef>
+</doxygen>

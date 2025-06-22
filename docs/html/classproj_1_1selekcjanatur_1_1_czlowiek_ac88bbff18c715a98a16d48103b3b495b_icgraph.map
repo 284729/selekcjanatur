@@ -1,0 +1,16 @@
+<map id="proj.selekcjanatur.Czlowiek.czyMezczyzna" name="proj.selekcjanatur.Czlowiek.czyMezczyzna">
+<area shape="rect" id="Node000001" title="Sprawdza płeć człowieka." alt="" coords="901,56,1108,99"/>
+<area shape="rect" id="Node000002" href="$classproj_1_1selekcjanatur_1_1_symulacja.html#af140417936a5d3f7ca9c02af9dbb2814" title="Aktualizuje stan symulacji (co 3 klatki)" alt="" coords="301,5,575,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="900,55,853,47,710,32,575,24,576,19,710,26,854,41,901,50"/>
+<area shape="rect" id="Node000004" href="$classproj_1_1selekcjanatur_1_1_symulacja.html#a2728068a09ceb38515acafb5547d86b3" title="Dodaje losowych ludzi na planszę" alt="" coords="626,56,850,99"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="886,80,850,80,850,75,886,75"/>
+<area shape="rect" id="Node000006" href="$classproj_1_1selekcjanatur_1_1_symulacja.html#a308b1488a3d7d83887fc3aea6c4ca4ee" title="Znajduje partnera do rozmnażania w zasięgu wzroku." alt="" coords="623,123,853,165"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="902,106,827,125,826,119,901,100"/>
+<area shape="rect" id="Node000003" href="$classproj_1_1selekcjanatur_1_1_symulacja.html#adec9a02326fa916fa822eddad509050f" title="Aktualizuje stan symulacji o jeden krok." alt="" coords="5,64,253,91"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="347,38,301,47,201,66,200,61,300,41,346,33"/>
+<area shape="rect" id="Node000005" href="$classproj_1_1selekcjanatur_1_1_symulacja.html#a41de65a2199621bc5386131e337629f5" title="Konstruktor inicjalizujący symulację" alt="" coords="342,56,534,99"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="611,80,534,80,534,75,611,75"/>
+<area shape="rect" id="Node000007" href="$classproj_1_1selekcjanatur_1_1_symulacja.html#a52f53070719050f572593ac7c6908ebd" title="Wykonuje ruch dla danego człowieka." alt="" coords="302,127,574,153"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="608,145,574,144,574,139,608,140"/>
+<area shape="poly" id="edge7_Node000007_Node000003" title=" " alt="" coords="353,126,198,94,199,89,354,120"/>
+</map>

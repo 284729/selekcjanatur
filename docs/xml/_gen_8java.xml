@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="pl">
+  <compounddef id="_gen_8java" kind="file" language="Java">
+    <compoundname>Gen.java</compoundname>
+    <innerclass refid="interfaceproj_1_1selekcjanatur_1_1_gen" prot="public">proj::selekcjanatur::Gen</innerclass>
+    <innernamespace refid="namespaceproj_1_1selekcjanatur">proj::selekcjanatur</innernamespace>
+    <briefdescription>
+<para>Interfejs definiujący podstawowe zachowania genów w symulacji. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keyword">package<sp/></highlight><highlight class="normal">proj.selekcjanatur;</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="interfaceproj_1_1selekcjanatur_1_1_gen" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">interface<sp/></highlight><highlight class="normal"><ref refid="interfaceproj_1_1selekcjanatur_1_1_gen" kindref="compound">Gen</ref><sp/>{</highlight></codeline>
+<codeline lineno="30" refid="interfaceproj_1_1selekcjanatur_1_1_gen_1ab2b013ae8d6ad91c73fdb8ec97f37c94" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="interfaceproj_1_1selekcjanatur_1_1_gen_1ab2b013ae8d6ad91c73fdb8ec97f37c94" kindref="member">wartosc</ref>();</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47" refid="interfaceproj_1_1selekcjanatur_1_1_gen_1a7dbd3fed6d9dee504bf8217028b50493" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="interfaceproj_1_1selekcjanatur_1_1_gen" kindref="compound">Gen</ref><sp/><ref refid="interfaceproj_1_1selekcjanatur_1_1_gen_1a7dbd3fed6d9dee504bf8217028b50493" kindref="member">odziedzicz</ref>();</highlight></codeline>
+<codeline lineno="48"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="src/main/java/proj/selekcjanatur/Gen.java"/>
+  </compounddef>
+</doxygen>

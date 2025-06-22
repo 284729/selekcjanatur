@@ -1,0 +1,5 @@
+<map id="proj.selekcjanatur.Kobieta.mozeRozmnazac" name="proj.selekcjanatur.Kobieta.mozeRozmnazac">
+<area shape="rect" id="Node000001" title="Określa możliwość rozmnażania." alt="" coords="5,5,213,48"/>
+<area shape="rect" id="Node000002" href="$classproj_1_1selekcjanatur_1_1_czlowiek.html#a7eb1b9e51b6766279f0f2b7d0dd9b119" title="Sprawdza czy człowiek jest dzieckiem." alt="" coords="261,5,467,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="213,24,245,24,245,29,213,29"/>
+</map>

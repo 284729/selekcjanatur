@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="pl">
+  <compounddef id="_gen_zapotrzebowanie_energetyczne_8java" kind="file" language="Java">
+    <compoundname>GenZapotrzebowanieEnergetyczne.java</compoundname>
+    <innerclass refid="classproj_1_1selekcjanatur_1_1_gen_zapotrzebowanie_energetyczne" prot="public">proj::selekcjanatur::GenZapotrzebowanieEnergetyczne</innerclass>
+    <innernamespace refid="namespaceproj_1_1selekcjanatur">proj::selekcjanatur</innernamespace>
+    <briefdescription>
+<para>Implementacja genu określającego metabolizm organizmu. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keyword">package<sp/></highlight><highlight class="normal">proj.selekcjanatur;</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20" refid="classproj_1_1selekcjanatur_1_1_gen_zapotrzebowanie_energetyczne" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classproj_1_1selekcjanatur_1_1_gen_zapotrzebowanie_energetyczne_1ae40faf3665048819b8179c5eaa72e344" kindref="member">GenZapotrzebowanieEnergetyczne</ref><sp/></highlight><highlight class="keyword">implements</highlight><highlight class="normal"><sp/><ref refid="interfaceproj_1_1selekcjanatur_1_1_gen" kindref="compound">Gen</ref><sp/>{</highlight></codeline>
+<codeline lineno="25" refid="classproj_1_1selekcjanatur_1_1_gen_zapotrzebowanie_energetyczne_1a6f92daa3d49d10ca3b4dae6f11e52a36" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">final</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classproj_1_1selekcjanatur_1_1_gen_zapotrzebowanie_energetyczne_1a6f92daa3d49d10ca3b4dae6f11e52a36" kindref="member">wartosc</ref>;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31" refid="classproj_1_1selekcjanatur_1_1_gen_zapotrzebowanie_energetyczne_1ae40faf3665048819b8179c5eaa72e344" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classproj_1_1selekcjanatur_1_1_gen_zapotrzebowanie_energetyczne_1ae40faf3665048819b8179c5eaa72e344" kindref="member">GenZapotrzebowanieEnergetyczne</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this.wartosc<sp/>=<sp/><ref refid="classproj_1_1selekcjanatur_1_1_app" kindref="compound">App</ref>.<ref refid="classproj_1_1selekcjanatur_1_1_app_1ad267df574f9f99d0adf41d333bf4823a" kindref="member">random</ref>.nextFloat(5,<sp/>20);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39" refid="classproj_1_1selekcjanatur_1_1_gen_zapotrzebowanie_energetyczne_1a064321ada51f7fb8bef1c810789afeca" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classproj_1_1selekcjanatur_1_1_gen_zapotrzebowanie_energetyczne_1a064321ada51f7fb8bef1c810789afeca" kindref="member">GenZapotrzebowanieEnergetyczne</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classproj_1_1selekcjanatur_1_1_gen_zapotrzebowanie_energetyczne_1a6f92daa3d49d10ca3b4dae6f11e52a36" kindref="member">wartosc</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this.wartosc<sp/>=<sp/><ref refid="classproj_1_1selekcjanatur_1_1_gen_zapotrzebowanie_energetyczne_1a6f92daa3d49d10ca3b4dae6f11e52a36" kindref="member">wartosc</ref>;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>@Override</highlight></codeline>
+<codeline lineno="48" refid="classproj_1_1selekcjanatur_1_1_gen_zapotrzebowanie_energetyczne_1afd421547690d3ea2c7a15eaea3cf1e08" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classproj_1_1selekcjanatur_1_1_gen_zapotrzebowanie_energetyczne_1afd421547690d3ea2c7a15eaea3cf1e08" kindref="member">wartosc</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classproj_1_1selekcjanatur_1_1_gen_zapotrzebowanie_energetyczne_1a6f92daa3d49d10ca3b4dae6f11e52a36" kindref="member">wartosc</ref>;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/>@Override</highlight></codeline>
+<codeline lineno="67" refid="classproj_1_1selekcjanatur_1_1_gen_zapotrzebowanie_energetyczne_1a283348bd55e17df0fe1345785d138c95" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="interfaceproj_1_1selekcjanatur_1_1_gen" kindref="compound">Gen</ref><sp/><ref refid="classproj_1_1selekcjanatur_1_1_gen_zapotrzebowanie_energetyczne_1a283348bd55e17df0fe1345785d138c95" kindref="member">odziedzicz</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>var<sp/>mutacja<sp/>=<sp/><ref refid="classproj_1_1selekcjanatur_1_1_app" kindref="compound">App</ref>.<ref refid="classproj_1_1selekcjanatur_1_1_app_1ad267df574f9f99d0adf41d333bf4823a" kindref="member">random</ref>.nextFloat(-5,<sp/>7);</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>var<sp/>nowa<sp/>=<sp/>Math.max(5,<sp/><ref refid="classproj_1_1selekcjanatur_1_1_gen_zapotrzebowanie_energetyczne_1a6f92daa3d49d10ca3b4dae6f11e52a36" kindref="member">wartosc</ref><sp/>+<sp/>mutacja);</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classproj_1_1selekcjanatur_1_1_gen_zapotrzebowanie_energetyczne_1ae40faf3665048819b8179c5eaa72e344" kindref="member">GenZapotrzebowanieEnergetyczne</ref>(nowa);</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="72"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="src/main/java/proj/selekcjanatur/GenZapotrzebowanieEnergetyczne.java"/>
+  </compounddef>
+</doxygen>

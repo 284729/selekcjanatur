@@ -1,0 +1,15 @@
+<map id="src/main/java/proj/selekcjanatur/App.java" name="src/main/java/proj/selekcjanatur/App.java">
+<area shape="rect" id="Node000001" title="Główna klasa aplikacji odpowiedzialna za uruchomienie symulacji." alt="" coords="484,5,642,48"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,96,196,123"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="485,44,189,95,188,90,484,39"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="220,96,384,123"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="497,51,358,94,357,88,495,46"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="407,96,543,123"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="542,51,502,87,498,83,539,47"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="567,96,738,123"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="588,47,629,83,625,87,584,51"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="762,96,892,123"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="632,46,772,88,770,94,630,51"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="917,96,1036,123"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="643,41,902,91,901,96,642,46"/>
+</map>

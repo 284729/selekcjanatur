@@ -1,0 +1,9 @@
+<map id="proj.selekcjanatur.Symulacja.dodajLosoweJedzenie" name="proj.selekcjanatur.Symulacja.dodajLosoweJedzenie">
+<area shape="rect" id="Node000001" title="Dodaje losowe jedzenie na planszę" alt="" coords="623,27,846,69"/>
+<area shape="rect" id="Node000002" href="$classproj_1_1selekcjanatur_1_1_symulacja.html#af140417936a5d3f7ca9c02af9dbb2814" title="Aktualizuje stan symulacji (co 3 klatki)" alt="" coords="301,5,575,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="607,38,575,35,576,30,608,33"/>
+<area shape="rect" id="Node000004" href="$classproj_1_1selekcjanatur_1_1_symulacja.html#a41de65a2199621bc5386131e337629f5" title="Konstruktor inicjalizujący symulację" alt="" coords="342,56,534,99"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="608,63,535,70,534,65,607,58"/>
+<area shape="rect" id="Node000003" href="$classproj_1_1selekcjanatur_1_1_symulacja.html#adec9a02326fa916fa822eddad509050f" title="Aktualizuje stan symulacji o jeden krok." alt="" coords="5,5,253,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="285,21,253,21,253,16,285,16"/>
+</map>

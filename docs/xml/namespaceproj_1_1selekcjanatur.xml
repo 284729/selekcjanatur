@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="pl">
+  <compounddef id="namespaceproj_1_1selekcjanatur" kind="namespace" language="Java">
+    <compoundname>proj::selekcjanatur</compoundname>
+    <innerclass refid="classproj_1_1selekcjanatur_1_1_app" prot="public">proj::selekcjanatur::App</innerclass>
+    <innerclass refid="classproj_1_1selekcjanatur_1_1_app_controller" prot="public">proj::selekcjanatur::AppController</innerclass>
+    <innerclass refid="classproj_1_1selekcjanatur_1_1_czlowiek" prot="public">proj::selekcjanatur::Czlowiek</innerclass>
+    <innerclass refid="interfaceproj_1_1selekcjanatur_1_1_gen" prot="public">proj::selekcjanatur::Gen</innerclass>
+    <innerclass refid="classproj_1_1selekcjanatur_1_1_gen_predkosc_chodzenia" prot="public">proj::selekcjanatur::GenPredkoscChodzenia</innerclass>
+    <innerclass refid="classproj_1_1selekcjanatur_1_1_gen_wzrok" prot="public">proj::selekcjanatur::GenWzrok</innerclass>
+    <innerclass refid="classproj_1_1selekcjanatur_1_1_gen_zapotrzebowanie_energetyczne" prot="public">proj::selekcjanatur::GenZapotrzebowanieEnergetyczne</innerclass>
+    <innerclass refid="interfaceproj_1_1selekcjanatur_1_1_interfejs_symulacji" prot="public">proj::selekcjanatur::InterfejsSymulacji</innerclass>
+    <innerclass refid="classproj_1_1selekcjanatur_1_1_jedzenie" prot="public">proj::selekcjanatur::Jedzenie</innerclass>
+    <innerclass refid="classproj_1_1selekcjanatur_1_1_kobieta" prot="public">proj::selekcjanatur::Kobieta</innerclass>
+    <innerclass refid="classproj_1_1selekcjanatur_1_1_mezczyzna" prot="public">proj::selekcjanatur::Mezczyzna</innerclass>
+    <innerclass refid="classproj_1_1selekcjanatur_1_1_start_controller" prot="public">proj::selekcjanatur::StartController</innerclass>
+    <innerclass refid="classproj_1_1selekcjanatur_1_1_symulacja" prot="public">proj::selekcjanatur::Symulacja</innerclass>
+    <innerclass refid="classproj_1_1selekcjanatur_1_1_symulacja_plik" prot="public">proj::selekcjanatur::SymulacjaPlik</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/main/java/proj/selekcjanatur/App.java" line="1" column="15"/>
+  </compounddef>
+</doxygen>

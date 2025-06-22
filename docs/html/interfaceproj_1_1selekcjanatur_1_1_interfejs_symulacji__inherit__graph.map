@@ -1,0 +1,7 @@
+<map id="proj.selekcjanatur.InterfejsSymulacji" name="proj.selekcjanatur.InterfejsSymulacji">
+<area shape="rect" id="Node000001" title="Główny interfejs systemu symulacji ewolucyjnej." alt="" coords="135,5,369,176"/>
+<area shape="rect" id="Node000002" href="$classproj_1_1selekcjanatur_1_1_symulacja.html" title="Implementacja symulacji ewolucyjnej z dziedziczeniem cech." alt="" coords="5,224,239,1131"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="232,191,225,225,220,224,227,190"/>
+<area shape="rect" id="Node000003" href="$classproj_1_1selekcjanatur_1_1_symulacja_plik.html" title="Klasa odtwarzająca symulację na podstawie zapisanego dziennika zdarzeń" alt="" coords="264,435,498,920"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="276,190,330,434,325,435,271,191"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="proj.selekcjanatur.Czlowiek.czyUmieraZeStarosci" name="proj.selekcjanatur.Czlowiek.czyUmieraZeStarosci">
+<area shape="rect" id="Node000001" title="Sprawdza czy człowiek umiera ze starości." alt="" coords="294,5,500,48"/>
+<area shape="rect" id="Node000002" href="$classproj_1_1selekcjanatur_1_1_czlowiek.html#aff9d2620e2407154927841859a6c98af" title="Aktualizuje stan człowieka w każdym cyklu symulacji." alt="" coords="5,13,246,40"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="278,29,246,29,246,24,278,24"/>
+</map>

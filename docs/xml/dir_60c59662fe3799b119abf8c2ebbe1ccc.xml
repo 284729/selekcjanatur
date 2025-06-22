@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="pl">
+  <compounddef id="dir_60c59662fe3799b119abf8c2ebbe1ccc" kind="dir">
+    <compoundname>src/main/java/proj</compoundname>
+    <innerdir refid="dir_7e66381ed7cbf1db0c622dca65685572">src/main/java/proj/selekcjanatur</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/main/java/proj/"/>
+  </compounddef>
+</doxygen>

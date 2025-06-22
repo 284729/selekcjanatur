@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="pl">
+  <compounddef id="_mezczyzna_8java" kind="file" language="Java">
+    <compoundname>Mezczyzna.java</compoundname>
+    <innerclass refid="classproj_1_1selekcjanatur_1_1_mezczyzna" prot="public">proj::selekcjanatur::Mezczyzna</innerclass>
+    <innernamespace refid="namespaceproj_1_1selekcjanatur">proj::selekcjanatur</innernamespace>
+    <briefdescription>
+<para>Klasa reprezentująca mężczyznę w symulacji ewolucyjnej. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keyword">package<sp/></highlight><highlight class="normal">proj.selekcjanatur;</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17" refid="classproj_1_1selekcjanatur_1_1_mezczyzna" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classproj_1_1selekcjanatur_1_1_mezczyzna_1a78b2079ac649e0e0600864a25b899f90" kindref="member">Mezczyzna</ref><sp/></highlight><highlight class="keyword">extends</highlight><highlight class="normal"><sp/><ref refid="classproj_1_1selekcjanatur_1_1_czlowiek_1a341bb3b95da388b296452c4155c1c773" kindref="member">Czlowiek</ref><sp/>{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29" refid="classproj_1_1selekcjanatur_1_1_mezczyzna_1a78b2079ac649e0e0600864a25b899f90" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classproj_1_1selekcjanatur_1_1_mezczyzna_1a78b2079ac649e0e0600864a25b899f90" kindref="member">Mezczyzna</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classproj_1_1selekcjanatur_1_1_czlowiek_1ac4d6409fa9719e64741b67bbfcdaf573" kindref="member">x</ref>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classproj_1_1selekcjanatur_1_1_czlowiek_1a59322ad4d7324f586e2acd03edd858ce" kindref="member">y</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>super(<ref refid="classproj_1_1selekcjanatur_1_1_czlowiek_1ac4d6409fa9719e64741b67bbfcdaf573" kindref="member">x</ref>,<sp/><ref refid="classproj_1_1selekcjanatur_1_1_czlowiek_1a59322ad4d7324f586e2acd03edd858ce" kindref="member">y</ref>);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>@Override</highlight></codeline>
+<codeline lineno="38" refid="classproj_1_1selekcjanatur_1_1_mezczyzna_1a99278a265802d4c1b952b84dc3bb46f5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">boolean</highlight><highlight class="normal"><sp/><ref refid="classproj_1_1selekcjanatur_1_1_mezczyzna_1a99278a265802d4c1b952b84dc3bb46f5" kindref="member">czyMezczyzna</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/>@Override</highlight></codeline>
+<codeline lineno="54" refid="classproj_1_1selekcjanatur_1_1_mezczyzna_1a6252640fd21d46c66daf76ce143dcf6a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">boolean</highlight><highlight class="normal"><sp/><ref refid="classproj_1_1selekcjanatur_1_1_mezczyzna_1a6252640fd21d46c66daf76ce143dcf6a" kindref="member">mozeRozmnazac</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="classproj_1_1selekcjanatur_1_1_czlowiek_1a7eb1b9e51b6766279f0f2b7d0dd9b119" kindref="member">jestDzieckiem</ref>())<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classproj_1_1selekcjanatur_1_1_czlowiek_1adc5b716c39bd2e6292460bcf9048eea3" kindref="member">poziomGlodu</ref><sp/>&gt;<sp/>60<sp/>&amp;&amp;<sp/><ref refid="classproj_1_1selekcjanatur_1_1_czlowiek_1ad0e705573c19c5416636ee0fd457cf7a" kindref="member">czasOdRozmnazania</ref><sp/>&gt;<sp/>10;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="58"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="src/main/java/proj/selekcjanatur/Mezczyzna.java"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,7 @@
+<map id="Graficzna hierarchia klas" name="Graficzna hierarchia klas">
+<area shape="rect" id="Node000000" href="$classproj_1_1selekcjanatur_1_1_czlowiek.html" title="Abstrakcyjna klasa reprezentująca człowieka w symulacji ewolucyjnej." alt="" coords="5,31,187,57"/>
+<area shape="rect" id="Node000001" href="$classproj_1_1selekcjanatur_1_1_kobieta.html" title="Specjalizacja klasy Czlowiek reprezentująca kobietę" alt="" coords="246,5,418,32"/>
+<area shape="poly" id="edge2_Node000000_Node000001" title=" " alt="" coords="202,30,245,25,246,31,202,35"/>
+<area shape="rect" id="Node000002" href="$classproj_1_1selekcjanatur_1_1_mezczyzna.html" title="Specjalizacja klasy Czlowiek reprezentująca mężczyznę" alt="" coords="235,56,429,83"/>
+<area shape="poly" id="edge3_Node000000_Node000002" title=" " alt="" coords="202,53,234,56,234,62,202,58"/>
+</map>

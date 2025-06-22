@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="pl">
+  <compounddef id="_gen_wzrok_8java" kind="file" language="Java">
+    <compoundname>GenWzrok.java</compoundname>
+    <innerclass refid="classproj_1_1selekcjanatur_1_1_gen_wzrok" prot="public">proj::selekcjanatur::GenWzrok</innerclass>
+    <innernamespace refid="namespaceproj_1_1selekcjanatur">proj::selekcjanatur</innernamespace>
+    <briefdescription>
+<para>Implementacja genu odpowiedzialnego za zasięg wzroku. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keyword">package<sp/></highlight><highlight class="normal">proj.selekcjanatur;</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21" refid="classproj_1_1selekcjanatur_1_1_gen_wzrok" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classproj_1_1selekcjanatur_1_1_gen_wzrok_1ae792ef922168b72adacb551ee3163a8b" kindref="member">GenWzrok</ref><sp/></highlight><highlight class="keyword">implements</highlight><highlight class="normal"><sp/><ref refid="interfaceproj_1_1selekcjanatur_1_1_gen" kindref="compound">Gen</ref><sp/>{</highlight></codeline>
+<codeline lineno="26" refid="classproj_1_1selekcjanatur_1_1_gen_wzrok_1aa3a11ccae78812a5d7aaaf4f82558090" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">final</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classproj_1_1selekcjanatur_1_1_gen_wzrok_1aa3a11ccae78812a5d7aaaf4f82558090" kindref="member">wartosc</ref>;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32" refid="classproj_1_1selekcjanatur_1_1_gen_wzrok_1ae792ef922168b72adacb551ee3163a8b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classproj_1_1selekcjanatur_1_1_gen_wzrok_1ae792ef922168b72adacb551ee3163a8b" kindref="member">GenWzrok</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this.wartosc<sp/>=<sp/><ref refid="classproj_1_1selekcjanatur_1_1_app" kindref="compound">App</ref>.<ref refid="classproj_1_1selekcjanatur_1_1_app_1ad267df574f9f99d0adf41d333bf4823a" kindref="member">random</ref>.nextInt(1,<sp/>11);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40" refid="classproj_1_1selekcjanatur_1_1_gen_wzrok_1aeff8627865c75ff56b4e95a81518354f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/><ref refid="classproj_1_1selekcjanatur_1_1_gen_wzrok_1aeff8627865c75ff56b4e95a81518354f" kindref="member">GenWzrok</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classproj_1_1selekcjanatur_1_1_gen_wzrok_1aa3a11ccae78812a5d7aaaf4f82558090" kindref="member">wartosc</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this.wartosc<sp/>=<sp/><ref refid="classproj_1_1selekcjanatur_1_1_gen_wzrok_1aa3a11ccae78812a5d7aaaf4f82558090" kindref="member">wartosc</ref>;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>@Override</highlight></codeline>
+<codeline lineno="49" refid="classproj_1_1selekcjanatur_1_1_gen_wzrok_1a2c2e4e3feabb475013319b27f6af596a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classproj_1_1selekcjanatur_1_1_gen_wzrok_1a2c2e4e3feabb475013319b27f6af596a" kindref="member">wartosc</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classproj_1_1selekcjanatur_1_1_gen_wzrok_1aa3a11ccae78812a5d7aaaf4f82558090" kindref="member">wartosc</ref>;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/>@Override</highlight></codeline>
+<codeline lineno="70" refid="classproj_1_1selekcjanatur_1_1_gen_wzrok_1a78a8ef7be1ae0cbe718d1428e44f639c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="interfaceproj_1_1selekcjanatur_1_1_gen" kindref="compound">Gen</ref><sp/><ref refid="classproj_1_1selekcjanatur_1_1_gen_wzrok_1a78a8ef7be1ae0cbe718d1428e44f639c" kindref="member">odziedzicz</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>var<sp/>mutacja<sp/>=<sp/><ref refid="classproj_1_1selekcjanatur_1_1_app" kindref="compound">App</ref>.<ref refid="classproj_1_1selekcjanatur_1_1_app_1ad267df574f9f99d0adf41d333bf4823a" kindref="member">random</ref>.nextFloat(-1,<sp/>1);</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>var<sp/>nowa<sp/>=<sp/>Math.max(1,<sp/>Math.min(10,<sp/><ref refid="classproj_1_1selekcjanatur_1_1_gen_wzrok_1aa3a11ccae78812a5d7aaaf4f82558090" kindref="member">wartosc</ref><sp/>+<sp/>mutacja));</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classproj_1_1selekcjanatur_1_1_gen_wzrok_1ae792ef922168b72adacb551ee3163a8b" kindref="member">GenWzrok</ref>(nowa);</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="75"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="src/main/java/proj/selekcjanatur/GenWzrok.java"/>
+  </compounddef>
+</doxygen>

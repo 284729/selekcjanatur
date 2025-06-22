@@ -1,0 +1,170 @@
+\doxysection{Dokumentacja klasy proj.\+selekcjanatur.\+Gen\+Predkosc\+Chodzenia}
+\hypertarget{classproj_1_1selekcjanatur_1_1_gen_predkosc_chodzenia}{}\label{classproj_1_1selekcjanatur_1_1_gen_predkosc_chodzenia}\index{proj.selekcjanatur.GenPredkoscChodzenia@{proj.selekcjanatur.GenPredkoscChodzenia}}
+
+
+Klasa implementująca gen prędkości chodzenia.  
+
+
+
+
+Diagram dziedziczenia dla proj.\+selekcjanatur.\+Gen\+Predkosc\+Chodzenia\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=227pt]{classproj_1_1selekcjanatur_1_1_gen_predkosc_chodzenia__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Diagram współpracy dla proj.\+selekcjanatur.\+Gen\+Predkosc\+Chodzenia\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=227pt]{classproj_1_1selekcjanatur_1_1_gen_predkosc_chodzenia__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classproj_1_1selekcjanatur_1_1_gen_predkosc_chodzenia_a8e6bad25e15b11e69b650089dd2849b5}{Gen\+Predkosc\+Chodzenia}} ()
+\begin{DoxyCompactList}\small\item\em Konstruktor losujący początkową wartość genu. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classproj_1_1selekcjanatur_1_1_gen_predkosc_chodzenia_ad62d70c9837c14191a3373aa526ce771}{Gen\+Predkosc\+Chodzenia}} (float \mbox{\hyperlink{classproj_1_1selekcjanatur_1_1_gen_predkosc_chodzenia_a0896853c9e0ca9ff837ead6054a486ee}{wartosc}})
+\begin{DoxyCompactList}\small\item\em Konstruktor z określeniem konkretnej wartości. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classproj_1_1selekcjanatur_1_1_gen_predkosc_chodzenia_a5a2e8c5c92648cd0fbd48ed3b3e79d48}{wartosc}} ()
+\begin{DoxyCompactList}\small\item\em Zwraca aktualną wartość genu. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{interfaceproj_1_1selekcjanatur_1_1_gen}{Gen}} \mbox{\hyperlink{classproj_1_1selekcjanatur_1_1_gen_predkosc_chodzenia_ac1c84739c1c813099f3d0b351c9a6487}{odziedzicz}} ()
+\begin{DoxyCompactList}\small\item\em Tworzy nowy gen poprzez dziedziczenie z mutacją \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Atrybuty prywatne}
+\begin{DoxyCompactItemize}
+\item 
+final float \mbox{\hyperlink{classproj_1_1selekcjanatur_1_1_gen_predkosc_chodzenia_a0896853c9e0ca9ff837ead6054a486ee}{wartosc}}
+\begin{DoxyCompactList}\small\item\em Przechowuje wartość genu prędkości. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Opis szczegółowy}
+Klasa implementująca gen prędkości chodzenia. 
+
+\doxylink{interfaceproj_1_1selekcjanatur_1_1_gen}{Gen} określa z jaką częstotliwością człowiek porusza się w symulacji. Wartość genu jest z zakresu 1.\+0-\/3.\+0 gdzie\+:
+\begin{DoxyItemize}
+\item 1.\+0 = najwolniejszy ruch (co 3 klatki)
+\item 2.\+0 = średnia prędkość (co 2 klatki)
+\item 3.\+0 = najszybszy ruch (co klatkę)
+\end{DoxyItemize}
+
+Dziedziczenie odbywa się z możliwością mutacji ±0.75, przy czym wartość jest zawszę ograniczana do zakresu 1-\/3. 
+
+\label{doc-constructors}
+\Hypertarget{classproj_1_1selekcjanatur_1_1_gen_predkosc_chodzenia_doc-constructors}
+\doxysubsection{Dokumentacja konstruktora i destruktora}
+\Hypertarget{classproj_1_1selekcjanatur_1_1_gen_predkosc_chodzenia_a8e6bad25e15b11e69b650089dd2849b5}\index{proj.selekcjanatur.GenPredkoscChodzenia@{proj.selekcjanatur.GenPredkoscChodzenia}!GenPredkoscChodzenia@{GenPredkoscChodzenia}}
+\index{GenPredkoscChodzenia@{GenPredkoscChodzenia}!proj.selekcjanatur.GenPredkoscChodzenia@{proj.selekcjanatur.GenPredkoscChodzenia}}
+\doxysubsubsection{\texorpdfstring{GenPredkoscChodzenia()}{GenPredkoscChodzenia()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{classproj_1_1selekcjanatur_1_1_gen_predkosc_chodzenia_a8e6bad25e15b11e69b650089dd2849b5} 
+proj.\+selekcjanatur.\+Gen\+Predkosc\+Chodzenia.\+Gen\+Predkosc\+Chodzenia (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Konstruktor losujący początkową wartość genu. 
+
+Generuje wartość całkowitą z przedziału 1-\/3 Oto graf wywoływań tej funkcji\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classproj_1_1selekcjanatur_1_1_gen_predkosc_chodzenia_a8e6bad25e15b11e69b650089dd2849b5_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classproj_1_1selekcjanatur_1_1_gen_predkosc_chodzenia_ad62d70c9837c14191a3373aa526ce771}\index{proj.selekcjanatur.GenPredkoscChodzenia@{proj.selekcjanatur.GenPredkoscChodzenia}!GenPredkoscChodzenia@{GenPredkoscChodzenia}}
+\index{GenPredkoscChodzenia@{GenPredkoscChodzenia}!proj.selekcjanatur.GenPredkoscChodzenia@{proj.selekcjanatur.GenPredkoscChodzenia}}
+\doxysubsubsection{\texorpdfstring{GenPredkoscChodzenia()}{GenPredkoscChodzenia()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{classproj_1_1selekcjanatur_1_1_gen_predkosc_chodzenia_ad62d70c9837c14191a3373aa526ce771} 
+proj.\+selekcjanatur.\+Gen\+Predkosc\+Chodzenia.\+Gen\+Predkosc\+Chodzenia (\begin{DoxyParamCaption}\item[{float}]{wartosc}{}\end{DoxyParamCaption})}
+
+
+
+Konstruktor z określeniem konkretnej wartości. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em wartosc} & Początkowa wartość genu (zostanie ograniczona do 1-\/3) \\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-func-members}
+\Hypertarget{classproj_1_1selekcjanatur_1_1_gen_predkosc_chodzenia_doc-func-members}
+\doxysubsection{Dokumentacja funkcji składowych}
+\Hypertarget{classproj_1_1selekcjanatur_1_1_gen_predkosc_chodzenia_ac1c84739c1c813099f3d0b351c9a6487}\index{proj.selekcjanatur.GenPredkoscChodzenia@{proj.selekcjanatur.GenPredkoscChodzenia}!odziedzicz@{odziedzicz}}
+\index{odziedzicz@{odziedzicz}!proj.selekcjanatur.GenPredkoscChodzenia@{proj.selekcjanatur.GenPredkoscChodzenia}}
+\doxysubsubsection{\texorpdfstring{odziedzicz()}{odziedzicz()}}
+{\footnotesize\ttfamily \label{classproj_1_1selekcjanatur_1_1_gen_predkosc_chodzenia_ac1c84739c1c813099f3d0b351c9a6487} 
+\mbox{\hyperlink{interfaceproj_1_1selekcjanatur_1_1_gen}{Gen}} proj.\+selekcjanatur.\+Gen\+Predkosc\+Chodzenia.\+odziedzicz (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Tworzy nowy gen poprzez dziedziczenie z mutacją 
+
+\begin{DoxyReturn}{Zwraca}
+Nowa instancja \doxylink{classproj_1_1selekcjanatur_1_1_gen_predkosc_chodzenia}{Gen\+Predkosc\+Chodzenia}
+\end{DoxyReturn}
+Algorytm działania\+:
+\begin{DoxyEnumerate}
+\item Losuje mutację z zakresu ±0.75
+\item Dodaje mutację do obecnej wartości
+\item Ogranicza wynik do zakresu 1.\+0-\/3.\+0
+\item Zwraca nowy gen z zmutowaną wartością
+\end{DoxyEnumerate}
+
+Przykład\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Gen\ gen\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{classproj_1_1selekcjanatur_1_1_gen_predkosc_chodzenia_a8e6bad25e15b11e69b650089dd2849b5}{GenPredkoscChodzenia}}(2.0f);}
+\DoxyCodeLine{Gen\ potomek\ =\ gen.odziedzicz();\ \textcolor{comment}{//\ np.\ 2.3}}
+
+\end{DoxyCode}
+ 
+
+Implementuje \mbox{\hyperlink{interfaceproj_1_1selekcjanatur_1_1_gen_a7dbd3fed6d9dee504bf8217028b50493}{proj.\+selekcjanatur.\+Gen}}.
+
+Oto graf wywołań dla tej funkcji\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classproj_1_1selekcjanatur_1_1_gen_predkosc_chodzenia_ac1c84739c1c813099f3d0b351c9a6487_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classproj_1_1selekcjanatur_1_1_gen_predkosc_chodzenia_a5a2e8c5c92648cd0fbd48ed3b3e79d48}\index{proj.selekcjanatur.GenPredkoscChodzenia@{proj.selekcjanatur.GenPredkoscChodzenia}!wartosc@{wartosc}}
+\index{wartosc@{wartosc}!proj.selekcjanatur.GenPredkoscChodzenia@{proj.selekcjanatur.GenPredkoscChodzenia}}
+\doxysubsubsection{\texorpdfstring{wartosc()}{wartosc()}}
+{\footnotesize\ttfamily \label{classproj_1_1selekcjanatur_1_1_gen_predkosc_chodzenia_a5a2e8c5c92648cd0fbd48ed3b3e79d48} 
+float proj.\+selekcjanatur.\+Gen\+Predkosc\+Chodzenia.\+wartosc (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Zwraca aktualną wartość genu. 
+
+\begin{DoxyReturn}{Zwraca}
+Wartość prędkości w zakresie 1.\+0-\/3.\+0 
+\end{DoxyReturn}
+
+
+Implementuje \mbox{\hyperlink{interfaceproj_1_1selekcjanatur_1_1_gen_ab2b013ae8d6ad91c73fdb8ec97f37c94}{proj.\+selekcjanatur.\+Gen}}.
+
+
+
+\label{doc-variable-members}
+\Hypertarget{classproj_1_1selekcjanatur_1_1_gen_predkosc_chodzenia_doc-variable-members}
+\doxysubsection{Dokumentacja atrybutów składowych}
+\Hypertarget{classproj_1_1selekcjanatur_1_1_gen_predkosc_chodzenia_a0896853c9e0ca9ff837ead6054a486ee}\index{proj.selekcjanatur.GenPredkoscChodzenia@{proj.selekcjanatur.GenPredkoscChodzenia}!wartosc@{wartosc}}
+\index{wartosc@{wartosc}!proj.selekcjanatur.GenPredkoscChodzenia@{proj.selekcjanatur.GenPredkoscChodzenia}}
+\doxysubsubsection{\texorpdfstring{wartosc}{wartosc}}
+{\footnotesize\ttfamily \label{classproj_1_1selekcjanatur_1_1_gen_predkosc_chodzenia_a0896853c9e0ca9ff837ead6054a486ee} 
+final float proj.\+selekcjanatur.\+Gen\+Predkosc\+Chodzenia.\+wartosc\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Przechowuje wartość genu prędkości. 
+
+Wartość z przedziału 1.\+0-\/3.\+0 
+
+Dokumentacja dla tej klasy została wygenerowana z pliku\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/proj/selekcjanatur/\mbox{\hyperlink{_gen_predkosc_chodzenia_8java}{Gen\+Predkosc\+Chodzenia.\+java}}\end{DoxyCompactItemize}

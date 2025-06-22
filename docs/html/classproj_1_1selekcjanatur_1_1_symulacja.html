@@ -1,0 +1,1196 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pl">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.14.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Selekcja Naturalna: Dokumentacja klasy proj.selekcjanatur.Symulacja</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Selekcja Naturalna<span id="projectnumber">&#160;1.0</span>
+   </div>
+   <div id="projectbrief">Aplikacja przedstawia ewolucję populacji w czasie w formie wizualnej animacji w JavaFX.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano za pomocą Doxygen 1.14.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Szukaj',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('classproj_1_1selekcjanatur_1_1_symulacja.html','','classproj_1_1selekcjanatur_1_1_symulacja-members'); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Wczytywanie...</div>
+<div class="SRStatus" id="Searching">Szukanie...</div>
+<div class="SRStatus" id="NoMatches">Brak dopasowań</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Dokumentacja klasy proj.selekcjanatur.Symulacja<span class="mlabels"><span class="mlabel abstract">abstract</span></span></div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Implementacja symulacji ewolucyjnej z dziedziczeniem cech.  
+ <a href="#details">Więcej...</a></p>
+<div class="dynheader">
+Diagram dziedziczenia dla proj.selekcjanatur.Symulacja</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classproj_1_1selekcjanatur_1_1_symulacja__inherit__graph.svg" width="246" height="1136"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+Diagram współpracy dla proj.selekcjanatur.Symulacja:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classproj_1_1selekcjanatur_1_1_symulacja__coll__graph.svg" width="246" height="1136"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Metody publiczne</h2></td></tr>
+<tr class="memitem:a41de65a2199621bc5386131e337629f5" id="r_a41de65a2199621bc5386131e337629f5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a41de65a2199621bc5386131e337629f5">Symulacja</a> (int <a class="el" href="#ada69032352c874148e69f7b067ea2594">kolumny</a>, int <a class="el" href="#a384e1267397de60c4964943880661f41">wiersze</a>)</td></tr>
+<tr class="memdesc:a41de65a2199621bc5386131e337629f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Konstruktor inicjalizujący symulację  <br /></td></tr>
+<tr class="memitem:a259b1b62d8f3116eefdc1b6e503ccd35" id="r_a259b1b62d8f3116eefdc1b6e503ccd35"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="classproj_1_1selekcjanatur_1_1_czlowiek.html">Czlowiek</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a259b1b62d8f3116eefdc1b6e503ccd35">getLudzie</a> ()</td></tr>
+<tr class="memdesc:a259b1b62d8f3116eefdc1b6e503ccd35"><td class="mdescLeft">&#160;</td><td class="mdescRight">Zwraca listę ludzi w symulacji.  <br /></td></tr>
+<tr class="memitem:ae3205b15a5c36425e97c6c1327c9f9eb" id="r_ae3205b15a5c36425e97c6c1327c9f9eb"><td class="memItemLeft" align="right" valign="top">Set&lt; <a class="el" href="classproj_1_1selekcjanatur_1_1_jedzenie.html">Jedzenie</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae3205b15a5c36425e97c6c1327c9f9eb">getJedzenie</a> ()</td></tr>
+<tr class="memdesc:ae3205b15a5c36425e97c6c1327c9f9eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Zwraca zbiór jedzenia w symulacji.  <br /></td></tr>
+<tr class="memitem:adec9a02326fa916fa822eddad509050f" id="r_adec9a02326fa916fa822eddad509050f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adec9a02326fa916fa822eddad509050f">aktualizuj</a> ()</td></tr>
+<tr class="memdesc:adec9a02326fa916fa822eddad509050f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Aktualizuje stan symulacji o jeden krok.  <br /></td></tr>
+<tr class="memitem:a3d0ca8ee0af5090358081f7577c0245f" id="r_a3d0ca8ee0af5090358081f7577c0245f"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3d0ca8ee0af5090358081f7577c0245f">czySymulacjaZakonczena</a> ()</td></tr>
+<tr class="memdesc:a3d0ca8ee0af5090358081f7577c0245f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sprawdza czy symulacja powinna się zakończyć  <br /></td></tr>
+<tr class="inherit_header pub_methods_interfaceproj_1_1selekcjanatur_1_1_interfejs_symulacji"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_interfaceproj_1_1selekcjanatur_1_1_interfejs_symulacji')"><span class="dynarrow"><span class="arrowhead closed"></span></span>Metody publiczne dziedziczone z <a class="el" href="interfaceproj_1_1selekcjanatur_1_1_interfejs_symulacji.html">proj.selekcjanatur.InterfejsSymulacji</a></td></tr>
+<tr class="memitem:a4537fd530e9fb26e34a029f9de374f9e inherit pub_methods_interfaceproj_1_1selekcjanatur_1_1_interfejs_symulacji" id="r_a4537fd530e9fb26e34a029f9de374f9e"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfaceproj_1_1selekcjanatur_1_1_interfejs_symulacji.html#a4537fd530e9fb26e34a029f9de374f9e">czySymulacjaZakonczona</a> ()</td></tr>
+<tr class="memdesc:a4537fd530e9fb26e34a029f9de374f9e inherit pub_methods_interfaceproj_1_1selekcjanatur_1_1_interfejs_symulacji"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sprawdza warunki zakończenia symulacji.  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-static-methods" class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Statyczne metody publiczne</h2></td></tr>
+<tr class="memitem:a6a0641aea8437d8f8a9ef0d975d8db75" id="r_a6a0641aea8437d8f8a9ef0d975d8db75"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6a0641aea8437d8f8a9ef0d975d8db75">ustawParametry</a> (int w, int h, int l, int j, int jt)</td></tr>
+<tr class="memdesc:a6a0641aea8437d8f8a9ef0d975d8db75"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ustawia globalne parametry symulacji.  <br /></td></tr>
+<tr class="memitem:a30d65d41391f815284bbdce9ab12beb9" id="r_a30d65d41391f815284bbdce9ab12beb9"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a30d65d41391f815284bbdce9ab12beb9">zapiszDziennikDoPliku</a> (String nazwaPliku)</td></tr>
+<tr class="memdesc:a30d65d41391f815284bbdce9ab12beb9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Zapisuje dziennik zdarzeń do pliku.  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-static-attribs" class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
+Statyczne atrybuty publiczne</h2></td></tr>
+<tr class="memitem:a628e531aaeeae0e81364b86adc82fff6" id="r_a628e531aaeeae0e81364b86adc82fff6"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a628e531aaeeae0e81364b86adc82fff6">szerokosc</a></td></tr>
+<tr class="memdesc:a628e531aaeeae0e81364b86adc82fff6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Statyczne parametry symulacji - szerokość planszy.  <br /></td></tr>
+<tr class="memitem:a1da6d14516adc51b8b1fd58eecaa2913" id="r_a1da6d14516adc51b8b1fd58eecaa2913"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1da6d14516adc51b8b1fd58eecaa2913">wysokosc</a></td></tr>
+<tr class="memdesc:a1da6d14516adc51b8b1fd58eecaa2913"><td class="mdescLeft">&#160;</td><td class="mdescRight">Statyczne parametry symulacji - wysokość planszy.  <br /></td></tr>
+<tr class="memitem:aee9f27bbc79b36ccddff1dd47bc00b2d" id="r_aee9f27bbc79b36ccddff1dd47bc00b2d"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aee9f27bbc79b36ccddff1dd47bc00b2d">liczbaLudzi</a></td></tr>
+<tr class="memdesc:aee9f27bbc79b36ccddff1dd47bc00b2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Statyczne parametry symulacji - początkowa liczba ludzi.  <br /></td></tr>
+<tr class="memitem:a79784ee2988b148e298f720675d68227" id="r_a79784ee2988b148e298f720675d68227"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a79784ee2988b148e298f720675d68227">poczatkoweJedzenie</a></td></tr>
+<tr class="memdesc:a79784ee2988b148e298f720675d68227"><td class="mdescLeft">&#160;</td><td class="mdescRight">Statyczne parametry symulacji - początkowa ilość jedzenia.  <br /></td></tr>
+<tr class="memitem:ad5f5a7cbaef83a2d3da013f66d935074" id="r_ad5f5a7cbaef83a2d3da013f66d935074"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad5f5a7cbaef83a2d3da013f66d935074">jedzenieNaTick</a></td></tr>
+<tr class="memdesc:ad5f5a7cbaef83a2d3da013f66d935074"><td class="mdescLeft">&#160;</td><td class="mdescRight">Statyczne parametry symulacji - nowe jedzenie na cykl.  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-methods" class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Metody prywatne</h2></td></tr>
+<tr class="memitem:adca30037183a0fade601724dd9b8f1bd" id="r_adca30037183a0fade601724dd9b8f1bd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adca30037183a0fade601724dd9b8f1bd">dodajDoDziennika</a> (String zdarzenie)</td></tr>
+<tr class="memdesc:adca30037183a0fade601724dd9b8f1bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dodaje wpis do dziennika zdarzeń  <br /></td></tr>
+<tr class="memitem:a2728068a09ceb38515acafb5547d86b3" id="r_a2728068a09ceb38515acafb5547d86b3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2728068a09ceb38515acafb5547d86b3">dodajLosowychLudzi</a> (int ile)</td></tr>
+<tr class="memdesc:a2728068a09ceb38515acafb5547d86b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dodaje losowych ludzi na planszę  <br /></td></tr>
+<tr class="memitem:ab361a78b8ca5a29d85b023553d4490f5" id="r_ab361a78b8ca5a29d85b023553d4490f5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab361a78b8ca5a29d85b023553d4490f5">dodajLosoweJedzenie</a> (int ile)</td></tr>
+<tr class="memdesc:ab361a78b8ca5a29d85b023553d4490f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dodaje losowe jedzenie na planszę  <br /></td></tr>
+<tr class="memitem:af140417936a5d3f7ca9c02af9dbb2814" id="r_af140417936a5d3f7ca9c02af9dbb2814"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af140417936a5d3f7ca9c02af9dbb2814">aktualizujStan</a> ()</td></tr>
+<tr class="memdesc:af140417936a5d3f7ca9c02af9dbb2814"><td class="mdescLeft">&#160;</td><td class="mdescRight">Aktualizuje stan symulacji (co 3 klatki)  <br /></td></tr>
+<tr class="memitem:a52f53070719050f572593ac7c6908ebd" id="r_a52f53070719050f572593ac7c6908ebd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a52f53070719050f572593ac7c6908ebd">wykonajRuch</a> (<a class="el" href="classproj_1_1selekcjanatur_1_1_czlowiek.html">Czlowiek</a> cz)</td></tr>
+<tr class="memdesc:a52f53070719050f572593ac7c6908ebd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wykonuje ruch dla danego człowieka.  <br /></td></tr>
+<tr class="memitem:a308b1488a3d7d83887fc3aea6c4ca4ee" id="r_a308b1488a3d7d83887fc3aea6c4ca4ee"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classproj_1_1selekcjanatur_1_1_czlowiek.html">Czlowiek</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a308b1488a3d7d83887fc3aea6c4ca4ee">znajdzPartnera</a> (<a class="el" href="classproj_1_1selekcjanatur_1_1_czlowiek.html">Czlowiek</a> cz)</td></tr>
+<tr class="memdesc:a308b1488a3d7d83887fc3aea6c4ca4ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Znajduje partnera do rozmnażania w zasięgu wzroku.  <br /></td></tr>
+<tr class="memitem:a09362c7d34ee3e4c0ffd46d4b3c8bd17" id="r_a09362c7d34ee3e4c0ffd46d4b3c8bd17"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classproj_1_1selekcjanatur_1_1_jedzenie.html">Jedzenie</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a09362c7d34ee3e4c0ffd46d4b3c8bd17">znajdzNajblizszeJedzenie</a> (<a class="el" href="classproj_1_1selekcjanatur_1_1_czlowiek.html">Czlowiek</a> cz)</td></tr>
+<tr class="memdesc:a09362c7d34ee3e4c0ffd46d4b3c8bd17"><td class="mdescLeft">&#160;</td><td class="mdescRight">Znajduje najbliższe jedzenie w zasięgu wzroku.  <br /></td></tr>
+<tr class="memitem:ac24b817f5f0ae590ecd7e988b3f78c56" id="r_ac24b817f5f0ae590ecd7e988b3f78c56"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classproj_1_1selekcjanatur_1_1_jedzenie.html">Jedzenie</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac24b817f5f0ae590ecd7e988b3f78c56">znajdzJedzenieNaPolu</a> (int x, int y)</td></tr>
+<tr class="memdesc:ac24b817f5f0ae590ecd7e988b3f78c56"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sprawdza czy na danym polu jest jedzenie.  <br /></td></tr>
+<tr class="memitem:a1d1661b0578afad91d9b4807d8122e39" id="r_a1d1661b0578afad91d9b4807d8122e39"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1d1661b0578afad91d9b4807d8122e39">przemiescSieNaPole</a> (<a class="el" href="classproj_1_1selekcjanatur_1_1_czlowiek.html">Czlowiek</a> cz, int x, int y)</td></tr>
+<tr class="memdesc:a1d1661b0578afad91d9b4807d8122e39"><td class="mdescLeft">&#160;</td><td class="mdescRight">Przenosi człowieka na nowe pole.  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-attribs" class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Atrybuty prywatne</h2></td></tr>
+<tr class="memitem:ada69032352c874148e69f7b067ea2594" id="r_ada69032352c874148e69f7b067ea2594"><td class="memItemLeft" align="right" valign="top">final int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ada69032352c874148e69f7b067ea2594">kolumny</a></td></tr>
+<tr class="memdesc:ada69032352c874148e69f7b067ea2594"><td class="mdescLeft">&#160;</td><td class="mdescRight">Liczba kolumn planszy (szerokość)  <br /></td></tr>
+<tr class="memitem:a384e1267397de60c4964943880661f41" id="r_a384e1267397de60c4964943880661f41"><td class="memItemLeft" align="right" valign="top">final int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a384e1267397de60c4964943880661f41">wiersze</a></td></tr>
+<tr class="memdesc:a384e1267397de60c4964943880661f41"><td class="mdescLeft">&#160;</td><td class="mdescRight">Liczba wierszy planszy (wysokość)  <br /></td></tr>
+<tr class="memitem:adddb7f79a97e55dceac133dbb4d7f3f0" id="r_adddb7f79a97e55dceac133dbb4d7f3f0"><td class="memItemLeft" align="right" valign="top">final List&lt; <a class="el" href="classproj_1_1selekcjanatur_1_1_czlowiek.html">Czlowiek</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adddb7f79a97e55dceac133dbb4d7f3f0">ludzie</a> = new ArrayList&lt;&gt;()</td></tr>
+<tr class="memdesc:adddb7f79a97e55dceac133dbb4d7f3f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lista wszystkich ludzi w symulacji.  <br /></td></tr>
+<tr class="memitem:a35077d39c97da84b288123a4ea611aad" id="r_a35077d39c97da84b288123a4ea611aad"><td class="memItemLeft" align="right" valign="top">final Set&lt; <a class="el" href="classproj_1_1selekcjanatur_1_1_jedzenie.html">Jedzenie</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a35077d39c97da84b288123a4ea611aad">jedzenie</a> = new HashSet&lt;&gt;()</td></tr>
+<tr class="memdesc:a35077d39c97da84b288123a4ea611aad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Zbiór dostępnego jedzenia na planszy.  <br /></td></tr>
+<tr class="memitem:afcd70b19057fc8083e473fdb86812eb2" id="r_afcd70b19057fc8083e473fdb86812eb2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afcd70b19057fc8083e473fdb86812eb2">licznikKlatek</a> = 0</td></tr>
+<tr class="memdesc:afcd70b19057fc8083e473fdb86812eb2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Licznik klatek symulacji.  <br /></td></tr>
+<tr class="memitem:af6654a8625e5ea42ca663df8f1fdc253" id="r_af6654a8625e5ea42ca663df8f1fdc253"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af6654a8625e5ea42ca663df8f1fdc253">licznikDodawaniaJedzenia</a> = 0</td></tr>
+<tr class="memdesc:af6654a8625e5ea42ca663df8f1fdc253"><td class="mdescLeft">&#160;</td><td class="mdescRight">Licznik kontrolujący dodawanie nowego jedzenia.  <br /></td></tr>
+<tr class="memitem:af59f557f32a2dd9f1775793e51f60453" id="r_af59f557f32a2dd9f1775793e51f60453"><td class="memItemLeft" align="right" valign="top">final boolean[][]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af59f557f32a2dd9f1775793e51f60453">zajete</a></td></tr>
+<tr class="memdesc:af59f557f32a2dd9f1775793e51f60453"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mapa zajętości pól na planszy.  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-static-attribs" class="groupheader"><a id="pri-static-attribs" name="pri-static-attribs"></a>
+Statyczne atrybuty prywatne</h2></td></tr>
+<tr class="memitem:ab09ec8433094637d73588830fbff7c9d" id="r_ab09ec8433094637d73588830fbff7c9d"><td class="memItemLeft" align="right" valign="top">static final List&lt; String &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab09ec8433094637d73588830fbff7c9d">dziennikZdarzen</a> = new ArrayList&lt;&gt;()</td></tr>
+<tr class="memdesc:ab09ec8433094637d73588830fbff7c9d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dziennik zdarzeń zapisywany do pliku.  <br /></td></tr>
+<tr class="memitem:ac3fbc3c271e2060e456fca26c1236f22" id="r_ac3fbc3c271e2060e456fca26c1236f22"><td class="memItemLeft" align="right" valign="top">static final List&lt; int[]&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac3fbc3c271e2060e456fca26c1236f22">KIERUNKI</a></td></tr>
+<tr class="memdesc:ac3fbc3c271e2060e456fca26c1236f22"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lista możliwych kierunków ruchu.  <br /></td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Opis szczegółowy</h2>
+<div class="textblock"><p>Implementacja symulacji ewolucyjnej z dziedziczeniem cech. </p>
+<p>Klasa zarządza całym przebiegiem symulacji, w tym:</p><ul>
+<li>Inicjalizacją populacji i środowiska</li>
+<li>Mechaniką rozmnażania i dziedziczenia cech</li>
+<li>Ruchem i interakcjami między organizmami</li>
+<li>Systemem dziennika zdarzeń</li>
+<li>Warunkami zakończenia symulacji </li>
+</ul>
+</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Dokumentacja konstruktora i destruktora</h2>
+<a id="a41de65a2199621bc5386131e337629f5" name="a41de65a2199621bc5386131e337629f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a41de65a2199621bc5386131e337629f5">&#9670;&#160;</a></span>Symulacja()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">proj.selekcjanatur.Symulacja.Symulacja </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>kolumny</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>wiersze</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Konstruktor inicjalizujący symulację </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">kolumny</td><td>Szerokość planszy </td></tr>
+    <tr><td class="paramname">wiersze</td><td>Wysokość planszy </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classproj_1_1selekcjanatur_1_1_symulacja_a41de65a2199621bc5386131e337629f5_cgraph.svg" width="746" height="140"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Dokumentacja funkcji składowych</h2>
+<a id="adec9a02326fa916fa822eddad509050f" name="adec9a02326fa916fa822eddad509050f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adec9a02326fa916fa822eddad509050f">&#9670;&#160;</a></span>aktualizuj()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void proj.selekcjanatur.Symulacja.aktualizuj </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Aktualizuje stan symulacji o jeden krok. </p>
+<p>Wykonuje:</p><ul>
+<li>Aktualizację stanu co 3 klatki</li>
+<li>Ruch ludzi zgodnie z ich predyspozycjami</li>
+<li>Dodawanie nowego jedzenia</li>
+<li>Rozmnażanie i usuwanie martwych </li>
+</ul>
+
+<p>Implementuje <a class="el" href="interfaceproj_1_1selekcjanatur_1_1_interfejs_symulacji.html#abd9c98677e97fa36f0126a04bb0baeba">proj.selekcjanatur.InterfejsSymulacji</a>.</p>
+<div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classproj_1_1selekcjanatur_1_1_symulacja_adec9a02326fa916fa822eddad509050f_cgraph.svg" width="1160" height="560"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="af140417936a5d3f7ca9c02af9dbb2814" name="af140417936a5d3f7ca9c02af9dbb2814"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af140417936a5d3f7ca9c02af9dbb2814">&#9670;&#160;</a></span>aktualizujStan()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void proj.selekcjanatur.Symulacja.aktualizujStan </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Aktualizuje stan symulacji (co 3 klatki) </p>
+<p>Wykonuje:</p><ul>
+<li>Dodawanie nowego jedzenia</li>
+<li>Aktualizację stanu ludzi</li>
+<li>Rozmnażanie i usuwanie martwych </li>
+</ul>
+<div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classproj_1_1selekcjanatur_1_1_symulacja_af140417936a5d3f7ca9c02af9dbb2814_cgraph.svg" width="858" height="318"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classproj_1_1selekcjanatur_1_1_symulacja_af140417936a5d3f7ca9c02af9dbb2814_icgraph.svg" width="580" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a3d0ca8ee0af5090358081f7577c0245f" name="a3d0ca8ee0af5090358081f7577c0245f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d0ca8ee0af5090358081f7577c0245f">&#9670;&#160;</a></span>czySymulacjaZakonczena()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">boolean proj.selekcjanatur.Symulacja.czySymulacjaZakonczena </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sprawdza czy symulacja powinna się zakończyć </p>
+<dl class="section return"><dt>Zwraca</dt><dd>true jeśli nie ma żywych ludzi </dd></dl>
+
+<p>Implementuje <a class="el" href="interfaceproj_1_1selekcjanatur_1_1_interfejs_symulacji.html#a7e2ab50886fc205455480e6015060caa">proj.selekcjanatur.InterfejsSymulacji</a>.</p>
+
+</div>
+</div>
+<a id="adca30037183a0fade601724dd9b8f1bd" name="adca30037183a0fade601724dd9b8f1bd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adca30037183a0fade601724dd9b8f1bd">&#9670;&#160;</a></span>dodajDoDziennika()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void proj.selekcjanatur.Symulacja.dodajDoDziennika </td>
+          <td>(</td>
+          <td class="paramtype">String</td>          <td class="paramname"><span class="paramname"><em>zdarzenie</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Dodaje wpis do dziennika zdarzeń </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">zdarzenie</td><td>Tekstowy opis zdarzenia </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classproj_1_1selekcjanatur_1_1_symulacja_adca30037183a0fade601724dd9b8f1bd_icgraph.svg" width="1152" height="307"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="ab361a78b8ca5a29d85b023553d4490f5" name="ab361a78b8ca5a29d85b023553d4490f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab361a78b8ca5a29d85b023553d4490f5">&#9670;&#160;</a></span>dodajLosoweJedzenie()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void proj.selekcjanatur.Symulacja.dodajLosoweJedzenie </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>ile</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Dodaje losowe jedzenie na planszę </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ile</td><td>Liczba jedzenia do dodania </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classproj_1_1selekcjanatur_1_1_symulacja_ab361a78b8ca5a29d85b023553d4490f5_cgraph.svg" width="506" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classproj_1_1selekcjanatur_1_1_symulacja_ab361a78b8ca5a29d85b023553d4490f5_icgraph.svg" width="852" height="104"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a2728068a09ceb38515acafb5547d86b3" name="a2728068a09ceb38515acafb5547d86b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2728068a09ceb38515acafb5547d86b3">&#9670;&#160;</a></span>dodajLosowychLudzi()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void proj.selekcjanatur.Symulacja.dodajLosowychLudzi </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>ile</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Dodaje losowych ludzi na planszę </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ile</td><td>Liczba ludzi do dodania </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classproj_1_1selekcjanatur_1_1_symulacja_a2728068a09ceb38515acafb5547d86b3_cgraph.svg" width="506" height="120"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classproj_1_1selekcjanatur_1_1_symulacja_a2728068a09ceb38515acafb5547d86b3_icgraph.svg" width="475" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="ae3205b15a5c36425e97c6c1327c9f9eb" name="ae3205b15a5c36425e97c6c1327c9f9eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae3205b15a5c36425e97c6c1327c9f9eb">&#9670;&#160;</a></span>getJedzenie()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Set&lt; <a class="el" href="classproj_1_1selekcjanatur_1_1_jedzenie.html">Jedzenie</a> &gt; proj.selekcjanatur.Symulacja.getJedzenie </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Zwraca zbiór jedzenia w symulacji. </p>
+<dl class="section return"><dt>Zwraca</dt><dd>Zbiór obiektów <a class="el" href="classproj_1_1selekcjanatur_1_1_jedzenie.html" title="Klasa modelująca pożywienie w symulacji ewolucyjnej.">Jedzenie</a> </dd></dl>
+
+<p>Implementuje <a class="el" href="interfaceproj_1_1selekcjanatur_1_1_interfejs_symulacji.html#aa64fcf541377293e9ace7cbabb3f5c62">proj.selekcjanatur.InterfejsSymulacji</a>.</p>
+
+</div>
+</div>
+<a id="a259b1b62d8f3116eefdc1b6e503ccd35" name="a259b1b62d8f3116eefdc1b6e503ccd35"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a259b1b62d8f3116eefdc1b6e503ccd35">&#9670;&#160;</a></span>getLudzie()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt; <a class="el" href="classproj_1_1selekcjanatur_1_1_czlowiek.html">Czlowiek</a> &gt; proj.selekcjanatur.Symulacja.getLudzie </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Zwraca listę ludzi w symulacji. </p>
+<dl class="section return"><dt>Zwraca</dt><dd>Lista obiektów <a class="el" href="classproj_1_1selekcjanatur_1_1_czlowiek.html" title="Abstrakcyjna klasa reprezentująca człowieka w symulacji ewolucyjnej.">Czlowiek</a> </dd></dl>
+
+<p>Implementuje <a class="el" href="interfaceproj_1_1selekcjanatur_1_1_interfejs_symulacji.html#a42c8bbee1a48204a12ea333621bca0d5">proj.selekcjanatur.InterfejsSymulacji</a>.</p>
+
+</div>
+</div>
+<a id="a1d1661b0578afad91d9b4807d8122e39" name="a1d1661b0578afad91d9b4807d8122e39"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d1661b0578afad91d9b4807d8122e39">&#9670;&#160;</a></span>przemiescSieNaPole()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void proj.selekcjanatur.Symulacja.przemiescSieNaPole </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classproj_1_1selekcjanatur_1_1_czlowiek.html">Czlowiek</a></td>          <td class="paramname"><span class="paramname"><em>cz</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>x</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>y</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Przenosi człowieka na nowe pole. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cz</td><td>Człowiek do przeniesienia </td></tr>
+    <tr><td class="paramname">x</td><td>Nowa pozycja x </td></tr>
+    <tr><td class="paramname">y</td><td>Nowa pozycja y </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classproj_1_1selekcjanatur_1_1_symulacja_a1d1661b0578afad91d9b4807d8122e39_cgraph.svg" width="542" height="171"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classproj_1_1selekcjanatur_1_1_symulacja_a1d1661b0578afad91d9b4807d8122e39_icgraph.svg" width="878" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a6a0641aea8437d8f8a9ef0d975d8db75" name="a6a0641aea8437d8f8a9ef0d975d8db75"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a0641aea8437d8f8a9ef0d975d8db75">&#9670;&#160;</a></span>ustawParametry()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void proj.selekcjanatur.Symulacja.ustawParametry </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>w</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>h</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>l</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>j</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>jt</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Ustawia globalne parametry symulacji. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">w</td><td>Szerokość planszy </td></tr>
+    <tr><td class="paramname">h</td><td>Wysokość planszy </td></tr>
+    <tr><td class="paramname">l</td><td>Początkowa liczba ludzi </td></tr>
+    <tr><td class="paramname">j</td><td>Początkowa ilość jedzenia </td></tr>
+    <tr><td class="paramname">jt</td><td>Ilość nowego jedzenia dodawanego co cykl </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classproj_1_1selekcjanatur_1_1_symulacja_a6a0641aea8437d8f8a9ef0d975d8db75_icgraph.svg" width="455" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a52f53070719050f572593ac7c6908ebd" name="a52f53070719050f572593ac7c6908ebd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a52f53070719050f572593ac7c6908ebd">&#9670;&#160;</a></span>wykonajRuch()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void proj.selekcjanatur.Symulacja.wykonajRuch </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classproj_1_1selekcjanatur_1_1_czlowiek.html">Czlowiek</a></td>          <td class="paramname"><span class="paramname"><em>cz</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Wykonuje ruch dla danego człowieka. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cz</td><td>Człowiek, który ma się poruszyć </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classproj_1_1selekcjanatur_1_1_symulacja_a52f53070719050f572593ac7c6908ebd_cgraph.svg" width="862" height="304"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classproj_1_1selekcjanatur_1_1_symulacja_a52f53070719050f572593ac7c6908ebd_icgraph.svg" width="578" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a30d65d41391f815284bbdce9ab12beb9" name="a30d65d41391f815284bbdce9ab12beb9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a30d65d41391f815284bbdce9ab12beb9">&#9670;&#160;</a></span>zapiszDziennikDoPliku()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void proj.selekcjanatur.Symulacja.zapiszDziennikDoPliku </td>
+          <td>(</td>
+          <td class="paramtype">String</td>          <td class="paramname"><span class="paramname"><em>nazwaPliku</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Zapisuje dziennik zdarzeń do pliku. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">nazwaPliku</td><td>Nazwa pliku do zapisu </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classproj_1_1selekcjanatur_1_1_symulacja_a30d65d41391f815284bbdce9ab12beb9_icgraph.svg" width="535" height="104"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="ac24b817f5f0ae590ecd7e988b3f78c56" name="ac24b817f5f0ae590ecd7e988b3f78c56"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac24b817f5f0ae590ecd7e988b3f78c56">&#9670;&#160;</a></span>znajdzJedzenieNaPolu()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classproj_1_1selekcjanatur_1_1_jedzenie.html">Jedzenie</a> proj.selekcjanatur.Symulacja.znajdzJedzenieNaPolu </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>x</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>y</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sprawdza czy na danym polu jest jedzenie. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>Pozycja x </td></tr>
+    <tr><td class="paramname">y</td><td>Pozycja y </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>Obiekt jedzenia lub null </dd></dl>
+<div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classproj_1_1selekcjanatur_1_1_symulacja_ac24b817f5f0ae590ecd7e988b3f78c56_icgraph.svg" width="1156" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a09362c7d34ee3e4c0ffd46d4b3c8bd17" name="a09362c7d34ee3e4c0ffd46d4b3c8bd17"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a09362c7d34ee3e4c0ffd46d4b3c8bd17">&#9670;&#160;</a></span>znajdzNajblizszeJedzenie()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classproj_1_1selekcjanatur_1_1_jedzenie.html">Jedzenie</a> proj.selekcjanatur.Symulacja.znajdzNajblizszeJedzenie </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classproj_1_1selekcjanatur_1_1_czlowiek.html">Czlowiek</a></td>          <td class="paramname"><span class="paramname"><em>cz</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Znajduje najbliższe jedzenie w zasięgu wzroku. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cz</td><td>Człowiek szukający jedzenia </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>Znalezione jedzenie lub null </dd></dl>
+<div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classproj_1_1selekcjanatur_1_1_symulacja_a09362c7d34ee3e4c0ffd46d4b3c8bd17_cgraph.svg" width="512" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classproj_1_1selekcjanatur_1_1_symulacja_a09362c7d34ee3e4c0ffd46d4b3c8bd17_icgraph.svg" width="856" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a308b1488a3d7d83887fc3aea6c4ca4ee" name="a308b1488a3d7d83887fc3aea6c4ca4ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a308b1488a3d7d83887fc3aea6c4ca4ee">&#9670;&#160;</a></span>znajdzPartnera()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classproj_1_1selekcjanatur_1_1_czlowiek.html">Czlowiek</a> proj.selekcjanatur.Symulacja.znajdzPartnera </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classproj_1_1selekcjanatur_1_1_czlowiek.html">Czlowiek</a></td>          <td class="paramname"><span class="paramname"><em>cz</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Znajduje partnera do rozmnażania w zasięgu wzroku. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cz</td><td>Człowiek szukający partnera </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>Znaleziony partner lub null </dd></dl>
+<div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classproj_1_1selekcjanatur_1_1_symulacja_a308b1488a3d7d83887fc3aea6c4ca4ee_cgraph.svg" width="512" height="120"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classproj_1_1selekcjanatur_1_1_symulacja_a308b1488a3d7d83887fc3aea6c4ca4ee_icgraph.svg" width="856" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Dokumentacja atrybutów składowych</h2>
+<a id="ab09ec8433094637d73588830fbff7c9d" name="ab09ec8433094637d73588830fbff7c9d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab09ec8433094637d73588830fbff7c9d">&#9670;&#160;</a></span>dziennikZdarzen</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final List&lt;String&gt; proj.selekcjanatur.Symulacja.dziennikZdarzen = new ArrayList&lt;&gt;()</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Dziennik zdarzeń zapisywany do pliku. </p>
+
+</div>
+</div>
+<a id="a35077d39c97da84b288123a4ea611aad" name="a35077d39c97da84b288123a4ea611aad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a35077d39c97da84b288123a4ea611aad">&#9670;&#160;</a></span>jedzenie</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final Set&lt;<a class="el" href="classproj_1_1selekcjanatur_1_1_jedzenie.html">Jedzenie</a>&gt; proj.selekcjanatur.Symulacja.jedzenie = new HashSet&lt;&gt;()</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Zbiór dostępnego jedzenia na planszy. </p>
+
+</div>
+</div>
+<a id="ad5f5a7cbaef83a2d3da013f66d935074" name="ad5f5a7cbaef83a2d3da013f66d935074"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad5f5a7cbaef83a2d3da013f66d935074">&#9670;&#160;</a></span>jedzenieNaTick</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int proj.selekcjanatur.Symulacja.jedzenieNaTick</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Statyczne parametry symulacji - nowe jedzenie na cykl. </p>
+
+</div>
+</div>
+<a id="ac3fbc3c271e2060e456fca26c1236f22" name="ac3fbc3c271e2060e456fca26c1236f22"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac3fbc3c271e2060e456fca26c1236f22">&#9670;&#160;</a></span>KIERUNKI</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final List&lt;int[]&gt; proj.selekcjanatur.Symulacja.KIERUNKI</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Wartość początkowa:</b><div class="fragment"><div class="line">= <span class="keyword">new</span> ArrayList&lt;&gt;(Arrays.asList(</div>
+<div class="line">            <span class="keyword">new</span> <span class="keywordtype">int</span>[]{1, 0},   </div>
+<div class="line">            <span class="keyword">new</span> <span class="keywordtype">int</span>[]{-1, 0},  </div>
+<div class="line">            <span class="keyword">new</span> <span class="keywordtype">int</span>[]{0, 1},   </div>
+<div class="line">            <span class="keyword">new</span> <span class="keywordtype">int</span>[]{0, -1},  </div>
+<div class="line">            <span class="keyword">new</span> <span class="keywordtype">int</span>[]{1, 1},   </div>
+<div class="line">            <span class="keyword">new</span> <span class="keywordtype">int</span>[]{-1, -1}, </div>
+<div class="line">            <span class="keyword">new</span> <span class="keywordtype">int</span>[]{1, -1},  </div>
+<div class="line">            <span class="keyword">new</span> <span class="keywordtype">int</span>[]{-1, 1}   </div>
+<div class="line">    ))</div>
+</div><!-- fragment -->
+<p>Lista możliwych kierunków ruchu. </p>
+
+</div>
+</div>
+<a id="ada69032352c874148e69f7b067ea2594" name="ada69032352c874148e69f7b067ea2594"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ada69032352c874148e69f7b067ea2594">&#9670;&#160;</a></span>kolumny</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final int proj.selekcjanatur.Symulacja.kolumny</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Liczba kolumn planszy (szerokość) </p>
+
+</div>
+</div>
+<a id="aee9f27bbc79b36ccddff1dd47bc00b2d" name="aee9f27bbc79b36ccddff1dd47bc00b2d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aee9f27bbc79b36ccddff1dd47bc00b2d">&#9670;&#160;</a></span>liczbaLudzi</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int proj.selekcjanatur.Symulacja.liczbaLudzi</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Statyczne parametry symulacji - początkowa liczba ludzi. </p>
+
+</div>
+</div>
+<a id="af6654a8625e5ea42ca663df8f1fdc253" name="af6654a8625e5ea42ca663df8f1fdc253"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af6654a8625e5ea42ca663df8f1fdc253">&#9670;&#160;</a></span>licznikDodawaniaJedzenia</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int proj.selekcjanatur.Symulacja.licznikDodawaniaJedzenia = 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Licznik kontrolujący dodawanie nowego jedzenia. </p>
+
+</div>
+</div>
+<a id="afcd70b19057fc8083e473fdb86812eb2" name="afcd70b19057fc8083e473fdb86812eb2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afcd70b19057fc8083e473fdb86812eb2">&#9670;&#160;</a></span>licznikKlatek</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int proj.selekcjanatur.Symulacja.licznikKlatek = 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Licznik klatek symulacji. </p>
+
+</div>
+</div>
+<a id="adddb7f79a97e55dceac133dbb4d7f3f0" name="adddb7f79a97e55dceac133dbb4d7f3f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adddb7f79a97e55dceac133dbb4d7f3f0">&#9670;&#160;</a></span>ludzie</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final List&lt;<a class="el" href="classproj_1_1selekcjanatur_1_1_czlowiek.html">Czlowiek</a>&gt; proj.selekcjanatur.Symulacja.ludzie = new ArrayList&lt;&gt;()</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Lista wszystkich ludzi w symulacji. </p>
+
+</div>
+</div>
+<a id="a79784ee2988b148e298f720675d68227" name="a79784ee2988b148e298f720675d68227"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a79784ee2988b148e298f720675d68227">&#9670;&#160;</a></span>poczatkoweJedzenie</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int proj.selekcjanatur.Symulacja.poczatkoweJedzenie</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Statyczne parametry symulacji - początkowa ilość jedzenia. </p>
+
+</div>
+</div>
+<a id="a628e531aaeeae0e81364b86adc82fff6" name="a628e531aaeeae0e81364b86adc82fff6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a628e531aaeeae0e81364b86adc82fff6">&#9670;&#160;</a></span>szerokosc</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int proj.selekcjanatur.Symulacja.szerokosc</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Statyczne parametry symulacji - szerokość planszy. </p>
+
+</div>
+</div>
+<a id="a384e1267397de60c4964943880661f41" name="a384e1267397de60c4964943880661f41"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a384e1267397de60c4964943880661f41">&#9670;&#160;</a></span>wiersze</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final int proj.selekcjanatur.Symulacja.wiersze</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Liczba wierszy planszy (wysokość) </p>
+
+</div>
+</div>
+<a id="a1da6d14516adc51b8b1fd58eecaa2913" name="a1da6d14516adc51b8b1fd58eecaa2913"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1da6d14516adc51b8b1fd58eecaa2913">&#9670;&#160;</a></span>wysokosc</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int proj.selekcjanatur.Symulacja.wysokosc</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Statyczne parametry symulacji - wysokość planszy. </p>
+
+</div>
+</div>
+<a id="af59f557f32a2dd9f1775793e51f60453" name="af59f557f32a2dd9f1775793e51f60453"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af59f557f32a2dd9f1775793e51f60453">&#9670;&#160;</a></span>zajete</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final boolean [][] proj.selekcjanatur.Symulacja.zajete</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Mapa zajętości pól na planszy. </p>
+
+</div>
+</div>
+<hr/>Dokumentacja dla tej klasy została wygenerowana z pliku:<ul>
+<li>src/main/java/proj/selekcjanatur/<a class="el" href="_symulacja_8java.html">Symulacja.java</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><b>proj</b></li><li class="navelem"><a href="namespaceproj_1_1selekcjanatur.html">selekcjanatur</a></li><li class="navelem"><a href="classproj_1_1selekcjanatur_1_1_symulacja.html">Symulacja</a></li>
+    <li class="footer">Wygenerowano za pomocą <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.14.0 </li>
+  </ul>
+</div>
+</body>
+</html>

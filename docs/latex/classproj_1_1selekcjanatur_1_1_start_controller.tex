@@ -1,0 +1,247 @@
+\doxysection{Dokumentacja klasy proj.\+selekcjanatur.\+Start\+Controller}
+\hypertarget{classproj_1_1selekcjanatur_1_1_start_controller}{}\label{classproj_1_1selekcjanatur_1_1_start_controller}\index{proj.selekcjanatur.StartController@{proj.selekcjanatur.StartController}}
+
+
+Kontroler GUI dla ekranu konfiguracji symulacji.  
+
+
+
+
+Diagram współpracy dla proj.\+selekcjanatur.\+Start\+Controller\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=205pt]{classproj_1_1selekcjanatur_1_1_start_controller__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classproj_1_1selekcjanatur_1_1_start_controller_a454899066792549fb6dd082733f7e7da}{initialize}} ()
+\begin{DoxyCompactList}\small\item\em Inicjalizacja kontrolera. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Metody prywatne}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classproj_1_1selekcjanatur_1_1_start_controller_ac32fa03ada58f71a3cbc379ea17cd8e3}{bind\+Slider\+Label}} (Slider slider, Label label)
+\begin{DoxyCompactList}\small\item\em Wiąże suwak z etykietą wyświetlającą jego wartość \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classproj_1_1selekcjanatur_1_1_start_controller_adef8290b0feaebf73d01894af5e102e3}{start\+Simulation}} ()
+\begin{DoxyCompactList}\small\item\em Uruchamia nową symulację z wybranymi parametrami. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classproj_1_1selekcjanatur_1_1_start_controller_a4ac0a2be052eb17c702f3b5e730d9ca5}{replay\+From\+File}} ()
+\begin{DoxyCompactList}\small\item\em Odtwarza symulację z pliku dziennika zdarzeń \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Atrybuty prywatne}
+\begin{DoxyCompactItemize}
+\item 
+Slider \mbox{\hyperlink{classproj_1_1selekcjanatur_1_1_start_controller_ae7db52fcfa05bd89630dbafbcb17798d}{slider\+Width}}
+\begin{DoxyCompactList}\small\item\em Suwak do ustawiania szerokości planszy. \end{DoxyCompactList}\item 
+Slider \mbox{\hyperlink{classproj_1_1selekcjanatur_1_1_start_controller_a14e68f735235784a770b67aadfdabf4c}{slider\+Height}}
+\begin{DoxyCompactList}\small\item\em Suwak do ustawiania wysokości planszy. \end{DoxyCompactList}\item 
+Slider \mbox{\hyperlink{classproj_1_1selekcjanatur_1_1_start_controller_a135e271886262b705dd0b01143d38743}{slider\+People}}
+\begin{DoxyCompactList}\small\item\em Suwak do ustawiania liczby ludzi. \end{DoxyCompactList}\item 
+Slider \mbox{\hyperlink{classproj_1_1selekcjanatur_1_1_start_controller_a753b0ce77f29df94503d98c8dfc077fe}{slider\+Food}}
+\begin{DoxyCompactList}\small\item\em Suwak do ustawiania początkowej ilości jedzenia. \end{DoxyCompactList}\item 
+Slider \mbox{\hyperlink{classproj_1_1selekcjanatur_1_1_start_controller_a06b38c2128a0877477a4e4b0b17362c0}{slider\+Food\+Per\+Tick}}
+\begin{DoxyCompactList}\small\item\em Suwak do ustawiania ilości nowego jedzenia na cykl. \end{DoxyCompactList}\item 
+Label \mbox{\hyperlink{classproj_1_1selekcjanatur_1_1_start_controller_af8dde37b2e330af51f7a19c1044f6abe}{label\+Width}}
+\begin{DoxyCompactList}\small\item\em Etykieta wyświetlająca wartość szerokości. \end{DoxyCompactList}\item 
+Label \mbox{\hyperlink{classproj_1_1selekcjanatur_1_1_start_controller_a598d8ff12ad77fab756529358cf46cda}{label\+Height}}
+\begin{DoxyCompactList}\small\item\em Etykieta wyświetlająca wartość wysokości. \end{DoxyCompactList}\item 
+Label \mbox{\hyperlink{classproj_1_1selekcjanatur_1_1_start_controller_a22fde975baf4d84eebb6565298af670b}{label\+People}}
+\begin{DoxyCompactList}\small\item\em Etykieta wyświetlająca liczbę ludzi. \end{DoxyCompactList}\item 
+Label \mbox{\hyperlink{classproj_1_1selekcjanatur_1_1_start_controller_aa97667419de3f51733fff36d81848010}{label\+Food}}
+\begin{DoxyCompactList}\small\item\em Etykieta wyświetlająca ilość jedzenia. \end{DoxyCompactList}\item 
+Label \mbox{\hyperlink{classproj_1_1selekcjanatur_1_1_start_controller_a7f288e985f51623326ee61dba06b8396}{label\+Food\+Per\+Tick}}
+\begin{DoxyCompactList}\small\item\em Etykieta wyświetlająca ilość jedzenia na cykl. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Opis szczegółowy}
+Kontroler GUI dla ekranu konfiguracji symulacji. 
+
+Klasa odpowiada za\+:
+\begin{DoxyItemize}
+\item Obsługę interfejsu użytkownika ekranu startowego
+\item Walidację parametrów symulacji
+\item Uruchamianie nowej symulacji
+\item Odtwarzanie symulacji z pliku dziennika zdarzeń 
+\end{DoxyItemize}
+
+\label{doc-func-members}
+\Hypertarget{classproj_1_1selekcjanatur_1_1_start_controller_doc-func-members}
+\doxysubsection{Dokumentacja funkcji składowych}
+\Hypertarget{classproj_1_1selekcjanatur_1_1_start_controller_ac32fa03ada58f71a3cbc379ea17cd8e3}\index{proj.selekcjanatur.StartController@{proj.selekcjanatur.StartController}!bindSliderLabel@{bindSliderLabel}}
+\index{bindSliderLabel@{bindSliderLabel}!proj.selekcjanatur.StartController@{proj.selekcjanatur.StartController}}
+\doxysubsubsection{\texorpdfstring{bindSliderLabel()}{bindSliderLabel()}}
+{\footnotesize\ttfamily \label{classproj_1_1selekcjanatur_1_1_start_controller_ac32fa03ada58f71a3cbc379ea17cd8e3} 
+void proj.\+selekcjanatur.\+Start\+Controller.\+bind\+Slider\+Label (\begin{DoxyParamCaption}\item[{Slider}]{slider}{, }\item[{Label}]{label}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Wiąże suwak z etykietą wyświetlającą jego wartość 
+
+
+\begin{DoxyParams}{Parametry}
+{\em slider} & Suwak do powiązania \\
+\hline
+{\em label} & Etykieta wyświetlająca wartość \\
+\hline
+\end{DoxyParams}
+Oto graf wywoływań tej funkcji\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classproj_1_1selekcjanatur_1_1_start_controller_ac32fa03ada58f71a3cbc379ea17cd8e3_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classproj_1_1selekcjanatur_1_1_start_controller_a454899066792549fb6dd082733f7e7da}\index{proj.selekcjanatur.StartController@{proj.selekcjanatur.StartController}!initialize@{initialize}}
+\index{initialize@{initialize}!proj.selekcjanatur.StartController@{proj.selekcjanatur.StartController}}
+\doxysubsubsection{\texorpdfstring{initialize()}{initialize()}}
+{\footnotesize\ttfamily \label{classproj_1_1selekcjanatur_1_1_start_controller_a454899066792549fb6dd082733f7e7da} 
+void proj.\+selekcjanatur.\+Start\+Controller.\+initialize (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Inicjalizacja kontrolera. 
+
+Wiąże suwaki z odpowiadającymi im etykietami, aby wartości były wyświetlane w czasie rzeczywistym. Oto graf wywołań dla tej funkcji\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classproj_1_1selekcjanatur_1_1_start_controller_a454899066792549fb6dd082733f7e7da_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classproj_1_1selekcjanatur_1_1_start_controller_a4ac0a2be052eb17c702f3b5e730d9ca5}\index{proj.selekcjanatur.StartController@{proj.selekcjanatur.StartController}!replayFromFile@{replayFromFile}}
+\index{replayFromFile@{replayFromFile}!proj.selekcjanatur.StartController@{proj.selekcjanatur.StartController}}
+\doxysubsubsection{\texorpdfstring{replayFromFile()}{replayFromFile()}}
+{\footnotesize\ttfamily \label{classproj_1_1selekcjanatur_1_1_start_controller_a4ac0a2be052eb17c702f3b5e730d9ca5} 
+void proj.\+selekcjanatur.\+Start\+Controller.\+replay\+From\+File (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Odtwarza symulację z pliku dziennika zdarzeń 
+
+Wczytuje podstawowe parametry symulacji z pliku i przełącza na widok symulacji w trybie odtwarzania. Wyświetla komunikaty błędów jeśli plik jest nieprawidłowy. \Hypertarget{classproj_1_1selekcjanatur_1_1_start_controller_adef8290b0feaebf73d01894af5e102e3}\index{proj.selekcjanatur.StartController@{proj.selekcjanatur.StartController}!startSimulation@{startSimulation}}
+\index{startSimulation@{startSimulation}!proj.selekcjanatur.StartController@{proj.selekcjanatur.StartController}}
+\doxysubsubsection{\texorpdfstring{startSimulation()}{startSimulation()}}
+{\footnotesize\ttfamily \label{classproj_1_1selekcjanatur_1_1_start_controller_adef8290b0feaebf73d01894af5e102e3} 
+void proj.\+selekcjanatur.\+Start\+Controller.\+start\+Simulation (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Uruchamia nową symulację z wybranymi parametrami. 
+
+Sprawdza poprawność parametrów i uruchamia symulację. Wyświetla komunikat błędu jeśli liczba obiektów przekracza liczbę dostępnych pól na planszy. Oto graf wywołań dla tej funkcji\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classproj_1_1selekcjanatur_1_1_start_controller_adef8290b0feaebf73d01894af5e102e3_cgraph}
+\end{center}
+\end{figure}
+
+
+\label{doc-variable-members}
+\Hypertarget{classproj_1_1selekcjanatur_1_1_start_controller_doc-variable-members}
+\doxysubsection{Dokumentacja atrybutów składowych}
+\Hypertarget{classproj_1_1selekcjanatur_1_1_start_controller_aa97667419de3f51733fff36d81848010}\index{proj.selekcjanatur.StartController@{proj.selekcjanatur.StartController}!labelFood@{labelFood}}
+\index{labelFood@{labelFood}!proj.selekcjanatur.StartController@{proj.selekcjanatur.StartController}}
+\doxysubsubsection{\texorpdfstring{labelFood}{labelFood}}
+{\footnotesize\ttfamily \label{classproj_1_1selekcjanatur_1_1_start_controller_aa97667419de3f51733fff36d81848010} 
+Label proj.\+selekcjanatur.\+Start\+Controller.\+label\+Food\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Etykieta wyświetlająca ilość jedzenia. 
+
+\Hypertarget{classproj_1_1selekcjanatur_1_1_start_controller_a7f288e985f51623326ee61dba06b8396}\index{proj.selekcjanatur.StartController@{proj.selekcjanatur.StartController}!labelFoodPerTick@{labelFoodPerTick}}
+\index{labelFoodPerTick@{labelFoodPerTick}!proj.selekcjanatur.StartController@{proj.selekcjanatur.StartController}}
+\doxysubsubsection{\texorpdfstring{labelFoodPerTick}{labelFoodPerTick}}
+{\footnotesize\ttfamily \label{classproj_1_1selekcjanatur_1_1_start_controller_a7f288e985f51623326ee61dba06b8396} 
+Label proj.\+selekcjanatur.\+Start\+Controller.\+label\+Food\+Per\+Tick\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Etykieta wyświetlająca ilość jedzenia na cykl. 
+
+\Hypertarget{classproj_1_1selekcjanatur_1_1_start_controller_a598d8ff12ad77fab756529358cf46cda}\index{proj.selekcjanatur.StartController@{proj.selekcjanatur.StartController}!labelHeight@{labelHeight}}
+\index{labelHeight@{labelHeight}!proj.selekcjanatur.StartController@{proj.selekcjanatur.StartController}}
+\doxysubsubsection{\texorpdfstring{labelHeight}{labelHeight}}
+{\footnotesize\ttfamily \label{classproj_1_1selekcjanatur_1_1_start_controller_a598d8ff12ad77fab756529358cf46cda} 
+Label proj.\+selekcjanatur.\+Start\+Controller.\+label\+Height\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Etykieta wyświetlająca wartość wysokości. 
+
+\Hypertarget{classproj_1_1selekcjanatur_1_1_start_controller_a22fde975baf4d84eebb6565298af670b}\index{proj.selekcjanatur.StartController@{proj.selekcjanatur.StartController}!labelPeople@{labelPeople}}
+\index{labelPeople@{labelPeople}!proj.selekcjanatur.StartController@{proj.selekcjanatur.StartController}}
+\doxysubsubsection{\texorpdfstring{labelPeople}{labelPeople}}
+{\footnotesize\ttfamily \label{classproj_1_1selekcjanatur_1_1_start_controller_a22fde975baf4d84eebb6565298af670b} 
+Label proj.\+selekcjanatur.\+Start\+Controller.\+label\+People\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Etykieta wyświetlająca liczbę ludzi. 
+
+\Hypertarget{classproj_1_1selekcjanatur_1_1_start_controller_af8dde37b2e330af51f7a19c1044f6abe}\index{proj.selekcjanatur.StartController@{proj.selekcjanatur.StartController}!labelWidth@{labelWidth}}
+\index{labelWidth@{labelWidth}!proj.selekcjanatur.StartController@{proj.selekcjanatur.StartController}}
+\doxysubsubsection{\texorpdfstring{labelWidth}{labelWidth}}
+{\footnotesize\ttfamily \label{classproj_1_1selekcjanatur_1_1_start_controller_af8dde37b2e330af51f7a19c1044f6abe} 
+Label proj.\+selekcjanatur.\+Start\+Controller.\+label\+Width\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Etykieta wyświetlająca wartość szerokości. 
+
+\Hypertarget{classproj_1_1selekcjanatur_1_1_start_controller_a753b0ce77f29df94503d98c8dfc077fe}\index{proj.selekcjanatur.StartController@{proj.selekcjanatur.StartController}!sliderFood@{sliderFood}}
+\index{sliderFood@{sliderFood}!proj.selekcjanatur.StartController@{proj.selekcjanatur.StartController}}
+\doxysubsubsection{\texorpdfstring{sliderFood}{sliderFood}}
+{\footnotesize\ttfamily \label{classproj_1_1selekcjanatur_1_1_start_controller_a753b0ce77f29df94503d98c8dfc077fe} 
+Slider proj.\+selekcjanatur.\+Start\+Controller.\+slider\+Food\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Suwak do ustawiania początkowej ilości jedzenia. 
+
+\Hypertarget{classproj_1_1selekcjanatur_1_1_start_controller_a06b38c2128a0877477a4e4b0b17362c0}\index{proj.selekcjanatur.StartController@{proj.selekcjanatur.StartController}!sliderFoodPerTick@{sliderFoodPerTick}}
+\index{sliderFoodPerTick@{sliderFoodPerTick}!proj.selekcjanatur.StartController@{proj.selekcjanatur.StartController}}
+\doxysubsubsection{\texorpdfstring{sliderFoodPerTick}{sliderFoodPerTick}}
+{\footnotesize\ttfamily \label{classproj_1_1selekcjanatur_1_1_start_controller_a06b38c2128a0877477a4e4b0b17362c0} 
+Slider proj.\+selekcjanatur.\+Start\+Controller.\+slider\+Food\+Per\+Tick\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Suwak do ustawiania ilości nowego jedzenia na cykl. 
+
+\Hypertarget{classproj_1_1selekcjanatur_1_1_start_controller_a14e68f735235784a770b67aadfdabf4c}\index{proj.selekcjanatur.StartController@{proj.selekcjanatur.StartController}!sliderHeight@{sliderHeight}}
+\index{sliderHeight@{sliderHeight}!proj.selekcjanatur.StartController@{proj.selekcjanatur.StartController}}
+\doxysubsubsection{\texorpdfstring{sliderHeight}{sliderHeight}}
+{\footnotesize\ttfamily \label{classproj_1_1selekcjanatur_1_1_start_controller_a14e68f735235784a770b67aadfdabf4c} 
+Slider proj.\+selekcjanatur.\+Start\+Controller.\+slider\+Height\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Suwak do ustawiania wysokości planszy. 
+
+\Hypertarget{classproj_1_1selekcjanatur_1_1_start_controller_a135e271886262b705dd0b01143d38743}\index{proj.selekcjanatur.StartController@{proj.selekcjanatur.StartController}!sliderPeople@{sliderPeople}}
+\index{sliderPeople@{sliderPeople}!proj.selekcjanatur.StartController@{proj.selekcjanatur.StartController}}
+\doxysubsubsection{\texorpdfstring{sliderPeople}{sliderPeople}}
+{\footnotesize\ttfamily \label{classproj_1_1selekcjanatur_1_1_start_controller_a135e271886262b705dd0b01143d38743} 
+Slider proj.\+selekcjanatur.\+Start\+Controller.\+slider\+People\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Suwak do ustawiania liczby ludzi. 
+
+\Hypertarget{classproj_1_1selekcjanatur_1_1_start_controller_ae7db52fcfa05bd89630dbafbcb17798d}\index{proj.selekcjanatur.StartController@{proj.selekcjanatur.StartController}!sliderWidth@{sliderWidth}}
+\index{sliderWidth@{sliderWidth}!proj.selekcjanatur.StartController@{proj.selekcjanatur.StartController}}
+\doxysubsubsection{\texorpdfstring{sliderWidth}{sliderWidth}}
+{\footnotesize\ttfamily \label{classproj_1_1selekcjanatur_1_1_start_controller_ae7db52fcfa05bd89630dbafbcb17798d} 
+Slider proj.\+selekcjanatur.\+Start\+Controller.\+slider\+Width\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Suwak do ustawiania szerokości planszy. 
+
+
+
+Dokumentacja dla tej klasy została wygenerowana z pliku\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/proj/selekcjanatur/\mbox{\hyperlink{_start_controller_8java}{Start\+Controller.\+java}}\end{DoxyCompactItemize}

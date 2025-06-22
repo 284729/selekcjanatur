@@ -1,0 +1,7 @@
+<map id="proj.selekcjanatur.Czlowiek.jestDzieckiem" name="proj.selekcjanatur.Czlowiek.jestDzieckiem">
+<area shape="rect" id="Node000001" title="Sprawdza czy człowiek jest dzieckiem." alt="" coords="284,39,490,81"/>
+<area shape="rect" id="Node000002" href="$classproj_1_1selekcjanatur_1_1_kobieta.html#a2a0a9cd3a3bc1e439e1c5c278381a9d3" title="Określa możliwość rozmnażania." alt="" coords="17,5,224,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="268,48,224,42,225,37,268,43"/>
+<area shape="rect" id="Node000003" href="$classproj_1_1selekcjanatur_1_1_mezczyzna.html#a6252640fd21d46c66daf76ce143dcf6a" title="Określa możliwość rozmnażania." alt="" coords="5,72,236,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="268,77,236,82,236,76,268,72"/>
+</map>

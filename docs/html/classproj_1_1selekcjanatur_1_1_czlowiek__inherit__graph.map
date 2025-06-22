@@ -1,0 +1,7 @@
+<map id="proj.selekcjanatur.Czlowiek" name="proj.selekcjanatur.Czlowiek">
+<area shape="rect" id="Node000001" title="Abstrakcyjna klasa reprezentująca człowieka w symulacji ewolucyjnej." alt="" coords="84,5,318,549"/>
+<area shape="rect" id="Node000002" href="$classproj_1_1selekcjanatur_1_1_kobieta.html" title="Specjalizacja klasy Czlowiek reprezentująca kobietę" alt="" coords="5,597,188,709"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="124,564,115,598,109,597,119,563"/>
+<area shape="rect" id="Node000003" href="$classproj_1_1selekcjanatur_1_1_mezczyzna.html" title="Specjalizacja klasy Czlowiek reprezentująca mężczyznę" alt="" coords="213,597,397,709"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="283,563,292,597,287,598,278,564"/>
+</map>

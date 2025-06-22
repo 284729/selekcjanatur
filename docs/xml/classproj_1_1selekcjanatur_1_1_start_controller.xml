@@ -1,0 +1,324 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="pl">
+  <compounddef id="classproj_1_1selekcjanatur_1_1_start_controller" kind="class" language="Java" prot="public">
+    <compoundname>proj::selekcjanatur::StartController</compoundname>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classproj_1_1selekcjanatur_1_1_start_controller_1ae7db52fcfa05bd89630dbafbcb17798d" prot="private" static="no" mutable="no">
+        <type>Slider</type>
+        <definition>Slider proj.selekcjanatur.StartController.sliderWidth</definition>
+        <argsstring></argsstring>
+        <name>sliderWidth</name>
+        <qualifiedname>proj.selekcjanatur.StartController.sliderWidth</qualifiedname>
+        <briefdescription>
+<para>Suwak do ustawiania szerokości planszy. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/proj/selekcjanatur/StartController.java" line="34" column="21" bodyfile="src/main/java/proj/selekcjanatur/StartController.java" bodystart="34" bodyend="-1"/>
+        <referencedby refid="classproj_1_1selekcjanatur_1_1_start_controller_1a454899066792549fb6dd082733f7e7da" compoundref="_start_controller_8java" startline="69" endline="75">proj.selekcjanatur.StartController.initialize</referencedby>
+        <referencedby refid="classproj_1_1selekcjanatur_1_1_start_controller_1a4ac0a2be052eb17c702f3b5e730d9ca5" compoundref="_start_controller_8java" startline="142" endline="174">proj.selekcjanatur.StartController.replayFromFile</referencedby>
+        <referencedby refid="classproj_1_1selekcjanatur_1_1_start_controller_1adef8290b0feaebf73d01894af5e102e3" compoundref="_start_controller_8java" startline="95" endline="133">proj.selekcjanatur.StartController.startSimulation</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classproj_1_1selekcjanatur_1_1_start_controller_1a14e68f735235784a770b67aadfdabf4c" prot="private" static="no" mutable="no">
+        <type>Slider</type>
+        <definition>Slider proj.selekcjanatur.StartController.sliderHeight</definition>
+        <argsstring></argsstring>
+        <name>sliderHeight</name>
+        <qualifiedname>proj.selekcjanatur.StartController.sliderHeight</qualifiedname>
+        <briefdescription>
+<para>Suwak do ustawiania wysokości planszy. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/proj/selekcjanatur/StartController.java" line="37" column="21" bodyfile="src/main/java/proj/selekcjanatur/StartController.java" bodystart="37" bodyend="-1"/>
+        <referencedby refid="classproj_1_1selekcjanatur_1_1_start_controller_1a454899066792549fb6dd082733f7e7da" compoundref="_start_controller_8java" startline="69" endline="75">proj.selekcjanatur.StartController.initialize</referencedby>
+        <referencedby refid="classproj_1_1selekcjanatur_1_1_start_controller_1adef8290b0feaebf73d01894af5e102e3" compoundref="_start_controller_8java" startline="95" endline="133">proj.selekcjanatur.StartController.startSimulation</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classproj_1_1selekcjanatur_1_1_start_controller_1a135e271886262b705dd0b01143d38743" prot="private" static="no" mutable="no">
+        <type>Slider</type>
+        <definition>Slider proj.selekcjanatur.StartController.sliderPeople</definition>
+        <argsstring></argsstring>
+        <name>sliderPeople</name>
+        <qualifiedname>proj.selekcjanatur.StartController.sliderPeople</qualifiedname>
+        <briefdescription>
+<para>Suwak do ustawiania liczby ludzi. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/proj/selekcjanatur/StartController.java" line="40" column="21" bodyfile="src/main/java/proj/selekcjanatur/StartController.java" bodystart="40" bodyend="-1"/>
+        <referencedby refid="classproj_1_1selekcjanatur_1_1_start_controller_1a454899066792549fb6dd082733f7e7da" compoundref="_start_controller_8java" startline="69" endline="75">proj.selekcjanatur.StartController.initialize</referencedby>
+        <referencedby refid="classproj_1_1selekcjanatur_1_1_start_controller_1adef8290b0feaebf73d01894af5e102e3" compoundref="_start_controller_8java" startline="95" endline="133">proj.selekcjanatur.StartController.startSimulation</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classproj_1_1selekcjanatur_1_1_start_controller_1a753b0ce77f29df94503d98c8dfc077fe" prot="private" static="no" mutable="no">
+        <type>Slider</type>
+        <definition>Slider proj.selekcjanatur.StartController.sliderFood</definition>
+        <argsstring></argsstring>
+        <name>sliderFood</name>
+        <qualifiedname>proj.selekcjanatur.StartController.sliderFood</qualifiedname>
+        <briefdescription>
+<para>Suwak do ustawiania początkowej ilości jedzenia. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/proj/selekcjanatur/StartController.java" line="43" column="21" bodyfile="src/main/java/proj/selekcjanatur/StartController.java" bodystart="43" bodyend="-1"/>
+        <referencedby refid="classproj_1_1selekcjanatur_1_1_start_controller_1a454899066792549fb6dd082733f7e7da" compoundref="_start_controller_8java" startline="69" endline="75">proj.selekcjanatur.StartController.initialize</referencedby>
+        <referencedby refid="classproj_1_1selekcjanatur_1_1_start_controller_1adef8290b0feaebf73d01894af5e102e3" compoundref="_start_controller_8java" startline="95" endline="133">proj.selekcjanatur.StartController.startSimulation</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classproj_1_1selekcjanatur_1_1_start_controller_1a06b38c2128a0877477a4e4b0b17362c0" prot="private" static="no" mutable="no">
+        <type>Slider</type>
+        <definition>Slider proj.selekcjanatur.StartController.sliderFoodPerTick</definition>
+        <argsstring></argsstring>
+        <name>sliderFoodPerTick</name>
+        <qualifiedname>proj.selekcjanatur.StartController.sliderFoodPerTick</qualifiedname>
+        <briefdescription>
+<para>Suwak do ustawiania ilości nowego jedzenia na cykl. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/proj/selekcjanatur/StartController.java" line="46" column="21" bodyfile="src/main/java/proj/selekcjanatur/StartController.java" bodystart="46" bodyend="-1"/>
+        <referencedby refid="classproj_1_1selekcjanatur_1_1_start_controller_1a454899066792549fb6dd082733f7e7da" compoundref="_start_controller_8java" startline="69" endline="75">proj.selekcjanatur.StartController.initialize</referencedby>
+        <referencedby refid="classproj_1_1selekcjanatur_1_1_start_controller_1adef8290b0feaebf73d01894af5e102e3" compoundref="_start_controller_8java" startline="95" endline="133">proj.selekcjanatur.StartController.startSimulation</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classproj_1_1selekcjanatur_1_1_start_controller_1af8dde37b2e330af51f7a19c1044f6abe" prot="private" static="no" mutable="no">
+        <type>Label</type>
+        <definition>Label proj.selekcjanatur.StartController.labelWidth</definition>
+        <argsstring></argsstring>
+        <name>labelWidth</name>
+        <qualifiedname>proj.selekcjanatur.StartController.labelWidth</qualifiedname>
+        <briefdescription>
+<para>Etykieta wyświetlająca wartość szerokości. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/proj/selekcjanatur/StartController.java" line="49" column="20" bodyfile="src/main/java/proj/selekcjanatur/StartController.java" bodystart="49" bodyend="-1"/>
+        <referencedby refid="classproj_1_1selekcjanatur_1_1_start_controller_1a454899066792549fb6dd082733f7e7da" compoundref="_start_controller_8java" startline="69" endline="75">proj.selekcjanatur.StartController.initialize</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classproj_1_1selekcjanatur_1_1_start_controller_1a598d8ff12ad77fab756529358cf46cda" prot="private" static="no" mutable="no">
+        <type>Label</type>
+        <definition>Label proj.selekcjanatur.StartController.labelHeight</definition>
+        <argsstring></argsstring>
+        <name>labelHeight</name>
+        <qualifiedname>proj.selekcjanatur.StartController.labelHeight</qualifiedname>
+        <briefdescription>
+<para>Etykieta wyświetlająca wartość wysokości. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/proj/selekcjanatur/StartController.java" line="52" column="20" bodyfile="src/main/java/proj/selekcjanatur/StartController.java" bodystart="52" bodyend="-1"/>
+        <referencedby refid="classproj_1_1selekcjanatur_1_1_start_controller_1a454899066792549fb6dd082733f7e7da" compoundref="_start_controller_8java" startline="69" endline="75">proj.selekcjanatur.StartController.initialize</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classproj_1_1selekcjanatur_1_1_start_controller_1a22fde975baf4d84eebb6565298af670b" prot="private" static="no" mutable="no">
+        <type>Label</type>
+        <definition>Label proj.selekcjanatur.StartController.labelPeople</definition>
+        <argsstring></argsstring>
+        <name>labelPeople</name>
+        <qualifiedname>proj.selekcjanatur.StartController.labelPeople</qualifiedname>
+        <briefdescription>
+<para>Etykieta wyświetlająca liczbę ludzi. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/proj/selekcjanatur/StartController.java" line="55" column="20" bodyfile="src/main/java/proj/selekcjanatur/StartController.java" bodystart="55" bodyend="-1"/>
+        <referencedby refid="classproj_1_1selekcjanatur_1_1_start_controller_1a454899066792549fb6dd082733f7e7da" compoundref="_start_controller_8java" startline="69" endline="75">proj.selekcjanatur.StartController.initialize</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classproj_1_1selekcjanatur_1_1_start_controller_1aa97667419de3f51733fff36d81848010" prot="private" static="no" mutable="no">
+        <type>Label</type>
+        <definition>Label proj.selekcjanatur.StartController.labelFood</definition>
+        <argsstring></argsstring>
+        <name>labelFood</name>
+        <qualifiedname>proj.selekcjanatur.StartController.labelFood</qualifiedname>
+        <briefdescription>
+<para>Etykieta wyświetlająca ilość jedzenia. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/proj/selekcjanatur/StartController.java" line="58" column="20" bodyfile="src/main/java/proj/selekcjanatur/StartController.java" bodystart="58" bodyend="-1"/>
+        <referencedby refid="classproj_1_1selekcjanatur_1_1_start_controller_1a454899066792549fb6dd082733f7e7da" compoundref="_start_controller_8java" startline="69" endline="75">proj.selekcjanatur.StartController.initialize</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classproj_1_1selekcjanatur_1_1_start_controller_1a7f288e985f51623326ee61dba06b8396" prot="private" static="no" mutable="no">
+        <type>Label</type>
+        <definition>Label proj.selekcjanatur.StartController.labelFoodPerTick</definition>
+        <argsstring></argsstring>
+        <name>labelFoodPerTick</name>
+        <qualifiedname>proj.selekcjanatur.StartController.labelFoodPerTick</qualifiedname>
+        <briefdescription>
+<para>Etykieta wyświetlająca ilość jedzenia na cykl. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/proj/selekcjanatur/StartController.java" line="61" column="20" bodyfile="src/main/java/proj/selekcjanatur/StartController.java" bodystart="61" bodyend="-1"/>
+        <referencedby refid="classproj_1_1selekcjanatur_1_1_start_controller_1a454899066792549fb6dd082733f7e7da" compoundref="_start_controller_8java" startline="69" endline="75">proj.selekcjanatur.StartController.initialize</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classproj_1_1selekcjanatur_1_1_start_controller_1a454899066792549fb6dd082733f7e7da" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void proj.selekcjanatur.StartController.initialize</definition>
+        <argsstring>()</argsstring>
+        <name>initialize</name>
+        <qualifiedname>proj.selekcjanatur.StartController.initialize</qualifiedname>
+        <briefdescription>
+<para>Inicjalizacja kontrolera. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Wiąże suwaki z odpowiadającymi im etykietami, aby wartości były wyświetlane w czasie rzeczywistym. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/proj/selekcjanatur/StartController.java" line="69" column="17" bodyfile="src/main/java/proj/selekcjanatur/StartController.java" bodystart="69" bodyend="75"/>
+        <references refid="classproj_1_1selekcjanatur_1_1_start_controller_1ac32fa03ada58f71a3cbc379ea17cd8e3" compoundref="_start_controller_8java" startline="82" endline="86">proj.selekcjanatur.StartController.bindSliderLabel</references>
+        <references refid="classproj_1_1selekcjanatur_1_1_start_controller_1aa97667419de3f51733fff36d81848010" compoundref="_start_controller_8java" startline="58">proj.selekcjanatur.StartController.labelFood</references>
+        <references refid="classproj_1_1selekcjanatur_1_1_start_controller_1a7f288e985f51623326ee61dba06b8396" compoundref="_start_controller_8java" startline="61">proj.selekcjanatur.StartController.labelFoodPerTick</references>
+        <references refid="classproj_1_1selekcjanatur_1_1_start_controller_1a598d8ff12ad77fab756529358cf46cda" compoundref="_start_controller_8java" startline="52">proj.selekcjanatur.StartController.labelHeight</references>
+        <references refid="classproj_1_1selekcjanatur_1_1_start_controller_1a22fde975baf4d84eebb6565298af670b" compoundref="_start_controller_8java" startline="55">proj.selekcjanatur.StartController.labelPeople</references>
+        <references refid="classproj_1_1selekcjanatur_1_1_start_controller_1af8dde37b2e330af51f7a19c1044f6abe" compoundref="_start_controller_8java" startline="49">proj.selekcjanatur.StartController.labelWidth</references>
+        <references refid="classproj_1_1selekcjanatur_1_1_start_controller_1a753b0ce77f29df94503d98c8dfc077fe" compoundref="_start_controller_8java" startline="43">proj.selekcjanatur.StartController.sliderFood</references>
+        <references refid="classproj_1_1selekcjanatur_1_1_start_controller_1a06b38c2128a0877477a4e4b0b17362c0" compoundref="_start_controller_8java" startline="46">proj.selekcjanatur.StartController.sliderFoodPerTick</references>
+        <references refid="classproj_1_1selekcjanatur_1_1_start_controller_1a14e68f735235784a770b67aadfdabf4c" compoundref="_start_controller_8java" startline="37">proj.selekcjanatur.StartController.sliderHeight</references>
+        <references refid="classproj_1_1selekcjanatur_1_1_start_controller_1a135e271886262b705dd0b01143d38743" compoundref="_start_controller_8java" startline="40">proj.selekcjanatur.StartController.sliderPeople</references>
+        <references refid="classproj_1_1selekcjanatur_1_1_start_controller_1ae7db52fcfa05bd89630dbafbcb17798d" compoundref="_start_controller_8java" startline="34">proj.selekcjanatur.StartController.sliderWidth</references>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classproj_1_1selekcjanatur_1_1_start_controller_1ac32fa03ada58f71a3cbc379ea17cd8e3" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void proj.selekcjanatur.StartController.bindSliderLabel</definition>
+        <argsstring>(Slider slider, Label label)</argsstring>
+        <name>bindSliderLabel</name>
+        <qualifiedname>proj.selekcjanatur.StartController.bindSliderLabel</qualifiedname>
+        <param>
+          <type>Slider</type>
+          <declname>slider</declname>
+        </param>
+        <param>
+          <type>Label</type>
+          <declname>label</declname>
+        </param>
+        <briefdescription>
+<para>Wiąże suwak z etykietą wyświetlającą jego wartość </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>slider</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Suwak do powiązania </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>label</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Etykieta wyświetlająca wartość </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/proj/selekcjanatur/StartController.java" line="82" column="18" bodyfile="src/main/java/proj/selekcjanatur/StartController.java" bodystart="82" bodyend="86"/>
+        <referencedby refid="classproj_1_1selekcjanatur_1_1_start_controller_1a454899066792549fb6dd082733f7e7da" compoundref="_start_controller_8java" startline="69" endline="75">proj.selekcjanatur.StartController.initialize</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classproj_1_1selekcjanatur_1_1_start_controller_1adef8290b0feaebf73d01894af5e102e3" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void proj.selekcjanatur.StartController.startSimulation</definition>
+        <argsstring>()</argsstring>
+        <name>startSimulation</name>
+        <qualifiedname>proj.selekcjanatur.StartController.startSimulation</qualifiedname>
+        <briefdescription>
+<para>Uruchamia nową symulację z wybranymi parametrami. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Sprawdza poprawność parametrów i uruchamia symulację. Wyświetla komunikat błędu jeśli liczba obiektów przekracza liczbę dostępnych pól na planszy. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/proj/selekcjanatur/StartController.java" line="95" column="18" bodyfile="src/main/java/proj/selekcjanatur/StartController.java" bodystart="95" bodyend="133"/>
+        <references refid="classproj_1_1selekcjanatur_1_1_start_controller_1a753b0ce77f29df94503d98c8dfc077fe" compoundref="_start_controller_8java" startline="43">proj.selekcjanatur.StartController.sliderFood</references>
+        <references refid="classproj_1_1selekcjanatur_1_1_start_controller_1a06b38c2128a0877477a4e4b0b17362c0" compoundref="_start_controller_8java" startline="46">proj.selekcjanatur.StartController.sliderFoodPerTick</references>
+        <references refid="classproj_1_1selekcjanatur_1_1_start_controller_1a14e68f735235784a770b67aadfdabf4c" compoundref="_start_controller_8java" startline="37">proj.selekcjanatur.StartController.sliderHeight</references>
+        <references refid="classproj_1_1selekcjanatur_1_1_start_controller_1a135e271886262b705dd0b01143d38743" compoundref="_start_controller_8java" startline="40">proj.selekcjanatur.StartController.sliderPeople</references>
+        <references refid="classproj_1_1selekcjanatur_1_1_start_controller_1ae7db52fcfa05bd89630dbafbcb17798d" compoundref="_start_controller_8java" startline="34">proj.selekcjanatur.StartController.sliderWidth</references>
+        <references refid="classproj_1_1selekcjanatur_1_1_symulacja_1a6a0641aea8437d8f8a9ef0d975d8db75" compoundref="_symulacja_8java" startline="48" endline="54">proj.selekcjanatur.Symulacja.ustawParametry</references>
+      </memberdef>
+      <memberdef kind="function" id="classproj_1_1selekcjanatur_1_1_start_controller_1a4ac0a2be052eb17c702f3b5e730d9ca5" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void proj.selekcjanatur.StartController.replayFromFile</definition>
+        <argsstring>()</argsstring>
+        <name>replayFromFile</name>
+        <qualifiedname>proj.selekcjanatur.StartController.replayFromFile</qualifiedname>
+        <briefdescription>
+<para>Odtwarza symulację z pliku dziennika zdarzeń </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Wczytuje podstawowe parametry symulacji z pliku i przełącza na widok symulacji w trybie odtwarzania. Wyświetla komunikaty błędów jeśli plik jest nieprawidłowy. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/proj/selekcjanatur/StartController.java" line="142" column="18" bodyfile="src/main/java/proj/selekcjanatur/StartController.java" bodystart="142" bodyend="174"/>
+        <references refid="classproj_1_1selekcjanatur_1_1_app_controller_1a126b2a6a1a53efdb82999b73dc9ca21d" compoundref="_app_controller_8java" startline="55">proj.selekcjanatur.AppController.PLIK</references>
+        <references refid="classproj_1_1selekcjanatur_1_1_start_controller_1ae7db52fcfa05bd89630dbafbcb17798d" compoundref="_start_controller_8java" startline="34">proj.selekcjanatur.StartController.sliderWidth</references>
+        <references refid="classproj_1_1selekcjanatur_1_1_symulacja_1a628e531aaeeae0e81364b86adc82fff6" compoundref="_symulacja_8java" startline="26">proj.selekcjanatur.Symulacja.szerokosc</references>
+        <references refid="classproj_1_1selekcjanatur_1_1_symulacja_1a1da6d14516adc51b8b1fd58eecaa2913" compoundref="_symulacja_8java" startline="29">proj.selekcjanatur.Symulacja.wysokosc</references>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Kontroler GUI dla ekranu konfiguracji symulacji. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Klasa odpowiada za:<itemizedlist>
+<listitem><para>Obsługę interfejsu użytkownika ekranu startowego</para>
+</listitem><listitem><para>Walidację parametrów symulacji</para>
+</listitem><listitem><para>Uruchamianie nowej symulacji</para>
+</listitem><listitem><para>Odtwarzanie symulacji z pliku dziennika zdarzeń </para>
+</listitem></itemizedlist>
+</para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>proj.selekcjanatur.StartController</label>
+        <link refid="classproj_1_1selekcjanatur_1_1_start_controller"/>
+      </node>
+    </collaborationgraph>
+    <location file="src/main/java/proj/selekcjanatur/StartController.java" line="32" column="7" bodyfile="src/main/java/proj/selekcjanatur/StartController.java" bodystart="32" bodyend="175"/>
+    <listofallmembers>
+      <member refid="classproj_1_1selekcjanatur_1_1_start_controller_1ac32fa03ada58f71a3cbc379ea17cd8e3" prot="private" virt="non-virtual"><scope>proj::selekcjanatur::StartController</scope><name>bindSliderLabel</name></member>
+      <member refid="classproj_1_1selekcjanatur_1_1_start_controller_1a454899066792549fb6dd082733f7e7da" prot="public" virt="non-virtual"><scope>proj::selekcjanatur::StartController</scope><name>initialize</name></member>
+      <member refid="classproj_1_1selekcjanatur_1_1_start_controller_1aa97667419de3f51733fff36d81848010" prot="private" virt="non-virtual"><scope>proj::selekcjanatur::StartController</scope><name>labelFood</name></member>
+      <member refid="classproj_1_1selekcjanatur_1_1_start_controller_1a7f288e985f51623326ee61dba06b8396" prot="private" virt="non-virtual"><scope>proj::selekcjanatur::StartController</scope><name>labelFoodPerTick</name></member>
+      <member refid="classproj_1_1selekcjanatur_1_1_start_controller_1a598d8ff12ad77fab756529358cf46cda" prot="private" virt="non-virtual"><scope>proj::selekcjanatur::StartController</scope><name>labelHeight</name></member>
+      <member refid="classproj_1_1selekcjanatur_1_1_start_controller_1a22fde975baf4d84eebb6565298af670b" prot="private" virt="non-virtual"><scope>proj::selekcjanatur::StartController</scope><name>labelPeople</name></member>
+      <member refid="classproj_1_1selekcjanatur_1_1_start_controller_1af8dde37b2e330af51f7a19c1044f6abe" prot="private" virt="non-virtual"><scope>proj::selekcjanatur::StartController</scope><name>labelWidth</name></member>
+      <member refid="classproj_1_1selekcjanatur_1_1_start_controller_1a4ac0a2be052eb17c702f3b5e730d9ca5" prot="private" virt="non-virtual"><scope>proj::selekcjanatur::StartController</scope><name>replayFromFile</name></member>
+      <member refid="classproj_1_1selekcjanatur_1_1_start_controller_1a753b0ce77f29df94503d98c8dfc077fe" prot="private" virt="non-virtual"><scope>proj::selekcjanatur::StartController</scope><name>sliderFood</name></member>
+      <member refid="classproj_1_1selekcjanatur_1_1_start_controller_1a06b38c2128a0877477a4e4b0b17362c0" prot="private" virt="non-virtual"><scope>proj::selekcjanatur::StartController</scope><name>sliderFoodPerTick</name></member>
+      <member refid="classproj_1_1selekcjanatur_1_1_start_controller_1a14e68f735235784a770b67aadfdabf4c" prot="private" virt="non-virtual"><scope>proj::selekcjanatur::StartController</scope><name>sliderHeight</name></member>
+      <member refid="classproj_1_1selekcjanatur_1_1_start_controller_1a135e271886262b705dd0b01143d38743" prot="private" virt="non-virtual"><scope>proj::selekcjanatur::StartController</scope><name>sliderPeople</name></member>
+      <member refid="classproj_1_1selekcjanatur_1_1_start_controller_1ae7db52fcfa05bd89630dbafbcb17798d" prot="private" virt="non-virtual"><scope>proj::selekcjanatur::StartController</scope><name>sliderWidth</name></member>
+      <member refid="classproj_1_1selekcjanatur_1_1_start_controller_1adef8290b0feaebf73d01894af5e102e3" prot="private" virt="non-virtual"><scope>proj::selekcjanatur::StartController</scope><name>startSimulation</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

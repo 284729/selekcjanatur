@@ -1,0 +1,20 @@
+<map id="proj.selekcjanatur.Symulacja.wykonajRuch" name="proj.selekcjanatur.Symulacja.wykonajRuch">
+<area shape="rect" id="Node000001" title="Wykonuje ruch dla danego człowieka." alt="" coords="5,197,277,224"/>
+<area shape="rect" id="Node000002" href="$classproj_1_1selekcjanatur_1_1_symulacja.html#a1d1661b0578afad91d9b4807d8122e39" title="Przenosi człowieka na nowe pole." alt="" coords="325,93,577,136"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="186,194,364,139,365,144,188,199"/>
+<area shape="rect" id="Node000006" href="$classproj_1_1selekcjanatur_1_1_symulacja.html#a09362c7d34ee3e4c0ffd46d4b3c8bd17" title="Znajduje najbliższe jedzenie w zasięgu wzroku." alt="" coords="336,189,566,232"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="277,208,320,208,320,213,277,213"/>
+<area shape="rect" id="Node000008" href="$classproj_1_1selekcjanatur_1_1_symulacja.html#a308b1488a3d7d83887fc3aea6c4ca4ee" title="Znajduje partnera do rozmnażania w zasięgu wzroku." alt="" coords="336,256,566,299"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="207,222,334,250,333,255,206,227"/>
+<area shape="rect" id="Node000003" href="$classproj_1_1selekcjanatur_1_1_symulacja.html#adca30037183a0fade601724dd9b8f1bd" title="Dodaje wpis do dziennika zdarzeń" alt="" coords="628,5,852,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="519,90,624,57,648,50,650,55,626,63,521,95"/>
+<area shape="rect" id="Node000004" href="$classproj_1_1selekcjanatur_1_1_czlowiek.html#a19de94d2ab10d64910307b71bf45ed2e" title="Zjada podane jedzenie." alt="" coords="632,72,848,99"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="577,99,616,95,617,100,578,104"/>
+<area shape="rect" id="Node000005" href="$classproj_1_1selekcjanatur_1_1_symulacja.html#ac24b817f5f0ae590ecd7e988b3f78c56" title="Sprawdza czy na danym polu jest jedzenie." alt="" coords="625,123,855,165"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="578,125,610,128,609,133,577,130"/>
+<area shape="rect" id="Node000007" href="$classproj_1_1selekcjanatur_1_1_czlowiek.html#aabd1eb0726b65fce7b6bab1f894904cf" title="Oblicza zasięg wzroku na podstawie genów." alt="" coords="628,189,852,232"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="566,208,613,208,613,213,566,213"/>
+<area shape="poly" id="edge9_Node000008_Node000007" title=" " alt="" coords="546,253,629,233,630,239,547,258"/>
+<area shape="rect" id="Node000009" href="$classproj_1_1selekcjanatur_1_1_czlowiek.html#ac88bbff18c715a98a16d48103b3b495b" title="Sprawdza płeć człowieka." alt="" coords="637,256,843,299"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="566,275,622,275,622,280,566,280"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="proj.selekcjanatur.Czlowiek.aktualizuj" name="proj.selekcjanatur.Czlowiek.aktualizuj">
+<area shape="rect" id="Node000001" title="Aktualizuje stan człowieka w każdym cyklu symulacji." alt="" coords="5,47,246,73"/>
+<area shape="rect" id="Node000002" href="$classproj_1_1selekcjanatur_1_1_czlowiek.html#a877a9787e423b1279430dc1f952fea04" title="Sprawdza czy człowiek umiera ze starości." alt="" coords="306,5,512,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="244,43,290,38,291,43,245,49"/>
+<area shape="rect" id="Node000003" href="$classproj_1_1selekcjanatur_1_1_czlowiek.html#a53d97caac471e136d612c2eb28f02c2d" title="Oblicza zużycie energii na cykl." alt="" coords="294,72,524,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="245,71,278,75,278,81,244,77"/>
+</map>

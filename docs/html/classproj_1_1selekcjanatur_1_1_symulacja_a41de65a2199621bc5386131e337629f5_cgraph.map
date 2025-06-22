@@ -1,0 +1,13 @@
+<map id="proj.selekcjanatur.Symulacja.Symulacja" name="proj.selekcjanatur.Symulacja.Symulacja">
+<area shape="rect" id="Node000001" title="Konstruktor inicjalizujący symulację" alt="" coords="5,26,198,68"/>
+<area shape="rect" id="Node000002" href="$classproj_1_1selekcjanatur_1_1_symulacja.html#adca30037183a0fade601724dd9b8f1bd" title="Dodaje wpis do dziennika zdarzeń" alt="" coords="517,26,740,68"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="182,22,245,11,357,3,469,11,525,19,524,25,469,16,357,8,246,16,183,28"/>
+<area shape="rect" id="Node000003" href="$classproj_1_1selekcjanatur_1_1_symulacja.html#ab361a78b8ca5a29d85b023553d4490f5" title="Dodaje losowe jedzenie na planszę" alt="" coords="246,26,469,68"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="198,44,230,44,230,50,198,50"/>
+<area shape="rect" id="Node000004" href="$classproj_1_1selekcjanatur_1_1_symulacja.html#a2728068a09ceb38515acafb5547d86b3" title="Dodaje losowych ludzi na planszę" alt="" coords="246,92,469,135"/>
+<area shape="poly" id="edge4_Node000001_Node000004" title=" " alt="" coords="187,66,259,85,257,90,185,71"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="469,44,502,44,502,50,469,50"/>
+<area shape="poly" id="edge6_Node000004_Node000002" title=" " alt="" coords="446,89,524,70,525,75,448,94"/>
+<area shape="rect" id="Node000005" href="$classproj_1_1selekcjanatur_1_1_czlowiek.html#ac88bbff18c715a98a16d48103b3b495b" title="Sprawdza płeć człowieka." alt="" coords="526,92,732,135"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="469,111,510,111,510,116,469,116"/>
+</map>

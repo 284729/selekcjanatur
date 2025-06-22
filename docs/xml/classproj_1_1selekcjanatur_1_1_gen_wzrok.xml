@@ -1,0 +1,174 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="pl">
+  <compounddef id="classproj_1_1selekcjanatur_1_1_gen_wzrok" kind="class" language="Java" prot="public">
+    <compoundname>proj::selekcjanatur::GenWzrok</compoundname>
+    <basecompoundref refid="interfaceproj_1_1selekcjanatur_1_1_gen" prot="public" virt="non-virtual">proj.selekcjanatur.Gen</basecompoundref>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classproj_1_1selekcjanatur_1_1_gen_wzrok_1aa3a11ccae78812a5d7aaaf4f82558090" prot="private" static="no" mutable="no">
+        <type>final float</type>
+        <definition>final float proj.selekcjanatur.GenWzrok.wartosc</definition>
+        <argsstring></argsstring>
+        <name>wartosc</name>
+        <qualifiedname>proj.selekcjanatur.GenWzrok.wartosc</qualifiedname>
+        <briefdescription>
+<para>Przechowuje wartość genu zasięgu wzroku. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Wartość z przedziału 1.0-10.0 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/proj/selekcjanatur/GenWzrok.java" line="26" column="25" bodyfile="src/main/java/proj/selekcjanatur/GenWzrok.java" bodystart="26" bodyend="-1"/>
+        <referencedby refid="classproj_1_1selekcjanatur_1_1_gen_wzrok_1aeff8627865c75ff56b4e95a81518354f" compoundref="_gen_wzrok_8java" startline="40" endline="42">proj.selekcjanatur.GenWzrok.GenWzrok</referencedby>
+        <referencedby refid="classproj_1_1selekcjanatur_1_1_gen_wzrok_1a78a8ef7be1ae0cbe718d1428e44f639c" compoundref="_gen_wzrok_8java" startline="70" endline="74">proj.selekcjanatur.GenWzrok.odziedzicz</referencedby>
+        <referencedby refid="classproj_1_1selekcjanatur_1_1_gen_wzrok_1a2c2e4e3feabb475013319b27f6af596a" compoundref="_gen_wzrok_8java" startline="49" endline="51">proj.selekcjanatur.GenWzrok.wartosc</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classproj_1_1selekcjanatur_1_1_gen_wzrok_1ae792ef922168b72adacb551ee3163a8b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>proj.selekcjanatur.GenWzrok.GenWzrok</definition>
+        <argsstring>()</argsstring>
+        <name>GenWzrok</name>
+        <qualifiedname>proj.selekcjanatur.GenWzrok.GenWzrok</qualifiedname>
+        <briefdescription>
+<para>Konstruktor losujący początkową wartość genu. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Generuje wartość całkowitą z przedziału 1-10 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/proj/selekcjanatur/GenWzrok.java" line="32" column="12" bodyfile="src/main/java/proj/selekcjanatur/GenWzrok.java" bodystart="32" bodyend="34"/>
+        <references refid="classproj_1_1selekcjanatur_1_1_app_1ad267df574f9f99d0adf41d333bf4823a" compoundref="_app_8java" startline="32">proj.selekcjanatur.App.random</references>
+        <referencedby refid="classproj_1_1selekcjanatur_1_1_gen_wzrok_1a78a8ef7be1ae0cbe718d1428e44f639c" compoundref="_gen_wzrok_8java" startline="70" endline="74">proj.selekcjanatur.GenWzrok.odziedzicz</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classproj_1_1selekcjanatur_1_1_gen_wzrok_1a2c2e4e3feabb475013319b27f6af596a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float proj.selekcjanatur.GenWzrok.wartosc</definition>
+        <argsstring>()</argsstring>
+        <name>wartosc</name>
+        <qualifiedname>proj.selekcjanatur.GenWzrok.wartosc</qualifiedname>
+        <reimplements refid="interfaceproj_1_1selekcjanatur_1_1_gen_1ab2b013ae8d6ad91c73fdb8ec97f37c94">wartosc</reimplements>
+        <briefdescription>
+<para>Zwraca aktualną wartość genu. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Wartość zasięgu wzroku w zakresie 1.0-10.0 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/proj/selekcjanatur/GenWzrok.java" line="49" column="18" bodyfile="src/main/java/proj/selekcjanatur/GenWzrok.java" bodystart="49" bodyend="51"/>
+        <references refid="classproj_1_1selekcjanatur_1_1_gen_wzrok_1aa3a11ccae78812a5d7aaaf4f82558090" compoundref="_gen_wzrok_8java" startline="26">proj.selekcjanatur.GenWzrok.wartosc</references>
+      </memberdef>
+      <memberdef kind="function" id="classproj_1_1selekcjanatur_1_1_gen_wzrok_1a78a8ef7be1ae0cbe718d1428e44f639c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="interfaceproj_1_1selekcjanatur_1_1_gen" kindref="compound">Gen</ref></type>
+        <definition>Gen proj.selekcjanatur.GenWzrok.odziedzicz</definition>
+        <argsstring>()</argsstring>
+        <name>odziedzicz</name>
+        <qualifiedname>proj.selekcjanatur.GenWzrok.odziedzicz</qualifiedname>
+        <reimplements refid="interfaceproj_1_1selekcjanatur_1_1_gen_1a7dbd3fed6d9dee504bf8217028b50493">odziedzicz</reimplements>
+        <briefdescription>
+<para>Tworzy nowy gen poprzez dziedziczenie z mutacją </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Nowa instancja <ref refid="classproj_1_1selekcjanatur_1_1_gen_wzrok" kindref="compound">GenWzrok</ref></para>
+</simplesect>
+Algorytm działania:<orderedlist>
+<listitem><para>Losuje mutację z zakresu ±1.0</para>
+</listitem><listitem><para>Dodaje mutację do obecnej wartości</para>
+</listitem><listitem><para>Ogranicza wynik do zakresu 1.0-10.0</para>
+</listitem><listitem><para>Zwraca nowy gen z zmutowaną wartością</para>
+</listitem></orderedlist>
+</para>
+<para>Przykład: <programlisting><codeline><highlight class="normal">Gen<sp/>gen<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classproj_1_1selekcjanatur_1_1_gen_wzrok_1ae792ef922168b72adacb551ee3163a8b" kindref="member">GenWzrok</ref>();</highlight></codeline>
+<codeline><highlight class="normal">Gen<sp/>potomek<sp/>=<sp/>gen.odziedzicz();<sp/></highlight><highlight class="comment">//<sp/>np.<sp/>5.3</highlight></codeline>
+</programlisting> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/proj/selekcjanatur/GenWzrok.java" line="70" column="16" bodyfile="src/main/java/proj/selekcjanatur/GenWzrok.java" bodystart="70" bodyend="74"/>
+        <references refid="classproj_1_1selekcjanatur_1_1_gen_wzrok_1ae792ef922168b72adacb551ee3163a8b" compoundref="_gen_wzrok_8java" startline="32" endline="34">proj.selekcjanatur.GenWzrok.GenWzrok</references>
+        <references refid="classproj_1_1selekcjanatur_1_1_app_1ad267df574f9f99d0adf41d333bf4823a" compoundref="_app_8java" startline="32">proj.selekcjanatur.App.random</references>
+        <references refid="classproj_1_1selekcjanatur_1_1_gen_wzrok_1aa3a11ccae78812a5d7aaaf4f82558090" compoundref="_gen_wzrok_8java" startline="26">proj.selekcjanatur.GenWzrok.wartosc</references>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classproj_1_1selekcjanatur_1_1_gen_wzrok_1aeff8627865c75ff56b4e95a81518354f" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>proj.selekcjanatur.GenWzrok.GenWzrok</definition>
+        <argsstring>(float wartosc)</argsstring>
+        <name>GenWzrok</name>
+        <qualifiedname>proj.selekcjanatur.GenWzrok.GenWzrok</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>wartosc</declname>
+        </param>
+        <briefdescription>
+<para>Prywatny konstruktor do tworzenia genów potomnych. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>wartosc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Określona wartość genu (zostanie ograniczona do 1-10) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/proj/selekcjanatur/GenWzrok.java" line="40" column="13" bodyfile="src/main/java/proj/selekcjanatur/GenWzrok.java" bodystart="40" bodyend="42"/>
+        <references refid="classproj_1_1selekcjanatur_1_1_gen_wzrok_1aa3a11ccae78812a5d7aaaf4f82558090" compoundref="_gen_wzrok_8java" startline="26">proj.selekcjanatur.GenWzrok.wartosc</references>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Klasa implementująca gen zasięgu wzroku. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><ref refid="interfaceproj_1_1selekcjanatur_1_1_gen" kindref="compound">Gen</ref> określa jak daleko człowiek widzi w symulacji. Wartość genu jest z zakresu 1.0-10.0 gdzie:<itemizedlist>
+<listitem><para>1.0 = minimalny zasięg wzroku (1 komórka)</para>
+</listitem><listitem><para>10.0 = maksymalny zasięg wzroku (10 komórek)</para>
+</listitem></itemizedlist>
+</para>
+<para>Dziedziczenie odbywa się z możliwością mutacji ±1.0, przy czym wartość jest zawsze ograniczana do zakresu 1-10. Konstruktor prywatny jest używany tylko przy dziedziczeniu. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>proj.selekcjanatur.GenWzrok</label>
+        <link refid="classproj_1_1selekcjanatur_1_1_gen_wzrok"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>proj.selekcjanatur.Gen</label>
+        <link refid="interfaceproj_1_1selekcjanatur_1_1_gen"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>proj.selekcjanatur.GenWzrok</label>
+        <link refid="classproj_1_1selekcjanatur_1_1_gen_wzrok"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>proj.selekcjanatur.Gen</label>
+        <link refid="interfaceproj_1_1selekcjanatur_1_1_gen"/>
+      </node>
+    </collaborationgraph>
+    <location file="src/main/java/proj/selekcjanatur/GenWzrok.java" line="21" column="7" bodyfile="src/main/java/proj/selekcjanatur/GenWzrok.java" bodystart="21" bodyend="75"/>
+    <listofallmembers>
+      <member refid="classproj_1_1selekcjanatur_1_1_gen_wzrok_1ae792ef922168b72adacb551ee3163a8b" prot="public" virt="non-virtual"><scope>proj::selekcjanatur::GenWzrok</scope><name>GenWzrok</name></member>
+      <member refid="classproj_1_1selekcjanatur_1_1_gen_wzrok_1aeff8627865c75ff56b4e95a81518354f" prot="private" virt="non-virtual"><scope>proj::selekcjanatur::GenWzrok</scope><name>GenWzrok</name></member>
+      <member refid="classproj_1_1selekcjanatur_1_1_gen_wzrok_1a78a8ef7be1ae0cbe718d1428e44f639c" prot="public" virt="non-virtual"><scope>proj::selekcjanatur::GenWzrok</scope><name>odziedzicz</name></member>
+      <member refid="classproj_1_1selekcjanatur_1_1_gen_wzrok_1aa3a11ccae78812a5d7aaaf4f82558090" prot="private" virt="non-virtual"><scope>proj::selekcjanatur::GenWzrok</scope><name>wartosc</name></member>
+      <member refid="classproj_1_1selekcjanatur_1_1_gen_wzrok_1a2c2e4e3feabb475013319b27f6af596a" prot="public" virt="non-virtual"><scope>proj::selekcjanatur::GenWzrok</scope><name>wartosc</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

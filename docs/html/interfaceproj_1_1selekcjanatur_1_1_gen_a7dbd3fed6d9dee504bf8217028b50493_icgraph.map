@@ -1,0 +1,9 @@
+<map id="proj.selekcjanatur.Gen.odziedzicz" name="proj.selekcjanatur.Gen.odziedzicz">
+<area shape="rect" id="Node000001" title="Tworzy nowy gen poprzez dziedziczenie z mutacją" alt="" coords="924,5,1142,32"/>
+<area shape="rect" id="Node000002" href="$classproj_1_1selekcjanatur_1_1_czlowiek.html#ac542fecf860b53af21ee3063be486d27" title="Rozmnaża się z innym człowiekiem." alt="" coords="623,5,876,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="909,21,877,21,877,16,909,16"/>
+<area shape="rect" id="Node000003" href="$classproj_1_1selekcjanatur_1_1_symulacja.html#af140417936a5d3f7ca9c02af9dbb2814" title="Aktualizuje stan symulacji (co 3 klatki)" alt="" coords="301,5,575,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="608,21,575,21,575,16,608,16"/>
+<area shape="rect" id="Node000004" href="$classproj_1_1selekcjanatur_1_1_symulacja.html#adec9a02326fa916fa822eddad509050f" title="Aktualizuje stan symulacji o jeden krok." alt="" coords="5,5,253,32"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="285,21,253,21,253,16,285,16"/>
+</map>

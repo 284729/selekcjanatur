@@ -1,0 +1,221 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.14.0" xml:lang="pl">
+  <compound refid="classproj_1_1selekcjanatur_1_1_app" kind="class"><name>proj::selekcjanatur::App</name>
+    <member refid="classproj_1_1selekcjanatur_1_1_app_1ad267df574f9f99d0adf41d333bf4823a" kind="variable"><name>random</name></member>
+    <member refid="classproj_1_1selekcjanatur_1_1_app_1ae2849dc6abb758adce6cf1f28cd43d40" kind="function"><name>start</name></member>
+    <member refid="classproj_1_1selekcjanatur_1_1_app_1a5b449f0612c86ffe7eaa088a307e9a3b" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="classproj_1_1selekcjanatur_1_1_app_controller" kind="class"><name>proj::selekcjanatur::AppController</name>
+    <member refid="classproj_1_1selekcjanatur_1_1_app_controller_1a2b784528ad05c8fdd4e5d0f882d4ae37" kind="variable"><name>KOLUMNY</name></member>
+    <member refid="classproj_1_1selekcjanatur_1_1_app_controller_1a5cba35b80ca745fc51f513236158278d" kind="variable"><name>WIERSZE</name></member>
+    <member refid="classproj_1_1selekcjanatur_1_1_app_controller_1aa9ca846c479440798d3da99b4f7ccf2f" kind="variable"><name>grid</name></member>
+    <member refid="classproj_1_1selekcjanatur_1_1_app_controller_1a521268194825a35c273b0f7308ba30b9" kind="variable"><name>komorki</name></member>
+    <member refid="classproj_1_1selekcjanatur_1_1_app_controller_1af048351de6fb835fd277cfcb30cc0bd8" kind="variable"><name>symulacja</name></member>
+    <member refid="classproj_1_1selekcjanatur_1_1_app_controller_1a58a3a135d36c9817c9bd23bbdbc5149f" kind="variable"><name>timeline</name></member>
+    <member refid="classproj_1_1selekcjanatur_1_1_app_controller_1a1fe389a4559c436cdcedbfa6b1da4f86" kind="variable"><name>pauseButton</name></member>
+    <member refid="classproj_1_1selekcjanatur_1_1_app_controller_1ad6c00c483b02ad4e9d10afd5d4205588" kind="variable"><name>pauza</name></member>
+    <member refid="classproj_1_1selekcjanatur_1_1_app_controller_1a126b2a6a1a53efdb82999b73dc9ca21d" kind="variable"><name>PLIK</name></member>
+    <member refid="classproj_1_1selekcjanatur_1_1_app_controller_1ac2cf98af4e541bbf36f17f799eb7b581" kind="function"><name>initialize</name></member>
+    <member refid="classproj_1_1selekcjanatur_1_1_app_controller_1abb8c03bcfbcead3aeda09a9f5d672360" kind="function"><name>rysujPlansze</name></member>
+    <member refid="classproj_1_1selekcjanatur_1_1_app_controller_1a6c1db90f850fed3c52f9e23270864b1a" kind="function"><name>pokazOknoZakonczenia</name></member>
+    <member refid="classproj_1_1selekcjanatur_1_1_app_controller_1ab1b23531bbe4e4dbf662e922c4597e58" kind="function"><name>togglePause</name></member>
+  </compound>
+  <compound refid="classproj_1_1selekcjanatur_1_1_czlowiek" kind="class"><name>proj::selekcjanatur::Czlowiek</name>
+    <member refid="classproj_1_1selekcjanatur_1_1_czlowiek_1ac4d6409fa9719e64741b67bbfcdaf573" kind="variable"><name>x</name></member>
+    <member refid="classproj_1_1selekcjanatur_1_1_czlowiek_1a59322ad4d7324f586e2acd03edd858ce" kind="variable"><name>y</name></member>
+    <member refid="classproj_1_1selekcjanatur_1_1_czlowiek_1a024b3bcb3c470bb8d8ad482646689263" kind="variable"><name>id</name></member>
+    <member refid="classproj_1_1selekcjanatur_1_1_czlowiek_1ae4932e671627f16ed55cf0b377aed889" kind="variable"><name>zywy</name></member>
+    <member refid="classproj_1_1selekcjanatur_1_1_czlowiek_1adc5b716c39bd2e6292460bcf9048eea3" kind="variable"><name>poziomGlodu</name></member>
+    <member refid="classproj_1_1selekcjanatur_1_1_czlowiek_1ad0e705573c19c5416636ee0fd457cf7a" kind="variable"><name>czasOdRozmnazania</name></member>
+    <member refid="classproj_1_1selekcjanatur_1_1_czlowiek_1a582845c239e55cf178e6e9ca22ee0639" kind="variable"><name>geny</name></member>
+    <member refid="classproj_1_1selekcjanatur_1_1_czlowiek_1a816cfb8471e36f40a415ce3184398033" kind="variable"><name>wiek</name></member>
+    <member refid="classproj_1_1selekcjanatur_1_1_czlowiek_1a509bb922ddb9fd50f424b988e350e17f" kind="variable"><name>globalneId</name></member>
+    <member refid="classproj_1_1selekcjanatur_1_1_czlowiek_1a341bb3b95da388b296452c4155c1c773" kind="function"><name>Czlowiek</name></member>
+    <member refid="classproj_1_1selekcjanatur_1_1_czlowiek_1a7eb1b9e51b6766279f0f2b7d0dd9b119" kind="function"><name>jestDzieckiem</name></member>
+    <member refid="classproj_1_1selekcjanatur_1_1_czlowiek_1aabd1eb0726b65fce7b6bab1f894904cf" kind="function"><name>zasiegWzroku</name></member>
+    <member refid="classproj_1_1selekcjanatur_1_1_czlowiek_1a485073a3fc648b9a3ca7ecdec405516e" kind="function"><name>predkosc</name></member>
+    <member refid="classproj_1_1selekcjanatur_1_1_czlowiek_1a53d97caac471e136d612c2eb28f02c2d" kind="function"><name>zuzycieEnergii</name></member>
+    <member refid="classproj_1_1selekcjanatur_1_1_czlowiek_1aff9d2620e2407154927841859a6c98af" kind="function"><name>aktualizuj</name></member>
+    <member refid="classproj_1_1selekcjanatur_1_1_czlowiek_1a9cce002ea96f19fe0eb88606d174e464" kind="function"><name>powinnienSieRuszyc</name></member>
+    <member refid="classproj_1_1selekcjanatur_1_1_czlowiek_1a104718c5aefe504867235fa48c03a645" kind="function"><name>mozeRozmnazac</name></member>
+    <member refid="classproj_1_1selekcjanatur_1_1_czlowiek_1a19de94d2ab10d64910307b71bf45ed2e" kind="function"><name>zjedz</name></member>
+    <member refid="classproj_1_1selekcjanatur_1_1_czlowiek_1ac88bbff18c715a98a16d48103b3b495b" kind="function"><name>czyMezczyzna</name></member>
+    <member refid="classproj_1_1selekcjanatur_1_1_czlowiek_1a877a9787e423b1279430dc1f952fea04" kind="function"><name>czyUmieraZeStarosci</name></member>
+    <member refid="classproj_1_1selekcjanatur_1_1_czlowiek_1ac542fecf860b53af21ee3063be486d27" kind="function"><name>rozmnazajZ</name></member>
+    <member refid="classproj_1_1selekcjanatur_1_1_czlowiek_1ac5cd794f090024daf3dd37da3ced3a6f" kind="function"><name>toString</name></member>
+  </compound>
+  <compound refid="interfaceproj_1_1selekcjanatur_1_1_gen" kind="interface"><name>proj::selekcjanatur::Gen</name>
+    <member refid="interfaceproj_1_1selekcjanatur_1_1_gen_1ab2b013ae8d6ad91c73fdb8ec97f37c94" kind="function"><name>wartosc</name></member>
+    <member refid="interfaceproj_1_1selekcjanatur_1_1_gen_1a7dbd3fed6d9dee504bf8217028b50493" kind="function"><name>odziedzicz</name></member>
+  </compound>
+  <compound refid="classproj_1_1selekcjanatur_1_1_gen_predkosc_chodzenia" kind="class"><name>proj::selekcjanatur::GenPredkoscChodzenia</name>
+    <member refid="classproj_1_1selekcjanatur_1_1_gen_predkosc_chodzenia_1a0896853c9e0ca9ff837ead6054a486ee" kind="variable"><name>wartosc</name></member>
+    <member refid="classproj_1_1selekcjanatur_1_1_gen_predkosc_chodzenia_1a8e6bad25e15b11e69b650089dd2849b5" kind="function"><name>GenPredkoscChodzenia</name></member>
+    <member refid="classproj_1_1selekcjanatur_1_1_gen_predkosc_chodzenia_1ad62d70c9837c14191a3373aa526ce771" kind="function"><name>GenPredkoscChodzenia</name></member>
+    <member refid="classproj_1_1selekcjanatur_1_1_gen_predkosc_chodzenia_1a5a2e8c5c92648cd0fbd48ed3b3e79d48" kind="function"><name>wartosc</name></member>
+    <member refid="classproj_1_1selekcjanatur_1_1_gen_predkosc_chodzenia_1ac1c84739c1c813099f3d0b351c9a6487" kind="function"><name>odziedzicz</name></member>
+  </compound>
+  <compound refid="classproj_1_1selekcjanatur_1_1_gen_wzrok" kind="class"><name>proj::selekcjanatur::GenWzrok</name>
+    <member refid="classproj_1_1selekcjanatur_1_1_gen_wzrok_1aa3a11ccae78812a5d7aaaf4f82558090" kind="variable"><name>wartosc</name></member>
+    <member refid="classproj_1_1selekcjanatur_1_1_gen_wzrok_1ae792ef922168b72adacb551ee3163a8b" kind="function"><name>GenWzrok</name></member>
+    <member refid="classproj_1_1selekcjanatur_1_1_gen_wzrok_1a2c2e4e3feabb475013319b27f6af596a" kind="function"><name>wartosc</name></member>
+    <member refid="classproj_1_1selekcjanatur_1_1_gen_wzrok_1a78a8ef7be1ae0cbe718d1428e44f639c" kind="function"><name>odziedzicz</name></member>
+    <member refid="classproj_1_1selekcjanatur_1_1_gen_wzrok_1aeff8627865c75ff56b4e95a81518354f" kind="function"><name>GenWzrok</name></member>
+  </compound>
+  <compound refid="classproj_1_1selekcjanatur_1_1_gen_zapotrzebowanie_energetyczne" kind="class"><name>proj::selekcjanatur::GenZapotrzebowanieEnergetyczne</name>
+    <member refid="classproj_1_1selekcjanatur_1_1_gen_zapotrzebowanie_energetyczne_1a6f92daa3d49d10ca3b4dae6f11e52a36" kind="variable"><name>wartosc</name></member>
+    <member refid="classproj_1_1selekcjanatur_1_1_gen_zapotrzebowanie_energetyczne_1ae40faf3665048819b8179c5eaa72e344" kind="function"><name>GenZapotrzebowanieEnergetyczne</name></member>
+    <member refid="classproj_1_1selekcjanatur_1_1_gen_zapotrzebowanie_energetyczne_1a064321ada51f7fb8bef1c810789afeca" kind="function"><name>GenZapotrzebowanieEnergetyczne</name></member>
+    <member refid="classproj_1_1selekcjanatur_1_1_gen_zapotrzebowanie_energetyczne_1afd421547690d3ea2c7a15eaea3cf1e08" kind="function"><name>wartosc</name></member>
+    <member refid="classproj_1_1selekcjanatur_1_1_gen_zapotrzebowanie_energetyczne_1a283348bd55e17df0fe1345785d138c95" kind="function"><name>odziedzicz</name></member>
+  </compound>
+  <compound refid="interfaceproj_1_1selekcjanatur_1_1_interfejs_symulacji" kind="interface"><name>proj::selekcjanatur::InterfejsSymulacji</name>
+    <member refid="interfaceproj_1_1selekcjanatur_1_1_interfejs_symulacji_1abd9c98677e97fa36f0126a04bb0baeba" kind="function"><name>aktualizuj</name></member>
+    <member refid="interfaceproj_1_1selekcjanatur_1_1_interfejs_symulacji_1a42c8bbee1a48204a12ea333621bca0d5" kind="function"><name>getLudzie</name></member>
+    <member refid="interfaceproj_1_1selekcjanatur_1_1_interfejs_symulacji_1aa64fcf541377293e9ace7cbabb3f5c62" kind="function"><name>getJedzenie</name></member>
+    <member refid="interfaceproj_1_1selekcjanatur_1_1_interfejs_symulacji_1a4537fd530e9fb26e34a029f9de374f9e" kind="function"><name>czySymulacjaZakonczona</name></member>
+    <member refid="interfaceproj_1_1selekcjanatur_1_1_interfejs_symulacji_1a7e2ab50886fc205455480e6015060caa" kind="function"><name>czySymulacjaZakonczena</name></member>
+  </compound>
+  <compound refid="classproj_1_1selekcjanatur_1_1_jedzenie" kind="class"><name>proj::selekcjanatur::Jedzenie</name>
+    <member refid="classproj_1_1selekcjanatur_1_1_jedzenie_1a3d5d2ca6e17c0c4256361d91f0960348" kind="variable"><name>x</name></member>
+    <member refid="classproj_1_1selekcjanatur_1_1_jedzenie_1a4efa742917f66b6c29735d90a2104683" kind="variable"><name>y</name></member>
+    <member refid="classproj_1_1selekcjanatur_1_1_jedzenie_1aba56f863335ddaf87115729096d41bb0" kind="variable"><name>wartosc</name></member>
+    <member refid="classproj_1_1selekcjanatur_1_1_jedzenie_1a0a32d35b4201fd65bcde3ecadae055cf" kind="function"><name>Jedzenie</name></member>
+  </compound>
+  <compound refid="classproj_1_1selekcjanatur_1_1_kobieta" kind="class"><name>proj::selekcjanatur::Kobieta</name>
+    <member refid="classproj_1_1selekcjanatur_1_1_kobieta_1ab20a08ab86b96cb78f5163a71e06c49c" kind="function"><name>Kobieta</name></member>
+    <member refid="classproj_1_1selekcjanatur_1_1_kobieta_1acf6cab99fe158694c65d666cfee653e3" kind="function"><name>czyMezczyzna</name></member>
+    <member refid="classproj_1_1selekcjanatur_1_1_kobieta_1a2a0a9cd3a3bc1e439e1c5c278381a9d3" kind="function"><name>mozeRozmnazac</name></member>
+  </compound>
+  <compound refid="classproj_1_1selekcjanatur_1_1_mezczyzna" kind="class"><name>proj::selekcjanatur::Mezczyzna</name>
+    <member refid="classproj_1_1selekcjanatur_1_1_mezczyzna_1a78b2079ac649e0e0600864a25b899f90" kind="function"><name>Mezczyzna</name></member>
+    <member refid="classproj_1_1selekcjanatur_1_1_mezczyzna_1a99278a265802d4c1b952b84dc3bb46f5" kind="function"><name>czyMezczyzna</name></member>
+    <member refid="classproj_1_1selekcjanatur_1_1_mezczyzna_1a6252640fd21d46c66daf76ce143dcf6a" kind="function"><name>mozeRozmnazac</name></member>
+  </compound>
+  <compound refid="classproj_1_1selekcjanatur_1_1_start_controller" kind="class"><name>proj::selekcjanatur::StartController</name>
+    <member refid="classproj_1_1selekcjanatur_1_1_start_controller_1ae7db52fcfa05bd89630dbafbcb17798d" kind="variable"><name>sliderWidth</name></member>
+    <member refid="classproj_1_1selekcjanatur_1_1_start_controller_1a14e68f735235784a770b67aadfdabf4c" kind="variable"><name>sliderHeight</name></member>
+    <member refid="classproj_1_1selekcjanatur_1_1_start_controller_1a135e271886262b705dd0b01143d38743" kind="variable"><name>sliderPeople</name></member>
+    <member refid="classproj_1_1selekcjanatur_1_1_start_controller_1a753b0ce77f29df94503d98c8dfc077fe" kind="variable"><name>sliderFood</name></member>
+    <member refid="classproj_1_1selekcjanatur_1_1_start_controller_1a06b38c2128a0877477a4e4b0b17362c0" kind="variable"><name>sliderFoodPerTick</name></member>
+    <member refid="classproj_1_1selekcjanatur_1_1_start_controller_1af8dde37b2e330af51f7a19c1044f6abe" kind="variable"><name>labelWidth</name></member>
+    <member refid="classproj_1_1selekcjanatur_1_1_start_controller_1a598d8ff12ad77fab756529358cf46cda" kind="variable"><name>labelHeight</name></member>
+    <member refid="classproj_1_1selekcjanatur_1_1_start_controller_1a22fde975baf4d84eebb6565298af670b" kind="variable"><name>labelPeople</name></member>
+    <member refid="classproj_1_1selekcjanatur_1_1_start_controller_1aa97667419de3f51733fff36d81848010" kind="variable"><name>labelFood</name></member>
+    <member refid="classproj_1_1selekcjanatur_1_1_start_controller_1a7f288e985f51623326ee61dba06b8396" kind="variable"><name>labelFoodPerTick</name></member>
+    <member refid="classproj_1_1selekcjanatur_1_1_start_controller_1a454899066792549fb6dd082733f7e7da" kind="function"><name>initialize</name></member>
+    <member refid="classproj_1_1selekcjanatur_1_1_start_controller_1ac32fa03ada58f71a3cbc379ea17cd8e3" kind="function"><name>bindSliderLabel</name></member>
+    <member refid="classproj_1_1selekcjanatur_1_1_start_controller_1adef8290b0feaebf73d01894af5e102e3" kind="function"><name>startSimulation</name></member>
+    <member refid="classproj_1_1selekcjanatur_1_1_start_controller_1a4ac0a2be052eb17c702f3b5e730d9ca5" kind="function"><name>replayFromFile</name></member>
+  </compound>
+  <compound refid="classproj_1_1selekcjanatur_1_1_symulacja" kind="class"><name>proj::selekcjanatur::Symulacja</name>
+    <member refid="classproj_1_1selekcjanatur_1_1_symulacja_1a628e531aaeeae0e81364b86adc82fff6" kind="variable"><name>szerokosc</name></member>
+    <member refid="classproj_1_1selekcjanatur_1_1_symulacja_1a1da6d14516adc51b8b1fd58eecaa2913" kind="variable"><name>wysokosc</name></member>
+    <member refid="classproj_1_1selekcjanatur_1_1_symulacja_1aee9f27bbc79b36ccddff1dd47bc00b2d" kind="variable"><name>liczbaLudzi</name></member>
+    <member refid="classproj_1_1selekcjanatur_1_1_symulacja_1a79784ee2988b148e298f720675d68227" kind="variable"><name>poczatkoweJedzenie</name></member>
+    <member refid="classproj_1_1selekcjanatur_1_1_symulacja_1ad5f5a7cbaef83a2d3da013f66d935074" kind="variable"><name>jedzenieNaTick</name></member>
+    <member refid="classproj_1_1selekcjanatur_1_1_symulacja_1ada69032352c874148e69f7b067ea2594" kind="variable"><name>kolumny</name></member>
+    <member refid="classproj_1_1selekcjanatur_1_1_symulacja_1a384e1267397de60c4964943880661f41" kind="variable"><name>wiersze</name></member>
+    <member refid="classproj_1_1selekcjanatur_1_1_symulacja_1adddb7f79a97e55dceac133dbb4d7f3f0" kind="variable"><name>ludzie</name></member>
+    <member refid="classproj_1_1selekcjanatur_1_1_symulacja_1a35077d39c97da84b288123a4ea611aad" kind="variable"><name>jedzenie</name></member>
+    <member refid="classproj_1_1selekcjanatur_1_1_symulacja_1afcd70b19057fc8083e473fdb86812eb2" kind="variable"><name>licznikKlatek</name></member>
+    <member refid="classproj_1_1selekcjanatur_1_1_symulacja_1af6654a8625e5ea42ca663df8f1fdc253" kind="variable"><name>licznikDodawaniaJedzenia</name></member>
+    <member refid="classproj_1_1selekcjanatur_1_1_symulacja_1af59f557f32a2dd9f1775793e51f60453" kind="variable"><name>zajete</name></member>
+    <member refid="classproj_1_1selekcjanatur_1_1_symulacja_1ab09ec8433094637d73588830fbff7c9d" kind="variable"><name>dziennikZdarzen</name></member>
+    <member refid="classproj_1_1selekcjanatur_1_1_symulacja_1ac3fbc3c271e2060e456fca26c1236f22" kind="variable"><name>KIERUNKI</name></member>
+    <member refid="classproj_1_1selekcjanatur_1_1_symulacja_1a6a0641aea8437d8f8a9ef0d975d8db75" kind="function"><name>ustawParametry</name></member>
+    <member refid="classproj_1_1selekcjanatur_1_1_symulacja_1a30d65d41391f815284bbdce9ab12beb9" kind="function"><name>zapiszDziennikDoPliku</name></member>
+    <member refid="classproj_1_1selekcjanatur_1_1_symulacja_1a41de65a2199621bc5386131e337629f5" kind="function"><name>Symulacja</name></member>
+    <member refid="classproj_1_1selekcjanatur_1_1_symulacja_1a259b1b62d8f3116eefdc1b6e503ccd35" kind="function"><name>getLudzie</name></member>
+    <member refid="classproj_1_1selekcjanatur_1_1_symulacja_1ae3205b15a5c36425e97c6c1327c9f9eb" kind="function"><name>getJedzenie</name></member>
+    <member refid="classproj_1_1selekcjanatur_1_1_symulacja_1adec9a02326fa916fa822eddad509050f" kind="function"><name>aktualizuj</name></member>
+    <member refid="classproj_1_1selekcjanatur_1_1_symulacja_1a3d0ca8ee0af5090358081f7577c0245f" kind="function"><name>czySymulacjaZakonczena</name></member>
+    <member refid="classproj_1_1selekcjanatur_1_1_symulacja_1adca30037183a0fade601724dd9b8f1bd" kind="function"><name>dodajDoDziennika</name></member>
+    <member refid="classproj_1_1selekcjanatur_1_1_symulacja_1a2728068a09ceb38515acafb5547d86b3" kind="function"><name>dodajLosowychLudzi</name></member>
+    <member refid="classproj_1_1selekcjanatur_1_1_symulacja_1ab361a78b8ca5a29d85b023553d4490f5" kind="function"><name>dodajLosoweJedzenie</name></member>
+    <member refid="classproj_1_1selekcjanatur_1_1_symulacja_1af140417936a5d3f7ca9c02af9dbb2814" kind="function"><name>aktualizujStan</name></member>
+    <member refid="classproj_1_1selekcjanatur_1_1_symulacja_1a52f53070719050f572593ac7c6908ebd" kind="function"><name>wykonajRuch</name></member>
+    <member refid="classproj_1_1selekcjanatur_1_1_symulacja_1a308b1488a3d7d83887fc3aea6c4ca4ee" kind="function"><name>znajdzPartnera</name></member>
+    <member refid="classproj_1_1selekcjanatur_1_1_symulacja_1a09362c7d34ee3e4c0ffd46d4b3c8bd17" kind="function"><name>znajdzNajblizszeJedzenie</name></member>
+    <member refid="classproj_1_1selekcjanatur_1_1_symulacja_1ac24b817f5f0ae590ecd7e988b3f78c56" kind="function"><name>znajdzJedzenieNaPolu</name></member>
+    <member refid="classproj_1_1selekcjanatur_1_1_symulacja_1a1d1661b0578afad91d9b4807d8122e39" kind="function"><name>przemiescSieNaPole</name></member>
+  </compound>
+  <compound refid="classproj_1_1selekcjanatur_1_1_symulacja_plik" kind="class"><name>proj::selekcjanatur::SymulacjaPlik</name>
+    <member refid="classproj_1_1selekcjanatur_1_1_symulacja_plik_1afc37062ccdcdfcd56718cbb0bb078139" kind="variable"><name>zdarzenia</name></member>
+    <member refid="classproj_1_1selekcjanatur_1_1_symulacja_plik_1a5f5d231c9080a0d5266d87d4b7031be7" kind="variable"><name>index</name></member>
+    <member refid="classproj_1_1selekcjanatur_1_1_symulacja_plik_1a03353e7e4527463873e0c81f085099b2" kind="variable"><name>ludzie</name></member>
+    <member refid="classproj_1_1selekcjanatur_1_1_symulacja_plik_1a29101cb32e3423796ec0b048790a3c39" kind="variable"><name>jedzenie</name></member>
+    <member refid="classproj_1_1selekcjanatur_1_1_symulacja_plik_1a67a339bf84667023f2cbf5c10239a27a" kind="function"><name>SymulacjaPlik</name></member>
+    <member refid="classproj_1_1selekcjanatur_1_1_symulacja_plik_1a51c0e6b4a307749c4746a70c5e624f15" kind="function"><name>aktualizuj</name></member>
+    <member refid="classproj_1_1selekcjanatur_1_1_symulacja_plik_1a794761349d4b40e843b27accf7930a21" kind="function"><name>czySymulacjaZakonczona</name></member>
+    <member refid="classproj_1_1selekcjanatur_1_1_symulacja_plik_1add43cde0f781327acda280da156c22b7" kind="function"><name>getLudzie</name></member>
+    <member refid="classproj_1_1selekcjanatur_1_1_symulacja_plik_1ac3c4708297d14861c4c3671f1e6afd6f" kind="function"><name>getJedzenie</name></member>
+    <member refid="classproj_1_1selekcjanatur_1_1_symulacja_plik_1ac2f0839c0c8670ed3801690546d03d23" kind="function"><name>dodajCzlowieka</name></member>
+    <member refid="classproj_1_1selekcjanatur_1_1_symulacja_plik_1ac529b5c1f654f9cc5a6c727fd029f342" kind="function"><name>dodajCzlowieka</name></member>
+    <member refid="classproj_1_1selekcjanatur_1_1_symulacja_plik_1affa9dff3c1ffc985a3ca96055b4534ca" kind="function"><name>przemiescCzlowieka</name></member>
+    <member refid="classproj_1_1selekcjanatur_1_1_symulacja_plik_1a5fd6171c7fa48a7581c013b7a852550d" kind="function"><name>usunJedzenie</name></member>
+    <member refid="classproj_1_1selekcjanatur_1_1_symulacja_plik_1a50a8cd7b56c409d4f312d49ed30bd42f" kind="function"><name>usunCzlowieka</name></member>
+  </compound>
+  <compound refid="namespacejava_1_1lang" kind="namespace"><name>java::lang</name>
+  </compound>
+  <compound refid="namespacejava_1_1util" kind="namespace"><name>java::util</name>
+  </compound>
+  <compound refid="namespacejavafx_1_1scene_1_1layout" kind="namespace"><name>javafx::scene::layout</name>
+  </compound>
+  <compound refid="namespaceproj" kind="namespace"><name>proj</name>
+  </compound>
+  <compound refid="namespaceproj_1_1selekcjanatur" kind="namespace"><name>proj::selekcjanatur</name>
+  </compound>
+  <compound refid="module-info_8java" kind="file"><name>module-info.java</name>
+    <member refid="module-info_8java_1add25d10e8a75b66efa64df2e17590256" kind="variable"><name>selekcjanatur</name></member>
+    <member refid="module-info_8java_1a117eda8ba0873252e84664f43161eb62" kind="variable"><name>fxml</name></member>
+  </compound>
+  <compound refid="_app_8java" kind="file"><name>App.java</name>
+  </compound>
+  <compound refid="_app_controller_8java" kind="file"><name>AppController.java</name>
+  </compound>
+  <compound refid="_czlowiek_8java" kind="file"><name>Czlowiek.java</name>
+  </compound>
+  <compound refid="_gen_8java" kind="file"><name>Gen.java</name>
+  </compound>
+  <compound refid="_gen_predkosc_chodzenia_8java" kind="file"><name>GenPredkoscChodzenia.java</name>
+  </compound>
+  <compound refid="_gen_wzrok_8java" kind="file"><name>GenWzrok.java</name>
+  </compound>
+  <compound refid="_gen_zapotrzebowanie_energetyczne_8java" kind="file"><name>GenZapotrzebowanieEnergetyczne.java</name>
+  </compound>
+  <compound refid="_interfejs_symulacji_8java" kind="file"><name>InterfejsSymulacji.java</name>
+  </compound>
+  <compound refid="_jedzenie_8java" kind="file"><name>Jedzenie.java</name>
+  </compound>
+  <compound refid="_kobieta_8java" kind="file"><name>Kobieta.java</name>
+  </compound>
+  <compound refid="_mezczyzna_8java" kind="file"><name>Mezczyzna.java</name>
+  </compound>
+  <compound refid="_start_controller_8java" kind="file"><name>StartController.java</name>
+  </compound>
+  <compound refid="_symulacja_8java" kind="file"><name>Symulacja.java</name>
+  </compound>
+  <compound refid="_symulacja_plik_8java" kind="file"><name>SymulacjaPlik.java</name>
+  </compound>
+  <compound refid="grid-view_8fxml" kind="file"><name>grid-view.fxml</name>
+  </compound>
+  <compound refid="start-view_8fxml" kind="file"><name>start-view.fxml</name>
+  </compound>
+  <compound refid="dir_fd3f6763802dee1ad875f6c80eac0bda" kind="dir"><name>src/main/java</name>
+  </compound>
+  <compound refid="dir_5eb159725f84c66aafd839904a4acdd0" kind="dir"><name>src/main</name>
+  </compound>
+  <compound refid="dir_60c59662fe3799b119abf8c2ebbe1ccc" kind="dir"><name>src/main/java/proj</name>
+  </compound>
+  <compound refid="dir_36046fb7ab089d356d5e621a087cd51d" kind="dir"><name>src/main/resources/proj</name>
+  </compound>
+  <compound refid="dir_6bfaacbfa58826360c75a979f1bd52ac" kind="dir"><name>src/main/resources</name>
+  </compound>
+  <compound refid="dir_7e66381ed7cbf1db0c622dca65685572" kind="dir"><name>src/main/java/proj/selekcjanatur</name>
+  </compound>
+  <compound refid="dir_e2770082773a9212f1ab93d6b3059d3d" kind="dir"><name>src/main/resources/proj/selekcjanatur</name>
+  </compound>
+  <compound refid="dir_68267d1309a1af8e8297ef4c3efbcdba" kind="dir"><name>src</name>
+  </compound>
+</doxygenindex>

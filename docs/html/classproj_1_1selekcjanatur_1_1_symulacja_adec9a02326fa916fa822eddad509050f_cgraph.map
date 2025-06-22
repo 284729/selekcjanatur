@@ -1,0 +1,38 @@
+<map id="proj.selekcjanatur.Symulacja.aktualizuj" name="proj.selekcjanatur.Symulacja.aktualizuj">
+<area shape="rect" id="Node000001" title="Aktualizuje stan symulacji o jeden krok." alt="" coords="5,256,253,283"/>
+<area shape="rect" id="Node000002" href="$classproj_1_1selekcjanatur_1_1_symulacja.html#af140417936a5d3f7ca9c02af9dbb2814" title="Aktualizuje stan symulacji (co 3 klatki)" alt="" coords="301,344,575,371"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="180,281,375,337,373,342,178,286"/>
+<area shape="rect" id="Node000004" href="$classproj_1_1selekcjanatur_1_1_symulacja.html#adca30037183a0fade601724dd9b8f1bd" title="Dodaje wpis do dziennika zdarzeń" alt="" coords="928,311,1151,353"/>
+<area shape="poly" id="edge10_Node000001_Node000004" title=" " alt="" coords="253,264,382,263,539,266,708,275,877,292,943,304,942,309,876,297,708,281,538,272,382,269,253,269"/>
+<area shape="rect" id="Node000010" href="$classproj_1_1selekcjanatur_1_1_symulacja.html#a52f53070719050f572593ac7c6908ebd" title="Wykonuje ruch dla danego człowieka." alt="" coords="302,139,574,165"/>
+<area shape="poly" id="edge11_Node000001_Node000010" title=" " alt="" coords="166,253,385,169,387,174,168,258"/>
+<area shape="rect" id="Node000003" href="$classproj_1_1selekcjanatur_1_1_czlowiek.html#ac88bbff18c715a98a16d48103b3b495b" title="Sprawdza płeć człowieka." alt="" coords="936,85,1143,128"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="446,342,472,307,512,261,563,214,622,175,664,163,739,149,921,120,921,126,740,154,665,168,624,180,566,218,516,265,477,311,451,345"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="575,363,720,365,876,359,917,354,918,359,877,364,721,371,575,368"/>
+<area shape="rect" id="Node000005" href="$classproj_1_1selekcjanatur_1_1_symulacja.html#ab361a78b8ca5a29d85b023553d4490f5" title="Dodaje losowe jedzenie na planszę" alt="" coords="638,424,861,467"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="489,369,658,417,656,422,487,374"/>
+<area shape="rect" id="Node000006" href="$classproj_1_1selekcjanatur_1_1_czlowiek.html#a104718c5aefe504867235fa48c03a645" title="Sprawdza możliwość rozmnożenia." alt="" coords="641,307,858,349"/>
+<area shape="poly" id="edge6_Node000002_Node000006" title=" " alt="" coords="575,342,625,337,626,342,575,347"/>
+<area shape="rect" id="Node000007" href="$classproj_1_1selekcjanatur_1_1_czlowiek.html#ac542fecf860b53af21ee3063be486d27" title="Rozmnaża się z innym człowiekiem." alt="" coords="623,491,876,517"/>
+<area shape="poly" id="edge7_Node000002_Node000007" title=" " alt="" coords="457,369,527,422,574,451,624,476,644,483,642,488,622,481,571,456,524,426,454,373"/>
+<area shape="poly" id="edge5_Node000005_Node000004" title=" " alt="" coords="824,421,875,403,979,358,981,363,877,408,825,426"/>
+<area shape="rect" id="Node000008" href="$classproj_1_1selekcjanatur_1_1_czlowiek.html#a341bb3b95da388b296452c4155c1c773" title="Konstruktor tworzący nowego człowieka." alt="" coords="947,512,1132,555"/>
+<area shape="poly" id="edge8_Node000007_Node000008" title=" " alt="" coords="877,514,932,520,931,525,877,520"/>
+<area shape="rect" id="Node000009" href="$interfaceproj_1_1selekcjanatur_1_1_gen.html#a7dbd3fed6d9dee504bf8217028b50493" title="Tworzy nowy gen poprzez dziedziczenie z mutacją" alt="" coords="931,461,1148,488"/>
+<area shape="poly" id="edge9_Node000007_Node000009" title=" " alt="" coords="877,488,915,485,915,490,877,494"/>
+<area shape="rect" id="Node000011" href="$classproj_1_1selekcjanatur_1_1_symulacja.html#a1d1661b0578afad91d9b4807d8122e39" title="Przenosi człowieka na nowe pole." alt="" coords="624,189,876,232"/>
+<area shape="poly" id="edge12_Node000010_Node000011" title=" " alt="" coords="513,163,619,183,618,189,512,169"/>
+<area shape="rect" id="Node000014" href="$classproj_1_1selekcjanatur_1_1_symulacja.html#a09362c7d34ee3e4c0ffd46d4b3c8bd17" title="Znajduje najbliższe jedzenie w zasięgu wzroku." alt="" coords="634,5,865,48"/>
+<area shape="poly" id="edge16_Node000010_Node000014" title=" " alt="" coords="462,136,532,98,622,58,641,51,643,56,624,62,535,103,464,141"/>
+<area shape="rect" id="Node000016" href="$classproj_1_1selekcjanatur_1_1_symulacja.html#a308b1488a3d7d83887fc3aea6c4ca4ee" title="Znajduje partnera do rozmnażania w zasięgu wzroku." alt="" coords="634,72,865,115"/>
+<area shape="poly" id="edge18_Node000010_Node000016" title=" " alt="" coords="512,135,619,115,620,120,513,141"/>
+<area shape="poly" id="edge13_Node000011_Node000004" title=" " alt="" coords="827,230,877,248,987,301,985,305,875,253,825,235"/>
+<area shape="rect" id="Node000012" href="$classproj_1_1selekcjanatur_1_1_czlowiek.html#a19de94d2ab10d64910307b71bf45ed2e" title="Zjada podane jedzenie." alt="" coords="931,231,1148,257"/>
+<area shape="poly" id="edge14_Node000011_Node000012" title=" " alt="" coords="876,223,916,227,916,232,876,228"/>
+<area shape="rect" id="Node000013" href="$classproj_1_1selekcjanatur_1_1_symulacja.html#ac24b817f5f0ae590ecd7e988b3f78c56" title="Sprawdza czy na danym polu jest jedzenie." alt="" coords="924,164,1155,207"/>
+<area shape="poly" id="edge15_Node000011_Node000013" title=" " alt="" coords="876,197,908,194,909,199,876,202"/>
+<area shape="rect" id="Node000015" href="$classproj_1_1selekcjanatur_1_1_czlowiek.html#aabd1eb0726b65fce7b6bab1f894904cf" title="Oblicza zasięg wzroku na podstawie genów." alt="" coords="928,12,1151,55"/>
+<area shape="poly" id="edge17_Node000014_Node000015" title=" " alt="" coords="865,27,913,28,913,33,865,32"/>
+<area shape="poly" id="edge19_Node000016_Node000003" title=" " alt="" coords="865,96,921,99,921,104,865,101"/>
+<area shape="poly" id="edge20_Node000016_Node000015" title=" " alt="" coords="855,69,918,56,919,61,856,74"/>
+</map>

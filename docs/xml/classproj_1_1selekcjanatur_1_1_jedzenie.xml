@@ -1,0 +1,124 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="pl">
+  <compounddef id="classproj_1_1selekcjanatur_1_1_jedzenie" kind="class" language="Java" prot="public">
+    <compoundname>proj::selekcjanatur::Jedzenie</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classproj_1_1selekcjanatur_1_1_jedzenie_1a3d5d2ca6e17c0c4256361d91f0960348" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int proj.selekcjanatur.Jedzenie.x</definition>
+        <argsstring></argsstring>
+        <name>x</name>
+        <qualifiedname>proj.selekcjanatur.Jedzenie.x</qualifiedname>
+        <briefdescription>
+<para>Pozycja x na planszy. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Wartość z zakresu 0 do szerokości planszy - 1 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/proj/selekcjanatur/Jedzenie.java" line="22" column="16" bodyfile="src/main/java/proj/selekcjanatur/Jedzenie.java" bodystart="22" bodyend="-1"/>
+        <referencedby refid="classproj_1_1selekcjanatur_1_1_jedzenie_1a0a32d35b4201fd65bcde3ecadae055cf" compoundref="_jedzenie_8java" startline="45" endline="49">proj.selekcjanatur.Jedzenie.Jedzenie</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classproj_1_1selekcjanatur_1_1_jedzenie_1a4efa742917f66b6c29735d90a2104683" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int proj.selekcjanatur.Jedzenie.y</definition>
+        <argsstring></argsstring>
+        <name>y</name>
+        <qualifiedname>proj.selekcjanatur.Jedzenie.y</qualifiedname>
+        <briefdescription>
+<para>Pozycja y na planszy. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Wartość z zakresu 0 do wysokości planszy - 1 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/proj/selekcjanatur/Jedzenie.java" line="28" column="16" bodyfile="src/main/java/proj/selekcjanatur/Jedzenie.java" bodystart="28" bodyend="-1"/>
+        <referencedby refid="classproj_1_1selekcjanatur_1_1_jedzenie_1a0a32d35b4201fd65bcde3ecadae055cf" compoundref="_jedzenie_8java" startline="45" endline="49">proj.selekcjanatur.Jedzenie.Jedzenie</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classproj_1_1selekcjanatur_1_1_jedzenie_1aba56f863335ddaf87115729096d41bb0" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int proj.selekcjanatur.Jedzenie.wartosc</definition>
+        <argsstring></argsstring>
+        <name>wartosc</name>
+        <qualifiedname>proj.selekcjanatur.Jedzenie.wartosc</qualifiedname>
+        <briefdescription>
+<para>Wartość energetyczna pożywienia. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Losowana z przedziału 10-50 w momencie tworzenia obiektu. Im wyższa wartość, tym więcej energii zyskuje człowiek po zjedzeniu. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/proj/selekcjanatur/Jedzenie.java" line="35" column="16" bodyfile="src/main/java/proj/selekcjanatur/Jedzenie.java" bodystart="35" bodyend="-1"/>
+        <referencedby refid="classproj_1_1selekcjanatur_1_1_czlowiek_1a19de94d2ab10d64910307b71bf45ed2e" compoundref="_czlowiek_8java" startline="136" endline="138">proj.selekcjanatur.Czlowiek.zjedz</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classproj_1_1selekcjanatur_1_1_jedzenie_1a0a32d35b4201fd65bcde3ecadae055cf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>proj.selekcjanatur.Jedzenie.Jedzenie</definition>
+        <argsstring>(int x, int y)</argsstring>
+        <name>Jedzenie</name>
+        <qualifiedname>proj.selekcjanatur.Jedzenie.Jedzenie</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+<para>Konstruktor tworzący nowe pożywienie. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pozycja pozioma na planszy </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pozycja pionowa na planszy</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+Wartość energetyczna jest losowana z przedziału 10-50. Pozycje powinny być zawarte w wymiarach planszy symulacji. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/proj/selekcjanatur/Jedzenie.java" line="45" column="12" bodyfile="src/main/java/proj/selekcjanatur/Jedzenie.java" bodystart="45" bodyend="49"/>
+        <references refid="classproj_1_1selekcjanatur_1_1_app_1ad267df574f9f99d0adf41d333bf4823a" compoundref="_app_8java" startline="32">proj.selekcjanatur.App.random</references>
+        <references refid="classproj_1_1selekcjanatur_1_1_jedzenie_1a3d5d2ca6e17c0c4256361d91f0960348" compoundref="_jedzenie_8java" startline="22">proj.selekcjanatur.Jedzenie.x</references>
+        <references refid="classproj_1_1selekcjanatur_1_1_jedzenie_1a4efa742917f66b6c29735d90a2104683" compoundref="_jedzenie_8java" startline="28">proj.selekcjanatur.Jedzenie.y</references>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Klasa modelująca pożywienie w symulacji ewolucyjnej. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Reprezentuje pojedyncze źródło pożywienia na planszy symulacji. Określa pozycję (x,y) oraz wartość energetyczną, która jest losowana przy tworzeniu obiektu. Klasa jest niezmiennicza (immutable) poza modyfikacjami dokonywanymi przez symulację. </para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>proj.selekcjanatur.Jedzenie</label>
+        <link refid="classproj_1_1selekcjanatur_1_1_jedzenie"/>
+      </node>
+    </collaborationgraph>
+    <location file="src/main/java/proj/selekcjanatur/Jedzenie.java" line="17" column="7" bodyfile="src/main/java/proj/selekcjanatur/Jedzenie.java" bodystart="17" bodyend="50"/>
+    <listofallmembers>
+      <member refid="classproj_1_1selekcjanatur_1_1_jedzenie_1a0a32d35b4201fd65bcde3ecadae055cf" prot="public" virt="non-virtual"><scope>proj::selekcjanatur::Jedzenie</scope><name>Jedzenie</name></member>
+      <member refid="classproj_1_1selekcjanatur_1_1_jedzenie_1aba56f863335ddaf87115729096d41bb0" prot="public" virt="non-virtual"><scope>proj::selekcjanatur::Jedzenie</scope><name>wartosc</name></member>
+      <member refid="classproj_1_1selekcjanatur_1_1_jedzenie_1a3d5d2ca6e17c0c4256361d91f0960348" prot="public" virt="non-virtual"><scope>proj::selekcjanatur::Jedzenie</scope><name>x</name></member>
+      <member refid="classproj_1_1selekcjanatur_1_1_jedzenie_1a4efa742917f66b6c29735d90a2104683" prot="public" virt="non-virtual"><scope>proj::selekcjanatur::Jedzenie</scope><name>y</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,172 @@
+\doxysection{Dokumentacja klasy proj.\+selekcjanatur.\+Gen\+Wzrok}
+\hypertarget{classproj_1_1selekcjanatur_1_1_gen_wzrok}{}\label{classproj_1_1selekcjanatur_1_1_gen_wzrok}\index{proj.selekcjanatur.GenWzrok@{proj.selekcjanatur.GenWzrok}}
+
+
+Klasa implementująca gen zasięgu wzroku.  
+
+
+
+
+Diagram dziedziczenia dla proj.\+selekcjanatur.\+Gen\+Wzrok\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=214pt]{classproj_1_1selekcjanatur_1_1_gen_wzrok__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Diagram współpracy dla proj.\+selekcjanatur.\+Gen\+Wzrok\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=214pt]{classproj_1_1selekcjanatur_1_1_gen_wzrok__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classproj_1_1selekcjanatur_1_1_gen_wzrok_ae792ef922168b72adacb551ee3163a8b}{Gen\+Wzrok}} ()
+\begin{DoxyCompactList}\small\item\em Konstruktor losujący początkową wartość genu. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classproj_1_1selekcjanatur_1_1_gen_wzrok_a2c2e4e3feabb475013319b27f6af596a}{wartosc}} ()
+\begin{DoxyCompactList}\small\item\em Zwraca aktualną wartość genu. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{interfaceproj_1_1selekcjanatur_1_1_gen}{Gen}} \mbox{\hyperlink{classproj_1_1selekcjanatur_1_1_gen_wzrok_a78a8ef7be1ae0cbe718d1428e44f639c}{odziedzicz}} ()
+\begin{DoxyCompactList}\small\item\em Tworzy nowy gen poprzez dziedziczenie z mutacją \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Metody prywatne}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classproj_1_1selekcjanatur_1_1_gen_wzrok_aeff8627865c75ff56b4e95a81518354f}{Gen\+Wzrok}} (float \mbox{\hyperlink{classproj_1_1selekcjanatur_1_1_gen_wzrok_aa3a11ccae78812a5d7aaaf4f82558090}{wartosc}})
+\begin{DoxyCompactList}\small\item\em Prywatny konstruktor do tworzenia genów potomnych. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Atrybuty prywatne}
+\begin{DoxyCompactItemize}
+\item 
+final float \mbox{\hyperlink{classproj_1_1selekcjanatur_1_1_gen_wzrok_aa3a11ccae78812a5d7aaaf4f82558090}{wartosc}}
+\begin{DoxyCompactList}\small\item\em Przechowuje wartość genu zasięgu wzroku. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Opis szczegółowy}
+Klasa implementująca gen zasięgu wzroku. 
+
+\doxylink{interfaceproj_1_1selekcjanatur_1_1_gen}{Gen} określa jak daleko człowiek widzi w symulacji. Wartość genu jest z zakresu 1.\+0-\/10.\+0 gdzie\+:
+\begin{DoxyItemize}
+\item 1.\+0 = minimalny zasięg wzroku (1 komórka)
+\item 10.\+0 = maksymalny zasięg wzroku (10 komórek)
+\end{DoxyItemize}
+
+Dziedziczenie odbywa się z możliwością mutacji ±1.0, przy czym wartość jest zawsze ograniczana do zakresu 1-\/10. Konstruktor prywatny jest używany tylko przy dziedziczeniu. 
+
+\label{doc-constructors}
+\Hypertarget{classproj_1_1selekcjanatur_1_1_gen_wzrok_doc-constructors}
+\doxysubsection{Dokumentacja konstruktora i destruktora}
+\Hypertarget{classproj_1_1selekcjanatur_1_1_gen_wzrok_ae792ef922168b72adacb551ee3163a8b}\index{proj.selekcjanatur.GenWzrok@{proj.selekcjanatur.GenWzrok}!GenWzrok@{GenWzrok}}
+\index{GenWzrok@{GenWzrok}!proj.selekcjanatur.GenWzrok@{proj.selekcjanatur.GenWzrok}}
+\doxysubsubsection{\texorpdfstring{GenWzrok()}{GenWzrok()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{classproj_1_1selekcjanatur_1_1_gen_wzrok_ae792ef922168b72adacb551ee3163a8b} 
+proj.\+selekcjanatur.\+Gen\+Wzrok.\+Gen\+Wzrok (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Konstruktor losujący początkową wartość genu. 
+
+Generuje wartość całkowitą z przedziału 1-\/10 Oto graf wywoływań tej funkcji\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classproj_1_1selekcjanatur_1_1_gen_wzrok_ae792ef922168b72adacb551ee3163a8b_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classproj_1_1selekcjanatur_1_1_gen_wzrok_aeff8627865c75ff56b4e95a81518354f}\index{proj.selekcjanatur.GenWzrok@{proj.selekcjanatur.GenWzrok}!GenWzrok@{GenWzrok}}
+\index{GenWzrok@{GenWzrok}!proj.selekcjanatur.GenWzrok@{proj.selekcjanatur.GenWzrok}}
+\doxysubsubsection{\texorpdfstring{GenWzrok()}{GenWzrok()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{classproj_1_1selekcjanatur_1_1_gen_wzrok_aeff8627865c75ff56b4e95a81518354f} 
+proj.\+selekcjanatur.\+Gen\+Wzrok.\+Gen\+Wzrok (\begin{DoxyParamCaption}\item[{float}]{wartosc}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Prywatny konstruktor do tworzenia genów potomnych. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em wartosc} & Określona wartość genu (zostanie ograniczona do 1-\/10) \\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-func-members}
+\Hypertarget{classproj_1_1selekcjanatur_1_1_gen_wzrok_doc-func-members}
+\doxysubsection{Dokumentacja funkcji składowych}
+\Hypertarget{classproj_1_1selekcjanatur_1_1_gen_wzrok_a78a8ef7be1ae0cbe718d1428e44f639c}\index{proj.selekcjanatur.GenWzrok@{proj.selekcjanatur.GenWzrok}!odziedzicz@{odziedzicz}}
+\index{odziedzicz@{odziedzicz}!proj.selekcjanatur.GenWzrok@{proj.selekcjanatur.GenWzrok}}
+\doxysubsubsection{\texorpdfstring{odziedzicz()}{odziedzicz()}}
+{\footnotesize\ttfamily \label{classproj_1_1selekcjanatur_1_1_gen_wzrok_a78a8ef7be1ae0cbe718d1428e44f639c} 
+\mbox{\hyperlink{interfaceproj_1_1selekcjanatur_1_1_gen}{Gen}} proj.\+selekcjanatur.\+Gen\+Wzrok.\+odziedzicz (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Tworzy nowy gen poprzez dziedziczenie z mutacją 
+
+\begin{DoxyReturn}{Zwraca}
+Nowa instancja \doxylink{classproj_1_1selekcjanatur_1_1_gen_wzrok}{Gen\+Wzrok}
+\end{DoxyReturn}
+Algorytm działania\+:
+\begin{DoxyEnumerate}
+\item Losuje mutację z zakresu ±1.0
+\item Dodaje mutację do obecnej wartości
+\item Ogranicza wynik do zakresu 1.\+0-\/10.\+0
+\item Zwraca nowy gen z zmutowaną wartością
+\end{DoxyEnumerate}
+
+Przykład\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Gen\ gen\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{classproj_1_1selekcjanatur_1_1_gen_wzrok_ae792ef922168b72adacb551ee3163a8b}{GenWzrok}}();}
+\DoxyCodeLine{Gen\ potomek\ =\ gen.odziedzicz();\ \textcolor{comment}{//\ np.\ 5.3}}
+
+\end{DoxyCode}
+ 
+
+Implementuje \mbox{\hyperlink{interfaceproj_1_1selekcjanatur_1_1_gen_a7dbd3fed6d9dee504bf8217028b50493}{proj.\+selekcjanatur.\+Gen}}.
+
+Oto graf wywołań dla tej funkcji\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classproj_1_1selekcjanatur_1_1_gen_wzrok_a78a8ef7be1ae0cbe718d1428e44f639c_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classproj_1_1selekcjanatur_1_1_gen_wzrok_a2c2e4e3feabb475013319b27f6af596a}\index{proj.selekcjanatur.GenWzrok@{proj.selekcjanatur.GenWzrok}!wartosc@{wartosc}}
+\index{wartosc@{wartosc}!proj.selekcjanatur.GenWzrok@{proj.selekcjanatur.GenWzrok}}
+\doxysubsubsection{\texorpdfstring{wartosc()}{wartosc()}}
+{\footnotesize\ttfamily \label{classproj_1_1selekcjanatur_1_1_gen_wzrok_a2c2e4e3feabb475013319b27f6af596a} 
+float proj.\+selekcjanatur.\+Gen\+Wzrok.\+wartosc (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Zwraca aktualną wartość genu. 
+
+\begin{DoxyReturn}{Zwraca}
+Wartość zasięgu wzroku w zakresie 1.\+0-\/10.\+0 
+\end{DoxyReturn}
+
+
+Implementuje \mbox{\hyperlink{interfaceproj_1_1selekcjanatur_1_1_gen_ab2b013ae8d6ad91c73fdb8ec97f37c94}{proj.\+selekcjanatur.\+Gen}}.
+
+
+
+\label{doc-variable-members}
+\Hypertarget{classproj_1_1selekcjanatur_1_1_gen_wzrok_doc-variable-members}
+\doxysubsection{Dokumentacja atrybutów składowych}
+\Hypertarget{classproj_1_1selekcjanatur_1_1_gen_wzrok_aa3a11ccae78812a5d7aaaf4f82558090}\index{proj.selekcjanatur.GenWzrok@{proj.selekcjanatur.GenWzrok}!wartosc@{wartosc}}
+\index{wartosc@{wartosc}!proj.selekcjanatur.GenWzrok@{proj.selekcjanatur.GenWzrok}}
+\doxysubsubsection{\texorpdfstring{wartosc}{wartosc}}
+{\footnotesize\ttfamily \label{classproj_1_1selekcjanatur_1_1_gen_wzrok_aa3a11ccae78812a5d7aaaf4f82558090} 
+final float proj.\+selekcjanatur.\+Gen\+Wzrok.\+wartosc\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Przechowuje wartość genu zasięgu wzroku. 
+
+Wartość z przedziału 1.\+0-\/10.\+0 
+
+Dokumentacja dla tej klasy została wygenerowana z pliku\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/proj/selekcjanatur/\mbox{\hyperlink{_gen_wzrok_8java}{Gen\+Wzrok.\+java}}\end{DoxyCompactItemize}

@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="pl">
+  <compounddef id="dir_36046fb7ab089d356d5e621a087cd51d" kind="dir">
+    <compoundname>src/main/resources/proj</compoundname>
+    <innerdir refid="dir_e2770082773a9212f1ab93d6b3059d3d">src/main/resources/proj/selekcjanatur</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/main/resources/proj/"/>
+  </compounddef>
+</doxygen>

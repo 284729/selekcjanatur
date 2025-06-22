@@ -1,0 +1,440 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="pl">
+  <compounddef id="classproj_1_1selekcjanatur_1_1_symulacja_plik" kind="class" language="Java" prot="public" abstract="yes">
+    <compoundname>proj::selekcjanatur::SymulacjaPlik</compoundname>
+    <basecompoundref refid="interfaceproj_1_1selekcjanatur_1_1_interfejs_symulacji" prot="public" virt="non-virtual">proj.selekcjanatur.InterfejsSymulacji</basecompoundref>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classproj_1_1selekcjanatur_1_1_symulacja_plik_1afc37062ccdcdfcd56718cbb0bb078139" prot="private" static="no" mutable="no">
+        <type>final List&lt; String &gt;</type>
+        <definition>final List&lt;String&gt; proj.selekcjanatur.SymulacjaPlik.zdarzenia</definition>
+        <argsstring></argsstring>
+        <name>zdarzenia</name>
+        <qualifiedname>proj.selekcjanatur.SymulacjaPlik.zdarzenia</qualifiedname>
+        <briefdescription>
+<para>Lista wczytanych zdarzeń z pliku. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/proj/selekcjanatur/SymulacjaPlik.java" line="23" column="24" bodyfile="src/main/java/proj/selekcjanatur/SymulacjaPlik.java" bodystart="23" bodyend="-1"/>
+        <referencedby refid="classproj_1_1selekcjanatur_1_1_symulacja_plik_1a51c0e6b4a307749c4746a70c5e624f15" compoundref="_symulacja_plik_8java" startline="49" endline="81">proj.selekcjanatur.SymulacjaPlik.aktualizuj</referencedby>
+        <referencedby refid="classproj_1_1selekcjanatur_1_1_symulacja_plik_1a794761349d4b40e843b27accf7930a21" compoundref="_symulacja_plik_8java" startline="88" endline="90">proj.selekcjanatur.SymulacjaPlik.czySymulacjaZakonczona</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classproj_1_1selekcjanatur_1_1_symulacja_plik_1a5f5d231c9080a0d5266d87d4b7031be7" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int proj.selekcjanatur.SymulacjaPlik.index</definition>
+        <argsstring></argsstring>
+        <name>index</name>
+        <qualifiedname>proj.selekcjanatur.SymulacjaPlik.index</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+<para>Aktualny indeks przetwarzanego zdarzenia. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/proj/selekcjanatur/SymulacjaPlik.java" line="26" column="17" bodyfile="src/main/java/proj/selekcjanatur/SymulacjaPlik.java" bodystart="26" bodyend="-1"/>
+        <referencedby refid="classproj_1_1selekcjanatur_1_1_symulacja_plik_1a51c0e6b4a307749c4746a70c5e624f15" compoundref="_symulacja_plik_8java" startline="49" endline="81">proj.selekcjanatur.SymulacjaPlik.aktualizuj</referencedby>
+        <referencedby refid="classproj_1_1selekcjanatur_1_1_symulacja_plik_1a794761349d4b40e843b27accf7930a21" compoundref="_symulacja_plik_8java" startline="88" endline="90">proj.selekcjanatur.SymulacjaPlik.czySymulacjaZakonczona</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classproj_1_1selekcjanatur_1_1_symulacja_plik_1a03353e7e4527463873e0c81f085099b2" prot="private" static="no" mutable="no">
+        <type>final List&lt; <ref refid="classproj_1_1selekcjanatur_1_1_czlowiek" kindref="compound">Czlowiek</ref> &gt;</type>
+        <definition>final List&lt;Czlowiek&gt; proj.selekcjanatur.SymulacjaPlik.ludzie</definition>
+        <argsstring></argsstring>
+        <name>ludzie</name>
+        <qualifiedname>proj.selekcjanatur.SymulacjaPlik.ludzie</qualifiedname>
+        <initializer>= new ArrayList&lt;&gt;()</initializer>
+        <briefdescription>
+<para>Lista ludzi w odtwarzanej symulacji. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/proj/selekcjanatur/SymulacjaPlik.java" line="29" column="24" bodyfile="src/main/java/proj/selekcjanatur/SymulacjaPlik.java" bodystart="29" bodyend="-1"/>
+        <referencedby refid="classproj_1_1selekcjanatur_1_1_symulacja_plik_1a51c0e6b4a307749c4746a70c5e624f15" compoundref="_symulacja_plik_8java" startline="49" endline="81">proj.selekcjanatur.SymulacjaPlik.aktualizuj</referencedby>
+        <referencedby refid="classproj_1_1selekcjanatur_1_1_symulacja_plik_1ac529b5c1f654f9cc5a6c727fd029f342" compoundref="_symulacja_plik_8java" startline="130" endline="136">proj.selekcjanatur.SymulacjaPlik.dodajCzlowieka</referencedby>
+        <referencedby refid="classproj_1_1selekcjanatur_1_1_symulacja_plik_1ac2f0839c0c8670ed3801690546d03d23" compoundref="_symulacja_plik_8java" startline="114" endline="122">proj.selekcjanatur.SymulacjaPlik.dodajCzlowieka</referencedby>
+        <referencedby refid="classproj_1_1selekcjanatur_1_1_symulacja_plik_1add43cde0f781327acda280da156c22b7" compoundref="_symulacja_plik_8java" startline="97" endline="99">proj.selekcjanatur.SymulacjaPlik.getLudzie</referencedby>
+        <referencedby refid="classproj_1_1selekcjanatur_1_1_symulacja_plik_1affa9dff3c1ffc985a3ca96055b4534ca" compoundref="_symulacja_plik_8java" startline="142" endline="156">proj.selekcjanatur.SymulacjaPlik.przemiescCzlowieka</referencedby>
+        <referencedby refid="classproj_1_1selekcjanatur_1_1_symulacja_plik_1a50a8cd7b56c409d4f312d49ed30bd42f" compoundref="_symulacja_plik_8java" startline="172" endline="177">proj.selekcjanatur.SymulacjaPlik.usunCzlowieka</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classproj_1_1selekcjanatur_1_1_symulacja_plik_1a29101cb32e3423796ec0b048790a3c39" prot="private" static="no" mutable="no">
+        <type>final Set&lt; <ref refid="classproj_1_1selekcjanatur_1_1_jedzenie" kindref="compound">Jedzenie</ref> &gt;</type>
+        <definition>final Set&lt;Jedzenie&gt; proj.selekcjanatur.SymulacjaPlik.jedzenie</definition>
+        <argsstring></argsstring>
+        <name>jedzenie</name>
+        <qualifiedname>proj.selekcjanatur.SymulacjaPlik.jedzenie</qualifiedname>
+        <initializer>= new HashSet&lt;&gt;()</initializer>
+        <briefdescription>
+<para>Zbiór jedzenia w odtwarzanej symulacji. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/proj/selekcjanatur/SymulacjaPlik.java" line="32" column="23" bodyfile="src/main/java/proj/selekcjanatur/SymulacjaPlik.java" bodystart="32" bodyend="-1"/>
+        <referencedby refid="classproj_1_1selekcjanatur_1_1_symulacja_plik_1a51c0e6b4a307749c4746a70c5e624f15" compoundref="_symulacja_plik_8java" startline="49" endline="81">proj.selekcjanatur.SymulacjaPlik.aktualizuj</referencedby>
+        <referencedby refid="classproj_1_1selekcjanatur_1_1_symulacja_plik_1ac3c4708297d14861c4c3671f1e6afd6f" compoundref="_symulacja_plik_8java" startline="106" endline="108">proj.selekcjanatur.SymulacjaPlik.getJedzenie</referencedby>
+        <referencedby refid="classproj_1_1selekcjanatur_1_1_symulacja_plik_1a5fd6171c7fa48a7581c013b7a852550d" compoundref="_symulacja_plik_8java" startline="162" endline="166">proj.selekcjanatur.SymulacjaPlik.usunJedzenie</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classproj_1_1selekcjanatur_1_1_symulacja_plik_1a67a339bf84667023f2cbf5c10239a27a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>proj.selekcjanatur.SymulacjaPlik.SymulacjaPlik</definition>
+        <argsstring>(String nazwaPliku)</argsstring>
+        <name>SymulacjaPlik</name>
+        <qualifiedname>proj.selekcjanatur.SymulacjaPlik.SymulacjaPlik</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>nazwaPliku</declname>
+        </param>
+        <exceptions> throws IOException </exceptions>
+        <briefdescription>
+<para>Konstruktor wczytujący dziennik zdarzeń z pliku. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>nazwaPliku</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Ścieżka do pliku dziennika zdarzeń </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>IOException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Jeśli wystąpi błąd odczytu pliku </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/proj/selekcjanatur/SymulacjaPlik.java" line="39" column="12" bodyfile="src/main/java/proj/selekcjanatur/SymulacjaPlik.java" bodystart="39" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="classproj_1_1selekcjanatur_1_1_symulacja_plik_1a51c0e6b4a307749c4746a70c5e624f15" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void proj.selekcjanatur.SymulacjaPlik.aktualizuj</definition>
+        <argsstring>()</argsstring>
+        <name>aktualizuj</name>
+        <qualifiedname>proj.selekcjanatur.SymulacjaPlik.aktualizuj</qualifiedname>
+        <reimplements refid="interfaceproj_1_1selekcjanatur_1_1_interfejs_symulacji_1abd9c98677e97fa36f0126a04bb0baeba">aktualizuj</reimplements>
+        <briefdescription>
+<para>Aktualizuje stan symulacji o jeden krok. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Przetwarza kolejne zdarzenia z dziennika aż do napotkania zdarzenia KLATKA, które oznacza koniec aktualnej klatki symulacji. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/proj/selekcjanatur/SymulacjaPlik.java" line="49" column="17" bodyfile="src/main/java/proj/selekcjanatur/SymulacjaPlik.java" bodystart="49" bodyend="81"/>
+        <references refid="classproj_1_1selekcjanatur_1_1_symulacja_plik_1ac2f0839c0c8670ed3801690546d03d23" compoundref="_symulacja_plik_8java" startline="114" endline="122">proj.selekcjanatur.SymulacjaPlik.dodajCzlowieka</references>
+        <references refid="classproj_1_1selekcjanatur_1_1_symulacja_plik_1a5f5d231c9080a0d5266d87d4b7031be7" compoundref="_symulacja_plik_8java" startline="26">proj.selekcjanatur.SymulacjaPlik.index</references>
+        <references refid="classproj_1_1selekcjanatur_1_1_symulacja_plik_1a29101cb32e3423796ec0b048790a3c39" compoundref="_symulacja_plik_8java" startline="32">proj.selekcjanatur.SymulacjaPlik.jedzenie</references>
+        <references refid="classproj_1_1selekcjanatur_1_1_symulacja_plik_1a03353e7e4527463873e0c81f085099b2" compoundref="_symulacja_plik_8java" startline="29">proj.selekcjanatur.SymulacjaPlik.ludzie</references>
+        <references refid="classproj_1_1selekcjanatur_1_1_symulacja_plik_1affa9dff3c1ffc985a3ca96055b4534ca" compoundref="_symulacja_plik_8java" startline="142" endline="156">proj.selekcjanatur.SymulacjaPlik.przemiescCzlowieka</references>
+        <references refid="classproj_1_1selekcjanatur_1_1_symulacja_plik_1a50a8cd7b56c409d4f312d49ed30bd42f" compoundref="_symulacja_plik_8java" startline="172" endline="177">proj.selekcjanatur.SymulacjaPlik.usunCzlowieka</references>
+        <references refid="classproj_1_1selekcjanatur_1_1_symulacja_plik_1a5fd6171c7fa48a7581c013b7a852550d" compoundref="_symulacja_plik_8java" startline="162" endline="166">proj.selekcjanatur.SymulacjaPlik.usunJedzenie</references>
+        <references refid="classproj_1_1selekcjanatur_1_1_symulacja_plik_1afc37062ccdcdfcd56718cbb0bb078139" compoundref="_symulacja_plik_8java" startline="23">proj.selekcjanatur.SymulacjaPlik.zdarzenia</references>
+      </memberdef>
+      <memberdef kind="function" id="classproj_1_1selekcjanatur_1_1_symulacja_plik_1a794761349d4b40e843b27accf7930a21" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean proj.selekcjanatur.SymulacjaPlik.czySymulacjaZakonczona</definition>
+        <argsstring>()</argsstring>
+        <name>czySymulacjaZakonczona</name>
+        <qualifiedname>proj.selekcjanatur.SymulacjaPlik.czySymulacjaZakonczona</qualifiedname>
+        <reimplements refid="interfaceproj_1_1selekcjanatur_1_1_interfejs_symulacji_1a4537fd530e9fb26e34a029f9de374f9e">czySymulacjaZakonczona</reimplements>
+        <briefdescription>
+<para>Sprawdza czy symulacja została w pełni odtworzona. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true jeśli wszystkie zdarzenia zostały przetworzone </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/proj/selekcjanatur/SymulacjaPlik.java" line="88" column="20" bodyfile="src/main/java/proj/selekcjanatur/SymulacjaPlik.java" bodystart="88" bodyend="90"/>
+        <references refid="classproj_1_1selekcjanatur_1_1_symulacja_plik_1a5f5d231c9080a0d5266d87d4b7031be7" compoundref="_symulacja_plik_8java" startline="26">proj.selekcjanatur.SymulacjaPlik.index</references>
+        <references refid="classproj_1_1selekcjanatur_1_1_symulacja_plik_1afc37062ccdcdfcd56718cbb0bb078139" compoundref="_symulacja_plik_8java" startline="23">proj.selekcjanatur.SymulacjaPlik.zdarzenia</references>
+      </memberdef>
+      <memberdef kind="function" id="classproj_1_1selekcjanatur_1_1_symulacja_plik_1add43cde0f781327acda280da156c22b7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>List&lt; <ref refid="classproj_1_1selekcjanatur_1_1_czlowiek" kindref="compound">Czlowiek</ref> &gt;</type>
+        <definition>List&lt; Czlowiek &gt; proj.selekcjanatur.SymulacjaPlik.getLudzie</definition>
+        <argsstring>()</argsstring>
+        <name>getLudzie</name>
+        <qualifiedname>proj.selekcjanatur.SymulacjaPlik.getLudzie</qualifiedname>
+        <reimplements refid="interfaceproj_1_1selekcjanatur_1_1_interfejs_symulacji_1a42c8bbee1a48204a12ea333621bca0d5">getLudzie</reimplements>
+        <briefdescription>
+<para>Zwraca listę ludzi w odtwarzanej symulacji. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Lista obiektów <ref refid="classproj_1_1selekcjanatur_1_1_czlowiek" kindref="compound">Czlowiek</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/proj/selekcjanatur/SymulacjaPlik.java" line="97" column="17" bodyfile="src/main/java/proj/selekcjanatur/SymulacjaPlik.java" bodystart="97" bodyend="99"/>
+        <references refid="classproj_1_1selekcjanatur_1_1_symulacja_plik_1a03353e7e4527463873e0c81f085099b2" compoundref="_symulacja_plik_8java" startline="29">proj.selekcjanatur.SymulacjaPlik.ludzie</references>
+      </memberdef>
+      <memberdef kind="function" id="classproj_1_1selekcjanatur_1_1_symulacja_plik_1ac3c4708297d14861c4c3671f1e6afd6f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Set&lt; <ref refid="classproj_1_1selekcjanatur_1_1_jedzenie" kindref="compound">Jedzenie</ref> &gt;</type>
+        <definition>Set&lt; Jedzenie &gt; proj.selekcjanatur.SymulacjaPlik.getJedzenie</definition>
+        <argsstring>()</argsstring>
+        <name>getJedzenie</name>
+        <qualifiedname>proj.selekcjanatur.SymulacjaPlik.getJedzenie</qualifiedname>
+        <reimplements refid="interfaceproj_1_1selekcjanatur_1_1_interfejs_symulacji_1aa64fcf541377293e9ace7cbabb3f5c62">getJedzenie</reimplements>
+        <briefdescription>
+<para>Zwraca zbiór jedzenia w odtwarzanej symulacji. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Zbiór obiektów <ref refid="classproj_1_1selekcjanatur_1_1_jedzenie" kindref="compound">Jedzenie</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/proj/selekcjanatur/SymulacjaPlik.java" line="106" column="16" bodyfile="src/main/java/proj/selekcjanatur/SymulacjaPlik.java" bodystart="106" bodyend="108"/>
+        <references refid="classproj_1_1selekcjanatur_1_1_symulacja_plik_1a29101cb32e3423796ec0b048790a3c39" compoundref="_symulacja_plik_8java" startline="32">proj.selekcjanatur.SymulacjaPlik.jedzenie</references>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classproj_1_1selekcjanatur_1_1_symulacja_plik_1ac2f0839c0c8670ed3801690546d03d23" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void proj.selekcjanatur.SymulacjaPlik.dodajCzlowieka</definition>
+        <argsstring>(String[] dane)</argsstring>
+        <name>dodajCzlowieka</name>
+        <qualifiedname>proj.selekcjanatur.SymulacjaPlik.dodajCzlowieka</qualifiedname>
+        <param>
+          <type>String[]</type>
+          <declname>dane</declname>
+        </param>
+        <briefdescription>
+<para>Dodaje człowieka na podstawie danych z dziennika. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dane</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Tablica parametrów zdarzenia DODANIE_CZLOWIEKA </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/proj/selekcjanatur/SymulacjaPlik.java" line="114" column="18" bodyfile="src/main/java/proj/selekcjanatur/SymulacjaPlik.java" bodystart="114" bodyend="122"/>
+        <references refid="classproj_1_1selekcjanatur_1_1_symulacja_plik_1a03353e7e4527463873e0c81f085099b2" compoundref="_symulacja_plik_8java" startline="29">proj.selekcjanatur.SymulacjaPlik.ludzie</references>
+        <referencedby refid="classproj_1_1selekcjanatur_1_1_symulacja_plik_1a51c0e6b4a307749c4746a70c5e624f15" compoundref="_symulacja_plik_8java" startline="49" endline="81">proj.selekcjanatur.SymulacjaPlik.aktualizuj</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classproj_1_1selekcjanatur_1_1_symulacja_plik_1ac529b5c1f654f9cc5a6c727fd029f342" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void proj.selekcjanatur.SymulacjaPlik.dodajCzlowieka</definition>
+        <argsstring>(String czyM, String xStr, String yStr)</argsstring>
+        <name>dodajCzlowieka</name>
+        <qualifiedname>proj.selekcjanatur.SymulacjaPlik.dodajCzlowieka</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>czyM</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>xStr</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>yStr</declname>
+        </param>
+        <briefdescription>
+<para>Dodaje dziecko powstałe w wyniku rozmnożenia. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>czyM</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Płeć dziecka (true = mężczyzna) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>xStr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pozycja x dziecka </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>yStr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pozycja y dziecka </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/proj/selekcjanatur/SymulacjaPlik.java" line="130" column="18" bodyfile="src/main/java/proj/selekcjanatur/SymulacjaPlik.java" bodystart="130" bodyend="136"/>
+        <references refid="classproj_1_1selekcjanatur_1_1_symulacja_plik_1a03353e7e4527463873e0c81f085099b2" compoundref="_symulacja_plik_8java" startline="29">proj.selekcjanatur.SymulacjaPlik.ludzie</references>
+      </memberdef>
+      <memberdef kind="function" id="classproj_1_1selekcjanatur_1_1_symulacja_plik_1affa9dff3c1ffc985a3ca96055b4534ca" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void proj.selekcjanatur.SymulacjaPlik.przemiescCzlowieka</definition>
+        <argsstring>(String[] dane)</argsstring>
+        <name>przemiescCzlowieka</name>
+        <qualifiedname>proj.selekcjanatur.SymulacjaPlik.przemiescCzlowieka</qualifiedname>
+        <param>
+          <type>String[]</type>
+          <declname>dane</declname>
+        </param>
+        <briefdescription>
+<para>Przenosi człowieka na nową pozycję </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dane</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Tablica parametrów zdarzenia PRZEMIESZCZENIE </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/proj/selekcjanatur/SymulacjaPlik.java" line="142" column="18" bodyfile="src/main/java/proj/selekcjanatur/SymulacjaPlik.java" bodystart="142" bodyend="156"/>
+        <references refid="classproj_1_1selekcjanatur_1_1_symulacja_plik_1a03353e7e4527463873e0c81f085099b2" compoundref="_symulacja_plik_8java" startline="29">proj.selekcjanatur.SymulacjaPlik.ludzie</references>
+        <referencedby refid="classproj_1_1selekcjanatur_1_1_symulacja_plik_1a51c0e6b4a307749c4746a70c5e624f15" compoundref="_symulacja_plik_8java" startline="49" endline="81">proj.selekcjanatur.SymulacjaPlik.aktualizuj</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classproj_1_1selekcjanatur_1_1_symulacja_plik_1a5fd6171c7fa48a7581c013b7a852550d" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void proj.selekcjanatur.SymulacjaPlik.usunJedzenie</definition>
+        <argsstring>(String[] dane)</argsstring>
+        <name>usunJedzenie</name>
+        <qualifiedname>proj.selekcjanatur.SymulacjaPlik.usunJedzenie</qualifiedname>
+        <param>
+          <type>String[]</type>
+          <declname>dane</declname>
+        </param>
+        <briefdescription>
+<para>Usuwa zjedzone jedzenie. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dane</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Tablica parametrów zdarzenia ZJEDZONO </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/proj/selekcjanatur/SymulacjaPlik.java" line="162" column="18" bodyfile="src/main/java/proj/selekcjanatur/SymulacjaPlik.java" bodystart="162" bodyend="166"/>
+        <references refid="classproj_1_1selekcjanatur_1_1_symulacja_plik_1a29101cb32e3423796ec0b048790a3c39" compoundref="_symulacja_plik_8java" startline="32">proj.selekcjanatur.SymulacjaPlik.jedzenie</references>
+        <referencedby refid="classproj_1_1selekcjanatur_1_1_symulacja_plik_1a51c0e6b4a307749c4746a70c5e624f15" compoundref="_symulacja_plik_8java" startline="49" endline="81">proj.selekcjanatur.SymulacjaPlik.aktualizuj</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classproj_1_1selekcjanatur_1_1_symulacja_plik_1a50a8cd7b56c409d4f312d49ed30bd42f" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void proj.selekcjanatur.SymulacjaPlik.usunCzlowieka</definition>
+        <argsstring>(String[] dane)</argsstring>
+        <name>usunCzlowieka</name>
+        <qualifiedname>proj.selekcjanatur.SymulacjaPlik.usunCzlowieka</qualifiedname>
+        <param>
+          <type>String[]</type>
+          <declname>dane</declname>
+        </param>
+        <briefdescription>
+<para>Usuwa martwego człowieka. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dane</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Tablica parametrów zdarzenia SMIERC </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/proj/selekcjanatur/SymulacjaPlik.java" line="172" column="18" bodyfile="src/main/java/proj/selekcjanatur/SymulacjaPlik.java" bodystart="172" bodyend="177"/>
+        <references refid="classproj_1_1selekcjanatur_1_1_symulacja_plik_1a03353e7e4527463873e0c81f085099b2" compoundref="_symulacja_plik_8java" startline="29">proj.selekcjanatur.SymulacjaPlik.ludzie</references>
+        <referencedby refid="classproj_1_1selekcjanatur_1_1_symulacja_plik_1a51c0e6b4a307749c4746a70c5e624f15" compoundref="_symulacja_plik_8java" startline="49" endline="81">proj.selekcjanatur.SymulacjaPlik.aktualizuj</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Klasa odtwarzająca symulację na podstawie zapisanego dziennika zdarzeń </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Implementuje ten sam interfejs co <ref refid="classproj_1_1selekcjanatur_1_1_symulacja" kindref="compound">Symulacja</ref>, ale zamiast obliczać nowe stany, odtwarza je sekwencyjnie z pliku. Pozwala to na odtworzenie przebiegu wcześniejszej symulacji krok po kroku. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>proj.selekcjanatur.SymulacjaPlik</label>
+        <link refid="classproj_1_1selekcjanatur_1_1_symulacja_plik"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>proj.selekcjanatur.InterfejsSymulacji</label>
+        <link refid="interfaceproj_1_1selekcjanatur_1_1_interfejs_symulacji"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>proj.selekcjanatur.SymulacjaPlik</label>
+        <link refid="classproj_1_1selekcjanatur_1_1_symulacja_plik"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>proj.selekcjanatur.InterfejsSymulacji</label>
+        <link refid="interfaceproj_1_1selekcjanatur_1_1_interfejs_symulacji"/>
+      </node>
+    </collaborationgraph>
+    <location file="src/main/java/proj/selekcjanatur/SymulacjaPlik.java" line="21" column="17" bodyfile="src/main/java/proj/selekcjanatur/SymulacjaPlik.java" bodystart="21" bodyend="178"/>
+    <listofallmembers>
+      <member refid="classproj_1_1selekcjanatur_1_1_symulacja_plik_1a51c0e6b4a307749c4746a70c5e624f15" prot="public" virt="non-virtual"><scope>proj::selekcjanatur::SymulacjaPlik</scope><name>aktualizuj</name></member>
+      <member refid="interfaceproj_1_1selekcjanatur_1_1_interfejs_symulacji_1a7e2ab50886fc205455480e6015060caa" prot="public" virt="non-virtual"><scope>proj::selekcjanatur::SymulacjaPlik</scope><name>czySymulacjaZakonczena</name></member>
+      <member refid="classproj_1_1selekcjanatur_1_1_symulacja_plik_1a794761349d4b40e843b27accf7930a21" prot="public" virt="non-virtual"><scope>proj::selekcjanatur::SymulacjaPlik</scope><name>czySymulacjaZakonczona</name></member>
+      <member refid="classproj_1_1selekcjanatur_1_1_symulacja_plik_1ac2f0839c0c8670ed3801690546d03d23" prot="private" virt="non-virtual"><scope>proj::selekcjanatur::SymulacjaPlik</scope><name>dodajCzlowieka</name></member>
+      <member refid="classproj_1_1selekcjanatur_1_1_symulacja_plik_1ac529b5c1f654f9cc5a6c727fd029f342" prot="private" virt="non-virtual"><scope>proj::selekcjanatur::SymulacjaPlik</scope><name>dodajCzlowieka</name></member>
+      <member refid="classproj_1_1selekcjanatur_1_1_symulacja_plik_1ac3c4708297d14861c4c3671f1e6afd6f" prot="public" virt="non-virtual"><scope>proj::selekcjanatur::SymulacjaPlik</scope><name>getJedzenie</name></member>
+      <member refid="classproj_1_1selekcjanatur_1_1_symulacja_plik_1add43cde0f781327acda280da156c22b7" prot="public" virt="non-virtual"><scope>proj::selekcjanatur::SymulacjaPlik</scope><name>getLudzie</name></member>
+      <member refid="classproj_1_1selekcjanatur_1_1_symulacja_plik_1a5f5d231c9080a0d5266d87d4b7031be7" prot="private" virt="non-virtual"><scope>proj::selekcjanatur::SymulacjaPlik</scope><name>index</name></member>
+      <member refid="classproj_1_1selekcjanatur_1_1_symulacja_plik_1a29101cb32e3423796ec0b048790a3c39" prot="private" virt="non-virtual"><scope>proj::selekcjanatur::SymulacjaPlik</scope><name>jedzenie</name></member>
+      <member refid="classproj_1_1selekcjanatur_1_1_symulacja_plik_1a03353e7e4527463873e0c81f085099b2" prot="private" virt="non-virtual"><scope>proj::selekcjanatur::SymulacjaPlik</scope><name>ludzie</name></member>
+      <member refid="classproj_1_1selekcjanatur_1_1_symulacja_plik_1affa9dff3c1ffc985a3ca96055b4534ca" prot="private" virt="non-virtual"><scope>proj::selekcjanatur::SymulacjaPlik</scope><name>przemiescCzlowieka</name></member>
+      <member refid="classproj_1_1selekcjanatur_1_1_symulacja_plik_1a67a339bf84667023f2cbf5c10239a27a" prot="public" virt="non-virtual"><scope>proj::selekcjanatur::SymulacjaPlik</scope><name>SymulacjaPlik</name></member>
+      <member refid="classproj_1_1selekcjanatur_1_1_symulacja_plik_1a50a8cd7b56c409d4f312d49ed30bd42f" prot="private" virt="non-virtual"><scope>proj::selekcjanatur::SymulacjaPlik</scope><name>usunCzlowieka</name></member>
+      <member refid="classproj_1_1selekcjanatur_1_1_symulacja_plik_1a5fd6171c7fa48a7581c013b7a852550d" prot="private" virt="non-virtual"><scope>proj::selekcjanatur::SymulacjaPlik</scope><name>usunJedzenie</name></member>
+      <member refid="classproj_1_1selekcjanatur_1_1_symulacja_plik_1afc37062ccdcdfcd56718cbb0bb078139" prot="private" virt="non-virtual"><scope>proj::selekcjanatur::SymulacjaPlik</scope><name>zdarzenia</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

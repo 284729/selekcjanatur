@@ -1,0 +1,11 @@
+<map id="src/main/java/proj/selekcjanatur/SymulacjaPlik.java" name="src/main/java/proj/selekcjanatur/SymulacjaPlik.java">
+<area shape="rect" id="Node000001" title="Implementacja odtwarzania symulacji z pliku dziennika zdarzeń" alt="" coords="187,5,404,48"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,96,141,123"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="239,51,123,93,121,88,237,46"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="165,96,285,123"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="279,50,248,86,244,82,275,47"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="308,96,427,123"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="316,47,348,82,344,86,312,50"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="451,96,527,123"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="346,46,446,87,444,92,344,51"/>
+</map>

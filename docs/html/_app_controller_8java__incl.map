@@ -1,0 +1,19 @@
+<map id="src/main/java/proj/selekcjanatur/AppController.java" name="src/main/java/proj/selekcjanatur/AppController.java">
+<area shape="rect" id="Node000001" title="Kontroler głównego interfejsu symulacji ewolucyjnej." alt="" coords="642,5,856,48"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,96,186,123"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="642,44,201,98,201,92,641,38"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="210,96,379,123"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="642,49,381,95,380,90,641,44"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="402,96,578,123"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="683,51,546,93,545,88,681,46"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="601,96,726,123"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="729,51,690,87,686,83,725,47"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="750,96,919,123"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="773,47,812,83,808,87,769,51"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="943,96,1123,123"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="823,46,974,89,973,94,821,51"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="1146,96,1290,123"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="856,44,1132,91,1131,96,855,49"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="1314,96,1445,123"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="856,38,1299,93,1298,98,856,43"/>
+</map>

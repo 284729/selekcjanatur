@@ -1,0 +1,95 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="pl">
+  <compounddef id="_app_8java" kind="file" language="Java">
+    <compoundname>App.java</compoundname>
+    <includes local="no">javafx.application.Application</includes>
+    <includes local="no">javafx.fxml.FXMLLoader</includes>
+    <includes local="no">javafx.scene.Scene</includes>
+    <includes local="no">javafx.scene.layout.VBox</includes>
+    <includes local="no">javafx.stage.Stage</includes>
+    <includes local="no">java.util.Random</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>src/main/java/proj/selekcjanatur/App.java</label>
+        <link refid="_app_8java"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>java.util.Random</label>
+      </node>
+      <node id="2">
+        <label>javafx.application.Application</label>
+      </node>
+      <node id="3">
+        <label>javafx.fxml.FXMLLoader</label>
+      </node>
+      <node id="4">
+        <label>javafx.scene.Scene</label>
+      </node>
+      <node id="5">
+        <label>javafx.scene.layout.VBox</label>
+      </node>
+      <node id="6">
+        <label>javafx.stage.Stage</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="classproj_1_1selekcjanatur_1_1_app" prot="public">proj::selekcjanatur::App</innerclass>
+    <innernamespace refid="namespaceproj_1_1selekcjanatur">proj::selekcjanatur</innernamespace>
+    <briefdescription>
+<para>Główna klasa aplikacji odpowiedzialna za uruchomienie symulacji. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>Michał Kowalewski </para>
+</simplesect>
+<simplesect kind="author"><para>Meteusz Sobański </para>
+</simplesect>
+<simplesect kind="author"><para>Krystian Szydłowski </para>
+</simplesect>
+<simplesect kind="date"><para>20.06.2025 </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1" refid="namespaceproj_1_1selekcjanatur" refkind="compound"><highlight class="keyword">package<sp/></highlight><highlight class="normal">proj.selekcjanatur;</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>javafx.application.Application;</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>javafx.fxml.FXMLLoader;</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>javafx.scene.Scene;</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>javafx.scene.layout.VBox;</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>javafx.stage.Stage;</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>java.util.Random;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27" refid="classproj_1_1selekcjanatur_1_1_app" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classproj_1_1selekcjanatur_1_1_app" kindref="compound">App</ref><sp/></highlight><highlight class="keyword">extends</highlight><highlight class="normal"><sp/>Application<sp/>{</highlight></codeline>
+<codeline lineno="32" refid="classproj_1_1selekcjanatur_1_1_app_1ad267df574f9f99d0adf41d333bf4823a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>Random<sp/><ref refid="classproj_1_1selekcjanatur_1_1_app_1ad267df574f9f99d0adf41d333bf4823a" kindref="member">random</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>Random();</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>@Override</highlight></codeline>
+<codeline lineno="43" refid="classproj_1_1selekcjanatur_1_1_app_1ae2849dc6abb758adce6cf1f28cd43d40" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classproj_1_1selekcjanatur_1_1_app_1ae2849dc6abb758adce6cf1f28cd43d40" kindref="member">start</ref>(Stage<sp/>stage)<sp/></highlight><highlight class="keywordflow">throws</highlight><highlight class="normal"><sp/>Exception<sp/>{</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FXMLLoader<sp/>loader<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>FXMLLoader(getClass().getResource(</highlight><highlight class="stringliteral">&quot;start-view.fxml&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>VBox<sp/>root<sp/>=<sp/>loader.load();</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>stage.setScene(</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>Scene(root));</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>stage.setTitle(</highlight><highlight class="stringliteral">&quot;Ustawienia<sp/>Symulacji&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>stage.show();</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58" refid="classproj_1_1selekcjanatur_1_1_app_1a5b449f0612c86ffe7eaa088a307e9a3b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classproj_1_1selekcjanatur_1_1_app_1a5b449f0612c86ffe7eaa088a307e9a3b" kindref="member">main</ref>(String[]<sp/>args)<sp/>{</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>launch(args);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!<ref refid="classproj_1_1selekcjanatur_1_1_app_controller" kindref="compound">AppController</ref>.<ref refid="classproj_1_1selekcjanatur_1_1_app_controller_1a126b2a6a1a53efdb82999b73dc9ca21d" kindref="member">PLIK</ref>)<sp/><ref refid="classproj_1_1selekcjanatur_1_1_symulacja" kindref="compound">Symulacja</ref>.<ref refid="classproj_1_1selekcjanatur_1_1_symulacja_1a30d65d41391f815284bbdce9ab12beb9" kindref="member">zapiszDziennikDoPliku</ref>(</highlight><highlight class="stringliteral">&quot;dziennik_zdarzen.txt&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="62"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="src/main/java/proj/selekcjanatur/App.java"/>
+  </compounddef>
+</doxygen>

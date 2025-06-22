@@ -1,0 +1,5 @@
+<map id="proj.selekcjanatur.SymulacjaPlik" name="proj.selekcjanatur.SymulacjaPlik">
+<area shape="rect" id="Node000001" title="Klasa odtwarzająca symulację na podstawie zapisanego dziennika zdarzeń" alt="" coords="5,224,239,709"/>
+<area shape="rect" id="Node000002" href="$interfaceproj_1_1selekcjanatur_1_1_interfejs_symulacji.html" title="Główny interfejs systemu symulacji ewolucyjnej." alt="" coords="5,5,239,176"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="125,191,125,224,120,224,120,191"/>
+</map>

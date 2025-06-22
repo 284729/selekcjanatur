@@ -1,0 +1,225 @@
+\doxysection{Dokumentacja klasy proj.\+selekcjanatur.\+App\+Controller}
+\hypertarget{classproj_1_1selekcjanatur_1_1_app_controller}{}\label{classproj_1_1selekcjanatur_1_1_app_controller}\index{proj.selekcjanatur.AppController@{proj.selekcjanatur.AppController}}
+
+
+Główny kontroler zarządzający interfejsem i logiką symulacji.  
+
+
+
+
+Diagram współpracy dla proj.\+selekcjanatur.\+App\+Controller\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=256pt]{classproj_1_1selekcjanatur_1_1_app_controller__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classproj_1_1selekcjanatur_1_1_app_controller_ac2cf98af4e541bbf36f17f799eb7b581}{initialize}} ()
+\begin{DoxyCompactList}\small\item\em Metoda inicjalizująca kontroler. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Statyczne atrybuty publiczne}
+\begin{DoxyCompactItemize}
+\item 
+static boolean \mbox{\hyperlink{classproj_1_1selekcjanatur_1_1_app_controller_a126b2a6a1a53efdb82999b73dc9ca21d}{PLIK}} = false
+\begin{DoxyCompactList}\small\item\em Flaga określająca czy symulacja działa w trybie odtwarzania z pliku. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Metody prywatne}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classproj_1_1selekcjanatur_1_1_app_controller_abb8c03bcfbcead3aeda09a9f5d672360}{rysuj\+Plansze}} ()
+\begin{DoxyCompactList}\small\item\em Aktualizuje wygląd planszy na podstawie stanu symulacji. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classproj_1_1selekcjanatur_1_1_app_controller_a6c1db90f850fed3c52f9e23270864b1a}{pokaz\+Okno\+Zakonczenia}} ()
+\begin{DoxyCompactList}\small\item\em Wyświetla okno dialogowe po zakończeniu symulacji. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classproj_1_1selekcjanatur_1_1_app_controller_ab1b23531bbe4e4dbf662e922c4597e58}{toggle\+Pause}} ()
+\begin{DoxyCompactList}\small\item\em Obsługuje wciśnięcie przycisku pauzy. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Atrybuty prywatne}
+\begin{DoxyCompactItemize}
+\item 
+Grid\+Pane \mbox{\hyperlink{classproj_1_1selekcjanatur_1_1_app_controller_aa9ca846c479440798d3da99b4f7ccf2f}{grid}}
+\begin{DoxyCompactList}\small\item\em Kontener Grid\+Pane przechowujący siatkę komórek. \end{DoxyCompactList}\item 
+final Pane\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classproj_1_1selekcjanatur_1_1_app_controller_a521268194825a35c273b0f7308ba30b9}{komorki}} = new Pane\mbox{[}\mbox{\hyperlink{classproj_1_1selekcjanatur_1_1_app_controller_a5cba35b80ca745fc51f513236158278d}{WIERSZE}}\mbox{]}\mbox{[}\mbox{\hyperlink{classproj_1_1selekcjanatur_1_1_app_controller_a2b784528ad05c8fdd4e5d0f882d4ae37}{KOLUMNY}}\mbox{]}
+\begin{DoxyCompactList}\small\item\em Dwuwymiarowa tablica przechowująca panele komórek. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{interfaceproj_1_1selekcjanatur_1_1_interfejs_symulacji}{Interfejs\+Symulacji}} \mbox{\hyperlink{classproj_1_1selekcjanatur_1_1_app_controller_af048351de6fb835fd277cfcb30cc0bd8}{symulacja}}
+\begin{DoxyCompactList}\small\item\em Referencja do obiektu symulacji. \end{DoxyCompactList}\item 
+Timeline \mbox{\hyperlink{classproj_1_1selekcjanatur_1_1_app_controller_a58a3a135d36c9817c9bd23bbdbc5149f}{timeline}}
+\begin{DoxyCompactList}\small\item\em Timeline kontrolująca cykl symulacji. \end{DoxyCompactList}\item 
+Button \mbox{\hyperlink{classproj_1_1selekcjanatur_1_1_app_controller_a1fe389a4559c436cdcedbfa6b1da4f86}{pause\+Button}}
+\begin{DoxyCompactList}\small\item\em Przycisk do wstrzymywania/wznawiania symulacji. \end{DoxyCompactList}\item 
+boolean \mbox{\hyperlink{classproj_1_1selekcjanatur_1_1_app_controller_ad6c00c483b02ad4e9d10afd5d4205588}{pauza}} = false
+\begin{DoxyCompactList}\small\item\em Flaga określająca czy symulacja jest wstrzymana. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Statyczne atrybuty prywatne}
+\begin{DoxyCompactItemize}
+\item 
+static final int \mbox{\hyperlink{classproj_1_1selekcjanatur_1_1_app_controller_a2b784528ad05c8fdd4e5d0f882d4ae37}{KOLUMNY}} = \mbox{\hyperlink{classproj_1_1selekcjanatur_1_1_symulacja_a628e531aaeeae0e81364b86adc82fff6}{Symulacja.\+szerokosc}}
+\begin{DoxyCompactList}\small\item\em Szerokość planszy w komórkach (pobrana z klasy \doxylink{classproj_1_1selekcjanatur_1_1_symulacja}{Symulacja}) \end{DoxyCompactList}\item 
+static final int \mbox{\hyperlink{classproj_1_1selekcjanatur_1_1_app_controller_a5cba35b80ca745fc51f513236158278d}{WIERSZE}} = \mbox{\hyperlink{classproj_1_1selekcjanatur_1_1_symulacja_a1da6d14516adc51b8b1fd58eecaa2913}{Symulacja.\+wysokosc}}
+\begin{DoxyCompactList}\small\item\em Wysokość planszy w komórkach (pobrana z klasy \doxylink{classproj_1_1selekcjanatur_1_1_symulacja}{Symulacja}) \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Opis szczegółowy}
+Główny kontroler zarządzający interfejsem i logiką symulacji. 
+
+Klasa odpowiedzialna za\+:
+\begin{DoxyItemize}
+\item Inicjalizację siatki komórek
+\item Obsługę symulacji
+\item Wyświetlanie symulacji
+\item Obsługę zdarzeń kończących symulację 
+\end{DoxyItemize}
+
+\label{doc-func-members}
+\Hypertarget{classproj_1_1selekcjanatur_1_1_app_controller_doc-func-members}
+\doxysubsection{Dokumentacja funkcji składowych}
+\Hypertarget{classproj_1_1selekcjanatur_1_1_app_controller_ac2cf98af4e541bbf36f17f799eb7b581}\index{proj.selekcjanatur.AppController@{proj.selekcjanatur.AppController}!initialize@{initialize}}
+\index{initialize@{initialize}!proj.selekcjanatur.AppController@{proj.selekcjanatur.AppController}}
+\doxysubsubsection{\texorpdfstring{initialize()}{initialize()}}
+{\footnotesize\ttfamily \label{classproj_1_1selekcjanatur_1_1_app_controller_ac2cf98af4e541bbf36f17f799eb7b581} 
+void proj.\+selekcjanatur.\+App\+Controller.\+initialize (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Metoda inicjalizująca kontroler. 
+
+Wykonywana automatycznie po załadowaniu widoku FXML. Tworzy siatkę komórek, inicjalizuje symulację i uruchamia timer. \Hypertarget{classproj_1_1selekcjanatur_1_1_app_controller_a6c1db90f850fed3c52f9e23270864b1a}\index{proj.selekcjanatur.AppController@{proj.selekcjanatur.AppController}!pokazOknoZakonczenia@{pokazOknoZakonczenia}}
+\index{pokazOknoZakonczenia@{pokazOknoZakonczenia}!proj.selekcjanatur.AppController@{proj.selekcjanatur.AppController}}
+\doxysubsubsection{\texorpdfstring{pokazOknoZakonczenia()}{pokazOknoZakonczenia()}}
+{\footnotesize\ttfamily \label{classproj_1_1selekcjanatur_1_1_app_controller_a6c1db90f850fed3c52f9e23270864b1a} 
+void proj.\+selekcjanatur.\+App\+Controller.\+pokaz\+Okno\+Zakonczenia (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Wyświetla okno dialogowe po zakończeniu symulacji. 
+
+W zależności od trybu (plik/live) wyświetla odpowiedni komunikat i w trybie live zapisuje dziennik zdarzeń do pliku. Oto graf wywołań dla tej funkcji\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classproj_1_1selekcjanatur_1_1_app_controller_a6c1db90f850fed3c52f9e23270864b1a_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classproj_1_1selekcjanatur_1_1_app_controller_abb8c03bcfbcead3aeda09a9f5d672360}\index{proj.selekcjanatur.AppController@{proj.selekcjanatur.AppController}!rysujPlansze@{rysujPlansze}}
+\index{rysujPlansze@{rysujPlansze}!proj.selekcjanatur.AppController@{proj.selekcjanatur.AppController}}
+\doxysubsubsection{\texorpdfstring{rysujPlansze()}{rysujPlansze()}}
+{\footnotesize\ttfamily \label{classproj_1_1selekcjanatur_1_1_app_controller_abb8c03bcfbcead3aeda09a9f5d672360} 
+void proj.\+selekcjanatur.\+App\+Controller.\+rysuj\+Plansze (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Aktualizuje wygląd planszy na podstawie stanu symulacji. 
+
+Metoda\+:
+\begin{DoxyEnumerate}
+\item Resetuje wszystkie komórki do koloru białego
+\item Rysuje jedzenie na ciemnozielono
+\item Rysuje ludzi (mężczyzn na niebiesko, kobiety na różowo, dzieci z gradientem) 
+\end{DoxyEnumerate}\Hypertarget{classproj_1_1selekcjanatur_1_1_app_controller_ab1b23531bbe4e4dbf662e922c4597e58}\index{proj.selekcjanatur.AppController@{proj.selekcjanatur.AppController}!togglePause@{togglePause}}
+\index{togglePause@{togglePause}!proj.selekcjanatur.AppController@{proj.selekcjanatur.AppController}}
+\doxysubsubsection{\texorpdfstring{togglePause()}{togglePause()}}
+{\footnotesize\ttfamily \label{classproj_1_1selekcjanatur_1_1_app_controller_ab1b23531bbe4e4dbf662e922c4597e58} 
+void proj.\+selekcjanatur.\+App\+Controller.\+toggle\+Pause (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Obsługuje wciśnięcie przycisku pauzy. 
+
+Zmienia stan symulacji (pauza/wznów) i aktualizuje tekst przycisku 
+
+\label{doc-variable-members}
+\Hypertarget{classproj_1_1selekcjanatur_1_1_app_controller_doc-variable-members}
+\doxysubsection{Dokumentacja atrybutów składowych}
+\Hypertarget{classproj_1_1selekcjanatur_1_1_app_controller_aa9ca846c479440798d3da99b4f7ccf2f}\index{proj.selekcjanatur.AppController@{proj.selekcjanatur.AppController}!grid@{grid}}
+\index{grid@{grid}!proj.selekcjanatur.AppController@{proj.selekcjanatur.AppController}}
+\doxysubsubsection{\texorpdfstring{grid}{grid}}
+{\footnotesize\ttfamily \label{classproj_1_1selekcjanatur_1_1_app_controller_aa9ca846c479440798d3da99b4f7ccf2f} 
+Grid\+Pane proj.\+selekcjanatur.\+App\+Controller.\+grid\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Kontener Grid\+Pane przechowujący siatkę komórek. 
+
+\Hypertarget{classproj_1_1selekcjanatur_1_1_app_controller_a2b784528ad05c8fdd4e5d0f882d4ae37}\index{proj.selekcjanatur.AppController@{proj.selekcjanatur.AppController}!KOLUMNY@{KOLUMNY}}
+\index{KOLUMNY@{KOLUMNY}!proj.selekcjanatur.AppController@{proj.selekcjanatur.AppController}}
+\doxysubsubsection{\texorpdfstring{KOLUMNY}{KOLUMNY}}
+{\footnotesize\ttfamily \label{classproj_1_1selekcjanatur_1_1_app_controller_a2b784528ad05c8fdd4e5d0f882d4ae37} 
+final int proj.\+selekcjanatur.\+App\+Controller.\+KOLUMNY = \mbox{\hyperlink{classproj_1_1selekcjanatur_1_1_symulacja_a628e531aaeeae0e81364b86adc82fff6}{Symulacja.\+szerokosc}}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Szerokość planszy w komórkach (pobrana z klasy \doxylink{classproj_1_1selekcjanatur_1_1_symulacja}{Symulacja}) 
+
+\Hypertarget{classproj_1_1selekcjanatur_1_1_app_controller_a521268194825a35c273b0f7308ba30b9}\index{proj.selekcjanatur.AppController@{proj.selekcjanatur.AppController}!komorki@{komorki}}
+\index{komorki@{komorki}!proj.selekcjanatur.AppController@{proj.selekcjanatur.AppController}}
+\doxysubsubsection{\texorpdfstring{komorki}{komorki}}
+{\footnotesize\ttfamily \label{classproj_1_1selekcjanatur_1_1_app_controller_a521268194825a35c273b0f7308ba30b9} 
+final Pane \mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} proj.\+selekcjanatur.\+App\+Controller.\+komorki = new Pane\mbox{[}\mbox{\hyperlink{classproj_1_1selekcjanatur_1_1_app_controller_a5cba35b80ca745fc51f513236158278d}{WIERSZE}}\mbox{]}\mbox{[}\mbox{\hyperlink{classproj_1_1selekcjanatur_1_1_app_controller_a2b784528ad05c8fdd4e5d0f882d4ae37}{KOLUMNY}}\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Dwuwymiarowa tablica przechowująca panele komórek. 
+
+\Hypertarget{classproj_1_1selekcjanatur_1_1_app_controller_a1fe389a4559c436cdcedbfa6b1da4f86}\index{proj.selekcjanatur.AppController@{proj.selekcjanatur.AppController}!pauseButton@{pauseButton}}
+\index{pauseButton@{pauseButton}!proj.selekcjanatur.AppController@{proj.selekcjanatur.AppController}}
+\doxysubsubsection{\texorpdfstring{pauseButton}{pauseButton}}
+{\footnotesize\ttfamily \label{classproj_1_1selekcjanatur_1_1_app_controller_a1fe389a4559c436cdcedbfa6b1da4f86} 
+Button proj.\+selekcjanatur.\+App\+Controller.\+pause\+Button\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Przycisk do wstrzymywania/wznawiania symulacji. 
+
+\Hypertarget{classproj_1_1selekcjanatur_1_1_app_controller_ad6c00c483b02ad4e9d10afd5d4205588}\index{proj.selekcjanatur.AppController@{proj.selekcjanatur.AppController}!pauza@{pauza}}
+\index{pauza@{pauza}!proj.selekcjanatur.AppController@{proj.selekcjanatur.AppController}}
+\doxysubsubsection{\texorpdfstring{pauza}{pauza}}
+{\footnotesize\ttfamily \label{classproj_1_1selekcjanatur_1_1_app_controller_ad6c00c483b02ad4e9d10afd5d4205588} 
+boolean proj.\+selekcjanatur.\+App\+Controller.\+pauza = false\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Flaga określająca czy symulacja jest wstrzymana. 
+
+\Hypertarget{classproj_1_1selekcjanatur_1_1_app_controller_a126b2a6a1a53efdb82999b73dc9ca21d}\index{proj.selekcjanatur.AppController@{proj.selekcjanatur.AppController}!PLIK@{PLIK}}
+\index{PLIK@{PLIK}!proj.selekcjanatur.AppController@{proj.selekcjanatur.AppController}}
+\doxysubsubsection{\texorpdfstring{PLIK}{PLIK}}
+{\footnotesize\ttfamily \label{classproj_1_1selekcjanatur_1_1_app_controller_a126b2a6a1a53efdb82999b73dc9ca21d} 
+boolean proj.\+selekcjanatur.\+App\+Controller.\+PLIK = false\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Flaga określająca czy symulacja działa w trybie odtwarzania z pliku. 
+
+\Hypertarget{classproj_1_1selekcjanatur_1_1_app_controller_af048351de6fb835fd277cfcb30cc0bd8}\index{proj.selekcjanatur.AppController@{proj.selekcjanatur.AppController}!symulacja@{symulacja}}
+\index{symulacja@{symulacja}!proj.selekcjanatur.AppController@{proj.selekcjanatur.AppController}}
+\doxysubsubsection{\texorpdfstring{symulacja}{symulacja}}
+{\footnotesize\ttfamily \label{classproj_1_1selekcjanatur_1_1_app_controller_af048351de6fb835fd277cfcb30cc0bd8} 
+\mbox{\hyperlink{interfaceproj_1_1selekcjanatur_1_1_interfejs_symulacji}{Interfejs\+Symulacji}} proj.\+selekcjanatur.\+App\+Controller.\+symulacja\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referencja do obiektu symulacji. 
+
+\Hypertarget{classproj_1_1selekcjanatur_1_1_app_controller_a58a3a135d36c9817c9bd23bbdbc5149f}\index{proj.selekcjanatur.AppController@{proj.selekcjanatur.AppController}!timeline@{timeline}}
+\index{timeline@{timeline}!proj.selekcjanatur.AppController@{proj.selekcjanatur.AppController}}
+\doxysubsubsection{\texorpdfstring{timeline}{timeline}}
+{\footnotesize\ttfamily \label{classproj_1_1selekcjanatur_1_1_app_controller_a58a3a135d36c9817c9bd23bbdbc5149f} 
+Timeline proj.\+selekcjanatur.\+App\+Controller.\+timeline\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Timeline kontrolująca cykl symulacji. 
+
+\Hypertarget{classproj_1_1selekcjanatur_1_1_app_controller_a5cba35b80ca745fc51f513236158278d}\index{proj.selekcjanatur.AppController@{proj.selekcjanatur.AppController}!WIERSZE@{WIERSZE}}
+\index{WIERSZE@{WIERSZE}!proj.selekcjanatur.AppController@{proj.selekcjanatur.AppController}}
+\doxysubsubsection{\texorpdfstring{WIERSZE}{WIERSZE}}
+{\footnotesize\ttfamily \label{classproj_1_1selekcjanatur_1_1_app_controller_a5cba35b80ca745fc51f513236158278d} 
+final int proj.\+selekcjanatur.\+App\+Controller.\+WIERSZE = \mbox{\hyperlink{classproj_1_1selekcjanatur_1_1_symulacja_a1da6d14516adc51b8b1fd58eecaa2913}{Symulacja.\+wysokosc}}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Wysokość planszy w komórkach (pobrana z klasy \doxylink{classproj_1_1selekcjanatur_1_1_symulacja}{Symulacja}) 
+
+
+
+Dokumentacja dla tej klasy została wygenerowana z pliku\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/proj/selekcjanatur/\mbox{\hyperlink{_app_controller_8java}{App\+Controller.\+java}}\end{DoxyCompactItemize}

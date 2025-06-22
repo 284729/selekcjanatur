@@ -1,0 +1,97 @@
+\doxysection{Dokumentacja klasy proj.\+selekcjanatur.\+Jedzenie}
+\hypertarget{classproj_1_1selekcjanatur_1_1_jedzenie}{}\label{classproj_1_1selekcjanatur_1_1_jedzenie}\index{proj.selekcjanatur.Jedzenie@{proj.selekcjanatur.Jedzenie}}
+
+
+Klasa modelująca pożywienie w symulacji ewolucyjnej.  
+
+
+
+
+Diagram współpracy dla proj.\+selekcjanatur.\+Jedzenie\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=207pt]{classproj_1_1selekcjanatur_1_1_jedzenie__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classproj_1_1selekcjanatur_1_1_jedzenie_a0a32d35b4201fd65bcde3ecadae055cf}{Jedzenie}} (int \mbox{\hyperlink{classproj_1_1selekcjanatur_1_1_jedzenie_a3d5d2ca6e17c0c4256361d91f0960348}{x}}, int \mbox{\hyperlink{classproj_1_1selekcjanatur_1_1_jedzenie_a4efa742917f66b6c29735d90a2104683}{y}})
+\begin{DoxyCompactList}\small\item\em Konstruktor tworzący nowe pożywienie. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Atrybuty publiczne}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classproj_1_1selekcjanatur_1_1_jedzenie_a3d5d2ca6e17c0c4256361d91f0960348}{x}}
+\begin{DoxyCompactList}\small\item\em Pozycja x na planszy. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classproj_1_1selekcjanatur_1_1_jedzenie_a4efa742917f66b6c29735d90a2104683}{y}}
+\begin{DoxyCompactList}\small\item\em Pozycja y na planszy. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classproj_1_1selekcjanatur_1_1_jedzenie_aba56f863335ddaf87115729096d41bb0}{wartosc}}
+\begin{DoxyCompactList}\small\item\em Wartość energetyczna pożywienia. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Opis szczegółowy}
+Klasa modelująca pożywienie w symulacji ewolucyjnej. 
+
+Reprezentuje pojedyncze źródło pożywienia na planszy symulacji. Określa pozycję (x,y) oraz wartość energetyczną, która jest losowana przy tworzeniu obiektu. Klasa jest niezmiennicza (immutable) poza modyfikacjami dokonywanymi przez symulację. 
+
+\label{doc-constructors}
+\Hypertarget{classproj_1_1selekcjanatur_1_1_jedzenie_doc-constructors}
+\doxysubsection{Dokumentacja konstruktora i destruktora}
+\Hypertarget{classproj_1_1selekcjanatur_1_1_jedzenie_a0a32d35b4201fd65bcde3ecadae055cf}\index{proj.selekcjanatur.Jedzenie@{proj.selekcjanatur.Jedzenie}!Jedzenie@{Jedzenie}}
+\index{Jedzenie@{Jedzenie}!proj.selekcjanatur.Jedzenie@{proj.selekcjanatur.Jedzenie}}
+\doxysubsubsection{\texorpdfstring{Jedzenie()}{Jedzenie()}}
+{\footnotesize\ttfamily \label{classproj_1_1selekcjanatur_1_1_jedzenie_a0a32d35b4201fd65bcde3ecadae055cf} 
+proj.\+selekcjanatur.\+Jedzenie.\+Jedzenie (\begin{DoxyParamCaption}\item[{int}]{x}{, }\item[{int}]{y}{}\end{DoxyParamCaption})}
+
+
+
+Konstruktor tworzący nowe pożywienie. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em x} & Pozycja pozioma na planszy \\
+\hline
+{\em y} & Pozycja pionowa na planszy\\
+\hline
+\end{DoxyParams}
+Wartość energetyczna jest losowana z przedziału 10-\/50. Pozycje powinny być zawarte w wymiarach planszy symulacji. 
+
+\label{doc-variable-members}
+\Hypertarget{classproj_1_1selekcjanatur_1_1_jedzenie_doc-variable-members}
+\doxysubsection{Dokumentacja atrybutów składowych}
+\Hypertarget{classproj_1_1selekcjanatur_1_1_jedzenie_aba56f863335ddaf87115729096d41bb0}\index{proj.selekcjanatur.Jedzenie@{proj.selekcjanatur.Jedzenie}!wartosc@{wartosc}}
+\index{wartosc@{wartosc}!proj.selekcjanatur.Jedzenie@{proj.selekcjanatur.Jedzenie}}
+\doxysubsubsection{\texorpdfstring{wartosc}{wartosc}}
+{\footnotesize\ttfamily \label{classproj_1_1selekcjanatur_1_1_jedzenie_aba56f863335ddaf87115729096d41bb0} 
+int proj.\+selekcjanatur.\+Jedzenie.\+wartosc}
+
+
+
+Wartość energetyczna pożywienia. 
+
+Losowana z przedziału 10-\/50 w momencie tworzenia obiektu. Im wyższa wartość, tym więcej energii zyskuje człowiek po zjedzeniu. \Hypertarget{classproj_1_1selekcjanatur_1_1_jedzenie_a3d5d2ca6e17c0c4256361d91f0960348}\index{proj.selekcjanatur.Jedzenie@{proj.selekcjanatur.Jedzenie}!x@{x}}
+\index{x@{x}!proj.selekcjanatur.Jedzenie@{proj.selekcjanatur.Jedzenie}}
+\doxysubsubsection{\texorpdfstring{x}{x}}
+{\footnotesize\ttfamily \label{classproj_1_1selekcjanatur_1_1_jedzenie_a3d5d2ca6e17c0c4256361d91f0960348} 
+int proj.\+selekcjanatur.\+Jedzenie.\+x}
+
+
+
+Pozycja x na planszy. 
+
+Wartość z zakresu 0 do szerokości planszy -\/ 1 \Hypertarget{classproj_1_1selekcjanatur_1_1_jedzenie_a4efa742917f66b6c29735d90a2104683}\index{proj.selekcjanatur.Jedzenie@{proj.selekcjanatur.Jedzenie}!y@{y}}
+\index{y@{y}!proj.selekcjanatur.Jedzenie@{proj.selekcjanatur.Jedzenie}}
+\doxysubsubsection{\texorpdfstring{y}{y}}
+{\footnotesize\ttfamily \label{classproj_1_1selekcjanatur_1_1_jedzenie_a4efa742917f66b6c29735d90a2104683} 
+int proj.\+selekcjanatur.\+Jedzenie.\+y}
+
+
+
+Pozycja y na planszy. 
+
+Wartość z zakresu 0 do wysokości planszy -\/ 1 
+
+Dokumentacja dla tej klasy została wygenerowana z pliku\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/proj/selekcjanatur/\mbox{\hyperlink{_jedzenie_8java}{Jedzenie.\+java}}\end{DoxyCompactItemize}

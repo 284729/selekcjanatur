@@ -1,0 +1,171 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="pl">
+  <compounddef id="classproj_1_1selekcjanatur_1_1_mezczyzna" kind="class" language="Java" prot="public">
+    <compoundname>proj::selekcjanatur::Mezczyzna</compoundname>
+    <basecompoundref refid="classproj_1_1selekcjanatur_1_1_czlowiek" prot="public" virt="non-virtual">proj.selekcjanatur.Czlowiek</basecompoundref>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classproj_1_1selekcjanatur_1_1_mezczyzna_1a78b2079ac649e0e0600864a25b899f90" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>proj.selekcjanatur.Mezczyzna.Mezczyzna</definition>
+        <argsstring>(int x, int y)</argsstring>
+        <name>Mezczyzna</name>
+        <qualifiedname>proj.selekcjanatur.Mezczyzna.Mezczyzna</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+<para>Konstruktor tworzący nowego mężczyznę </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pozycja startowa x na planszy </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pozycja startowa y na planszy</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+Inicjalizuje mężczyznę z:<itemizedlist>
+<listitem><para>Standardowymi genami (wzrok, prędkość, metabolizm)</para>
+</listitem><listitem><para>Pełnym zakresem możliwej prędkości (1-3)</para>
+</listitem><listitem><para>Początkowym poziomem energii 100% </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/proj/selekcjanatur/Mezczyzna.java" line="29" column="12" bodyfile="src/main/java/proj/selekcjanatur/Mezczyzna.java" bodystart="29" bodyend="31"/>
+        <references refid="classproj_1_1selekcjanatur_1_1_czlowiek_1ac4d6409fa9719e64741b67bbfcdaf573" compoundref="_czlowiek_8java" startline="21">proj.selekcjanatur.Czlowiek.x</references>
+        <references refid="classproj_1_1selekcjanatur_1_1_czlowiek_1a59322ad4d7324f586e2acd03edd858ce" compoundref="_czlowiek_8java" startline="24">proj.selekcjanatur.Czlowiek.y</references>
+      </memberdef>
+      <memberdef kind="function" id="classproj_1_1selekcjanatur_1_1_mezczyzna_1a99278a265802d4c1b952b84dc3bb46f5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean proj.selekcjanatur.Mezczyzna.czyMezczyzna</definition>
+        <argsstring>()</argsstring>
+        <name>czyMezczyzna</name>
+        <qualifiedname>proj.selekcjanatur.Mezczyzna.czyMezczyzna</qualifiedname>
+        <reimplements refid="classproj_1_1selekcjanatur_1_1_czlowiek_1ac88bbff18c715a98a16d48103b3b495b">czyMezczyzna</reimplements>
+        <briefdescription>
+<para>Sprawdza płeć człowieka. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Zawsze true (obiekt reprezentuje mężczyznę) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/proj/selekcjanatur/Mezczyzna.java" line="38" column="20" bodyfile="src/main/java/proj/selekcjanatur/Mezczyzna.java" bodystart="38" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="classproj_1_1selekcjanatur_1_1_mezczyzna_1a6252640fd21d46c66daf76ce143dcf6a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean proj.selekcjanatur.Mezczyzna.mozeRozmnazac</definition>
+        <argsstring>()</argsstring>
+        <name>mozeRozmnazac</name>
+        <qualifiedname>proj.selekcjanatur.Mezczyzna.mozeRozmnazac</qualifiedname>
+        <reimplements refid="classproj_1_1selekcjanatur_1_1_czlowiek_1a104718c5aefe504867235fa48c03a645">mozeRozmnazac</reimplements>
+        <briefdescription>
+<para>Określa możliwość rozmnażania. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true jeśli spełnione są wszystkie warunki:<itemizedlist>
+<listitem><para>Nie jest dzieckiem (wiek ≥ 18 cykli)</para>
+</listitem><listitem><para>Poziom głodu &gt; 60%</para>
+</listitem><listitem><para>Od ostatniego rozmnażania minęło &gt; 10 cykli</para>
+</listitem></itemizedlist>
+</para>
+</simplesect>
+Mężczyźni mają mniejsze wymagania energetyczne do rozmnażania niż kobiety (60% vs 70% energii) i krótszy wymagany czas między rozmnażaniem (10 vs 20 cykli). </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/proj/selekcjanatur/Mezczyzna.java" line="54" column="20" bodyfile="src/main/java/proj/selekcjanatur/Mezczyzna.java" bodystart="54" bodyend="57"/>
+        <references refid="classproj_1_1selekcjanatur_1_1_czlowiek_1ad0e705573c19c5416636ee0fd457cf7a" compoundref="_czlowiek_8java" startline="33">proj.selekcjanatur.Czlowiek.czasOdRozmnazania</references>
+        <references refid="classproj_1_1selekcjanatur_1_1_czlowiek_1a7eb1b9e51b6766279f0f2b7d0dd9b119" compoundref="_czlowiek_8java" startline="66" endline="68">proj.selekcjanatur.Czlowiek.jestDzieckiem</references>
+        <references refid="classproj_1_1selekcjanatur_1_1_czlowiek_1adc5b716c39bd2e6292460bcf9048eea3" compoundref="_czlowiek_8java" startline="30">proj.selekcjanatur.Czlowiek.poziomGlodu</references>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Specjalizacja klasy <ref refid="classproj_1_1selekcjanatur_1_1_czlowiek" kindref="compound">Czlowiek</ref> reprezentująca mężczyznę </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Klasa rozszerza podstawową funkcjonalność człowieka o:<itemizedlist>
+<listitem><para>Męską płeć (zawsze zwraca true w <ref refid="classproj_1_1selekcjanatur_1_1_mezczyzna_1a99278a265802d4c1b952b84dc3bb46f5" kindref="member">czyMezczyzna()</ref>)</para>
+</listitem><listitem><para>Specyficzne warunki reprodukcyjne (mniejsze wymagania niż kobieta)</para>
+</listitem><listitem><para>Standardową prędkość chodzenia (pełen zakres 1-3) </para>
+</listitem></itemizedlist>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>proj.selekcjanatur.Mezczyzna</label>
+        <link refid="classproj_1_1selekcjanatur_1_1_mezczyzna"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>proj.selekcjanatur.Czlowiek</label>
+        <link refid="classproj_1_1selekcjanatur_1_1_czlowiek"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>proj.selekcjanatur.Mezczyzna</label>
+        <link refid="classproj_1_1selekcjanatur_1_1_mezczyzna"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>proj.selekcjanatur.Czlowiek</label>
+        <link refid="classproj_1_1selekcjanatur_1_1_czlowiek"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>#geny</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>proj.selekcjanatur.Gen</label>
+        <link refid="interfaceproj_1_1selekcjanatur_1_1_gen"/>
+      </node>
+    </collaborationgraph>
+    <location file="src/main/java/proj/selekcjanatur/Mezczyzna.java" line="17" column="7" bodyfile="src/main/java/proj/selekcjanatur/Mezczyzna.java" bodystart="17" bodyend="58"/>
+    <listofallmembers>
+      <member refid="classproj_1_1selekcjanatur_1_1_czlowiek_1aff9d2620e2407154927841859a6c98af" prot="public" virt="non-virtual"><scope>proj::selekcjanatur::Mezczyzna</scope><name>aktualizuj</name></member>
+      <member refid="classproj_1_1selekcjanatur_1_1_czlowiek_1ad0e705573c19c5416636ee0fd457cf7a" prot="protected" virt="non-virtual"><scope>proj::selekcjanatur::Mezczyzna</scope><name>czasOdRozmnazania</name></member>
+      <member refid="classproj_1_1selekcjanatur_1_1_czlowiek_1a341bb3b95da388b296452c4155c1c773" prot="public" virt="non-virtual"><scope>proj::selekcjanatur::Mezczyzna</scope><name>Czlowiek</name></member>
+      <member refid="classproj_1_1selekcjanatur_1_1_mezczyzna_1a99278a265802d4c1b952b84dc3bb46f5" prot="public" virt="non-virtual"><scope>proj::selekcjanatur::Mezczyzna</scope><name>czyMezczyzna</name></member>
+      <member refid="classproj_1_1selekcjanatur_1_1_czlowiek_1a877a9787e423b1279430dc1f952fea04" prot="public" virt="non-virtual"><scope>proj::selekcjanatur::Mezczyzna</scope><name>czyUmieraZeStarosci</name></member>
+      <member refid="classproj_1_1selekcjanatur_1_1_czlowiek_1a582845c239e55cf178e6e9ca22ee0639" prot="protected" virt="non-virtual"><scope>proj::selekcjanatur::Mezczyzna</scope><name>geny</name></member>
+      <member refid="classproj_1_1selekcjanatur_1_1_czlowiek_1a509bb922ddb9fd50f424b988e350e17f" prot="private" virt="non-virtual"><scope>proj::selekcjanatur::Mezczyzna</scope><name>globalneId</name></member>
+      <member refid="classproj_1_1selekcjanatur_1_1_czlowiek_1a024b3bcb3c470bb8d8ad482646689263" prot="public" virt="non-virtual"><scope>proj::selekcjanatur::Mezczyzna</scope><name>id</name></member>
+      <member refid="classproj_1_1selekcjanatur_1_1_czlowiek_1a7eb1b9e51b6766279f0f2b7d0dd9b119" prot="public" virt="non-virtual"><scope>proj::selekcjanatur::Mezczyzna</scope><name>jestDzieckiem</name></member>
+      <member refid="classproj_1_1selekcjanatur_1_1_mezczyzna_1a78b2079ac649e0e0600864a25b899f90" prot="public" virt="non-virtual"><scope>proj::selekcjanatur::Mezczyzna</scope><name>Mezczyzna</name></member>
+      <member refid="classproj_1_1selekcjanatur_1_1_mezczyzna_1a6252640fd21d46c66daf76ce143dcf6a" prot="public" virt="non-virtual"><scope>proj::selekcjanatur::Mezczyzna</scope><name>mozeRozmnazac</name></member>
+      <member refid="classproj_1_1selekcjanatur_1_1_czlowiek_1a9cce002ea96f19fe0eb88606d174e464" prot="public" virt="non-virtual"><scope>proj::selekcjanatur::Mezczyzna</scope><name>powinnienSieRuszyc</name></member>
+      <member refid="classproj_1_1selekcjanatur_1_1_czlowiek_1adc5b716c39bd2e6292460bcf9048eea3" prot="protected" virt="non-virtual"><scope>proj::selekcjanatur::Mezczyzna</scope><name>poziomGlodu</name></member>
+      <member refid="classproj_1_1selekcjanatur_1_1_czlowiek_1a485073a3fc648b9a3ca7ecdec405516e" prot="public" virt="non-virtual"><scope>proj::selekcjanatur::Mezczyzna</scope><name>predkosc</name></member>
+      <member refid="classproj_1_1selekcjanatur_1_1_czlowiek_1ac542fecf860b53af21ee3063be486d27" prot="public" virt="non-virtual"><scope>proj::selekcjanatur::Mezczyzna</scope><name>rozmnazajZ</name></member>
+      <member refid="classproj_1_1selekcjanatur_1_1_czlowiek_1ac5cd794f090024daf3dd37da3ced3a6f" prot="public" virt="non-virtual"><scope>proj::selekcjanatur::Mezczyzna</scope><name>toString</name></member>
+      <member refid="classproj_1_1selekcjanatur_1_1_czlowiek_1a816cfb8471e36f40a415ce3184398033" prot="protected" virt="non-virtual"><scope>proj::selekcjanatur::Mezczyzna</scope><name>wiek</name></member>
+      <member refid="classproj_1_1selekcjanatur_1_1_czlowiek_1ac4d6409fa9719e64741b67bbfcdaf573" prot="public" virt="non-virtual"><scope>proj::selekcjanatur::Mezczyzna</scope><name>x</name></member>
+      <member refid="classproj_1_1selekcjanatur_1_1_czlowiek_1a59322ad4d7324f586e2acd03edd858ce" prot="public" virt="non-virtual"><scope>proj::selekcjanatur::Mezczyzna</scope><name>y</name></member>
+      <member refid="classproj_1_1selekcjanatur_1_1_czlowiek_1aabd1eb0726b65fce7b6bab1f894904cf" prot="public" virt="non-virtual"><scope>proj::selekcjanatur::Mezczyzna</scope><name>zasiegWzroku</name></member>
+      <member refid="classproj_1_1selekcjanatur_1_1_czlowiek_1a19de94d2ab10d64910307b71bf45ed2e" prot="public" virt="non-virtual"><scope>proj::selekcjanatur::Mezczyzna</scope><name>zjedz</name></member>
+      <member refid="classproj_1_1selekcjanatur_1_1_czlowiek_1a53d97caac471e136d612c2eb28f02c2d" prot="public" virt="non-virtual"><scope>proj::selekcjanatur::Mezczyzna</scope><name>zuzycieEnergii</name></member>
+      <member refid="classproj_1_1selekcjanatur_1_1_czlowiek_1ae4932e671627f16ed55cf0b377aed889" prot="protected" virt="non-virtual"><scope>proj::selekcjanatur::Mezczyzna</scope><name>zywy</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

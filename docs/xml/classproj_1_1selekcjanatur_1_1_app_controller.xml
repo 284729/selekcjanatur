@@ -1,0 +1,299 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="pl">
+  <compounddef id="classproj_1_1selekcjanatur_1_1_app_controller" kind="class" language="Java" prot="public">
+    <compoundname>proj::selekcjanatur::AppController</compoundname>
+    <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classproj_1_1selekcjanatur_1_1_app_controller_1a2b784528ad05c8fdd4e5d0f882d4ae37" prot="private" static="yes" mutable="no">
+        <type>final int</type>
+        <definition>final int proj.selekcjanatur.AppController.KOLUMNY</definition>
+        <argsstring></argsstring>
+        <name>KOLUMNY</name>
+        <qualifiedname>proj.selekcjanatur.AppController.KOLUMNY</qualifiedname>
+        <initializer>= <ref refid="classproj_1_1selekcjanatur_1_1_symulacja_1a628e531aaeeae0e81364b86adc82fff6" kindref="member">Symulacja.szerokosc</ref></initializer>
+        <briefdescription>
+<para>Szerokość planszy w komórkach (pobrana z klasy <ref refid="classproj_1_1selekcjanatur_1_1_symulacja" kindref="compound">Symulacja</ref>) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/proj/selekcjanatur/AppController.java" line="29" column="30" bodyfile="src/main/java/proj/selekcjanatur/AppController.java" bodystart="29" bodyend="-1"/>
+        <referencedby refid="classproj_1_1selekcjanatur_1_1_app_controller_1ac2cf98af4e541bbf36f17f799eb7b581" compoundref="_app_controller_8java" startline="62" endline="120">proj.selekcjanatur.AppController.initialize</referencedby>
+        <referencedby refid="classproj_1_1selekcjanatur_1_1_app_controller_1abb8c03bcfbcead3aeda09a9f5d672360" compoundref="_app_controller_8java" startline="129" endline="148">proj.selekcjanatur.AppController.rysujPlansze</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classproj_1_1selekcjanatur_1_1_app_controller_1a5cba35b80ca745fc51f513236158278d" prot="private" static="yes" mutable="no">
+        <type>final int</type>
+        <definition>final int proj.selekcjanatur.AppController.WIERSZE</definition>
+        <argsstring></argsstring>
+        <name>WIERSZE</name>
+        <qualifiedname>proj.selekcjanatur.AppController.WIERSZE</qualifiedname>
+        <initializer>= <ref refid="classproj_1_1selekcjanatur_1_1_symulacja_1a1da6d14516adc51b8b1fd58eecaa2913" kindref="member">Symulacja.wysokosc</ref></initializer>
+        <briefdescription>
+<para>Wysokość planszy w komórkach (pobrana z klasy <ref refid="classproj_1_1selekcjanatur_1_1_symulacja" kindref="compound">Symulacja</ref>) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/proj/selekcjanatur/AppController.java" line="32" column="30" bodyfile="src/main/java/proj/selekcjanatur/AppController.java" bodystart="32" bodyend="-1"/>
+        <referencedby refid="classproj_1_1selekcjanatur_1_1_app_controller_1ac2cf98af4e541bbf36f17f799eb7b581" compoundref="_app_controller_8java" startline="62" endline="120">proj.selekcjanatur.AppController.initialize</referencedby>
+        <referencedby refid="classproj_1_1selekcjanatur_1_1_app_controller_1abb8c03bcfbcead3aeda09a9f5d672360" compoundref="_app_controller_8java" startline="129" endline="148">proj.selekcjanatur.AppController.rysujPlansze</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classproj_1_1selekcjanatur_1_1_app_controller_1aa9ca846c479440798d3da99b4f7ccf2f" prot="private" static="no" mutable="no">
+        <type>GridPane</type>
+        <definition>GridPane proj.selekcjanatur.AppController.grid</definition>
+        <argsstring></argsstring>
+        <name>grid</name>
+        <qualifiedname>proj.selekcjanatur.AppController.grid</qualifiedname>
+        <briefdescription>
+<para>Kontener GridPane przechowujący siatkę komórek. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/proj/selekcjanatur/AppController.java" line="36" column="22" bodyfile="src/main/java/proj/selekcjanatur/AppController.java" bodystart="36" bodyend="-1"/>
+        <referencedby refid="classproj_1_1selekcjanatur_1_1_app_controller_1ac2cf98af4e541bbf36f17f799eb7b581" compoundref="_app_controller_8java" startline="62" endline="120">proj.selekcjanatur.AppController.initialize</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classproj_1_1selekcjanatur_1_1_app_controller_1a521268194825a35c273b0f7308ba30b9" prot="private" static="no" mutable="no">
+        <type>final Pane[][]</type>
+        <definition>final Pane [][] proj.selekcjanatur.AppController.komorki</definition>
+        <argsstring></argsstring>
+        <name>komorki</name>
+        <qualifiedname>proj.selekcjanatur.AppController.komorki</qualifiedname>
+        <initializer>= new Pane[<ref refid="classproj_1_1selekcjanatur_1_1_app_controller_1a5cba35b80ca745fc51f513236158278d" kindref="member">WIERSZE</ref>][<ref refid="classproj_1_1selekcjanatur_1_1_app_controller_1a2b784528ad05c8fdd4e5d0f882d4ae37" kindref="member">KOLUMNY</ref>]</initializer>
+        <briefdescription>
+<para>Dwuwymiarowa tablica przechowująca panele komórek. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/proj/selekcjanatur/AppController.java" line="39" column="24" bodyfile="src/main/java/proj/selekcjanatur/AppController.java" bodystart="39" bodyend="-1"/>
+        <referencedby refid="classproj_1_1selekcjanatur_1_1_app_controller_1ac2cf98af4e541bbf36f17f799eb7b581" compoundref="_app_controller_8java" startline="62" endline="120">proj.selekcjanatur.AppController.initialize</referencedby>
+        <referencedby refid="classproj_1_1selekcjanatur_1_1_app_controller_1abb8c03bcfbcead3aeda09a9f5d672360" compoundref="_app_controller_8java" startline="129" endline="148">proj.selekcjanatur.AppController.rysujPlansze</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classproj_1_1selekcjanatur_1_1_app_controller_1af048351de6fb835fd277cfcb30cc0bd8" prot="private" static="no" mutable="no">
+        <type><ref refid="interfaceproj_1_1selekcjanatur_1_1_interfejs_symulacji" kindref="compound">InterfejsSymulacji</ref></type>
+        <definition>InterfejsSymulacji proj.selekcjanatur.AppController.symulacja</definition>
+        <argsstring></argsstring>
+        <name>symulacja</name>
+        <qualifiedname>proj.selekcjanatur.AppController.symulacja</qualifiedname>
+        <briefdescription>
+<para>Referencja do obiektu symulacji. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/proj/selekcjanatur/AppController.java" line="42" column="32" bodyfile="src/main/java/proj/selekcjanatur/AppController.java" bodystart="42" bodyend="-1"/>
+        <referencedby refid="classproj_1_1selekcjanatur_1_1_app_controller_1ac2cf98af4e541bbf36f17f799eb7b581" compoundref="_app_controller_8java" startline="62" endline="120">proj.selekcjanatur.AppController.initialize</referencedby>
+        <referencedby refid="classproj_1_1selekcjanatur_1_1_app_controller_1abb8c03bcfbcead3aeda09a9f5d672360" compoundref="_app_controller_8java" startline="129" endline="148">proj.selekcjanatur.AppController.rysujPlansze</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classproj_1_1selekcjanatur_1_1_app_controller_1a58a3a135d36c9817c9bd23bbdbc5149f" prot="private" static="no" mutable="no">
+        <type>Timeline</type>
+        <definition>Timeline proj.selekcjanatur.AppController.timeline</definition>
+        <argsstring></argsstring>
+        <name>timeline</name>
+        <qualifiedname>proj.selekcjanatur.AppController.timeline</qualifiedname>
+        <briefdescription>
+<para>Timeline kontrolująca cykl symulacji. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/proj/selekcjanatur/AppController.java" line="45" column="22" bodyfile="src/main/java/proj/selekcjanatur/AppController.java" bodystart="45" bodyend="-1"/>
+        <referencedby refid="classproj_1_1selekcjanatur_1_1_app_controller_1ac2cf98af4e541bbf36f17f799eb7b581" compoundref="_app_controller_8java" startline="62" endline="120">proj.selekcjanatur.AppController.initialize</referencedby>
+        <referencedby refid="classproj_1_1selekcjanatur_1_1_app_controller_1ab1b23531bbe4e4dbf662e922c4597e58" compoundref="_app_controller_8java" startline="176" endline="185">proj.selekcjanatur.AppController.togglePause</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classproj_1_1selekcjanatur_1_1_app_controller_1a1fe389a4559c436cdcedbfa6b1da4f86" prot="private" static="no" mutable="no">
+        <type>Button</type>
+        <definition>Button proj.selekcjanatur.AppController.pauseButton</definition>
+        <argsstring></argsstring>
+        <name>pauseButton</name>
+        <qualifiedname>proj.selekcjanatur.AppController.pauseButton</qualifiedname>
+        <briefdescription>
+<para>Przycisk do wstrzymywania/wznawiania symulacji. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/proj/selekcjanatur/AppController.java" line="49" column="20" bodyfile="src/main/java/proj/selekcjanatur/AppController.java" bodystart="49" bodyend="-1"/>
+        <referencedby refid="classproj_1_1selekcjanatur_1_1_app_controller_1ab1b23531bbe4e4dbf662e922c4597e58" compoundref="_app_controller_8java" startline="176" endline="185">proj.selekcjanatur.AppController.togglePause</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classproj_1_1selekcjanatur_1_1_app_controller_1ad6c00c483b02ad4e9d10afd5d4205588" prot="private" static="no" mutable="no">
+        <type>boolean</type>
+        <definition>boolean proj.selekcjanatur.AppController.pauza</definition>
+        <argsstring></argsstring>
+        <name>pauza</name>
+        <qualifiedname>proj.selekcjanatur.AppController.pauza</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+<para>Flaga określająca czy symulacja jest wstrzymana. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/proj/selekcjanatur/AppController.java" line="52" column="21" bodyfile="src/main/java/proj/selekcjanatur/AppController.java" bodystart="52" bodyend="-1"/>
+        <referencedby refid="classproj_1_1selekcjanatur_1_1_app_controller_1ab1b23531bbe4e4dbf662e922c4597e58" compoundref="_app_controller_8java" startline="176" endline="185">proj.selekcjanatur.AppController.togglePause</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classproj_1_1selekcjanatur_1_1_app_controller_1a126b2a6a1a53efdb82999b73dc9ca21d" prot="public" static="yes" mutable="no">
+        <type>boolean</type>
+        <definition>boolean proj.selekcjanatur.AppController.PLIK</definition>
+        <argsstring></argsstring>
+        <name>PLIK</name>
+        <qualifiedname>proj.selekcjanatur.AppController.PLIK</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+<para>Flaga określająca czy symulacja działa w trybie odtwarzania z pliku. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/proj/selekcjanatur/AppController.java" line="55" column="27" bodyfile="src/main/java/proj/selekcjanatur/AppController.java" bodystart="55" bodyend="-1"/>
+        <referencedby refid="classproj_1_1selekcjanatur_1_1_app_controller_1ac2cf98af4e541bbf36f17f799eb7b581" compoundref="_app_controller_8java" startline="62" endline="120">proj.selekcjanatur.AppController.initialize</referencedby>
+        <referencedby refid="classproj_1_1selekcjanatur_1_1_app_1a5b449f0612c86ffe7eaa088a307e9a3b" compoundref="_app_8java" startline="58" endline="61">proj.selekcjanatur.App.main</referencedby>
+        <referencedby refid="classproj_1_1selekcjanatur_1_1_app_controller_1a6c1db90f850fed3c52f9e23270864b1a" compoundref="_app_controller_8java" startline="155" endline="169">proj.selekcjanatur.AppController.pokazOknoZakonczenia</referencedby>
+        <referencedby refid="classproj_1_1selekcjanatur_1_1_start_controller_1a4ac0a2be052eb17c702f3b5e730d9ca5" compoundref="_start_controller_8java" startline="142" endline="174">proj.selekcjanatur.StartController.replayFromFile</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classproj_1_1selekcjanatur_1_1_app_controller_1ac2cf98af4e541bbf36f17f799eb7b581" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void proj.selekcjanatur.AppController.initialize</definition>
+        <argsstring>()</argsstring>
+        <name>initialize</name>
+        <qualifiedname>proj.selekcjanatur.AppController.initialize</qualifiedname>
+        <briefdescription>
+<para>Metoda inicjalizująca kontroler. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Wykonywana automatycznie po załadowaniu widoku FXML. Tworzy siatkę komórek, inicjalizuje symulację i uruchamia timer. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/proj/selekcjanatur/AppController.java" line="62" column="17" bodyfile="src/main/java/proj/selekcjanatur/AppController.java" bodystart="62" bodyend="120"/>
+        <references refid="classproj_1_1selekcjanatur_1_1_app_controller_1aa9ca846c479440798d3da99b4f7ccf2f" compoundref="_app_controller_8java" startline="36">proj.selekcjanatur.AppController.grid</references>
+        <references refid="classproj_1_1selekcjanatur_1_1_app_controller_1a2b784528ad05c8fdd4e5d0f882d4ae37" compoundref="_app_controller_8java" startline="29">proj.selekcjanatur.AppController.KOLUMNY</references>
+        <references refid="classproj_1_1selekcjanatur_1_1_app_controller_1a521268194825a35c273b0f7308ba30b9" compoundref="_app_controller_8java" startline="39">proj.selekcjanatur.AppController.komorki</references>
+        <references refid="classproj_1_1selekcjanatur_1_1_app_controller_1a126b2a6a1a53efdb82999b73dc9ca21d" compoundref="_app_controller_8java" startline="55">proj.selekcjanatur.AppController.PLIK</references>
+        <references refid="classproj_1_1selekcjanatur_1_1_app_controller_1af048351de6fb835fd277cfcb30cc0bd8" compoundref="_app_controller_8java" startline="42">proj.selekcjanatur.AppController.symulacja</references>
+        <references refid="classproj_1_1selekcjanatur_1_1_app_controller_1a58a3a135d36c9817c9bd23bbdbc5149f" compoundref="_app_controller_8java" startline="45">proj.selekcjanatur.AppController.timeline</references>
+        <references refid="classproj_1_1selekcjanatur_1_1_app_controller_1a5cba35b80ca745fc51f513236158278d" compoundref="_app_controller_8java" startline="32">proj.selekcjanatur.AppController.WIERSZE</references>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classproj_1_1selekcjanatur_1_1_app_controller_1abb8c03bcfbcead3aeda09a9f5d672360" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void proj.selekcjanatur.AppController.rysujPlansze</definition>
+        <argsstring>()</argsstring>
+        <name>rysujPlansze</name>
+        <qualifiedname>proj.selekcjanatur.AppController.rysujPlansze</qualifiedname>
+        <briefdescription>
+<para>Aktualizuje wygląd planszy na podstawie stanu symulacji. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Metoda:<orderedlist>
+<listitem><para>Resetuje wszystkie komórki do koloru białego</para>
+</listitem><listitem><para>Rysuje jedzenie na ciemnozielono</para>
+</listitem><listitem><para>Rysuje ludzi (mężczyzn na niebiesko, kobiety na różowo, dzieci z gradientem) </para>
+</listitem></orderedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/proj/selekcjanatur/AppController.java" line="129" column="18" bodyfile="src/main/java/proj/selekcjanatur/AppController.java" bodystart="129" bodyend="148"/>
+        <references refid="classproj_1_1selekcjanatur_1_1_app_controller_1a2b784528ad05c8fdd4e5d0f882d4ae37" compoundref="_app_controller_8java" startline="29">proj.selekcjanatur.AppController.KOLUMNY</references>
+        <references refid="classproj_1_1selekcjanatur_1_1_app_controller_1a521268194825a35c273b0f7308ba30b9" compoundref="_app_controller_8java" startline="39">proj.selekcjanatur.AppController.komorki</references>
+        <references refid="classproj_1_1selekcjanatur_1_1_app_controller_1af048351de6fb835fd277cfcb30cc0bd8" compoundref="_app_controller_8java" startline="42">proj.selekcjanatur.AppController.symulacja</references>
+        <references refid="classproj_1_1selekcjanatur_1_1_app_controller_1a5cba35b80ca745fc51f513236158278d" compoundref="_app_controller_8java" startline="32">proj.selekcjanatur.AppController.WIERSZE</references>
+      </memberdef>
+      <memberdef kind="function" id="classproj_1_1selekcjanatur_1_1_app_controller_1a6c1db90f850fed3c52f9e23270864b1a" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void proj.selekcjanatur.AppController.pokazOknoZakonczenia</definition>
+        <argsstring>()</argsstring>
+        <name>pokazOknoZakonczenia</name>
+        <qualifiedname>proj.selekcjanatur.AppController.pokazOknoZakonczenia</qualifiedname>
+        <briefdescription>
+<para>Wyświetla okno dialogowe po zakończeniu symulacji. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>W zależności od trybu (plik/live) wyświetla odpowiedni komunikat i w trybie live zapisuje dziennik zdarzeń do pliku. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/proj/selekcjanatur/AppController.java" line="155" column="18" bodyfile="src/main/java/proj/selekcjanatur/AppController.java" bodystart="155" bodyend="169"/>
+        <references refid="classproj_1_1selekcjanatur_1_1_app_controller_1a126b2a6a1a53efdb82999b73dc9ca21d" compoundref="_app_controller_8java" startline="55">proj.selekcjanatur.AppController.PLIK</references>
+        <references refid="classproj_1_1selekcjanatur_1_1_symulacja_1a30d65d41391f815284bbdce9ab12beb9" compoundref="_symulacja_8java" startline="348" endline="356">proj.selekcjanatur.Symulacja.zapiszDziennikDoPliku</references>
+      </memberdef>
+      <memberdef kind="function" id="classproj_1_1selekcjanatur_1_1_app_controller_1ab1b23531bbe4e4dbf662e922c4597e58" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void proj.selekcjanatur.AppController.togglePause</definition>
+        <argsstring>()</argsstring>
+        <name>togglePause</name>
+        <qualifiedname>proj.selekcjanatur.AppController.togglePause</qualifiedname>
+        <briefdescription>
+<para>Obsługuje wciśnięcie przycisku pauzy. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Zmienia stan symulacji (pauza/wznów) i aktualizuje tekst przycisku </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/proj/selekcjanatur/AppController.java" line="176" column="18" bodyfile="src/main/java/proj/selekcjanatur/AppController.java" bodystart="176" bodyend="185"/>
+        <references refid="classproj_1_1selekcjanatur_1_1_app_controller_1a1fe389a4559c436cdcedbfa6b1da4f86" compoundref="_app_controller_8java" startline="49">proj.selekcjanatur.AppController.pauseButton</references>
+        <references refid="classproj_1_1selekcjanatur_1_1_app_controller_1ad6c00c483b02ad4e9d10afd5d4205588" compoundref="_app_controller_8java" startline="52">proj.selekcjanatur.AppController.pauza</references>
+        <references refid="classproj_1_1selekcjanatur_1_1_app_controller_1a58a3a135d36c9817c9bd23bbdbc5149f" compoundref="_app_controller_8java" startline="45">proj.selekcjanatur.AppController.timeline</references>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Główny kontroler zarządzający interfejsem i logiką symulacji. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Klasa odpowiedzialna za:<itemizedlist>
+<listitem><para>Inicjalizację siatki komórek</para>
+</listitem><listitem><para>Obsługę symulacji</para>
+</listitem><listitem><para>Wyświetlanie symulacji</para>
+</listitem><listitem><para>Obsługę zdarzeń kończących symulację </para>
+</listitem></itemizedlist>
+</para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>proj.selekcjanatur.AppController</label>
+        <link refid="classproj_1_1selekcjanatur_1_1_app_controller"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>-symulacja</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>proj.selekcjanatur.InterfejsSymulacji</label>
+        <link refid="interfaceproj_1_1selekcjanatur_1_1_interfejs_symulacji"/>
+      </node>
+    </collaborationgraph>
+    <location file="src/main/java/proj/selekcjanatur/AppController.java" line="27" column="7" bodyfile="src/main/java/proj/selekcjanatur/AppController.java" bodystart="27" bodyend="186"/>
+    <listofallmembers>
+      <member refid="classproj_1_1selekcjanatur_1_1_app_controller_1aa9ca846c479440798d3da99b4f7ccf2f" prot="private" virt="non-virtual"><scope>proj::selekcjanatur::AppController</scope><name>grid</name></member>
+      <member refid="classproj_1_1selekcjanatur_1_1_app_controller_1ac2cf98af4e541bbf36f17f799eb7b581" prot="public" virt="non-virtual"><scope>proj::selekcjanatur::AppController</scope><name>initialize</name></member>
+      <member refid="classproj_1_1selekcjanatur_1_1_app_controller_1a2b784528ad05c8fdd4e5d0f882d4ae37" prot="private" virt="non-virtual"><scope>proj::selekcjanatur::AppController</scope><name>KOLUMNY</name></member>
+      <member refid="classproj_1_1selekcjanatur_1_1_app_controller_1a521268194825a35c273b0f7308ba30b9" prot="private" virt="non-virtual"><scope>proj::selekcjanatur::AppController</scope><name>komorki</name></member>
+      <member refid="classproj_1_1selekcjanatur_1_1_app_controller_1a1fe389a4559c436cdcedbfa6b1da4f86" prot="private" virt="non-virtual"><scope>proj::selekcjanatur::AppController</scope><name>pauseButton</name></member>
+      <member refid="classproj_1_1selekcjanatur_1_1_app_controller_1ad6c00c483b02ad4e9d10afd5d4205588" prot="private" virt="non-virtual"><scope>proj::selekcjanatur::AppController</scope><name>pauza</name></member>
+      <member refid="classproj_1_1selekcjanatur_1_1_app_controller_1a126b2a6a1a53efdb82999b73dc9ca21d" prot="public" virt="non-virtual"><scope>proj::selekcjanatur::AppController</scope><name>PLIK</name></member>
+      <member refid="classproj_1_1selekcjanatur_1_1_app_controller_1a6c1db90f850fed3c52f9e23270864b1a" prot="private" virt="non-virtual"><scope>proj::selekcjanatur::AppController</scope><name>pokazOknoZakonczenia</name></member>
+      <member refid="classproj_1_1selekcjanatur_1_1_app_controller_1abb8c03bcfbcead3aeda09a9f5d672360" prot="private" virt="non-virtual"><scope>proj::selekcjanatur::AppController</scope><name>rysujPlansze</name></member>
+      <member refid="classproj_1_1selekcjanatur_1_1_app_controller_1af048351de6fb835fd277cfcb30cc0bd8" prot="private" virt="non-virtual"><scope>proj::selekcjanatur::AppController</scope><name>symulacja</name></member>
+      <member refid="classproj_1_1selekcjanatur_1_1_app_controller_1a58a3a135d36c9817c9bd23bbdbc5149f" prot="private" virt="non-virtual"><scope>proj::selekcjanatur::AppController</scope><name>timeline</name></member>
+      <member refid="classproj_1_1selekcjanatur_1_1_app_controller_1ab1b23531bbe4e4dbf662e922c4597e58" prot="private" virt="non-virtual"><scope>proj::selekcjanatur::AppController</scope><name>togglePause</name></member>
+      <member refid="classproj_1_1selekcjanatur_1_1_app_controller_1a5cba35b80ca745fc51f513236158278d" prot="private" virt="non-virtual"><scope>proj::selekcjanatur::AppController</scope><name>WIERSZE</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

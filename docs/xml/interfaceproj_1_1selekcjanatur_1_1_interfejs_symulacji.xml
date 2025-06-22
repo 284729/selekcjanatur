@@ -1,0 +1,154 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="pl">
+  <compounddef id="interfaceproj_1_1selekcjanatur_1_1_interfejs_symulacji" kind="interface" language="Java" prot="public">
+    <compoundname>proj::selekcjanatur::InterfejsSymulacji</compoundname>
+    <derivedcompoundref refid="classproj_1_1selekcjanatur_1_1_symulacja" prot="public" virt="non-virtual">proj.selekcjanatur.Symulacja</derivedcompoundref>
+    <derivedcompoundref refid="classproj_1_1selekcjanatur_1_1_symulacja_plik" prot="public" virt="non-virtual">proj.selekcjanatur.SymulacjaPlik</derivedcompoundref>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="interfaceproj_1_1selekcjanatur_1_1_interfejs_symulacji_1abd9c98677e97fa36f0126a04bb0baeba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void proj.selekcjanatur.InterfejsSymulacji.aktualizuj</definition>
+        <argsstring>()</argsstring>
+        <name>aktualizuj</name>
+        <qualifiedname>proj.selekcjanatur.InterfejsSymulacji.aktualizuj</qualifiedname>
+        <reimplementedby refid="classproj_1_1selekcjanatur_1_1_symulacja_1adec9a02326fa916fa822eddad509050f">aktualizuj</reimplementedby>
+        <reimplementedby refid="classproj_1_1selekcjanatur_1_1_symulacja_plik_1a51c0e6b4a307749c4746a70c5e624f15">aktualizuj</reimplementedby>
+        <briefdescription>
+<para>Aktualizuje stan symulacji o jeden krok. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Metoda powinna:<itemizedlist>
+<listitem><para>Wykonać wszystkie obliczenia dla bieżącego cyklu</para>
+</listitem><listitem><para>Zaktualizować stan wszystkich obiektów</para>
+</listitem><listitem><para>Sprawdzić warunki zakończenia symulacji </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/proj/selekcjanatur/InterfejsSymulacji.java" line="29" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="interfaceproj_1_1selekcjanatur_1_1_interfejs_symulacji_1a42c8bbee1a48204a12ea333621bca0d5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>List&lt; <ref refid="classproj_1_1selekcjanatur_1_1_czlowiek" kindref="compound">Czlowiek</ref> &gt;</type>
+        <definition>List&lt; Czlowiek &gt; proj.selekcjanatur.InterfejsSymulacji.getLudzie</definition>
+        <argsstring>()</argsstring>
+        <name>getLudzie</name>
+        <qualifiedname>proj.selekcjanatur.InterfejsSymulacji.getLudzie</qualifiedname>
+        <reimplementedby refid="classproj_1_1selekcjanatur_1_1_symulacja_1a259b1b62d8f3116eefdc1b6e503ccd35">getLudzie</reimplementedby>
+        <reimplementedby refid="classproj_1_1selekcjanatur_1_1_symulacja_plik_1add43cde0f781327acda280da156c22b7">getLudzie</reimplementedby>
+        <briefdescription>
+<para>Pobiera listę wszystkich ludzi w symulacji. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Lista obiektów <ref refid="classproj_1_1selekcjanatur_1_1_czlowiek" kindref="compound">Czlowiek</ref></para>
+</simplesect>
+Zwraca zarówno żywych jak i martwych uczestników symulacji. Kolejność na liście może mieć znaczenie dla renderowania. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/proj/selekcjanatur/InterfejsSymulacji.java" line="37" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="interfaceproj_1_1selekcjanatur_1_1_interfejs_symulacji_1aa64fcf541377293e9ace7cbabb3f5c62" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Set&lt; <ref refid="classproj_1_1selekcjanatur_1_1_jedzenie" kindref="compound">Jedzenie</ref> &gt;</type>
+        <definition>Set&lt; Jedzenie &gt; proj.selekcjanatur.InterfejsSymulacji.getJedzenie</definition>
+        <argsstring>()</argsstring>
+        <name>getJedzenie</name>
+        <qualifiedname>proj.selekcjanatur.InterfejsSymulacji.getJedzenie</qualifiedname>
+        <reimplementedby refid="classproj_1_1selekcjanatur_1_1_symulacja_1ae3205b15a5c36425e97c6c1327c9f9eb">getJedzenie</reimplementedby>
+        <reimplementedby refid="classproj_1_1selekcjanatur_1_1_symulacja_plik_1ac3c4708297d14861c4c3671f1e6afd6f">getJedzenie</reimplementedby>
+        <briefdescription>
+<para>Pobiera zbiór dostępnego jedzenia. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Nieuporządkowany zbiór obiektów <ref refid="classproj_1_1selekcjanatur_1_1_jedzenie" kindref="compound">Jedzenie</ref></para>
+</simplesect>
+Zwraca tylko jedzenie obecne w bieżącym cyklu symulacji. <ref refid="classproj_1_1selekcjanatur_1_1_jedzenie" kindref="compound">Jedzenie</ref> zjedzone w poprzednich cyklach nie jest uwzględniane. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/proj/selekcjanatur/InterfejsSymulacji.java" line="45" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="interfaceproj_1_1selekcjanatur_1_1_interfejs_symulacji_1a4537fd530e9fb26e34a029f9de374f9e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean proj.selekcjanatur.InterfejsSymulacji.czySymulacjaZakonczona</definition>
+        <argsstring>()</argsstring>
+        <name>czySymulacjaZakonczona</name>
+        <qualifiedname>proj.selekcjanatur.InterfejsSymulacji.czySymulacjaZakonczona</qualifiedname>
+        <reimplementedby refid="classproj_1_1selekcjanatur_1_1_symulacja_plik_1a794761349d4b40e843b27accf7930a21">czySymulacjaZakonczona</reimplementedby>
+        <briefdescription>
+<para>Sprawdza warunki zakończenia symulacji. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true jeśli symulacja powinna się zakończyć</para>
+</simplesect>
+Typowe warunki zakończenia:<itemizedlist>
+<listitem><para>Wyczerpanie się populacji (brak żywych ludzi)</para>
+</listitem><listitem><para>Osiągnięcie maksymalnej liczby cykli</para>
+</listitem><listitem><para>Odtworzenie wszystkich zdarzeń z pliku (w trybie odtwarzania) </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/proj/selekcjanatur/InterfejsSymulacji.java" line="55" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="interfaceproj_1_1selekcjanatur_1_1_interfejs_symulacji_1a7e2ab50886fc205455480e6015060caa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean proj.selekcjanatur.InterfejsSymulacji.czySymulacjaZakonczena</definition>
+        <argsstring>()</argsstring>
+        <name>czySymulacjaZakonczena</name>
+        <qualifiedname>proj.selekcjanatur.InterfejsSymulacji.czySymulacjaZakonczena</qualifiedname>
+        <reimplementedby refid="classproj_1_1selekcjanatur_1_1_symulacja_1a3d0ca8ee0af5090358081f7577c0245f">czySymulacjaZakonczena</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/proj/selekcjanatur/InterfejsSymulacji.java" line="57" column="13"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Główny interfejs systemu symulacji ewolucyjnej. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Definiuje kontrakt dla wszystkich implementacji symulacji, zarówno działających w czasie rzeczywistym jak i odtwarzających z zapisanych danych. Interfejs jest implementowany przez:<itemizedlist>
+<listitem><para>Klasę <ref refid="classproj_1_1selekcjanatur_1_1_symulacja" kindref="compound">Symulacja</ref> (podstawowa implementacja)</para>
+</listitem><listitem><para>Klasę <ref refid="classproj_1_1selekcjanatur_1_1_symulacja_plik" kindref="compound">SymulacjaPlik</ref> (odtwarzanie z dziennika zdarzeń) </para>
+</listitem></itemizedlist>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>proj.selekcjanatur.InterfejsSymulacji</label>
+        <link refid="interfaceproj_1_1selekcjanatur_1_1_interfejs_symulacji"/>
+      </node>
+      <node id="2">
+        <label>proj.selekcjanatur.Symulacja</label>
+        <link refid="classproj_1_1selekcjanatur_1_1_symulacja"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>proj.selekcjanatur.SymulacjaPlik</label>
+        <link refid="classproj_1_1selekcjanatur_1_1_symulacja_plik"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>proj.selekcjanatur.InterfejsSymulacji</label>
+        <link refid="interfaceproj_1_1selekcjanatur_1_1_interfejs_symulacji"/>
+      </node>
+    </collaborationgraph>
+    <location file="src/main/java/proj/selekcjanatur/InterfejsSymulacji.java" line="21" column="18" bodyfile="src/main/java/proj/selekcjanatur/InterfejsSymulacji.java" bodystart="21" bodyend="58"/>
+    <listofallmembers>
+      <member refid="interfaceproj_1_1selekcjanatur_1_1_interfejs_symulacji_1abd9c98677e97fa36f0126a04bb0baeba" prot="public" virt="non-virtual"><scope>proj::selekcjanatur::InterfejsSymulacji</scope><name>aktualizuj</name></member>
+      <member refid="interfaceproj_1_1selekcjanatur_1_1_interfejs_symulacji_1a7e2ab50886fc205455480e6015060caa" prot="public" virt="non-virtual"><scope>proj::selekcjanatur::InterfejsSymulacji</scope><name>czySymulacjaZakonczena</name></member>
+      <member refid="interfaceproj_1_1selekcjanatur_1_1_interfejs_symulacji_1a4537fd530e9fb26e34a029f9de374f9e" prot="public" virt="non-virtual"><scope>proj::selekcjanatur::InterfejsSymulacji</scope><name>czySymulacjaZakonczona</name></member>
+      <member refid="interfaceproj_1_1selekcjanatur_1_1_interfejs_symulacji_1aa64fcf541377293e9ace7cbabb3f5c62" prot="public" virt="non-virtual"><scope>proj::selekcjanatur::InterfejsSymulacji</scope><name>getJedzenie</name></member>
+      <member refid="interfaceproj_1_1selekcjanatur_1_1_interfejs_symulacji_1a42c8bbee1a48204a12ea333621bca0d5" prot="public" virt="non-virtual"><scope>proj::selekcjanatur::InterfejsSymulacji</scope><name>getLudzie</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

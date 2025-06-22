@@ -1,0 +1,7 @@
+<map id="Graficzna hierarchia klas" name="Graficzna hierarchia klas">
+<area shape="rect" id="Node000000" href="$interfaceproj_1_1selekcjanatur_1_1_interfejs_symulacji.html" title="Główny interfejs systemu symulacji ewolucyjnej." alt="" coords="5,23,180,65"/>
+<area shape="rect" id="Node000001" href="$classproj_1_1selekcjanatur_1_1_symulacja.html" title="Implementacja symulacji ewolucyjnej z dziedziczeniem cech." alt="" coords="239,5,427,32"/>
+<area shape="poly" id="edge7_Node000000_Node000001" title=" " alt="" coords="195,31,238,26,239,31,196,36"/>
+<area shape="rect" id="Node000002" href="$classproj_1_1selekcjanatur_1_1_symulacja_plik.html" title="Klasa odtwarzająca symulację na podstawie zapisanego dziennika zdarzeń" alt="" coords="228,56,438,83"/>
+<area shape="poly" id="edge8_Node000000_Node000002" title=" " alt="" coords="196,52,228,56,227,61,195,57"/>
+</map>

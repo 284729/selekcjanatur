@@ -1,0 +1,223 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="pl">
+  <compounddef id="_start_controller_8java" kind="file" language="Java">
+    <compoundname>StartController.java</compoundname>
+    <includes local="no">javafx.fxml.FXML</includes>
+    <includes local="no">javafx.fxml.FXMLLoader</includes>
+    <includes local="no">javafx.scene.Scene</includes>
+    <includes local="no">javafx.scene.control.Alert</includes>
+    <includes local="no">javafx.scene.control.Label</includes>
+    <includes local="no">javafx.scene.control.Slider</includes>
+    <includes local="no">javafx.scene.layout.BorderPane</includes>
+    <includes local="no">javafx.stage.Stage</includes>
+    <includes local="no">java.io.BufferedReader</includes>
+    <includes local="no">java.io.IOException</includes>
+    <includes local="no">java.nio.file.Files</includes>
+    <includes local="no">java.nio.file.Path</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>src/main/java/proj/selekcjanatur/StartController.java</label>
+        <link refid="_start_controller_8java"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>java.io.BufferedReader</label>
+      </node>
+      <node id="11">
+        <label>java.io.IOException</label>
+      </node>
+      <node id="12">
+        <label>java.nio.file.Files</label>
+      </node>
+      <node id="13">
+        <label>java.nio.file.Path</label>
+      </node>
+      <node id="2">
+        <label>javafx.fxml.FXML</label>
+      </node>
+      <node id="3">
+        <label>javafx.fxml.FXMLLoader</label>
+      </node>
+      <node id="4">
+        <label>javafx.scene.Scene</label>
+      </node>
+      <node id="5">
+        <label>javafx.scene.control.Alert</label>
+      </node>
+      <node id="6">
+        <label>javafx.scene.control.Label</label>
+      </node>
+      <node id="7">
+        <label>javafx.scene.control.Slider</label>
+      </node>
+      <node id="8">
+        <label>javafx.scene.layout.BorderPane</label>
+      </node>
+      <node id="9">
+        <label>javafx.stage.Stage</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="classproj_1_1selekcjanatur_1_1_start_controller" prot="public">proj::selekcjanatur::StartController</innerclass>
+    <innernamespace refid="namespaceproj_1_1selekcjanatur">proj::selekcjanatur</innernamespace>
+    <briefdescription>
+<para>Kontroler ekranu startowego symulacji. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keyword">package<sp/></highlight><highlight class="normal">proj.selekcjanatur;</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>javafx.fxml.FXML;</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>javafx.fxml.FXMLLoader;</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>javafx.scene.Scene;</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>javafx.scene.control.Alert;</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>javafx.scene.control.Label;</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>javafx.scene.control.Slider;</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>javafx.scene.layout.BorderPane;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>javafx.stage.Stage;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>java.io.BufferedReader;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>java.io.IOException;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>java.nio.file.Files;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>java.nio.file.Path;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32" refid="classproj_1_1selekcjanatur_1_1_start_controller" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classproj_1_1selekcjanatur_1_1_start_controller" kindref="compound">StartController</ref><sp/>{</highlight></codeline>
+<codeline lineno="34" refid="classproj_1_1selekcjanatur_1_1_start_controller_1ae7db52fcfa05bd89630dbafbcb17798d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>@FXML<sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/>Slider<sp/><ref refid="classproj_1_1selekcjanatur_1_1_start_controller_1ae7db52fcfa05bd89630dbafbcb17798d" kindref="member">sliderWidth</ref>;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37" refid="classproj_1_1selekcjanatur_1_1_start_controller_1a14e68f735235784a770b67aadfdabf4c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>@FXML<sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/>Slider<sp/><ref refid="classproj_1_1selekcjanatur_1_1_start_controller_1a14e68f735235784a770b67aadfdabf4c" kindref="member">sliderHeight</ref>;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40" refid="classproj_1_1selekcjanatur_1_1_start_controller_1a135e271886262b705dd0b01143d38743" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>@FXML<sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/>Slider<sp/><ref refid="classproj_1_1selekcjanatur_1_1_start_controller_1a135e271886262b705dd0b01143d38743" kindref="member">sliderPeople</ref>;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43" refid="classproj_1_1selekcjanatur_1_1_start_controller_1a753b0ce77f29df94503d98c8dfc077fe" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>@FXML<sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/>Slider<sp/><ref refid="classproj_1_1selekcjanatur_1_1_start_controller_1a753b0ce77f29df94503d98c8dfc077fe" kindref="member">sliderFood</ref>;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46" refid="classproj_1_1selekcjanatur_1_1_start_controller_1a06b38c2128a0877477a4e4b0b17362c0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>@FXML<sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/>Slider<sp/><ref refid="classproj_1_1selekcjanatur_1_1_start_controller_1a06b38c2128a0877477a4e4b0b17362c0" kindref="member">sliderFoodPerTick</ref>;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49" refid="classproj_1_1selekcjanatur_1_1_start_controller_1af8dde37b2e330af51f7a19c1044f6abe" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>@FXML<sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/>Label<sp/><ref refid="classproj_1_1selekcjanatur_1_1_start_controller_1af8dde37b2e330af51f7a19c1044f6abe" kindref="member">labelWidth</ref>;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52" refid="classproj_1_1selekcjanatur_1_1_start_controller_1a598d8ff12ad77fab756529358cf46cda" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>@FXML<sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/>Label<sp/><ref refid="classproj_1_1selekcjanatur_1_1_start_controller_1a598d8ff12ad77fab756529358cf46cda" kindref="member">labelHeight</ref>;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55" refid="classproj_1_1selekcjanatur_1_1_start_controller_1a22fde975baf4d84eebb6565298af670b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>@FXML<sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/>Label<sp/><ref refid="classproj_1_1selekcjanatur_1_1_start_controller_1a22fde975baf4d84eebb6565298af670b" kindref="member">labelPeople</ref>;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58" refid="classproj_1_1selekcjanatur_1_1_start_controller_1aa97667419de3f51733fff36d81848010" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>@FXML<sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/>Label<sp/><ref refid="classproj_1_1selekcjanatur_1_1_start_controller_1aa97667419de3f51733fff36d81848010" kindref="member">labelFood</ref>;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61" refid="classproj_1_1selekcjanatur_1_1_start_controller_1a7f288e985f51623326ee61dba06b8396" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>@FXML<sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/>Label<sp/><ref refid="classproj_1_1selekcjanatur_1_1_start_controller_1a7f288e985f51623326ee61dba06b8396" kindref="member">labelFoodPerTick</ref>;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>@FXML</highlight></codeline>
+<codeline lineno="69" refid="classproj_1_1selekcjanatur_1_1_start_controller_1a454899066792549fb6dd082733f7e7da" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classproj_1_1selekcjanatur_1_1_start_controller_1a454899066792549fb6dd082733f7e7da" kindref="member">initialize</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classproj_1_1selekcjanatur_1_1_start_controller_1ac32fa03ada58f71a3cbc379ea17cd8e3" kindref="member">bindSliderLabel</ref>(<ref refid="classproj_1_1selekcjanatur_1_1_start_controller_1ae7db52fcfa05bd89630dbafbcb17798d" kindref="member">sliderWidth</ref>,<sp/><ref refid="classproj_1_1selekcjanatur_1_1_start_controller_1af8dde37b2e330af51f7a19c1044f6abe" kindref="member">labelWidth</ref>);</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classproj_1_1selekcjanatur_1_1_start_controller_1ac32fa03ada58f71a3cbc379ea17cd8e3" kindref="member">bindSliderLabel</ref>(<ref refid="classproj_1_1selekcjanatur_1_1_start_controller_1a14e68f735235784a770b67aadfdabf4c" kindref="member">sliderHeight</ref>,<sp/><ref refid="classproj_1_1selekcjanatur_1_1_start_controller_1a598d8ff12ad77fab756529358cf46cda" kindref="member">labelHeight</ref>);</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classproj_1_1selekcjanatur_1_1_start_controller_1ac32fa03ada58f71a3cbc379ea17cd8e3" kindref="member">bindSliderLabel</ref>(<ref refid="classproj_1_1selekcjanatur_1_1_start_controller_1a135e271886262b705dd0b01143d38743" kindref="member">sliderPeople</ref>,<sp/><ref refid="classproj_1_1selekcjanatur_1_1_start_controller_1a22fde975baf4d84eebb6565298af670b" kindref="member">labelPeople</ref>);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classproj_1_1selekcjanatur_1_1_start_controller_1ac32fa03ada58f71a3cbc379ea17cd8e3" kindref="member">bindSliderLabel</ref>(<ref refid="classproj_1_1selekcjanatur_1_1_start_controller_1a753b0ce77f29df94503d98c8dfc077fe" kindref="member">sliderFood</ref>,<sp/><ref refid="classproj_1_1selekcjanatur_1_1_start_controller_1aa97667419de3f51733fff36d81848010" kindref="member">labelFood</ref>);</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classproj_1_1selekcjanatur_1_1_start_controller_1ac32fa03ada58f71a3cbc379ea17cd8e3" kindref="member">bindSliderLabel</ref>(<ref refid="classproj_1_1selekcjanatur_1_1_start_controller_1a06b38c2128a0877477a4e4b0b17362c0" kindref="member">sliderFoodPerTick</ref>,<sp/><ref refid="classproj_1_1selekcjanatur_1_1_start_controller_1a7f288e985f51623326ee61dba06b8396" kindref="member">labelFoodPerTick</ref>);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82" refid="classproj_1_1selekcjanatur_1_1_start_controller_1ac32fa03ada58f71a3cbc379ea17cd8e3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classproj_1_1selekcjanatur_1_1_start_controller_1ac32fa03ada58f71a3cbc379ea17cd8e3" kindref="member">bindSliderLabel</ref>(Slider<sp/>slider,<sp/>Label<sp/>label)<sp/>{</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>label.setText(String.valueOf((</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)<sp/>slider.getValue()));</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>slider.valueProperty().addListener((obs,<sp/>oldVal,<sp/>newVal)<sp/>-&gt;</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>label.setText(String.valueOf(newVal.intValue())));</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/>@FXML</highlight></codeline>
+<codeline lineno="95" refid="classproj_1_1selekcjanatur_1_1_start_controller_1adef8290b0feaebf73d01894af5e102e3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classproj_1_1selekcjanatur_1_1_start_controller_1adef8290b0feaebf73d01894af5e102e3" kindref="member">startSimulation</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>width<sp/>=<sp/>(int)<sp/><ref refid="classproj_1_1selekcjanatur_1_1_start_controller_1ae7db52fcfa05bd89630dbafbcb17798d" kindref="member">sliderWidth</ref>.getValue();</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>height<sp/>=<sp/>(int)<sp/><ref refid="classproj_1_1selekcjanatur_1_1_start_controller_1a14e68f735235784a770b67aadfdabf4c" kindref="member">sliderHeight</ref>.getValue();</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>people<sp/>=<sp/>(int)<sp/><ref refid="classproj_1_1selekcjanatur_1_1_start_controller_1a135e271886262b705dd0b01143d38743" kindref="member">sliderPeople</ref>.getValue();</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>food<sp/>=<sp/>(int)<sp/><ref refid="classproj_1_1selekcjanatur_1_1_start_controller_1a753b0ce77f29df94503d98c8dfc077fe" kindref="member">sliderFood</ref>.getValue();</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>foodPerTick<sp/>=<sp/>(int)<sp/><ref refid="classproj_1_1selekcjanatur_1_1_start_controller_1a06b38c2128a0877477a4e4b0b17362c0" kindref="member">sliderFoodPerTick</ref>.getValue();</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>numberOfFields<sp/>=<sp/>width<sp/>*<sp/>height;</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>numberOfEntities<sp/>=<sp/>people<sp/>+<sp/>food;</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(numberOfEntities<sp/>&gt;<sp/>numberOfFields)<sp/>{</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Alert<sp/>alert<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>Alert(Alert.AlertType.ERROR);</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>alert.setTitle(</highlight><highlight class="stringliteral">&quot;Błąd<sp/>konfiguracji<sp/>planszy&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>alert.setHeaderText(</highlight><highlight class="stringliteral">&quot;Zbyt<sp/>dużo<sp/>obiektów<sp/>na<sp/>mapie&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>String<sp/>message<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;-&gt;<sp/>Liczba<sp/>pól:<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/>numberOfFields<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal"><sp/>+</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;-&gt;<sp/>Ludzie:<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/>people<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal"><sp/>+</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;-&gt;<sp/>Jedzenie:<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/>food<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal"><sp/>+</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;-&gt;<sp/>Łącznie<sp/>zajętych<sp/>pól:<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/>numberOfEntities<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;\n\n&quot;</highlight><highlight class="normal"><sp/>+</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;Łączna<sp/>liczba<sp/>ludzi<sp/>i<sp/>jedzenia<sp/>nie<sp/>może<sp/>przekraczać<sp/>liczby<sp/>dostępnych<sp/>pól.&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>alert.setContentText(message);</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>alert.showAndWait();</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classproj_1_1selekcjanatur_1_1_symulacja" kindref="compound">Symulacja</ref>.<ref refid="classproj_1_1selekcjanatur_1_1_symulacja_1a6a0641aea8437d8f8a9ef0d975d8db75" kindref="member">ustawParametry</ref>(width,<sp/>height,<sp/>people,<sp/>food,<sp/>foodPerTick);</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">try</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FXMLLoader<sp/>loader<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>FXMLLoader(getClass().getResource(</highlight><highlight class="stringliteral">&quot;grid-view.fxml&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BorderPane<sp/>gridView<sp/>=<sp/>loader.load();</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Stage<sp/>stage<sp/>=<sp/>(Stage)<sp/><ref refid="classproj_1_1selekcjanatur_1_1_start_controller_1ae7db52fcfa05bd89630dbafbcb17798d" kindref="member">sliderWidth</ref>.getScene().getWindow();</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>stage.setScene(</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>Scene(gridView));</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>stage.setTitle(</highlight><highlight class="stringliteral">&quot;Selekcja<sp/>Naturalna<sp/>-<sp/>Symulacja&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">catch</highlight><highlight class="normal"><sp/>(Exception<sp/>e)<sp/>{</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>e.printStackTrace();</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/>@FXML</highlight></codeline>
+<codeline lineno="142" refid="classproj_1_1selekcjanatur_1_1_start_controller_1a4ac0a2be052eb17c702f3b5e730d9ca5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classproj_1_1selekcjanatur_1_1_start_controller_1a4ac0a2be052eb17c702f3b5e730d9ca5" kindref="member">replayFromFile</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>var<sp/>path<sp/>=<sp/>Path.of(</highlight><highlight class="stringliteral">&quot;dziennik_zdarzen.txt&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">try</highlight><highlight class="normal"><sp/>(BufferedReader<sp/>reader<sp/>=<sp/>Files.newBufferedReader(path))<sp/>{</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>var<sp/>linia<sp/>=<sp/>reader.readLine();</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>var<sp/>dane<sp/>=<sp/>linia<sp/>==<sp/></highlight><highlight class="keyword">null</highlight><highlight class="normal"><sp/>?<sp/>null<sp/>:<sp/>linia.split(</highlight><highlight class="stringliteral">&quot;;&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(linia<sp/>==<sp/></highlight><highlight class="keyword">null</highlight><highlight class="normal"><sp/>||<sp/>!dane[0].equals(</highlight><highlight class="stringliteral">&quot;ROZMIAR&quot;</highlight><highlight class="normal">))<sp/>{</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>var<sp/>alert<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>Alert(Alert.AlertType.ERROR);</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>alert.setTitle(</highlight><highlight class="stringliteral">&quot;Błądny<sp/>format<sp/>pliku&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>alert.setContentText(</highlight><highlight class="stringliteral">&quot;Plik<sp/>nie<sp/>jest<sp/>poprawnym<sp/>zapisem<sp/>symulacji&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>alert.showAndWait();</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>var<sp/>kolumny<sp/>=<sp/>Integer.parseInt(dane[1]);</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>var<sp/>wiersze<sp/>=<sp/>Integer.parseInt(dane[2]);</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classproj_1_1selekcjanatur_1_1_symulacja_1a628e531aaeeae0e81364b86adc82fff6" kindref="member">Symulacja.szerokosc</ref><sp/>=<sp/>kolumny;</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classproj_1_1selekcjanatur_1_1_symulacja_1a1da6d14516adc51b8b1fd58eecaa2913" kindref="member">Symulacja.wysokosc</ref><sp/>=<sp/>wiersze;</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classproj_1_1selekcjanatur_1_1_app_controller_1a126b2a6a1a53efdb82999b73dc9ca21d" kindref="member">AppController.PLIK</ref><sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"></highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FXMLLoader<sp/>loader<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>FXMLLoader(getClass().getResource(</highlight><highlight class="stringliteral">&quot;grid-view.fxml&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BorderPane<sp/>gridView<sp/>=<sp/>loader.load();</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"></highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Stage<sp/>stage<sp/>=<sp/>(Stage)<sp/><ref refid="classproj_1_1selekcjanatur_1_1_start_controller_1ae7db52fcfa05bd89630dbafbcb17798d" kindref="member">sliderWidth</ref>.getScene().getWindow();</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>stage.setScene(</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>Scene(gridView));</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>stage.setTitle(</highlight><highlight class="stringliteral">&quot;Selekcja<sp/>Naturalna<sp/>-<sp/>Odtworzenie<sp/>symulacji<sp/>z<sp/>pliku&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">catch</highlight><highlight class="normal"><sp/>(IOException<sp/>e)<sp/>{</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>e.printStackTrace();</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>var<sp/>alert<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>Alert(Alert.AlertType.ERROR);</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>alert.setTitle(</highlight><highlight class="stringliteral">&quot;Błąd<sp/>odczytania<sp/>pliku<sp/>dziennik_zdarzen.txt&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>alert.setContentText(e.getMessage());</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>alert.showAndWait();</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="175"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="src/main/java/proj/selekcjanatur/StartController.java"/>
+  </compounddef>
+</doxygen>

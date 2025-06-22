@@ -1,0 +1,331 @@
+\doxysection{Dokumentacja klasy proj.\+selekcjanatur.\+Symulacja\+Plik}
+\hypertarget{classproj_1_1selekcjanatur_1_1_symulacja_plik}{}\label{classproj_1_1selekcjanatur_1_1_symulacja_plik}\index{proj.selekcjanatur.SymulacjaPlik@{proj.selekcjanatur.SymulacjaPlik}}
+
+
+Klasa odtwarzająca symulację na podstawie zapisanego dziennika zdarzeń  
+
+
+
+
+Diagram dziedziczenia dla proj.\+selekcjanatur.\+Symulacja\+Plik\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classproj_1_1selekcjanatur_1_1_symulacja_plik__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Diagram współpracy dla proj.\+selekcjanatur.\+Symulacja\+Plik\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classproj_1_1selekcjanatur_1_1_symulacja_plik__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classproj_1_1selekcjanatur_1_1_symulacja_plik_a67a339bf84667023f2cbf5c10239a27a}{Symulacja\+Plik}} (String nazwa\+Pliku)  throws IOException 
+\begin{DoxyCompactList}\small\item\em Konstruktor wczytujący dziennik zdarzeń z pliku. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classproj_1_1selekcjanatur_1_1_symulacja_plik_a51c0e6b4a307749c4746a70c5e624f15}{aktualizuj}} ()
+\begin{DoxyCompactList}\small\item\em Aktualizuje stan symulacji o jeden krok. \end{DoxyCompactList}\item 
+boolean \mbox{\hyperlink{classproj_1_1selekcjanatur_1_1_symulacja_plik_a794761349d4b40e843b27accf7930a21}{czy\+Symulacja\+Zakonczona}} ()
+\begin{DoxyCompactList}\small\item\em Sprawdza czy symulacja została w pełni odtworzona. \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{classproj_1_1selekcjanatur_1_1_czlowiek}{Czlowiek}} $>$ \mbox{\hyperlink{classproj_1_1selekcjanatur_1_1_symulacja_plik_add43cde0f781327acda280da156c22b7}{get\+Ludzie}} ()
+\begin{DoxyCompactList}\small\item\em Zwraca listę ludzi w odtwarzanej symulacji. \end{DoxyCompactList}\item 
+Set$<$ \mbox{\hyperlink{classproj_1_1selekcjanatur_1_1_jedzenie}{Jedzenie}} $>$ \mbox{\hyperlink{classproj_1_1selekcjanatur_1_1_symulacja_plik_ac3c4708297d14861c4c3671f1e6afd6f}{get\+Jedzenie}} ()
+\begin{DoxyCompactList}\small\item\em Zwraca zbiór jedzenia w odtwarzanej symulacji. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Metody publiczne dziedziczone z \mbox{\hyperlink{interfaceproj_1_1selekcjanatur_1_1_interfejs_symulacji}{proj.\+selekcjanatur.\+Interfejs\+Symulacji}}}
+\begin{DoxyCompactItemize}
+\item 
+boolean \mbox{\hyperlink{interfaceproj_1_1selekcjanatur_1_1_interfejs_symulacji_a7e2ab50886fc205455480e6015060caa}{czy\+Symulacja\+Zakonczena}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Metody prywatne}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classproj_1_1selekcjanatur_1_1_symulacja_plik_ac2f0839c0c8670ed3801690546d03d23}{dodaj\+Czlowieka}} (String\mbox{[}$\,$\mbox{]} dane)
+\begin{DoxyCompactList}\small\item\em Dodaje człowieka na podstawie danych z dziennika. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classproj_1_1selekcjanatur_1_1_symulacja_plik_ac529b5c1f654f9cc5a6c727fd029f342}{dodaj\+Czlowieka}} (String czyM, String x\+Str, String y\+Str)
+\begin{DoxyCompactList}\small\item\em Dodaje dziecko powstałe w wyniku rozmnożenia. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classproj_1_1selekcjanatur_1_1_symulacja_plik_affa9dff3c1ffc985a3ca96055b4534ca}{przemiesc\+Czlowieka}} (String\mbox{[}$\,$\mbox{]} dane)
+\begin{DoxyCompactList}\small\item\em Przenosi człowieka na nową pozycję \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classproj_1_1selekcjanatur_1_1_symulacja_plik_a5fd6171c7fa48a7581c013b7a852550d}{usun\+Jedzenie}} (String\mbox{[}$\,$\mbox{]} dane)
+\begin{DoxyCompactList}\small\item\em Usuwa zjedzone jedzenie. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classproj_1_1selekcjanatur_1_1_symulacja_plik_a50a8cd7b56c409d4f312d49ed30bd42f}{usun\+Czlowieka}} (String\mbox{[}$\,$\mbox{]} dane)
+\begin{DoxyCompactList}\small\item\em Usuwa martwego człowieka. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Atrybuty prywatne}
+\begin{DoxyCompactItemize}
+\item 
+final List$<$ String $>$ \mbox{\hyperlink{classproj_1_1selekcjanatur_1_1_symulacja_plik_afc37062ccdcdfcd56718cbb0bb078139}{zdarzenia}}
+\begin{DoxyCompactList}\small\item\em Lista wczytanych zdarzeń z pliku. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classproj_1_1selekcjanatur_1_1_symulacja_plik_a5f5d231c9080a0d5266d87d4b7031be7}{index}} = 0
+\begin{DoxyCompactList}\small\item\em Aktualny indeks przetwarzanego zdarzenia. \end{DoxyCompactList}\item 
+final List$<$ \mbox{\hyperlink{classproj_1_1selekcjanatur_1_1_czlowiek}{Czlowiek}} $>$ \mbox{\hyperlink{classproj_1_1selekcjanatur_1_1_symulacja_plik_a03353e7e4527463873e0c81f085099b2}{ludzie}} = new Array\+List$<$$>$()
+\begin{DoxyCompactList}\small\item\em Lista ludzi w odtwarzanej symulacji. \end{DoxyCompactList}\item 
+final Set$<$ \mbox{\hyperlink{classproj_1_1selekcjanatur_1_1_jedzenie}{Jedzenie}} $>$ \mbox{\hyperlink{classproj_1_1selekcjanatur_1_1_symulacja_plik_a29101cb32e3423796ec0b048790a3c39}{jedzenie}} = new Hash\+Set$<$$>$()
+\begin{DoxyCompactList}\small\item\em Zbiór jedzenia w odtwarzanej symulacji. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Opis szczegółowy}
+Klasa odtwarzająca symulację na podstawie zapisanego dziennika zdarzeń 
+
+Implementuje ten sam interfejs co \doxylink{classproj_1_1selekcjanatur_1_1_symulacja}{Symulacja}, ale zamiast obliczać nowe stany, odtwarza je sekwencyjnie z pliku. Pozwala to na odtworzenie przebiegu wcześniejszej symulacji krok po kroku. 
+
+\label{doc-constructors}
+\Hypertarget{classproj_1_1selekcjanatur_1_1_symulacja_plik_doc-constructors}
+\doxysubsection{Dokumentacja konstruktora i destruktora}
+\Hypertarget{classproj_1_1selekcjanatur_1_1_symulacja_plik_a67a339bf84667023f2cbf5c10239a27a}\index{proj.selekcjanatur.SymulacjaPlik@{proj.selekcjanatur.SymulacjaPlik}!SymulacjaPlik@{SymulacjaPlik}}
+\index{SymulacjaPlik@{SymulacjaPlik}!proj.selekcjanatur.SymulacjaPlik@{proj.selekcjanatur.SymulacjaPlik}}
+\doxysubsubsection{\texorpdfstring{SymulacjaPlik()}{SymulacjaPlik()}}
+{\footnotesize\ttfamily \label{classproj_1_1selekcjanatur_1_1_symulacja_plik_a67a339bf84667023f2cbf5c10239a27a} 
+proj.\+selekcjanatur.\+Symulacja\+Plik.\+Symulacja\+Plik (\begin{DoxyParamCaption}\item[{String}]{nazwa\+Pliku}{}\end{DoxyParamCaption}) throws IOException}
+
+
+
+Konstruktor wczytujący dziennik zdarzeń z pliku. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em nazwa\+Pliku} & Ścieżka do pliku dziennika zdarzeń \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Wyjątki}
+{\em IOException} & Jeśli wystąpi błąd odczytu pliku \\
+\hline
+\end{DoxyExceptions}
+
+
+\label{doc-func-members}
+\Hypertarget{classproj_1_1selekcjanatur_1_1_symulacja_plik_doc-func-members}
+\doxysubsection{Dokumentacja funkcji składowych}
+\Hypertarget{classproj_1_1selekcjanatur_1_1_symulacja_plik_a51c0e6b4a307749c4746a70c5e624f15}\index{proj.selekcjanatur.SymulacjaPlik@{proj.selekcjanatur.SymulacjaPlik}!aktualizuj@{aktualizuj}}
+\index{aktualizuj@{aktualizuj}!proj.selekcjanatur.SymulacjaPlik@{proj.selekcjanatur.SymulacjaPlik}}
+\doxysubsubsection{\texorpdfstring{aktualizuj()}{aktualizuj()}}
+{\footnotesize\ttfamily \label{classproj_1_1selekcjanatur_1_1_symulacja_plik_a51c0e6b4a307749c4746a70c5e624f15} 
+void proj.\+selekcjanatur.\+Symulacja\+Plik.\+aktualizuj (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Aktualizuje stan symulacji o jeden krok. 
+
+Przetwarza kolejne zdarzenia z dziennika aż do napotkania zdarzenia KLATKA, które oznacza koniec aktualnej klatki symulacji. 
+
+Implementuje \mbox{\hyperlink{interfaceproj_1_1selekcjanatur_1_1_interfejs_symulacji_abd9c98677e97fa36f0126a04bb0baeba}{proj.\+selekcjanatur.\+Interfejs\+Symulacji}}.
+
+Oto graf wywołań dla tej funkcji\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classproj_1_1selekcjanatur_1_1_symulacja_plik_a51c0e6b4a307749c4746a70c5e624f15_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classproj_1_1selekcjanatur_1_1_symulacja_plik_a794761349d4b40e843b27accf7930a21}\index{proj.selekcjanatur.SymulacjaPlik@{proj.selekcjanatur.SymulacjaPlik}!czySymulacjaZakonczona@{czySymulacjaZakonczona}}
+\index{czySymulacjaZakonczona@{czySymulacjaZakonczona}!proj.selekcjanatur.SymulacjaPlik@{proj.selekcjanatur.SymulacjaPlik}}
+\doxysubsubsection{\texorpdfstring{czySymulacjaZakonczona()}{czySymulacjaZakonczona()}}
+{\footnotesize\ttfamily \label{classproj_1_1selekcjanatur_1_1_symulacja_plik_a794761349d4b40e843b27accf7930a21} 
+boolean proj.\+selekcjanatur.\+Symulacja\+Plik.\+czy\+Symulacja\+Zakonczona (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Sprawdza czy symulacja została w pełni odtworzona. 
+
+\begin{DoxyReturn}{Zwraca}
+true jeśli wszystkie zdarzenia zostały przetworzone 
+\end{DoxyReturn}
+
+
+Implementuje \mbox{\hyperlink{interfaceproj_1_1selekcjanatur_1_1_interfejs_symulacji_a4537fd530e9fb26e34a029f9de374f9e}{proj.\+selekcjanatur.\+Interfejs\+Symulacji}}.
+
+\Hypertarget{classproj_1_1selekcjanatur_1_1_symulacja_plik_ac529b5c1f654f9cc5a6c727fd029f342}\index{proj.selekcjanatur.SymulacjaPlik@{proj.selekcjanatur.SymulacjaPlik}!dodajCzlowieka@{dodajCzlowieka}}
+\index{dodajCzlowieka@{dodajCzlowieka}!proj.selekcjanatur.SymulacjaPlik@{proj.selekcjanatur.SymulacjaPlik}}
+\doxysubsubsection{\texorpdfstring{dodajCzlowieka()}{dodajCzlowieka()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{classproj_1_1selekcjanatur_1_1_symulacja_plik_ac529b5c1f654f9cc5a6c727fd029f342} 
+void proj.\+selekcjanatur.\+Symulacja\+Plik.\+dodaj\+Czlowieka (\begin{DoxyParamCaption}\item[{String}]{czyM}{, }\item[{String}]{x\+Str}{, }\item[{String}]{y\+Str}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Dodaje dziecko powstałe w wyniku rozmnożenia. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em czyM} & Płeć dziecka (true = mężczyzna) \\
+\hline
+{\em x\+Str} & Pozycja x dziecka \\
+\hline
+{\em y\+Str} & Pozycja y dziecka \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classproj_1_1selekcjanatur_1_1_symulacja_plik_ac2f0839c0c8670ed3801690546d03d23}\index{proj.selekcjanatur.SymulacjaPlik@{proj.selekcjanatur.SymulacjaPlik}!dodajCzlowieka@{dodajCzlowieka}}
+\index{dodajCzlowieka@{dodajCzlowieka}!proj.selekcjanatur.SymulacjaPlik@{proj.selekcjanatur.SymulacjaPlik}}
+\doxysubsubsection{\texorpdfstring{dodajCzlowieka()}{dodajCzlowieka()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{classproj_1_1selekcjanatur_1_1_symulacja_plik_ac2f0839c0c8670ed3801690546d03d23} 
+void proj.\+selekcjanatur.\+Symulacja\+Plik.\+dodaj\+Czlowieka (\begin{DoxyParamCaption}\item[{String\mbox{[}$\,$\mbox{]}}]{dane}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Dodaje człowieka na podstawie danych z dziennika. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em dane} & Tablica parametrów zdarzenia DODANIE\+\_\+\+CZLOWIEKA \\
+\hline
+\end{DoxyParams}
+Oto graf wywoływań tej funkcji\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classproj_1_1selekcjanatur_1_1_symulacja_plik_ac2f0839c0c8670ed3801690546d03d23_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classproj_1_1selekcjanatur_1_1_symulacja_plik_ac3c4708297d14861c4c3671f1e6afd6f}\index{proj.selekcjanatur.SymulacjaPlik@{proj.selekcjanatur.SymulacjaPlik}!getJedzenie@{getJedzenie}}
+\index{getJedzenie@{getJedzenie}!proj.selekcjanatur.SymulacjaPlik@{proj.selekcjanatur.SymulacjaPlik}}
+\doxysubsubsection{\texorpdfstring{getJedzenie()}{getJedzenie()}}
+{\footnotesize\ttfamily \label{classproj_1_1selekcjanatur_1_1_symulacja_plik_ac3c4708297d14861c4c3671f1e6afd6f} 
+Set$<$ \mbox{\hyperlink{classproj_1_1selekcjanatur_1_1_jedzenie}{Jedzenie}} $>$ proj.\+selekcjanatur.\+Symulacja\+Plik.\+get\+Jedzenie (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Zwraca zbiór jedzenia w odtwarzanej symulacji. 
+
+\begin{DoxyReturn}{Zwraca}
+Zbiór obiektów \doxylink{classproj_1_1selekcjanatur_1_1_jedzenie}{Jedzenie} 
+\end{DoxyReturn}
+
+
+Implementuje \mbox{\hyperlink{interfaceproj_1_1selekcjanatur_1_1_interfejs_symulacji_aa64fcf541377293e9ace7cbabb3f5c62}{proj.\+selekcjanatur.\+Interfejs\+Symulacji}}.
+
+\Hypertarget{classproj_1_1selekcjanatur_1_1_symulacja_plik_add43cde0f781327acda280da156c22b7}\index{proj.selekcjanatur.SymulacjaPlik@{proj.selekcjanatur.SymulacjaPlik}!getLudzie@{getLudzie}}
+\index{getLudzie@{getLudzie}!proj.selekcjanatur.SymulacjaPlik@{proj.selekcjanatur.SymulacjaPlik}}
+\doxysubsubsection{\texorpdfstring{getLudzie()}{getLudzie()}}
+{\footnotesize\ttfamily \label{classproj_1_1selekcjanatur_1_1_symulacja_plik_add43cde0f781327acda280da156c22b7} 
+List$<$ \mbox{\hyperlink{classproj_1_1selekcjanatur_1_1_czlowiek}{Czlowiek}} $>$ proj.\+selekcjanatur.\+Symulacja\+Plik.\+get\+Ludzie (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Zwraca listę ludzi w odtwarzanej symulacji. 
+
+\begin{DoxyReturn}{Zwraca}
+Lista obiektów \doxylink{classproj_1_1selekcjanatur_1_1_czlowiek}{Czlowiek} 
+\end{DoxyReturn}
+
+
+Implementuje \mbox{\hyperlink{interfaceproj_1_1selekcjanatur_1_1_interfejs_symulacji_a42c8bbee1a48204a12ea333621bca0d5}{proj.\+selekcjanatur.\+Interfejs\+Symulacji}}.
+
+\Hypertarget{classproj_1_1selekcjanatur_1_1_symulacja_plik_affa9dff3c1ffc985a3ca96055b4534ca}\index{proj.selekcjanatur.SymulacjaPlik@{proj.selekcjanatur.SymulacjaPlik}!przemiescCzlowieka@{przemiescCzlowieka}}
+\index{przemiescCzlowieka@{przemiescCzlowieka}!proj.selekcjanatur.SymulacjaPlik@{proj.selekcjanatur.SymulacjaPlik}}
+\doxysubsubsection{\texorpdfstring{przemiescCzlowieka()}{przemiescCzlowieka()}}
+{\footnotesize\ttfamily \label{classproj_1_1selekcjanatur_1_1_symulacja_plik_affa9dff3c1ffc985a3ca96055b4534ca} 
+void proj.\+selekcjanatur.\+Symulacja\+Plik.\+przemiesc\+Czlowieka (\begin{DoxyParamCaption}\item[{String\mbox{[}$\,$\mbox{]}}]{dane}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Przenosi człowieka na nową pozycję 
+
+
+\begin{DoxyParams}{Parametry}
+{\em dane} & Tablica parametrów zdarzenia PRZEMIESZCZENIE \\
+\hline
+\end{DoxyParams}
+Oto graf wywoływań tej funkcji\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classproj_1_1selekcjanatur_1_1_symulacja_plik_affa9dff3c1ffc985a3ca96055b4534ca_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classproj_1_1selekcjanatur_1_1_symulacja_plik_a50a8cd7b56c409d4f312d49ed30bd42f}\index{proj.selekcjanatur.SymulacjaPlik@{proj.selekcjanatur.SymulacjaPlik}!usunCzlowieka@{usunCzlowieka}}
+\index{usunCzlowieka@{usunCzlowieka}!proj.selekcjanatur.SymulacjaPlik@{proj.selekcjanatur.SymulacjaPlik}}
+\doxysubsubsection{\texorpdfstring{usunCzlowieka()}{usunCzlowieka()}}
+{\footnotesize\ttfamily \label{classproj_1_1selekcjanatur_1_1_symulacja_plik_a50a8cd7b56c409d4f312d49ed30bd42f} 
+void proj.\+selekcjanatur.\+Symulacja\+Plik.\+usun\+Czlowieka (\begin{DoxyParamCaption}\item[{String\mbox{[}$\,$\mbox{]}}]{dane}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Usuwa martwego człowieka. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em dane} & Tablica parametrów zdarzenia SMIERC \\
+\hline
+\end{DoxyParams}
+Oto graf wywoływań tej funkcji\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classproj_1_1selekcjanatur_1_1_symulacja_plik_a50a8cd7b56c409d4f312d49ed30bd42f_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classproj_1_1selekcjanatur_1_1_symulacja_plik_a5fd6171c7fa48a7581c013b7a852550d}\index{proj.selekcjanatur.SymulacjaPlik@{proj.selekcjanatur.SymulacjaPlik}!usunJedzenie@{usunJedzenie}}
+\index{usunJedzenie@{usunJedzenie}!proj.selekcjanatur.SymulacjaPlik@{proj.selekcjanatur.SymulacjaPlik}}
+\doxysubsubsection{\texorpdfstring{usunJedzenie()}{usunJedzenie()}}
+{\footnotesize\ttfamily \label{classproj_1_1selekcjanatur_1_1_symulacja_plik_a5fd6171c7fa48a7581c013b7a852550d} 
+void proj.\+selekcjanatur.\+Symulacja\+Plik.\+usun\+Jedzenie (\begin{DoxyParamCaption}\item[{String\mbox{[}$\,$\mbox{]}}]{dane}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Usuwa zjedzone jedzenie. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em dane} & Tablica parametrów zdarzenia ZJEDZONO \\
+\hline
+\end{DoxyParams}
+Oto graf wywoływań tej funkcji\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classproj_1_1selekcjanatur_1_1_symulacja_plik_a5fd6171c7fa48a7581c013b7a852550d_icgraph}
+\end{center}
+\end{figure}
+
+
+\label{doc-variable-members}
+\Hypertarget{classproj_1_1selekcjanatur_1_1_symulacja_plik_doc-variable-members}
+\doxysubsection{Dokumentacja atrybutów składowych}
+\Hypertarget{classproj_1_1selekcjanatur_1_1_symulacja_plik_a5f5d231c9080a0d5266d87d4b7031be7}\index{proj.selekcjanatur.SymulacjaPlik@{proj.selekcjanatur.SymulacjaPlik}!index@{index}}
+\index{index@{index}!proj.selekcjanatur.SymulacjaPlik@{proj.selekcjanatur.SymulacjaPlik}}
+\doxysubsubsection{\texorpdfstring{index}{index}}
+{\footnotesize\ttfamily \label{classproj_1_1selekcjanatur_1_1_symulacja_plik_a5f5d231c9080a0d5266d87d4b7031be7} 
+int proj.\+selekcjanatur.\+Symulacja\+Plik.\+index = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Aktualny indeks przetwarzanego zdarzenia. 
+
+\Hypertarget{classproj_1_1selekcjanatur_1_1_symulacja_plik_a29101cb32e3423796ec0b048790a3c39}\index{proj.selekcjanatur.SymulacjaPlik@{proj.selekcjanatur.SymulacjaPlik}!jedzenie@{jedzenie}}
+\index{jedzenie@{jedzenie}!proj.selekcjanatur.SymulacjaPlik@{proj.selekcjanatur.SymulacjaPlik}}
+\doxysubsubsection{\texorpdfstring{jedzenie}{jedzenie}}
+{\footnotesize\ttfamily \label{classproj_1_1selekcjanatur_1_1_symulacja_plik_a29101cb32e3423796ec0b048790a3c39} 
+final Set$<$\mbox{\hyperlink{classproj_1_1selekcjanatur_1_1_jedzenie}{Jedzenie}}$>$ proj.\+selekcjanatur.\+Symulacja\+Plik.\+jedzenie = new Hash\+Set$<$$>$()\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Zbiór jedzenia w odtwarzanej symulacji. 
+
+\Hypertarget{classproj_1_1selekcjanatur_1_1_symulacja_plik_a03353e7e4527463873e0c81f085099b2}\index{proj.selekcjanatur.SymulacjaPlik@{proj.selekcjanatur.SymulacjaPlik}!ludzie@{ludzie}}
+\index{ludzie@{ludzie}!proj.selekcjanatur.SymulacjaPlik@{proj.selekcjanatur.SymulacjaPlik}}
+\doxysubsubsection{\texorpdfstring{ludzie}{ludzie}}
+{\footnotesize\ttfamily \label{classproj_1_1selekcjanatur_1_1_symulacja_plik_a03353e7e4527463873e0c81f085099b2} 
+final List$<$\mbox{\hyperlink{classproj_1_1selekcjanatur_1_1_czlowiek}{Czlowiek}}$>$ proj.\+selekcjanatur.\+Symulacja\+Plik.\+ludzie = new Array\+List$<$$>$()\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Lista ludzi w odtwarzanej symulacji. 
+
+\Hypertarget{classproj_1_1selekcjanatur_1_1_symulacja_plik_afc37062ccdcdfcd56718cbb0bb078139}\index{proj.selekcjanatur.SymulacjaPlik@{proj.selekcjanatur.SymulacjaPlik}!zdarzenia@{zdarzenia}}
+\index{zdarzenia@{zdarzenia}!proj.selekcjanatur.SymulacjaPlik@{proj.selekcjanatur.SymulacjaPlik}}
+\doxysubsubsection{\texorpdfstring{zdarzenia}{zdarzenia}}
+{\footnotesize\ttfamily \label{classproj_1_1selekcjanatur_1_1_symulacja_plik_afc37062ccdcdfcd56718cbb0bb078139} 
+final List$<$String$>$ proj.\+selekcjanatur.\+Symulacja\+Plik.\+zdarzenia\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Lista wczytanych zdarzeń z pliku. 
+
+
+
+Dokumentacja dla tej klasy została wygenerowana z pliku\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/proj/selekcjanatur/\mbox{\hyperlink{_symulacja_plik_8java}{Symulacja\+Plik.\+java}}\end{DoxyCompactItemize}

@@ -1,0 +1,5 @@
+<map id="proj.selekcjanatur.Symulacja.dodajLosoweJedzenie" name="proj.selekcjanatur.Symulacja.dodajLosoweJedzenie">
+<area shape="rect" id="Node000001" title="Dodaje losowe jedzenie na planszę" alt="" coords="5,5,229,48"/>
+<area shape="rect" id="Node000002" href="$classproj_1_1selekcjanatur_1_1_symulacja.html#adca30037183a0fade601724dd9b8f1bd" title="Dodaje wpis do dziennika zdarzeń" alt="" coords="277,5,500,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="229,24,261,24,261,29,229,29"/>
+</map>

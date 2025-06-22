@@ -1,0 +1,142 @@
+\doxysection{Dokumentacja interfejsu proj.\+selekcjanatur.\+Interfejs\+Symulacji}
+\hypertarget{interfaceproj_1_1selekcjanatur_1_1_interfejs_symulacji}{}\label{interfaceproj_1_1selekcjanatur_1_1_interfejs_symulacji}\index{proj.selekcjanatur.InterfejsSymulacji@{proj.selekcjanatur.InterfejsSymulacji}}
+
+
+Główny interfejs systemu symulacji ewolucyjnej.  
+
+
+
+
+Diagram dziedziczenia dla proj.\+selekcjanatur.\+Interfejs\+Symulacji\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{interfaceproj_1_1selekcjanatur_1_1_interfejs_symulacji__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Diagram współpracy dla proj.\+selekcjanatur.\+Interfejs\+Symulacji\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=256pt]{interfaceproj_1_1selekcjanatur_1_1_interfejs_symulacji__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{interfaceproj_1_1selekcjanatur_1_1_interfejs_symulacji_abd9c98677e97fa36f0126a04bb0baeba}{aktualizuj}} ()
+\begin{DoxyCompactList}\small\item\em Aktualizuje stan symulacji o jeden krok. \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{classproj_1_1selekcjanatur_1_1_czlowiek}{Czlowiek}} $>$ \mbox{\hyperlink{interfaceproj_1_1selekcjanatur_1_1_interfejs_symulacji_a42c8bbee1a48204a12ea333621bca0d5}{get\+Ludzie}} ()
+\begin{DoxyCompactList}\small\item\em Pobiera listę wszystkich ludzi w symulacji. \end{DoxyCompactList}\item 
+Set$<$ \mbox{\hyperlink{classproj_1_1selekcjanatur_1_1_jedzenie}{Jedzenie}} $>$ \mbox{\hyperlink{interfaceproj_1_1selekcjanatur_1_1_interfejs_symulacji_aa64fcf541377293e9ace7cbabb3f5c62}{get\+Jedzenie}} ()
+\begin{DoxyCompactList}\small\item\em Pobiera zbiór dostępnego jedzenia. \end{DoxyCompactList}\item 
+boolean \mbox{\hyperlink{interfaceproj_1_1selekcjanatur_1_1_interfejs_symulacji_a4537fd530e9fb26e34a029f9de374f9e}{czy\+Symulacja\+Zakonczona}} ()
+\begin{DoxyCompactList}\small\item\em Sprawdza warunki zakończenia symulacji. \end{DoxyCompactList}\item 
+boolean \mbox{\hyperlink{interfaceproj_1_1selekcjanatur_1_1_interfejs_symulacji_a7e2ab50886fc205455480e6015060caa}{czy\+Symulacja\+Zakonczena}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Opis szczegółowy}
+Główny interfejs systemu symulacji ewolucyjnej. 
+
+Definiuje kontrakt dla wszystkich implementacji symulacji, zarówno działających w czasie rzeczywistym jak i odtwarzających z zapisanych danych. Interfejs jest implementowany przez\+:
+\begin{DoxyItemize}
+\item Klasę \doxylink{classproj_1_1selekcjanatur_1_1_symulacja}{Symulacja} (podstawowa implementacja)
+\item Klasę \doxylink{classproj_1_1selekcjanatur_1_1_symulacja_plik}{Symulacja\+Plik} (odtwarzanie z dziennika zdarzeń) 
+\end{DoxyItemize}
+
+\label{doc-func-members}
+\Hypertarget{interfaceproj_1_1selekcjanatur_1_1_interfejs_symulacji_doc-func-members}
+\doxysubsection{Dokumentacja funkcji składowych}
+\Hypertarget{interfaceproj_1_1selekcjanatur_1_1_interfejs_symulacji_abd9c98677e97fa36f0126a04bb0baeba}\index{proj.selekcjanatur.InterfejsSymulacji@{proj.selekcjanatur.InterfejsSymulacji}!aktualizuj@{aktualizuj}}
+\index{aktualizuj@{aktualizuj}!proj.selekcjanatur.InterfejsSymulacji@{proj.selekcjanatur.InterfejsSymulacji}}
+\doxysubsubsection{\texorpdfstring{aktualizuj()}{aktualizuj()}}
+{\footnotesize\ttfamily \label{interfaceproj_1_1selekcjanatur_1_1_interfejs_symulacji_abd9c98677e97fa36f0126a04bb0baeba} 
+void proj.\+selekcjanatur.\+Interfejs\+Symulacji.\+aktualizuj (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Aktualizuje stan symulacji o jeden krok. 
+
+Metoda powinna\+:
+\begin{DoxyItemize}
+\item Wykonać wszystkie obliczenia dla bieżącego cyklu
+\item Zaktualizować stan wszystkich obiektów
+\item Sprawdzić warunki zakończenia symulacji 
+\end{DoxyItemize}
+
+Implementowany w \mbox{\hyperlink{classproj_1_1selekcjanatur_1_1_symulacja_adec9a02326fa916fa822eddad509050f}{proj.\+selekcjanatur.\+Symulacja}} i \mbox{\hyperlink{classproj_1_1selekcjanatur_1_1_symulacja_plik_a51c0e6b4a307749c4746a70c5e624f15}{proj.\+selekcjanatur.\+Symulacja\+Plik}}.
+
+\Hypertarget{interfaceproj_1_1selekcjanatur_1_1_interfejs_symulacji_a7e2ab50886fc205455480e6015060caa}\index{proj.selekcjanatur.InterfejsSymulacji@{proj.selekcjanatur.InterfejsSymulacji}!czySymulacjaZakonczena@{czySymulacjaZakonczena}}
+\index{czySymulacjaZakonczena@{czySymulacjaZakonczena}!proj.selekcjanatur.InterfejsSymulacji@{proj.selekcjanatur.InterfejsSymulacji}}
+\doxysubsubsection{\texorpdfstring{czySymulacjaZakonczena()}{czySymulacjaZakonczena()}}
+{\footnotesize\ttfamily \label{interfaceproj_1_1selekcjanatur_1_1_interfejs_symulacji_a7e2ab50886fc205455480e6015060caa} 
+boolean proj.\+selekcjanatur.\+Interfejs\+Symulacji.\+czy\+Symulacja\+Zakonczena (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Implementowany w \mbox{\hyperlink{classproj_1_1selekcjanatur_1_1_symulacja_a3d0ca8ee0af5090358081f7577c0245f}{proj.\+selekcjanatur.\+Symulacja}}.
+
+\Hypertarget{interfaceproj_1_1selekcjanatur_1_1_interfejs_symulacji_a4537fd530e9fb26e34a029f9de374f9e}\index{proj.selekcjanatur.InterfejsSymulacji@{proj.selekcjanatur.InterfejsSymulacji}!czySymulacjaZakonczona@{czySymulacjaZakonczona}}
+\index{czySymulacjaZakonczona@{czySymulacjaZakonczona}!proj.selekcjanatur.InterfejsSymulacji@{proj.selekcjanatur.InterfejsSymulacji}}
+\doxysubsubsection{\texorpdfstring{czySymulacjaZakonczona()}{czySymulacjaZakonczona()}}
+{\footnotesize\ttfamily \label{interfaceproj_1_1selekcjanatur_1_1_interfejs_symulacji_a4537fd530e9fb26e34a029f9de374f9e} 
+boolean proj.\+selekcjanatur.\+Interfejs\+Symulacji.\+czy\+Symulacja\+Zakonczona (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Sprawdza warunki zakończenia symulacji. 
+
+\begin{DoxyReturn}{Zwraca}
+true jeśli symulacja powinna się zakończyć
+\end{DoxyReturn}
+Typowe warunki zakończenia\+:
+\begin{DoxyItemize}
+\item Wyczerpanie się populacji (brak żywych ludzi)
+\item Osiągnięcie maksymalnej liczby cykli
+\item Odtworzenie wszystkich zdarzeń z pliku (w trybie odtwarzania) 
+\end{DoxyItemize}
+
+Implementowany w \mbox{\hyperlink{classproj_1_1selekcjanatur_1_1_symulacja_plik_a794761349d4b40e843b27accf7930a21}{proj.\+selekcjanatur.\+Symulacja\+Plik}}.
+
+\Hypertarget{interfaceproj_1_1selekcjanatur_1_1_interfejs_symulacji_aa64fcf541377293e9ace7cbabb3f5c62}\index{proj.selekcjanatur.InterfejsSymulacji@{proj.selekcjanatur.InterfejsSymulacji}!getJedzenie@{getJedzenie}}
+\index{getJedzenie@{getJedzenie}!proj.selekcjanatur.InterfejsSymulacji@{proj.selekcjanatur.InterfejsSymulacji}}
+\doxysubsubsection{\texorpdfstring{getJedzenie()}{getJedzenie()}}
+{\footnotesize\ttfamily \label{interfaceproj_1_1selekcjanatur_1_1_interfejs_symulacji_aa64fcf541377293e9ace7cbabb3f5c62} 
+Set$<$ \mbox{\hyperlink{classproj_1_1selekcjanatur_1_1_jedzenie}{Jedzenie}} $>$ proj.\+selekcjanatur.\+Interfejs\+Symulacji.\+get\+Jedzenie (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Pobiera zbiór dostępnego jedzenia. 
+
+\begin{DoxyReturn}{Zwraca}
+Nieuporządkowany zbiór obiektów \doxylink{classproj_1_1selekcjanatur_1_1_jedzenie}{Jedzenie}
+\end{DoxyReturn}
+Zwraca tylko jedzenie obecne w bieżącym cyklu symulacji. \doxylink{classproj_1_1selekcjanatur_1_1_jedzenie}{Jedzenie} zjedzone w poprzednich cyklach nie jest uwzględniane. 
+
+Implementowany w \mbox{\hyperlink{classproj_1_1selekcjanatur_1_1_symulacja_ae3205b15a5c36425e97c6c1327c9f9eb}{proj.\+selekcjanatur.\+Symulacja}} i \mbox{\hyperlink{classproj_1_1selekcjanatur_1_1_symulacja_plik_ac3c4708297d14861c4c3671f1e6afd6f}{proj.\+selekcjanatur.\+Symulacja\+Plik}}.
+
+\Hypertarget{interfaceproj_1_1selekcjanatur_1_1_interfejs_symulacji_a42c8bbee1a48204a12ea333621bca0d5}\index{proj.selekcjanatur.InterfejsSymulacji@{proj.selekcjanatur.InterfejsSymulacji}!getLudzie@{getLudzie}}
+\index{getLudzie@{getLudzie}!proj.selekcjanatur.InterfejsSymulacji@{proj.selekcjanatur.InterfejsSymulacji}}
+\doxysubsubsection{\texorpdfstring{getLudzie()}{getLudzie()}}
+{\footnotesize\ttfamily \label{interfaceproj_1_1selekcjanatur_1_1_interfejs_symulacji_a42c8bbee1a48204a12ea333621bca0d5} 
+List$<$ \mbox{\hyperlink{classproj_1_1selekcjanatur_1_1_czlowiek}{Czlowiek}} $>$ proj.\+selekcjanatur.\+Interfejs\+Symulacji.\+get\+Ludzie (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Pobiera listę wszystkich ludzi w symulacji. 
+
+\begin{DoxyReturn}{Zwraca}
+Lista obiektów \doxylink{classproj_1_1selekcjanatur_1_1_czlowiek}{Czlowiek}
+\end{DoxyReturn}
+Zwraca zarówno żywych jak i martwych uczestników symulacji. Kolejność na liście może mieć znaczenie dla renderowania. 
+
+Implementowany w \mbox{\hyperlink{classproj_1_1selekcjanatur_1_1_symulacja_a259b1b62d8f3116eefdc1b6e503ccd35}{proj.\+selekcjanatur.\+Symulacja}} i \mbox{\hyperlink{classproj_1_1selekcjanatur_1_1_symulacja_plik_add43cde0f781327acda280da156c22b7}{proj.\+selekcjanatur.\+Symulacja\+Plik}}.
+
+
+
+Dokumentacja dla tego interfejsu została wygenerowana z pliku\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/proj/selekcjanatur/\mbox{\hyperlink{_interfejs_symulacji_8java}{Interfejs\+Symulacji.\+java}}\end{DoxyCompactItemize}

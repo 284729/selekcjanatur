@@ -1,0 +1,166 @@
+\doxysection{Dokumentacja klasy proj.\+selekcjanatur.\+Gen\+Zapotrzebowanie\+Energetyczne}
+\hypertarget{classproj_1_1selekcjanatur_1_1_gen_zapotrzebowanie_energetyczne}{}\label{classproj_1_1selekcjanatur_1_1_gen_zapotrzebowanie_energetyczne}\index{proj.selekcjanatur.GenZapotrzebowanieEnergetyczne@{proj.selekcjanatur.GenZapotrzebowanieEnergetyczne}}
+
+
+Klasa implementująca gen zapotrzebowania energetycznego.  
+
+
+
+
+Diagram dziedziczenia dla proj.\+selekcjanatur.\+Gen\+Zapotrzebowanie\+Energetyczne\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=260pt]{classproj_1_1selekcjanatur_1_1_gen_zapotrzebowanie_energetyczne__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Diagram współpracy dla proj.\+selekcjanatur.\+Gen\+Zapotrzebowanie\+Energetyczne\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=260pt]{classproj_1_1selekcjanatur_1_1_gen_zapotrzebowanie_energetyczne__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classproj_1_1selekcjanatur_1_1_gen_zapotrzebowanie_energetyczne_ae40faf3665048819b8179c5eaa72e344}{Gen\+Zapotrzebowanie\+Energetyczne}} ()
+\begin{DoxyCompactList}\small\item\em Konstruktor losujący początkową wartość genu. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classproj_1_1selekcjanatur_1_1_gen_zapotrzebowanie_energetyczne_a064321ada51f7fb8bef1c810789afeca}{Gen\+Zapotrzebowanie\+Energetyczne}} (float \mbox{\hyperlink{classproj_1_1selekcjanatur_1_1_gen_zapotrzebowanie_energetyczne_a6f92daa3d49d10ca3b4dae6f11e52a36}{wartosc}})
+\begin{DoxyCompactList}\small\item\em Konstruktor z określeniem konkretnej wartości. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classproj_1_1selekcjanatur_1_1_gen_zapotrzebowanie_energetyczne_afd421547690d3ea2c7a15eaea3cf1e08}{wartosc}} ()
+\begin{DoxyCompactList}\small\item\em Zwraca aktualną wartość genu. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{interfaceproj_1_1selekcjanatur_1_1_gen}{Gen}} \mbox{\hyperlink{classproj_1_1selekcjanatur_1_1_gen_zapotrzebowanie_energetyczne_a283348bd55e17df0fe1345785d138c95}{odziedzicz}} ()
+\begin{DoxyCompactList}\small\item\em Tworzy nowy gen poprzez dziedziczenie z mutacją \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Atrybuty prywatne}
+\begin{DoxyCompactItemize}
+\item 
+final float \mbox{\hyperlink{classproj_1_1selekcjanatur_1_1_gen_zapotrzebowanie_energetyczne_a6f92daa3d49d10ca3b4dae6f11e52a36}{wartosc}}
+\begin{DoxyCompactList}\small\item\em Przechowuje wartość genu metabolizmu. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Opis szczegółowy}
+Klasa implementująca gen zapotrzebowania energetycznego. 
+
+\doxylink{interfaceproj_1_1selekcjanatur_1_1_gen}{Gen} określa ile energii człowiek traci w każdym cyklu symulacji. Wartość genu reprezentuje procentowy ubytek energii na cykl\+:
+\begin{DoxyItemize}
+\item Niższe wartości\+: organizm oszczędniejszy (dłużej przeżyje bez jedzenia)
+\item Wyższe wartości\+: szybsze zużycie energii (większa potrzeba jedzenia)
+\end{DoxyItemize}
+
+Dziedziczenie odbywa się z asymetryczną mutacją (-\/5 do +7), przy czym minimalna wartość wynosi 5 (organizm nie może być całkowicie bierny). 
+
+\label{doc-constructors}
+\Hypertarget{classproj_1_1selekcjanatur_1_1_gen_zapotrzebowanie_energetyczne_doc-constructors}
+\doxysubsection{Dokumentacja konstruktora i destruktora}
+\Hypertarget{classproj_1_1selekcjanatur_1_1_gen_zapotrzebowanie_energetyczne_ae40faf3665048819b8179c5eaa72e344}\index{proj.selekcjanatur.GenZapotrzebowanieEnergetyczne@{proj.selekcjanatur.GenZapotrzebowanieEnergetyczne}!GenZapotrzebowanieEnergetyczne@{GenZapotrzebowanieEnergetyczne}}
+\index{GenZapotrzebowanieEnergetyczne@{GenZapotrzebowanieEnergetyczne}!proj.selekcjanatur.GenZapotrzebowanieEnergetyczne@{proj.selekcjanatur.GenZapotrzebowanieEnergetyczne}}
+\doxysubsubsection{\texorpdfstring{GenZapotrzebowanieEnergetyczne()}{GenZapotrzebowanieEnergetyczne()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{classproj_1_1selekcjanatur_1_1_gen_zapotrzebowanie_energetyczne_ae40faf3665048819b8179c5eaa72e344} 
+proj.\+selekcjanatur.\+Gen\+Zapotrzebowanie\+Energetyczne.\+Gen\+Zapotrzebowanie\+Energetyczne (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Konstruktor losujący początkową wartość genu. 
+
+Generuje wartość zmiennoprzecinkową z przedziału 5-\/20 Oto graf wywoływań tej funkcji\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classproj_1_1selekcjanatur_1_1_gen_zapotrzebowanie_energetyczne_ae40faf3665048819b8179c5eaa72e344_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classproj_1_1selekcjanatur_1_1_gen_zapotrzebowanie_energetyczne_a064321ada51f7fb8bef1c810789afeca}\index{proj.selekcjanatur.GenZapotrzebowanieEnergetyczne@{proj.selekcjanatur.GenZapotrzebowanieEnergetyczne}!GenZapotrzebowanieEnergetyczne@{GenZapotrzebowanieEnergetyczne}}
+\index{GenZapotrzebowanieEnergetyczne@{GenZapotrzebowanieEnergetyczne}!proj.selekcjanatur.GenZapotrzebowanieEnergetyczne@{proj.selekcjanatur.GenZapotrzebowanieEnergetyczne}}
+\doxysubsubsection{\texorpdfstring{GenZapotrzebowanieEnergetyczne()}{GenZapotrzebowanieEnergetyczne()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{classproj_1_1selekcjanatur_1_1_gen_zapotrzebowanie_energetyczne_a064321ada51f7fb8bef1c810789afeca} 
+proj.\+selekcjanatur.\+Gen\+Zapotrzebowanie\+Energetyczne.\+Gen\+Zapotrzebowanie\+Energetyczne (\begin{DoxyParamCaption}\item[{float}]{wartosc}{}\end{DoxyParamCaption})}
+
+
+
+Konstruktor z określeniem konkretnej wartości. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em wartosc} & Początkowa wartość genu (minimalna wartość to 5) \\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-func-members}
+\Hypertarget{classproj_1_1selekcjanatur_1_1_gen_zapotrzebowanie_energetyczne_doc-func-members}
+\doxysubsection{Dokumentacja funkcji składowych}
+\Hypertarget{classproj_1_1selekcjanatur_1_1_gen_zapotrzebowanie_energetyczne_a283348bd55e17df0fe1345785d138c95}\index{proj.selekcjanatur.GenZapotrzebowanieEnergetyczne@{proj.selekcjanatur.GenZapotrzebowanieEnergetyczne}!odziedzicz@{odziedzicz}}
+\index{odziedzicz@{odziedzicz}!proj.selekcjanatur.GenZapotrzebowanieEnergetyczne@{proj.selekcjanatur.GenZapotrzebowanieEnergetyczne}}
+\doxysubsubsection{\texorpdfstring{odziedzicz()}{odziedzicz()}}
+{\footnotesize\ttfamily \label{classproj_1_1selekcjanatur_1_1_gen_zapotrzebowanie_energetyczne_a283348bd55e17df0fe1345785d138c95} 
+\mbox{\hyperlink{interfaceproj_1_1selekcjanatur_1_1_gen}{Gen}} proj.\+selekcjanatur.\+Gen\+Zapotrzebowanie\+Energetyczne.\+odziedzicz (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Tworzy nowy gen poprzez dziedziczenie z mutacją 
+
+\begin{DoxyReturn}{Zwraca}
+Nowa instancja \doxylink{classproj_1_1selekcjanatur_1_1_gen_zapotrzebowanie_energetyczne}{Gen\+Zapotrzebowanie\+Energetyczne}
+\end{DoxyReturn}
+Algorytm działania\+:
+\begin{DoxyEnumerate}
+\item Losuje mutację z zakresu -\/5 do +7 (asymetrycznie)
+\item Dodaje mutację do obecnej wartości
+\item Gwarantuje minimalną wartość 5
+\item Zwraca nowy gen z zmutowaną wartością
+\end{DoxyEnumerate}
+
+\begin{DoxyNote}{Nota}
+Mutacja jest celowo asymetryczna -\/ większa szansa na zwiększenie metabolizmu niż na jego zmniejszenie, co symuluje ewolucyjną tendencję do zwiększania aktywności organizmów. 
+\end{DoxyNote}
+
+
+Implementuje \mbox{\hyperlink{interfaceproj_1_1selekcjanatur_1_1_gen_a7dbd3fed6d9dee504bf8217028b50493}{proj.\+selekcjanatur.\+Gen}}.
+
+Oto graf wywołań dla tej funkcji\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classproj_1_1selekcjanatur_1_1_gen_zapotrzebowanie_energetyczne_a283348bd55e17df0fe1345785d138c95_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classproj_1_1selekcjanatur_1_1_gen_zapotrzebowanie_energetyczne_afd421547690d3ea2c7a15eaea3cf1e08}\index{proj.selekcjanatur.GenZapotrzebowanieEnergetyczne@{proj.selekcjanatur.GenZapotrzebowanieEnergetyczne}!wartosc@{wartosc}}
+\index{wartosc@{wartosc}!proj.selekcjanatur.GenZapotrzebowanieEnergetyczne@{proj.selekcjanatur.GenZapotrzebowanieEnergetyczne}}
+\doxysubsubsection{\texorpdfstring{wartosc()}{wartosc()}}
+{\footnotesize\ttfamily \label{classproj_1_1selekcjanatur_1_1_gen_zapotrzebowanie_energetyczne_afd421547690d3ea2c7a15eaea3cf1e08} 
+float proj.\+selekcjanatur.\+Gen\+Zapotrzebowanie\+Energetyczne.\+wartosc (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Zwraca aktualną wartość genu. 
+
+\begin{DoxyReturn}{Zwraca}
+Wartość zapotrzebowania energetycznego 
+\end{DoxyReturn}
+
+
+Implementuje \mbox{\hyperlink{interfaceproj_1_1selekcjanatur_1_1_gen_ab2b013ae8d6ad91c73fdb8ec97f37c94}{proj.\+selekcjanatur.\+Gen}}.
+
+
+
+\label{doc-variable-members}
+\Hypertarget{classproj_1_1selekcjanatur_1_1_gen_zapotrzebowanie_energetyczne_doc-variable-members}
+\doxysubsection{Dokumentacja atrybutów składowych}
+\Hypertarget{classproj_1_1selekcjanatur_1_1_gen_zapotrzebowanie_energetyczne_a6f92daa3d49d10ca3b4dae6f11e52a36}\index{proj.selekcjanatur.GenZapotrzebowanieEnergetyczne@{proj.selekcjanatur.GenZapotrzebowanieEnergetyczne}!wartosc@{wartosc}}
+\index{wartosc@{wartosc}!proj.selekcjanatur.GenZapotrzebowanieEnergetyczne@{proj.selekcjanatur.GenZapotrzebowanieEnergetyczne}}
+\doxysubsubsection{\texorpdfstring{wartosc}{wartosc}}
+{\footnotesize\ttfamily \label{classproj_1_1selekcjanatur_1_1_gen_zapotrzebowanie_energetyczne_a6f92daa3d49d10ca3b4dae6f11e52a36} 
+final float proj.\+selekcjanatur.\+Gen\+Zapotrzebowanie\+Energetyczne.\+wartosc\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Przechowuje wartość genu metabolizmu. 
+
+Wartość określa procentowy ubytek energii na cykl symulacji 
+
+Dokumentacja dla tej klasy została wygenerowana z pliku\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/proj/selekcjanatur/\mbox{\hyperlink{_gen_zapotrzebowanie_energetyczne_8java}{Gen\+Zapotrzebowanie\+Energetyczne.\+java}}\end{DoxyCompactItemize}

@@ -1,0 +1,7 @@
+<map id="proj.selekcjanatur.Symulacja.zapiszDziennikDoPliku" name="proj.selekcjanatur.Symulacja.zapiszDziennikDoPliku">
+<area shape="rect" id="Node000001" title="Zapisuje dziennik zdarzeń do pliku." alt="" coords="299,27,529,69"/>
+<area shape="rect" id="Node000002" href="$classproj_1_1selekcjanatur_1_1_app.html#a5b449f0612c86ffe7eaa088a307e9a3b" title="Główna metoda uruchamiająca aplikację." alt="" coords="37,5,219,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="283,37,219,31,220,25,284,32"/>
+<area shape="rect" id="Node000003" href="$classproj_1_1selekcjanatur_1_1_app_controller.html#a6c1db90f850fed3c52f9e23270864b1a" title="Wyświetla okno dialogowe po zakończeniu symulacji." alt="" coords="5,56,251,99"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="283,64,251,67,251,62,283,59"/>
+</map>

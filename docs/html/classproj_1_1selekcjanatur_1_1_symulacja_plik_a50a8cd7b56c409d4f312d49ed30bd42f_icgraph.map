@@ -1,0 +1,5 @@
+<map id="proj.selekcjanatur.SymulacjaPlik.usunCzlowieka" name="proj.selekcjanatur.SymulacjaPlik.usunCzlowieka">
+<area shape="rect" id="Node000001" title="Usuwa martwego człowieka." alt="" coords="242,5,430,48"/>
+<area shape="rect" id="Node000002" href="$classproj_1_1selekcjanatur_1_1_symulacja_plik.html#a51c0e6b4a307749c4746a70c5e624f15" title="Aktualizuje stan symulacji o jeden krok." alt="" coords="5,5,194,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="226,29,194,29,194,24,226,24"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="proj.selekcjanatur.Czlowiek.predkosc" name="proj.selekcjanatur.Czlowiek.predkosc">
+<area shape="rect" id="Node000001" title="Oblicza prędkość poruszania na podstawie genów." alt="" coords="297,13,535,40"/>
+<area shape="rect" id="Node000002" href="$classproj_1_1selekcjanatur_1_1_czlowiek.html#a9cce002ea96f19fe0eb88606d174e464" title="Decyduje czy człowiek powinien się poruszyć w danej klatce." alt="" coords="5,5,249,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="281,29,249,29,249,24,281,24"/>
+</map>

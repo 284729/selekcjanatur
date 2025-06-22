@@ -1,0 +1,7 @@
+<map id="proj.selekcjanatur.Symulacja.znajdzPartnera" name="proj.selekcjanatur.Symulacja.znajdzPartnera">
+<area shape="rect" id="Node000001" title="Znajduje partnera do rozmnażania w zasięgu wzroku." alt="" coords="5,39,236,81"/>
+<area shape="rect" id="Node000002" href="$classproj_1_1selekcjanatur_1_1_czlowiek.html#ac88bbff18c715a98a16d48103b3b495b" title="Sprawdza płeć człowieka." alt="" coords="292,5,498,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="236,43,276,38,277,44,236,49"/>
+<area shape="rect" id="Node000003" href="$classproj_1_1selekcjanatur_1_1_czlowiek.html#aabd1eb0726b65fce7b6bab1f894904cf" title="Oblicza zasięg wzroku na podstawie genów." alt="" coords="284,72,507,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="236,71,268,75,268,81,236,77"/>
+</map>

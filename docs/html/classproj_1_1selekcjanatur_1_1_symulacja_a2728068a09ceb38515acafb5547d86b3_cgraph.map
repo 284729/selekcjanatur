@@ -1,0 +1,7 @@
+<map id="proj.selekcjanatur.Symulacja.dodajLosowychLudzi" name="proj.selekcjanatur.Symulacja.dodajLosowychLudzi">
+<area shape="rect" id="Node000001" title="Dodaje losowych ludzi na planszę" alt="" coords="5,39,229,81"/>
+<area shape="rect" id="Node000002" href="$classproj_1_1selekcjanatur_1_1_czlowiek.html#ac88bbff18c715a98a16d48103b3b495b" title="Sprawdza płeć człowieka." alt="" coords="285,5,492,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="229,44,269,39,270,44,229,49"/>
+<area shape="rect" id="Node000003" href="$classproj_1_1selekcjanatur_1_1_symulacja.html#adca30037183a0fade601724dd9b8f1bd" title="Dodaje wpis do dziennika zdarzeń" alt="" coords="277,72,500,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="229,71,262,75,261,80,229,76"/>
+</map>
