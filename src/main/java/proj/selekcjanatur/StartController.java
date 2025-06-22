@@ -14,11 +14,57 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 
+/**
+ * @file    StartController.java
+ * @brief   Kontroler ekranu startowego symulacji
+ */
+
+/**
+ * @class   StartController
+ * @brief   Kontroler GUI dla ekranu konfiguracji symulacji
+ *
+ * Klasa odpowiada za:
+ * - Obsługę interfejsu użytkownika ekranu startowego
+ * - Walidację parametrów symulacji
+ * - Uruchamianie nowej symulacji
+ * - Odtwarzanie symulacji z pliku dziennika zdarzeń
+ */
 public class StartController {
+    /** @brief Suwak do ustawiania szerokości planszy */
+    @FXML private Slider sliderWidth;
 
-    @FXML private Slider sliderWidth, sliderHeight, sliderPeople, sliderFood, sliderFoodPerTick;
-    @FXML private Label labelWidth, labelHeight, labelPeople, labelFood, labelFoodPerTick;
+    /** @brief Suwak do ustawiania wysokości planszy */
+    @FXML private Slider sliderHeight;
 
+    /** @brief Suwak do ustawiania liczby ludzi */
+    @FXML private Slider sliderPeople;
+
+    /** @brief Suwak do ustawiania początkowej ilości jedzenia */
+    @FXML private Slider sliderFood;
+
+    /** @brief Suwak do ustawiania ilości nowego jedzenia na cykl */
+    @FXML private Slider sliderFoodPerTick;
+
+    /** @brief Etykieta wyświetlająca wartość szerokości */
+    @FXML private Label labelWidth;
+
+    /** @brief Etykieta wyświetlająca wartość wysokości */
+    @FXML private Label labelHeight;
+
+    /** @brief Etykieta wyświetlająca liczbę ludzi */
+    @FXML private Label labelPeople;
+
+    /** @brief Etykieta wyświetlająca ilość jedzenia */
+    @FXML private Label labelFood;
+
+    /** @brief Etykieta wyświetlająca ilość jedzenia na cykl */
+    @FXML private Label labelFoodPerTick;
+
+    /**
+     * @brief Inicjalizacja kontrolera
+     * @details Wiąże suwaki z odpowiadającymi im etykietami,
+     * aby wartości były wyświetlane w czasie rzeczywistym.
+     */
     @FXML
     public void initialize() {
         bindSliderLabel(sliderWidth, labelWidth);
@@ -28,12 +74,23 @@ public class StartController {
         bindSliderLabel(sliderFoodPerTick, labelFoodPerTick);
     }
 
+    /**
+     * @brief Wiąże suwak z etykietą wyświetlającą jego wartość
+     * @param slider Suwak do powiązania
+     * @param label Etykieta wyświetlająca wartość
+     */
     private void bindSliderLabel(Slider slider, Label label) {
         label.setText(String.valueOf((int) slider.getValue()));
         slider.valueProperty().addListener((obs, oldVal, newVal) ->
                 label.setText(String.valueOf(newVal.intValue())));
     }
 
+    /**
+     * @brief Uruchamia nową symulację z wybranymi parametrami
+     * @details Sprawdza poprawność parametrów i uruchamia symulację.
+     * Wyświetla komunikat błędu jeśli liczba obiektów przekracza
+     * liczbę dostępnych pól na planszy.
+     */
     @FXML
     private void startSimulation() {
         int width = (int) sliderWidth.getValue();
@@ -75,6 +132,12 @@ public class StartController {
         }
     }
 
+    /**
+     * @brief Odtwarza symulację z pliku dziennika zdarzeń
+     * @details Wczytuje podstawowe parametry symulacji z pliku
+     * i przełącza na widok symulacji w trybie odtwarzania.
+     * Wyświetla komunikaty błędów jeśli plik jest nieprawidłowy.
+     */
     @FXML
     private void replayFromFile() {
         var path = Path.of("dziennik_zdarzen.txt");

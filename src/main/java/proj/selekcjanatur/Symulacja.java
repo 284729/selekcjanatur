@@ -5,13 +5,46 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 
-public class Symulacja implements InterfejsSymulacji {
+/**
+ * @file    Symulacja.java
+ * @brief   Główna klasa implementująca logikę symulacji ewolucyjnej
+ */
+
+/**
+ * @class   Symulacja
+ * @brief   Implementacja symulacji ewolucyjnej z dziedziczeniem cech
+ *
+ * Klasa zarządza całym przebiegiem symulacji, w tym:
+ * - Inicjalizacją populacji i środowiska
+ * - Mechaniką rozmnażania i dziedziczenia cech
+ * - Ruchem i interakcjami między organizmami
+ * - Systemem dziennika zdarzeń
+ * - Warunkami zakończenia symulacji
+ */
+public abstract class Symulacja implements InterfejsSymulacji {
+    /** @brief Statyczne parametry symulacji - szerokość planszy */
     public static int szerokosc;
+
+    /** @brief Statyczne parametry symulacji - wysokość planszy */
     public static int wysokosc;
+
+    /** @brief Statyczne parametry symulacji - początkowa liczba ludzi */
     public static int liczbaLudzi;
+
+    /** @brief Statyczne parametry symulacji - początkowa ilość jedzenia */
     public static int poczatkoweJedzenie;
+
+    /** @brief Statyczne parametry symulacji - nowe jedzenie na cykl */
     public static int jedzenieNaTick;
 
+    /**
+     * @brief Ustawia globalne parametry symulacji
+     * @param w Szerokość planszy
+     * @param h Wysokość planszy
+     * @param l Początkowa liczba ludzi
+     * @param j Początkowa ilość jedzenia
+     * @param jt Ilość nowego jedzenia dodawanego co cykl
+     */
     public static void ustawParametry(int w, int h, int l, int j, int jt) {
         szerokosc = w;
         wysokosc = h;
@@ -20,30 +53,47 @@ public class Symulacja implements InterfejsSymulacji {
         jedzenieNaTick = jt;
     }
 
+    /** @brief Liczba kolumn planszy (szerokość) */
     private final int kolumny;
+
+    /** @brief Liczba wierszy planszy (wysokość) */
     private final int wiersze;
 
+    /** @brief Lista wszystkich ludzi w symulacji */
     private final List<Czlowiek> ludzie = new ArrayList<>();
-    private final Set<Jedzenie> jedzenie = new HashSet<>();
-    private static final List<String> dziennikZdarzen = new ArrayList<>(); // Dziennik zdarzeń
 
+    /** @brief Zbiór dostępnego jedzenia na planszy */
+    private final Set<Jedzenie> jedzenie = new HashSet<>();
+
+    /** @brief Dziennik zdarzeń zapisywany do pliku */
+    private static final List<String> dziennikZdarzen = new ArrayList<>();
+
+    /** @brief Licznik klatek symulacji */
     private int licznikKlatek = 0;
+
+    /** @brief Licznik kontrolujący dodawanie nowego jedzenia */
     private int licznikDodawaniaJedzenia = 0;
 
+    /** @brief Mapa zajętości pól na planszy */
     private final boolean[][] zajete;
 
+    /** @brief Lista możliwych kierunków ruchu */
     private static final List<int[]> KIERUNKI = new ArrayList<>(Arrays.asList(
-            new int[]{1, 0},
-            new int[]{-1, 0},
-            new int[]{0, 1},
-            new int[]{0, -1},
-            new int[]{1, 1},
-            new int[]{-1, -1},
-            new int[]{1, -1},
-            new int[]{-1, 1}
+            new int[]{1, 0},   // prawo
+            new int[]{-1, 0},  // lewo
+            new int[]{0, 1},   // dół
+            new int[]{0, -1},  // góra
+            new int[]{1, 1},   // prawo-dół
+            new int[]{-1, -1}, // lewo-góra
+            new int[]{1, -1},  // prawo-góra
+            new int[]{-1, 1}   // lewo-dół
     ));
 
-
+    /**
+     * @brief Konstruktor inicjalizujący symulację
+     * @param kolumny Szerokość planszy
+     * @param wiersze Wysokość planszy
+     */
     public Symulacja(int kolumny, int wiersze) {
         this.kolumny = kolumny;
         this.wiersze = wiersze;
@@ -54,18 +104,36 @@ public class Symulacja implements InterfejsSymulacji {
         dodajLosoweJedzenie(poczatkoweJedzenie);
     }
 
+    /**
+     * @brief Dodaje wpis do dziennika zdarzeń
+     * @param zdarzenie Tekstowy opis zdarzenia
+     */
     private void dodajDoDziennika(String zdarzenie) {
         dziennikZdarzen.add(zdarzenie);
     }
 
+    /**
+     * @brief Zwraca listę ludzi w symulacji
+     * @return Lista obiektów Czlowiek
+     */
+    @Override
     public List<Czlowiek> getLudzie() {
         return ludzie;
     }
 
+    /**
+     * @brief Zwraca zbiór jedzenia w symulacji
+     * @return Zbiór obiektów Jedzenie
+     */
+    @Override
     public Set<Jedzenie> getJedzenie() {
         return jedzenie;
     }
 
+    /**
+     * @brief Dodaje losowych ludzi na planszę
+     * @param ile Liczba ludzi do dodania
+     */
     private void dodajLosowychLudzi(int ile) {
         for (int i = 0; i < ile; i++) {
             Czlowiek cz;
@@ -83,6 +151,10 @@ public class Symulacja implements InterfejsSymulacji {
         }
     }
 
+    /**
+     * @brief Dodaje losowe jedzenie na planszę
+     * @param ile Liczba jedzenia do dodania
+     */
     private void dodajLosoweJedzenie(int ile) {
         int dodane = 0;
         while (dodane < ile) {
@@ -96,15 +168,22 @@ public class Symulacja implements InterfejsSymulacji {
         }
     }
 
+    /**
+     * @brief Aktualizuje stan symulacji o jeden krok
+     * @details Wykonuje:
+     * - Aktualizację stanu co 3 klatki
+     * - Ruch ludzi zgodnie z ich predyspozycjami
+     * - Dodawanie nowego jedzenia
+     * - Rozmnażanie i usuwanie martwych
+     */
+    @Override
     public void aktualizuj() {
         dodajDoDziennika("KLATKA;" + licznikKlatek);
-        // Aktualizacja stanu tylko co 3 klatki
         licznikKlatek++;
         if (licznikKlatek % 3 == 0) {
             aktualizujStan();
         }
 
-        // Wykonaj pojedynczy krok dla każdego człowieka
         for (Czlowiek cz : ludzie) {
             if (cz.zywy && cz.powinnienSieRuszyc(licznikKlatek)) {
                 wykonajRuch(cz);
@@ -112,22 +191,26 @@ public class Symulacja implements InterfejsSymulacji {
         }
     }
 
+    /**
+     * @brief Aktualizuje stan symulacji (co 3 klatki)
+     * @details Wykonuje:
+     * - Dodawanie nowego jedzenia
+     * - Aktualizację stanu ludzi
+     * - Rozmnażanie i usuwanie martwych
+     */
     private void aktualizujStan() {
-        // Dodawanie jedzenia co pewien czas
         licznikDodawaniaJedzenia++;
         if (licznikDodawaniaJedzenia >= 3) {
             dodajLosoweJedzenie(jedzenieNaTick);
             licznikDodawaniaJedzenia = 0;
         }
 
-        // Aktualizacja stanu ludzi
         for (Czlowiek cz : ludzie) {
             if (cz.zywy) {
                 cz.aktualizuj();
             }
         }
 
-        // Rozmnażanie
         List<Czlowiek> nowi = new ArrayList<>();
         Iterator<Czlowiek> it = ludzie.iterator();
         while (it.hasNext()) {
@@ -163,6 +246,10 @@ public class Symulacja implements InterfejsSymulacji {
         ludzie.addAll(nowi);
     }
 
+    /**
+     * @brief Wykonuje ruch dla danego człowieka
+     * @param cz Człowiek, który ma się poruszyć
+     */
     private void wykonajRuch(Czlowiek cz) {
         Czlowiek partner = znajdzPartnera(cz);
         Jedzenie jedzenie = (partner == null) ? znajdzNajblizszeJedzenie(cz) : null;
@@ -194,6 +281,11 @@ public class Symulacja implements InterfejsSymulacji {
         }
     }
 
+    /**
+     * @brief Znajduje partnera do rozmnażania w zasięgu wzroku
+     * @param cz Człowiek szukający partnera
+     * @return Znaleziony partner lub null
+     */
     private Czlowiek znajdzPartnera(Czlowiek cz) {
         return ludzie.stream()
                 .filter(p -> p != cz && p.zywy && p.mozeRozmnazac() && cz.czyMezczyzna() != p.czyMezczyzna())
@@ -202,6 +294,11 @@ public class Symulacja implements InterfejsSymulacji {
                 .orElse(null);
     }
 
+    /**
+     * @brief Znajduje najbliższe jedzenie w zasięgu wzroku
+     * @param cz Człowiek szukający jedzenia
+     * @return Znalezione jedzenie lub null
+     */
     private Jedzenie znajdzNajblizszeJedzenie(Czlowiek cz) {
         return jedzenie.stream()
                 .min(Comparator.comparingInt(j -> Math.abs(j.x - cz.x) + Math.abs(j.y - cz.y)))
@@ -209,6 +306,12 @@ public class Symulacja implements InterfejsSymulacji {
                 .orElse(null);
     }
 
+    /**
+     * @brief Sprawdza czy na danym polu jest jedzenie
+     * @param x Pozycja x
+     * @param y Pozycja y
+     * @return Obiekt jedzenia lub null
+     */
     private Jedzenie znajdzJedzenieNaPolu(int x, int y) {
         for (Jedzenie j : jedzenie) {
             if (j.x == x && j.y == y) return j;
@@ -216,6 +319,12 @@ public class Symulacja implements InterfejsSymulacji {
         return null;
     }
 
+    /**
+     * @brief Przenosi człowieka na nowe pole
+     * @param cz Człowiek do przeniesienia
+     * @param x Nowa pozycja x
+     * @param y Nowa pozycja y
+     */
     private void przemiescSieNaPole(Czlowiek cz, int x, int y) {
         zajete[cz.y][cz.x] = false;
         dodajDoDziennika("PRZEMIESZCZENIE;" + cz + ";" + cz.x + ";" + cz.y + ";" + x + ";" + y);
@@ -232,6 +341,10 @@ public class Symulacja implements InterfejsSymulacji {
         }
     }
 
+    /**
+     * @brief Zapisuje dziennik zdarzeń do pliku
+     * @param nazwaPliku Nazwa pliku do zapisu
+     */
     public static void zapiszDziennikDoPliku(String nazwaPliku) {
         if (dziennikZdarzen.isEmpty()) return;
         try {
@@ -242,7 +355,12 @@ public class Symulacja implements InterfejsSymulacji {
         }
     }
 
-    public boolean czySymulacjaZakonczona() {
+    /**
+     * @brief Sprawdza czy symulacja powinna się zakończyć
+     * @return true jeśli nie ma żywych ludzi
+     */
+    @Override
+    public boolean czySymulacjaZakonczena() {
         return ludzie.isEmpty();
     }
 }

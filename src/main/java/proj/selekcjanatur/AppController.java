@@ -12,27 +12,57 @@ import javafx.scene.control.Button;
 import javafx.scene.layout.*;
 import javafx.util.Duration;
 
+/**
+ * @file    AppController.java
+ * @brief   Kontroler głównego interfejsu symulacji ewolucyjnej
+ */
+
+/**
+ * @class   AppController
+ * @brief   Główny kontroler zarządzający interfejsem i logiką symulacji
+ *
+ * Klasa odpowiedzialna za:
+ * - Inicjalizację siatki komórek
+ * - Obsługę symulacji
+ * - Wyświetlanie symulacji
+ * - Obsługę zdarzeń kończących symulację
+ */
 public class AppController {
+    /** @brief Szerokość planszy w komórkach (pobrana z klasy Symulacja) */
     private static final int KOLUMNY = Symulacja.szerokosc;
+
+    /** @brief Wysokość planszy w komórkach (pobrana z klasy Symulacja) */
     private static final int WIERSZE = Symulacja.wysokosc;
 
+    /** @brief Kontener GridPane przechowujący siatkę komórek */
     @FXML
     private GridPane grid;
 
+    /** @brief Dwuwymiarowa tablica przechowująca panele komórek */
     private final Pane[][] komorki = new Pane[WIERSZE][KOLUMNY];
 
+    /** @brief Referencja do obiektu symulacji */
     private InterfejsSymulacji symulacja;
+
+    /** @brief Timeline kontrolująca cykl symulacji */
     private Timeline timeline;
 
+    /** @brief Przycisk do wstrzymywania/wznawiania symulacji */
     @FXML
     private Button pauseButton;
 
+    /** @brief Flaga określająca czy symulacja jest wstrzymana */
     private boolean pauza = false;
 
+    /** @brief Flaga określająca czy symulacja działa w trybie odtwarzania z pliku */
     public static boolean PLIK = false;
 
+    /**
+     * @brief Metoda inicjalizująca kontroler
+     * @details Wykonywana automatycznie po załadowaniu widoku FXML.
+     * Tworzy siatkę komórek, inicjalizuje symulację i uruchamia timer.
+     */
     public void initialize() {
-        // Tworzenie siatki
         for (int x = 0; x < KOLUMNY; x++) {
             ColumnConstraints col = new ColumnConstraints();
             col.setPercentWidth(100.0 / KOLUMNY);
@@ -58,7 +88,17 @@ public class AppController {
         }
 
         try {
-            symulacja = PLIK ? new SymulacjaPlik("dziennik_zdarzen.txt") : new Symulacja(KOLUMNY, WIERSZE);
+            symulacja = PLIK ? new SymulacjaPlik("dziennik_zdarzen.txt") {
+                @Override
+                public boolean czySymulacjaZakonczena() {
+                    return false;
+                }
+            } : new Symulacja(KOLUMNY, WIERSZE) {
+                @Override
+                public boolean czySymulacjaZakonczona() {
+                    return false;
+                }
+            };
 
             timeline = new Timeline(
                     new KeyFrame(Duration.millis(250), event -> {
@@ -82,8 +122,15 @@ public class AppController {
         }
     }
 
+    /**
+     * @brief Aktualizuje wygląd planszy na podstawie stanu symulacji
+     * @details Metoda:
+     * 1. Resetuje wszystkie komórki do koloru białego
+     * 2. Rysuje jedzenie na ciemnozielono
+     * 3. Rysuje ludzi (mężczyzn na niebiesko, kobiety na różowo, dzieci z gradientem)
+     */
     private void rysujPlansze() {
-        // Wyczyść wszystkie komórki - aby uniknąć nakładania/duplikaci się elementów
+        // Reset wszystkich komórek
         for (int y = 0; y < WIERSZE; y++) {
             for (int x = 0; x < KOLUMNY; x++) {
                 komorki[y][x].getChildren().clear();
@@ -96,7 +143,7 @@ public class AppController {
             polaLudzi.add(new Point(cz.x, cz.y));
         }
 
-        //Rysuj jedzenie
+        // Rysowanie jedzenia
         for (Jedzenie j : symulacja.getJedzenie()) {
             if (polaLudzi.contains(new Point(j.x, j.y))) continue;
 
@@ -106,7 +153,8 @@ public class AppController {
 
             komorki[j.y][j.x].getChildren().add(jedzenie);
         }
-        //Rysuj ludzi
+
+        // Rysowanie ludzi
         for (Czlowiek cz : symulacja.getLudzie()) {
             Region kolko = new Region();
             kolko.setPrefSize(16, 16);
@@ -126,7 +174,12 @@ public class AppController {
         }
     }
 
-        private void pokazOknoZakonczenia() {
+    /**
+     * @brief Wyświetla okno dialogowe po zakończeniu symulacji
+     * @details W zależności od trybu (plik/live) wyświetla odpowiedni komunikat
+     * i w trybie live zapisuje dziennik zdarzeń do pliku.
+     */
+    private void pokazOknoZakonczenia() {
         Platform.runLater(() -> {
             var alert = new Alert(Alert.AlertType.INFORMATION);
             alert.setTitle("Symulacja zakończona");
@@ -142,6 +195,10 @@ public class AppController {
         });
     }
 
+    /**
+     * @brief Obsługuje wciśnięcie przycisku pauzy
+     * @details Zmienia stan symulacji (pauza/wznów) i aktualizuje tekst przycisku
+     */
     @FXML
     private void togglePause() {
         pauza = !pauza;
