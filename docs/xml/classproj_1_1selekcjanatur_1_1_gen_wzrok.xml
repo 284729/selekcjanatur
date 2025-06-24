@@ -43,6 +43,36 @@
         <references refid="classproj_1_1selekcjanatur_1_1_app_1ad267df574f9f99d0adf41d333bf4823a" compoundref="_app_8java" startline="32">proj.selekcjanatur.App.random</references>
         <referencedby refid="classproj_1_1selekcjanatur_1_1_gen_wzrok_1a78a8ef7be1ae0cbe718d1428e44f639c" compoundref="_gen_wzrok_8java" startline="70" endline="74">proj.selekcjanatur.GenWzrok.odziedzicz</referencedby>
       </memberdef>
+      <memberdef kind="function" id="classproj_1_1selekcjanatur_1_1_gen_wzrok_1aeff8627865c75ff56b4e95a81518354f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>proj.selekcjanatur.GenWzrok.GenWzrok</definition>
+        <argsstring>(float wartosc)</argsstring>
+        <name>GenWzrok</name>
+        <qualifiedname>proj.selekcjanatur.GenWzrok.GenWzrok</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>wartosc</declname>
+        </param>
+        <briefdescription>
+<para>Prywatny konstruktor do tworzenia genów potomnych. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>wartosc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Określona wartość genu (zostanie ograniczona do 1-10) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/proj/selekcjanatur/GenWzrok.java" line="40" column="12" bodyfile="src/main/java/proj/selekcjanatur/GenWzrok.java" bodystart="40" bodyend="42"/>
+        <references refid="classproj_1_1selekcjanatur_1_1_gen_wzrok_1aa3a11ccae78812a5d7aaaf4f82558090" compoundref="_gen_wzrok_8java" startline="26">proj.selekcjanatur.GenWzrok.wartosc</references>
+      </memberdef>
       <memberdef kind="function" id="classproj_1_1selekcjanatur_1_1_gen_wzrok_1a2c2e4e3feabb475013319b27f6af596a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>float</type>
         <definition>float proj.selekcjanatur.GenWzrok.wartosc</definition>
@@ -95,38 +125,6 @@ Algorytm działania:<orderedlist>
         <references refid="classproj_1_1selekcjanatur_1_1_gen_wzrok_1aa3a11ccae78812a5d7aaaf4f82558090" compoundref="_gen_wzrok_8java" startline="26">proj.selekcjanatur.GenWzrok.wartosc</references>
       </memberdef>
     </sectiondef>
-    <sectiondef kind="private-func">
-      <memberdef kind="function" id="classproj_1_1selekcjanatur_1_1_gen_wzrok_1aeff8627865c75ff56b4e95a81518354f" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type></type>
-        <definition>proj.selekcjanatur.GenWzrok.GenWzrok</definition>
-        <argsstring>(float wartosc)</argsstring>
-        <name>GenWzrok</name>
-        <qualifiedname>proj.selekcjanatur.GenWzrok.GenWzrok</qualifiedname>
-        <param>
-          <type>float</type>
-          <declname>wartosc</declname>
-        </param>
-        <briefdescription>
-<para>Prywatny konstruktor do tworzenia genów potomnych. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>wartosc</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Określona wartość genu (zostanie ograniczona do 1-10) </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="src/main/java/proj/selekcjanatur/GenWzrok.java" line="40" column="13" bodyfile="src/main/java/proj/selekcjanatur/GenWzrok.java" bodystart="40" bodyend="42"/>
-        <references refid="classproj_1_1selekcjanatur_1_1_gen_wzrok_1aa3a11ccae78812a5d7aaaf4f82558090" compoundref="_gen_wzrok_8java" startline="26">proj.selekcjanatur.GenWzrok.wartosc</references>
-      </memberdef>
-    </sectiondef>
     <briefdescription>
 <para>Klasa implementująca gen zasięgu wzroku. </para>
     </briefdescription>
@@ -165,7 +163,7 @@ Algorytm działania:<orderedlist>
     <location file="src/main/java/proj/selekcjanatur/GenWzrok.java" line="21" column="7" bodyfile="src/main/java/proj/selekcjanatur/GenWzrok.java" bodystart="21" bodyend="75"/>
     <listofallmembers>
       <member refid="classproj_1_1selekcjanatur_1_1_gen_wzrok_1ae792ef922168b72adacb551ee3163a8b" prot="public" virt="non-virtual"><scope>proj::selekcjanatur::GenWzrok</scope><name>GenWzrok</name></member>
-      <member refid="classproj_1_1selekcjanatur_1_1_gen_wzrok_1aeff8627865c75ff56b4e95a81518354f" prot="private" virt="non-virtual"><scope>proj::selekcjanatur::GenWzrok</scope><name>GenWzrok</name></member>
+      <member refid="classproj_1_1selekcjanatur_1_1_gen_wzrok_1aeff8627865c75ff56b4e95a81518354f" prot="public" virt="non-virtual"><scope>proj::selekcjanatur::GenWzrok</scope><name>GenWzrok</name></member>
       <member refid="classproj_1_1selekcjanatur_1_1_gen_wzrok_1a78a8ef7be1ae0cbe718d1428e44f639c" prot="public" virt="non-virtual"><scope>proj::selekcjanatur::GenWzrok</scope><name>odziedzicz</name></member>
       <member refid="classproj_1_1selekcjanatur_1_1_gen_wzrok_1aa3a11ccae78812a5d7aaaf4f82558090" prot="private" virt="non-virtual"><scope>proj::selekcjanatur::GenWzrok</scope><name>wartosc</name></member>
       <member refid="classproj_1_1selekcjanatur_1_1_gen_wzrok_1a2c2e4e3feabb475013319b27f6af596a" prot="public" virt="non-virtual"><scope>proj::selekcjanatur::GenWzrok</scope><name>wartosc</name></member>

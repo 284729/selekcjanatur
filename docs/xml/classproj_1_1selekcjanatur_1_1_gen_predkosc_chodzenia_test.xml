@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="pl">
+  <compounddef id="classproj_1_1selekcjanatur_1_1_gen_predkosc_chodzenia_test" kind="class" language="Java" prot="package">
+    <compoundname>proj::selekcjanatur::GenPredkoscChodzeniaTest</compoundname>
+    <sectiondef kind="package-func">
+      <memberdef kind="function" id="classproj_1_1selekcjanatur_1_1_gen_predkosc_chodzenia_test_1a3cd0886bee9bae87f1b098ea8898d4bf" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void proj.selekcjanatur.GenPredkoscChodzeniaTest.konstruktorZWartosciaDzialaPoprawnie</definition>
+        <argsstring>()</argsstring>
+        <name>konstruktorZWartosciaDzialaPoprawnie</name>
+        <qualifiedname>proj.selekcjanatur.GenPredkoscChodzeniaTest.konstruktorZWartosciaDzialaPoprawnie</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/test/java/proj/selekcjanatur/GenPredkoscChodzeniaTest.java" line="9" column="10" bodyfile="src/test/java/proj/selekcjanatur/GenPredkoscChodzeniaTest.java" bodystart="9" bodyend="12"/>
+      </memberdef>
+      <memberdef kind="function" id="classproj_1_1selekcjanatur_1_1_gen_predkosc_chodzenia_test_1ace6be20f94ee7d9d118b6a259cb5d0f3" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void proj.selekcjanatur.GenPredkoscChodzeniaTest.odziedziczGenerujeNowyObiektWZakresie</definition>
+        <argsstring>()</argsstring>
+        <name>odziedziczGenerujeNowyObiektWZakresie</name>
+        <qualifiedname>proj.selekcjanatur.GenPredkoscChodzeniaTest.odziedziczGenerujeNowyObiektWZakresie</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/test/java/proj/selekcjanatur/GenPredkoscChodzeniaTest.java" line="15" column="10" bodyfile="src/test/java/proj/selekcjanatur/GenPredkoscChodzeniaTest.java" bodystart="15" bodyend="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classproj_1_1selekcjanatur_1_1_gen_predkosc_chodzenia_test_1a0fcd55ec6b7ca876b028074517c73c15" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void proj.selekcjanatur.GenPredkoscChodzeniaTest.odziedziczNieZwracaTegoSamegoObiektu</definition>
+        <argsstring>()</argsstring>
+        <name>odziedziczNieZwracaTegoSamegoObiektu</name>
+        <qualifiedname>proj.selekcjanatur.GenPredkoscChodzeniaTest.odziedziczNieZwracaTegoSamegoObiektu</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/test/java/proj/selekcjanatur/GenPredkoscChodzeniaTest.java" line="23" column="10" bodyfile="src/test/java/proj/selekcjanatur/GenPredkoscChodzeniaTest.java" bodystart="23" bodyend="27"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>proj.selekcjanatur.GenPredkoscChodzeniaTest</label>
+      </node>
+    </collaborationgraph>
+    <location file="src/test/java/proj/selekcjanatur/GenPredkoscChodzeniaTest.java" line="6" column="1" bodyfile="src/test/java/proj/selekcjanatur/GenPredkoscChodzeniaTest.java" bodystart="6" bodyend="28"/>
+    <listofallmembers>
+      <member refid="classproj_1_1selekcjanatur_1_1_gen_predkosc_chodzenia_test_1a3cd0886bee9bae87f1b098ea8898d4bf" prot="package" virt="non-virtual"><scope>proj::selekcjanatur::GenPredkoscChodzeniaTest</scope><name>konstruktorZWartosciaDzialaPoprawnie</name></member>
+      <member refid="classproj_1_1selekcjanatur_1_1_gen_predkosc_chodzenia_test_1ace6be20f94ee7d9d118b6a259cb5d0f3" prot="package" virt="non-virtual"><scope>proj::selekcjanatur::GenPredkoscChodzeniaTest</scope><name>odziedziczGenerujeNowyObiektWZakresie</name></member>
+      <member refid="classproj_1_1selekcjanatur_1_1_gen_predkosc_chodzenia_test_1a0fcd55ec6b7ca876b028074517c73c15" prot="package" virt="non-virtual"><scope>proj::selekcjanatur::GenPredkoscChodzeniaTest</scope><name>odziedziczNieZwracaTegoSamegoObiektu</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

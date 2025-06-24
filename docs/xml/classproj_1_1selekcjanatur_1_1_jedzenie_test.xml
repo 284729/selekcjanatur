@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="pl">
+  <compounddef id="classproj_1_1selekcjanatur_1_1_jedzenie_test" kind="class" language="Java" prot="package">
+    <compoundname>proj::selekcjanatur::JedzenieTest</compoundname>
+    <sectiondef kind="package-func">
+      <memberdef kind="function" id="classproj_1_1selekcjanatur_1_1_jedzenie_test_1a83ae43aba74d2a4a5db3b500d3e71195" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void proj.selekcjanatur.JedzenieTest.konstruktorPoprawnieUstawiaPozycje</definition>
+        <argsstring>()</argsstring>
+        <name>konstruktorPoprawnieUstawiaPozycje</name>
+        <qualifiedname>proj.selekcjanatur.JedzenieTest.konstruktorPoprawnieUstawiaPozycje</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/test/java/proj/selekcjanatur/JedzenieTest.java" line="9" column="10" bodyfile="src/test/java/proj/selekcjanatur/JedzenieTest.java" bodystart="9" bodyend="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classproj_1_1selekcjanatur_1_1_jedzenie_test_1a696810ddfe2c75e83bcaf8f6b55f1147" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void proj.selekcjanatur.JedzenieTest.wartoscJestWZakresie</definition>
+        <argsstring>()</argsstring>
+        <name>wartoscJestWZakresie</name>
+        <qualifiedname>proj.selekcjanatur.JedzenieTest.wartoscJestWZakresie</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/test/java/proj/selekcjanatur/JedzenieTest.java" line="17" column="10" bodyfile="src/test/java/proj/selekcjanatur/JedzenieTest.java" bodystart="17" bodyend="23"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>proj.selekcjanatur.JedzenieTest</label>
+      </node>
+    </collaborationgraph>
+    <location file="src/test/java/proj/selekcjanatur/JedzenieTest.java" line="6" column="1" bodyfile="src/test/java/proj/selekcjanatur/JedzenieTest.java" bodystart="6" bodyend="24"/>
+    <listofallmembers>
+      <member refid="classproj_1_1selekcjanatur_1_1_jedzenie_test_1a83ae43aba74d2a4a5db3b500d3e71195" prot="package" virt="non-virtual"><scope>proj::selekcjanatur::JedzenieTest</scope><name>konstruktorPoprawnieUstawiaPozycje</name></member>
+      <member refid="classproj_1_1selekcjanatur_1_1_jedzenie_test_1a696810ddfe2c75e83bcaf8f6b55f1147" prot="package" virt="non-virtual"><scope>proj::selekcjanatur::JedzenieTest</scope><name>wartoscJestWZakresie</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

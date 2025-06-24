@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="pl">
-  <compounddef id="classproj_1_1selekcjanatur_1_1_symulacja" kind="class" language="Java" prot="public" abstract="yes">
+  <compounddef id="classproj_1_1selekcjanatur_1_1_symulacja" kind="class" language="Java" prot="public">
     <compoundname>proj::selekcjanatur::Symulacja</compoundname>
     <basecompoundref refid="interfaceproj_1_1selekcjanatur_1_1_interfejs_symulacji" prot="public" virt="non-virtual">proj.selekcjanatur.InterfejsSymulacji</basecompoundref>
     <sectiondef kind="public-static-attrib">
@@ -18,7 +18,7 @@
         <inbodydescription>
         </inbodydescription>
         <location file="src/main/java/proj/selekcjanatur/Symulacja.java" line="26" column="23" bodyfile="src/main/java/proj/selekcjanatur/Symulacja.java" bodystart="26" bodyend="-1"/>
-        <referencedby refid="classproj_1_1selekcjanatur_1_1_start_controller_1a4ac0a2be052eb17c702f3b5e730d9ca5" compoundref="_start_controller_8java" startline="142" endline="174">proj.selekcjanatur.StartController.replayFromFile</referencedby>
+        <referencedby refid="classproj_1_1selekcjanatur_1_1_start_controller_1a4ac0a2be052eb17c702f3b5e730d9ca5" compoundref="_start_controller_8java" startline="159" endline="195">proj.selekcjanatur.StartController.replayFromFile</referencedby>
         <referencedby refid="classproj_1_1selekcjanatur_1_1_symulacja_1a6a0641aea8437d8f8a9ef0d975d8db75" compoundref="_symulacja_8java" startline="48" endline="54">proj.selekcjanatur.Symulacja.ustawParametry</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classproj_1_1selekcjanatur_1_1_symulacja_1a1da6d14516adc51b8b1fd58eecaa2913" prot="public" static="yes" mutable="no">
@@ -35,7 +35,7 @@
         <inbodydescription>
         </inbodydescription>
         <location file="src/main/java/proj/selekcjanatur/Symulacja.java" line="29" column="23" bodyfile="src/main/java/proj/selekcjanatur/Symulacja.java" bodystart="29" bodyend="-1"/>
-        <referencedby refid="classproj_1_1selekcjanatur_1_1_start_controller_1a4ac0a2be052eb17c702f3b5e730d9ca5" compoundref="_start_controller_8java" startline="142" endline="174">proj.selekcjanatur.StartController.replayFromFile</referencedby>
+        <referencedby refid="classproj_1_1selekcjanatur_1_1_start_controller_1a4ac0a2be052eb17c702f3b5e730d9ca5" compoundref="_start_controller_8java" startline="159" endline="195">proj.selekcjanatur.StartController.replayFromFile</referencedby>
         <referencedby refid="classproj_1_1selekcjanatur_1_1_symulacja_1a6a0641aea8437d8f8a9ef0d975d8db75" compoundref="_symulacja_8java" startline="48" endline="54">proj.selekcjanatur.Symulacja.ustawParametry</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classproj_1_1selekcjanatur_1_1_symulacja_1aee9f27bbc79b36ccddff1dd47bc00b2d" prot="public" static="yes" mutable="no">
@@ -146,7 +146,7 @@
         <location file="src/main/java/proj/selekcjanatur/Symulacja.java" line="63" column="24" bodyfile="src/main/java/proj/selekcjanatur/Symulacja.java" bodystart="63" bodyend="-1"/>
         <referencedby refid="classproj_1_1selekcjanatur_1_1_symulacja_1adec9a02326fa916fa822eddad509050f" compoundref="_symulacja_8java" startline="180" endline="192">proj.selekcjanatur.Symulacja.aktualizuj</referencedby>
         <referencedby refid="classproj_1_1selekcjanatur_1_1_symulacja_1af140417936a5d3f7ca9c02af9dbb2814" compoundref="_symulacja_8java" startline="201" endline="247">proj.selekcjanatur.Symulacja.aktualizujStan</referencedby>
-        <referencedby refid="classproj_1_1selekcjanatur_1_1_symulacja_1a3d0ca8ee0af5090358081f7577c0245f" compoundref="_symulacja_8java" startline="363" endline="365">proj.selekcjanatur.Symulacja.czySymulacjaZakonczena</referencedby>
+        <referencedby refid="classproj_1_1selekcjanatur_1_1_symulacja_1a1d8fdf87b1547988f8a889f352cb521d" compoundref="_symulacja_8java" startline="363" endline="365">proj.selekcjanatur.Symulacja.czySymulacjaZakonczona</referencedby>
         <referencedby refid="classproj_1_1selekcjanatur_1_1_symulacja_1a2728068a09ceb38515acafb5547d86b3" compoundref="_symulacja_8java" startline="137" endline="152">proj.selekcjanatur.Symulacja.dodajLosowychLudzi</referencedby>
         <referencedby refid="classproj_1_1selekcjanatur_1_1_symulacja_1a259b1b62d8f3116eefdc1b6e503ccd35" compoundref="_symulacja_8java" startline="120" endline="122">proj.selekcjanatur.Symulacja.getLudzie</referencedby>
         <referencedby refid="classproj_1_1selekcjanatur_1_1_symulacja_1a308b1488a3d7d83887fc3aea6c4ca4ee" compoundref="_symulacja_8java" startline="289" endline="295">proj.selekcjanatur.Symulacja.znajdzPartnera</referencedby>
@@ -355,7 +355,7 @@
         <references refid="classproj_1_1selekcjanatur_1_1_symulacja_1a79784ee2988b148e298f720675d68227" compoundref="_symulacja_8java" startline="35">proj.selekcjanatur.Symulacja.poczatkoweJedzenie</references>
         <references refid="classproj_1_1selekcjanatur_1_1_symulacja_1a628e531aaeeae0e81364b86adc82fff6" compoundref="_symulacja_8java" startline="26">proj.selekcjanatur.Symulacja.szerokosc</references>
         <references refid="classproj_1_1selekcjanatur_1_1_symulacja_1a1da6d14516adc51b8b1fd58eecaa2913" compoundref="_symulacja_8java" startline="29">proj.selekcjanatur.Symulacja.wysokosc</references>
-        <referencedby refid="classproj_1_1selekcjanatur_1_1_start_controller_1adef8290b0feaebf73d01894af5e102e3" compoundref="_start_controller_8java" startline="95" endline="133">proj.selekcjanatur.StartController.startSimulation</referencedby>
+        <referencedby refid="classproj_1_1selekcjanatur_1_1_start_controller_1adef8290b0feaebf73d01894af5e102e3" compoundref="_start_controller_8java" startline="111" endline="150">proj.selekcjanatur.StartController.startSimulation</referencedby>
       </memberdef>
       <memberdef kind="function" id="classproj_1_1selekcjanatur_1_1_symulacja_1a30d65d41391f815284bbdce9ab12beb9" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -386,8 +386,8 @@
         </inbodydescription>
         <location file="src/main/java/proj/selekcjanatur/Symulacja.java" line="348" column="24" bodyfile="src/main/java/proj/selekcjanatur/Symulacja.java" bodystart="348" bodyend="356"/>
         <references refid="classproj_1_1selekcjanatur_1_1_symulacja_1ab09ec8433094637d73588830fbff7c9d" compoundref="_symulacja_8java" startline="69">proj.selekcjanatur.Symulacja.dziennikZdarzen</references>
-        <referencedby refid="classproj_1_1selekcjanatur_1_1_app_1a5b449f0612c86ffe7eaa088a307e9a3b" compoundref="_app_8java" startline="58" endline="61">proj.selekcjanatur.App.main</referencedby>
-        <referencedby refid="classproj_1_1selekcjanatur_1_1_app_controller_1a6c1db90f850fed3c52f9e23270864b1a" compoundref="_app_controller_8java" startline="155" endline="169">proj.selekcjanatur.AppController.pokazOknoZakonczenia</referencedby>
+        <referencedby refid="classproj_1_1selekcjanatur_1_1_app_1a5b449f0612c86ffe7eaa088a307e9a3b" compoundref="_app_8java" startline="61" endline="64">proj.selekcjanatur.App.main</referencedby>
+        <referencedby refid="classproj_1_1selekcjanatur_1_1_app_controller_1a6c1db90f850fed3c52f9e23270864b1a" compoundref="_app_controller_8java" startline="173" endline="187">proj.selekcjanatur.AppController.pokazOknoZakonczenia</referencedby>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-func">
@@ -507,13 +507,13 @@
         <references refid="classproj_1_1selekcjanatur_1_1_symulacja_1adddb7f79a97e55dceac133dbb4d7f3f0" compoundref="_symulacja_8java" startline="63">proj.selekcjanatur.Symulacja.ludzie</references>
         <references refid="classproj_1_1selekcjanatur_1_1_symulacja_1a52f53070719050f572593ac7c6908ebd" compoundref="_symulacja_8java" startline="253" endline="282">proj.selekcjanatur.Symulacja.wykonajRuch</references>
       </memberdef>
-      <memberdef kind="function" id="classproj_1_1selekcjanatur_1_1_symulacja_1a3d0ca8ee0af5090358081f7577c0245f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+      <memberdef kind="function" id="classproj_1_1selekcjanatur_1_1_symulacja_1a1d8fdf87b1547988f8a889f352cb521d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>boolean</type>
-        <definition>boolean proj.selekcjanatur.Symulacja.czySymulacjaZakonczena</definition>
+        <definition>boolean proj.selekcjanatur.Symulacja.czySymulacjaZakonczona</definition>
         <argsstring>()</argsstring>
-        <name>czySymulacjaZakonczena</name>
-        <qualifiedname>proj.selekcjanatur.Symulacja.czySymulacjaZakonczena</qualifiedname>
-        <reimplements refid="interfaceproj_1_1selekcjanatur_1_1_interfejs_symulacji_1a7e2ab50886fc205455480e6015060caa">czySymulacjaZakonczena</reimplements>
+        <name>czySymulacjaZakonczona</name>
+        <qualifiedname>proj.selekcjanatur.Symulacja.czySymulacjaZakonczona</qualifiedname>
+        <reimplements refid="interfaceproj_1_1selekcjanatur_1_1_interfejs_symulacji_1a4537fd530e9fb26e34a029f9de374f9e">czySymulacjaZakonczona</reimplements>
         <briefdescription>
 <para>Sprawdza czy symulacja powinna się zakończyć </para>
         </briefdescription>
@@ -934,12 +934,11 @@
         <link refid="interfaceproj_1_1selekcjanatur_1_1_interfejs_symulacji"/>
       </node>
     </collaborationgraph>
-    <location file="src/main/java/proj/selekcjanatur/Symulacja.java" line="24" column="17" bodyfile="src/main/java/proj/selekcjanatur/Symulacja.java" bodystart="24" bodyend="366"/>
+    <location file="src/main/java/proj/selekcjanatur/Symulacja.java" line="24" column="7" bodyfile="src/main/java/proj/selekcjanatur/Symulacja.java" bodystart="24" bodyend="366"/>
     <listofallmembers>
       <member refid="classproj_1_1selekcjanatur_1_1_symulacja_1adec9a02326fa916fa822eddad509050f" prot="public" virt="non-virtual"><scope>proj::selekcjanatur::Symulacja</scope><name>aktualizuj</name></member>
       <member refid="classproj_1_1selekcjanatur_1_1_symulacja_1af140417936a5d3f7ca9c02af9dbb2814" prot="private" virt="non-virtual"><scope>proj::selekcjanatur::Symulacja</scope><name>aktualizujStan</name></member>
-      <member refid="classproj_1_1selekcjanatur_1_1_symulacja_1a3d0ca8ee0af5090358081f7577c0245f" prot="public" virt="non-virtual"><scope>proj::selekcjanatur::Symulacja</scope><name>czySymulacjaZakonczena</name></member>
-      <member refid="interfaceproj_1_1selekcjanatur_1_1_interfejs_symulacji_1a4537fd530e9fb26e34a029f9de374f9e" prot="public" virt="non-virtual"><scope>proj::selekcjanatur::Symulacja</scope><name>czySymulacjaZakonczona</name></member>
+      <member refid="classproj_1_1selekcjanatur_1_1_symulacja_1a1d8fdf87b1547988f8a889f352cb521d" prot="public" virt="non-virtual"><scope>proj::selekcjanatur::Symulacja</scope><name>czySymulacjaZakonczona</name></member>
       <member refid="classproj_1_1selekcjanatur_1_1_symulacja_1adca30037183a0fade601724dd9b8f1bd" prot="private" virt="non-virtual"><scope>proj::selekcjanatur::Symulacja</scope><name>dodajDoDziennika</name></member>
       <member refid="classproj_1_1selekcjanatur_1_1_symulacja_1ab361a78b8ca5a29d85b023553d4490f5" prot="private" virt="non-virtual"><scope>proj::selekcjanatur::Symulacja</scope><name>dodajLosoweJedzenie</name></member>
       <member refid="classproj_1_1selekcjanatur_1_1_symulacja_1a2728068a09ceb38515acafb5547d86b3" prot="private" virt="non-virtual"><scope>proj::selekcjanatur::Symulacja</scope><name>dodajLosowychLudzi</name></member>

@@ -33,6 +33,27 @@
         <referencedby refid="classproj_1_1selekcjanatur_1_1_gen_zapotrzebowanie_energetyczne_1a283348bd55e17df0fe1345785d138c95" compoundref="_gen_zapotrzebowanie_energetyczne_8java" startline="67" endline="71">proj.selekcjanatur.GenZapotrzebowanieEnergetyczne.odziedzicz</referencedby>
         <referencedby refid="classproj_1_1selekcjanatur_1_1_czlowiek_1ac542fecf860b53af21ee3063be486d27" compoundref="_czlowiek_8java" startline="169" endline="181">proj.selekcjanatur.Czlowiek.rozmnazajZ</referencedby>
       </memberdef>
+      <memberdef kind="variable" id="classproj_1_1selekcjanatur_1_1_app_1aee0b3631bd9c03b80b29ac667fe73734" prot="public" static="yes" mutable="no">
+        <type>String</type>
+        <definition>String proj.selekcjanatur.App.dziennikZdarzen</definition>
+        <argsstring></argsstring>
+        <name>dziennikZdarzen</name>
+        <qualifiedname>proj.selekcjanatur.App.dziennikZdarzen</qualifiedname>
+        <initializer>= &quot;dziennik_zdarzen.txt&quot;</initializer>
+        <briefdescription>
+<para>Nazwa pliku dziennika zdarzeń </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/proj/selekcjanatur/App.java" line="35" column="26" bodyfile="src/main/java/proj/selekcjanatur/App.java" bodystart="35" bodyend="-1"/>
+        <referencedby refid="classproj_1_1selekcjanatur_1_1_app_controller_1ac2cf98af4e541bbf36f17f799eb7b581" compoundref="_app_controller_8java" startline="65" endline="114">proj.selekcjanatur.AppController.initialize</referencedby>
+        <referencedby refid="classproj_1_1selekcjanatur_1_1_app_1a5b449f0612c86ffe7eaa088a307e9a3b" compoundref="_app_8java" startline="61" endline="64">proj.selekcjanatur.App.main</referencedby>
+        <referencedby refid="classproj_1_1selekcjanatur_1_1_app_controller_1a6c1db90f850fed3c52f9e23270864b1a" compoundref="_app_controller_8java" startline="173" endline="187">proj.selekcjanatur.AppController.pokazOknoZakonczenia</referencedby>
+        <referencedby refid="classproj_1_1selekcjanatur_1_1_start_controller_1a4ac0a2be052eb17c702f3b5e730d9ca5" compoundref="_start_controller_8java" startline="159" endline="195">proj.selekcjanatur.StartController.replayFromFile</referencedby>
+        <referencedby refid="classproj_1_1selekcjanatur_1_1_start_controller_1adef8290b0feaebf73d01894af5e102e3" compoundref="_start_controller_8java" startline="111" endline="150">proj.selekcjanatur.StartController.startSimulation</referencedby>
+      </memberdef>
     </sectiondef>
     <sectiondef kind="public-func">
       <memberdef kind="function" id="classproj_1_1selekcjanatur_1_1_app_1ae2849dc6abb758adce6cf1f28cd43d40" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
@@ -72,7 +93,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/main/java/proj/selekcjanatur/App.java" line="43" column="17" bodyfile="src/main/java/proj/selekcjanatur/App.java" bodystart="43" bodyend="49"/>
+        <location file="src/main/java/proj/selekcjanatur/App.java" line="46" column="17" bodyfile="src/main/java/proj/selekcjanatur/App.java" bodystart="46" bodyend="52"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-static-func">
@@ -103,8 +124,9 @@ Po zamknięciu aplikacji, jeśli nie zapisano do pliku, automatycznie zapisuje d
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/main/java/proj/selekcjanatur/App.java" line="58" column="24" bodyfile="src/main/java/proj/selekcjanatur/App.java" bodystart="58" bodyend="61"/>
-        <references refid="classproj_1_1selekcjanatur_1_1_app_controller_1a126b2a6a1a53efdb82999b73dc9ca21d" compoundref="_app_controller_8java" startline="55">proj.selekcjanatur.AppController.PLIK</references>
+        <location file="src/main/java/proj/selekcjanatur/App.java" line="61" column="24" bodyfile="src/main/java/proj/selekcjanatur/App.java" bodystart="61" bodyend="64"/>
+        <references refid="classproj_1_1selekcjanatur_1_1_app_1aee0b3631bd9c03b80b29ac667fe73734" compoundref="_app_8java" startline="35">proj.selekcjanatur.App.dziennikZdarzen</references>
+        <references refid="classproj_1_1selekcjanatur_1_1_app_controller_1a126b2a6a1a53efdb82999b73dc9ca21d" compoundref="_app_controller_8java" startline="58">proj.selekcjanatur.AppController.PLIK</references>
         <references refid="classproj_1_1selekcjanatur_1_1_symulacja_1a30d65d41391f815284bbdce9ab12beb9" compoundref="_symulacja_8java" startline="348" endline="356">proj.selekcjanatur.Symulacja.zapiszDziennikDoPliku</references>
       </memberdef>
     </sectiondef>
@@ -136,8 +158,9 @@ Po zamknięciu aplikacji, jeśli nie zapisano do pliku, automatycznie zapisuje d
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="src/main/java/proj/selekcjanatur/App.java" line="27" column="7" bodyfile="src/main/java/proj/selekcjanatur/App.java" bodystart="27" bodyend="62"/>
+    <location file="src/main/java/proj/selekcjanatur/App.java" line="27" column="7" bodyfile="src/main/java/proj/selekcjanatur/App.java" bodystart="27" bodyend="65"/>
     <listofallmembers>
+      <member refid="classproj_1_1selekcjanatur_1_1_app_1aee0b3631bd9c03b80b29ac667fe73734" prot="public" virt="non-virtual"><scope>proj::selekcjanatur::App</scope><name>dziennikZdarzen</name></member>
       <member refid="classproj_1_1selekcjanatur_1_1_app_1a5b449f0612c86ffe7eaa088a307e9a3b" prot="public" virt="non-virtual"><scope>proj::selekcjanatur::App</scope><name>main</name></member>
       <member refid="classproj_1_1selekcjanatur_1_1_app_1ad267df574f9f99d0adf41d333bf4823a" prot="public" virt="non-virtual"><scope>proj::selekcjanatur::App</scope><name>random</name></member>
       <member refid="classproj_1_1selekcjanatur_1_1_app_1ae2849dc6abb758adce6cf1f28cd43d40" prot="public" virt="non-virtual"><scope>proj::selekcjanatur::App</scope><name>start</name></member>

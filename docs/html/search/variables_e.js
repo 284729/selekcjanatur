@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['zajete_0',['zajete',['../classproj_1_1selekcjanatur_1_1_symulacja.html#af59f557f32a2dd9f1775793e51f60453',1,'proj::selekcjanatur::Symulacja']]],
-  ['zdarzenia_1',['zdarzenia',['../classproj_1_1selekcjanatur_1_1_symulacja_plik.html#afc37062ccdcdfcd56718cbb0bb078139',1,'proj::selekcjanatur::SymulacjaPlik']]],
-  ['zywy_2',['zywy',['../classproj_1_1selekcjanatur_1_1_czlowiek.html#ae4932e671627f16ed55cf0b377aed889',1,'proj::selekcjanatur::Czlowiek']]]
+  ['y_0',['y',['../classproj_1_1selekcjanatur_1_1_czlowiek.html#a59322ad4d7324f586e2acd03edd858ce',1,'proj.selekcjanatur.Czlowiek.y'],['../classproj_1_1selekcjanatur_1_1_jedzenie.html#a4efa742917f66b6c29735d90a2104683',1,'proj.selekcjanatur.Jedzenie.y']]]
 ];

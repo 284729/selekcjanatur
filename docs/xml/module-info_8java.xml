@@ -19,7 +19,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/main/java/module-info.java" line="13" column="12" bodyfile="src/main/java/module-info.java" bodystart="13" bodyend="-1"/>
+        <location file="src/main/java/module-info.java" line="1" column="12" bodyfile="src/main/java/module-info.java" bodystart="1" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="module-info_8java_1a117eda8ba0873252e84664f43161eb62" prot="package" static="no" mutable="no">
         <type>requires javafx.</type>
@@ -34,26 +34,37 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/main/java/module-info.java" line="18" column="20" bodyfile="src/main/java/module-info.java" bodystart="18" bodyend="-1"/>
+        <location file="src/main/java/module-info.java" line="6" column="20" bodyfile="src/main/java/module-info.java" bodystart="6" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="module-info_8java_1a8bad16a78e8ac60c68ba88e3cedd8ae7" prot="package" static="no" mutable="no">
+        <type>requires java.</type>
+        <definition>requires java. desktop</definition>
+        <argsstring></argsstring>
+        <name>desktop</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/module-info.java" line="7" column="18" bodyfile="src/main/java/module-info.java" bodystart="7" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
-<para>Deklaracja modułu Java dla aplikacji Symulacja Selekcji Naturalnej. </para>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
     <programlisting>
-<codeline lineno="1"><highlight class="normal"></highlight></codeline>
-<codeline lineno="5"><highlight class="normal"></highlight></codeline>
-<codeline lineno="13"><highlight class="normal">module<sp/><ref refid="namespaceproj_1_1selekcjanatur" kindref="compound">proj.selekcjanatur</ref><sp/>{</highlight></codeline>
-<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>requires<sp/>javafx.controls;</highlight></codeline>
-<codeline lineno="16"><highlight class="normal"></highlight></codeline>
-<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>requires<sp/>javafx.fxml;</highlight></codeline>
-<codeline lineno="19"><highlight class="normal"></highlight></codeline>
-<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>opens<sp/><ref refid="namespaceproj_1_1selekcjanatur" kindref="compound">proj.selekcjanatur</ref><sp/>to<sp/>javafx.fxml;</highlight></codeline>
-<codeline lineno="22"><highlight class="normal"></highlight></codeline>
-<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>exports<sp/>proj.selekcjanatur;</highlight></codeline>
-<codeline lineno="25"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="1"><highlight class="normal">module<sp/><ref refid="namespaceproj_1_1selekcjanatur" kindref="compound">proj.selekcjanatur</ref><sp/>{</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"><sp/><sp/><sp/><sp/>requires<sp/>javafx.controls;</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/>requires<sp/>javafx.fxml;</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/>requires<sp/>java.desktop;</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/>opens<sp/><ref refid="namespaceproj_1_1selekcjanatur" kindref="compound">proj.selekcjanatur</ref><sp/>to<sp/>javafx.fxml;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/>exports<sp/>proj.selekcjanatur;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal">}</highlight></codeline>
     </programlisting>
     <location file="src/main/java/module-info.java"/>
   </compounddef>

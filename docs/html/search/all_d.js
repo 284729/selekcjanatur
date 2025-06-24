@@ -1,19 +1,7 @@
 var searchData=
 [
-  ['sliderfood_0',['sliderFood',['../classproj_1_1selekcjanatur_1_1_start_controller.html#a753b0ce77f29df94503d98c8dfc077fe',1,'proj::selekcjanatur::StartController']]],
-  ['sliderfoodpertick_1',['sliderFoodPerTick',['../classproj_1_1selekcjanatur_1_1_start_controller.html#a06b38c2128a0877477a4e4b0b17362c0',1,'proj::selekcjanatur::StartController']]],
-  ['sliderheight_2',['sliderHeight',['../classproj_1_1selekcjanatur_1_1_start_controller.html#a14e68f735235784a770b67aadfdabf4c',1,'proj::selekcjanatur::StartController']]],
-  ['sliderpeople_3',['sliderPeople',['../classproj_1_1selekcjanatur_1_1_start_controller.html#a135e271886262b705dd0b01143d38743',1,'proj::selekcjanatur::StartController']]],
-  ['sliderwidth_4',['sliderWidth',['../classproj_1_1selekcjanatur_1_1_start_controller.html#ae7db52fcfa05bd89630dbafbcb17798d',1,'proj::selekcjanatur::StartController']]],
-  ['start_5',['start',['../classproj_1_1selekcjanatur_1_1_app.html#ae2849dc6abb758adce6cf1f28cd43d40',1,'proj::selekcjanatur::App']]],
-  ['start_2dview_2efxml_6',['start-view.fxml',['../start-view_8fxml.html',1,'']]],
-  ['startcontroller_7',['StartController',['../classproj_1_1selekcjanatur_1_1_start_controller.html',1,'proj::selekcjanatur']]],
-  ['startcontroller_2ejava_8',['StartController.java',['../_start_controller_8java.html',1,'']]],
-  ['startsimulation_9',['startSimulation',['../classproj_1_1selekcjanatur_1_1_start_controller.html#adef8290b0feaebf73d01894af5e102e3',1,'proj::selekcjanatur::StartController']]],
-  ['symulacja_10',['Symulacja',['../classproj_1_1selekcjanatur_1_1_symulacja.html',1,'proj.selekcjanatur.Symulacja'],['../classproj_1_1selekcjanatur_1_1_symulacja.html#a41de65a2199621bc5386131e337629f5',1,'proj.selekcjanatur.Symulacja.Symulacja()']]],
-  ['symulacja_11',['symulacja',['../classproj_1_1selekcjanatur_1_1_app_controller.html#af048351de6fb835fd277cfcb30cc0bd8',1,'proj::selekcjanatur::AppController']]],
-  ['symulacja_2ejava_12',['Symulacja.java',['../_symulacja_8java.html',1,'']]],
-  ['symulacjaplik_13',['SymulacjaPlik',['../classproj_1_1selekcjanatur_1_1_symulacja_plik.html',1,'proj.selekcjanatur.SymulacjaPlik'],['../classproj_1_1selekcjanatur_1_1_symulacja_plik.html#a67a339bf84667023f2cbf5c10239a27a',1,'proj.selekcjanatur.SymulacjaPlik.SymulacjaPlik()']]],
-  ['symulacjaplik_2ejava_14',['SymulacjaPlik.java',['../_symulacja_plik_8java.html',1,'']]],
-  ['szerokosc_15',['szerokosc',['../classproj_1_1selekcjanatur_1_1_symulacja.html#a628e531aaeeae0e81364b86adc82fff6',1,'proj::selekcjanatur::Symulacja']]]
+  ['random_0',['random',['../classproj_1_1selekcjanatur_1_1_app.html#ad267df574f9f99d0adf41d333bf4823a',1,'proj::selekcjanatur::App']]],
+  ['replayfromfile_1',['replayFromFile',['../classproj_1_1selekcjanatur_1_1_start_controller.html#a4ac0a2be052eb17c702f3b5e730d9ca5',1,'proj::selekcjanatur::StartController']]],
+  ['rozmnazajz_2',['rozmnazajZ',['../classproj_1_1selekcjanatur_1_1_czlowiek.html#ac542fecf860b53af21ee3063be486d27',1,'proj::selekcjanatur::Czlowiek']]],
+  ['rysujplansze_3',['rysujPlansze',['../classproj_1_1selekcjanatur_1_1_app_controller.html#abb8c03bcfbcead3aeda09a9f5d672360',1,'proj::selekcjanatur::AppController']]]
 ];

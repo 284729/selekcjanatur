@@ -7,15 +7,20 @@
     <innerclass refid="classproj_1_1selekcjanatur_1_1_czlowiek" prot="public">proj::selekcjanatur::Czlowiek</innerclass>
     <innerclass refid="interfaceproj_1_1selekcjanatur_1_1_gen" prot="public">proj::selekcjanatur::Gen</innerclass>
     <innerclass refid="classproj_1_1selekcjanatur_1_1_gen_predkosc_chodzenia" prot="public">proj::selekcjanatur::GenPredkoscChodzenia</innerclass>
+    <innerclass refid="classproj_1_1selekcjanatur_1_1_gen_predkosc_chodzenia_test" prot="package">proj::selekcjanatur::GenPredkoscChodzeniaTest</innerclass>
     <innerclass refid="classproj_1_1selekcjanatur_1_1_gen_wzrok" prot="public">proj::selekcjanatur::GenWzrok</innerclass>
+    <innerclass refid="classproj_1_1selekcjanatur_1_1_gen_wzrok_test" prot="package">proj::selekcjanatur::GenWzrokTest</innerclass>
     <innerclass refid="classproj_1_1selekcjanatur_1_1_gen_zapotrzebowanie_energetyczne" prot="public">proj::selekcjanatur::GenZapotrzebowanieEnergetyczne</innerclass>
+    <innerclass refid="classproj_1_1selekcjanatur_1_1_gen_zapotrzebowanie_energetyczne_test" prot="package">proj::selekcjanatur::GenZapotrzebowanieEnergetyczneTest</innerclass>
     <innerclass refid="interfaceproj_1_1selekcjanatur_1_1_interfejs_symulacji" prot="public">proj::selekcjanatur::InterfejsSymulacji</innerclass>
     <innerclass refid="classproj_1_1selekcjanatur_1_1_jedzenie" prot="public">proj::selekcjanatur::Jedzenie</innerclass>
+    <innerclass refid="classproj_1_1selekcjanatur_1_1_jedzenie_test" prot="package">proj::selekcjanatur::JedzenieTest</innerclass>
     <innerclass refid="classproj_1_1selekcjanatur_1_1_kobieta" prot="public">proj::selekcjanatur::Kobieta</innerclass>
     <innerclass refid="classproj_1_1selekcjanatur_1_1_mezczyzna" prot="public">proj::selekcjanatur::Mezczyzna</innerclass>
     <innerclass refid="classproj_1_1selekcjanatur_1_1_start_controller" prot="public">proj::selekcjanatur::StartController</innerclass>
     <innerclass refid="classproj_1_1selekcjanatur_1_1_symulacja" prot="public">proj::selekcjanatur::Symulacja</innerclass>
     <innerclass refid="classproj_1_1selekcjanatur_1_1_symulacja_plik" prot="public">proj::selekcjanatur::SymulacjaPlik</innerclass>
+    <innerclass refid="classproj_1_1selekcjanatur_1_1_symulacja_test" prot="package">proj::selekcjanatur::SymulacjaTest</innerclass>
     <briefdescription>
     </briefdescription>
     <detaileddescription>

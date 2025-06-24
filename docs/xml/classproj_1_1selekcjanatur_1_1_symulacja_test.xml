@@ -1,0 +1,95 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="pl">
+  <compounddef id="classproj_1_1selekcjanatur_1_1_symulacja_test" kind="class" language="Java" prot="package">
+    <compoundname>proj::selekcjanatur::SymulacjaTest</compoundname>
+    <sectiondef kind="package-func">
+      <memberdef kind="function" id="classproj_1_1selekcjanatur_1_1_symulacja_test_1a7c1a6bbd56a4072f67cd6b1af514feff" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void proj.selekcjanatur.SymulacjaTest.testUstawParametry</definition>
+        <argsstring>()</argsstring>
+        <name>testUstawParametry</name>
+        <qualifiedname>proj.selekcjanatur.SymulacjaTest.testUstawParametry</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/test/java/proj/selekcjanatur/SymulacjaTest.java" line="9" column="10" bodyfile="src/test/java/proj/selekcjanatur/SymulacjaTest.java" bodystart="9" bodyend="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classproj_1_1selekcjanatur_1_1_symulacja_test_1a003db0726ebe37afd25bf455fda97bd6" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void proj.selekcjanatur.SymulacjaTest.testSymulacjaConstructor</definition>
+        <argsstring>()</argsstring>
+        <name>testSymulacjaConstructor</name>
+        <qualifiedname>proj.selekcjanatur.SymulacjaTest.testSymulacjaConstructor</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/test/java/proj/selekcjanatur/SymulacjaTest.java" line="20" column="10" bodyfile="src/test/java/proj/selekcjanatur/SymulacjaTest.java" bodystart="20" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="classproj_1_1selekcjanatur_1_1_symulacja_test_1ae00ffd68f199fce464caecea647b8975" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void proj.selekcjanatur.SymulacjaTest.testDodanieLudziIJedzenia</definition>
+        <argsstring>()</argsstring>
+        <name>testDodanieLudziIJedzenia</name>
+        <qualifiedname>proj.selekcjanatur.SymulacjaTest.testDodanieLudziIJedzenia</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/test/java/proj/selekcjanatur/SymulacjaTest.java" line="26" column="10" bodyfile="src/test/java/proj/selekcjanatur/SymulacjaTest.java" bodystart="26" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="classproj_1_1selekcjanatur_1_1_symulacja_test_1aeb9a107ccaf4b807c4d3880e384bebd9" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void proj.selekcjanatur.SymulacjaTest.testAktualizacjiSymulacji</definition>
+        <argsstring>()</argsstring>
+        <name>testAktualizacjiSymulacji</name>
+        <qualifiedname>proj.selekcjanatur.SymulacjaTest.testAktualizacjiSymulacji</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/test/java/proj/selekcjanatur/SymulacjaTest.java" line="35" column="10" bodyfile="src/test/java/proj/selekcjanatur/SymulacjaTest.java" bodystart="35" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="classproj_1_1selekcjanatur_1_1_symulacja_test_1a758882ce3fdc0ce3c88ddba4c13766eb" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void proj.selekcjanatur.SymulacjaTest.testCzySymulacjaZakonczonaGdyBrakLudzi</definition>
+        <argsstring>()</argsstring>
+        <name>testCzySymulacjaZakonczonaGdyBrakLudzi</name>
+        <qualifiedname>proj.selekcjanatur.SymulacjaTest.testCzySymulacjaZakonczonaGdyBrakLudzi</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/test/java/proj/selekcjanatur/SymulacjaTest.java" line="45" column="10" bodyfile="src/test/java/proj/selekcjanatur/SymulacjaTest.java" bodystart="45" bodyend="50"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>proj.selekcjanatur.SymulacjaTest</label>
+      </node>
+    </collaborationgraph>
+    <location file="src/test/java/proj/selekcjanatur/SymulacjaTest.java" line="6" column="1" bodyfile="src/test/java/proj/selekcjanatur/SymulacjaTest.java" bodystart="6" bodyend="52"/>
+    <listofallmembers>
+      <member refid="classproj_1_1selekcjanatur_1_1_symulacja_test_1aeb9a107ccaf4b807c4d3880e384bebd9" prot="package" virt="non-virtual"><scope>proj::selekcjanatur::SymulacjaTest</scope><name>testAktualizacjiSymulacji</name></member>
+      <member refid="classproj_1_1selekcjanatur_1_1_symulacja_test_1a758882ce3fdc0ce3c88ddba4c13766eb" prot="package" virt="non-virtual"><scope>proj::selekcjanatur::SymulacjaTest</scope><name>testCzySymulacjaZakonczonaGdyBrakLudzi</name></member>
+      <member refid="classproj_1_1selekcjanatur_1_1_symulacja_test_1ae00ffd68f199fce464caecea647b8975" prot="package" virt="non-virtual"><scope>proj::selekcjanatur::SymulacjaTest</scope><name>testDodanieLudziIJedzenia</name></member>
+      <member refid="classproj_1_1selekcjanatur_1_1_symulacja_test_1a003db0726ebe37afd25bf455fda97bd6" prot="package" virt="non-virtual"><scope>proj::selekcjanatur::SymulacjaTest</scope><name>testSymulacjaConstructor</name></member>
+      <member refid="classproj_1_1selekcjanatur_1_1_symulacja_test_1a7c1a6bbd56a4072f67cd6b1af514feff" prot="package" virt="non-virtual"><scope>proj::selekcjanatur::SymulacjaTest</scope><name>testUstawParametry</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

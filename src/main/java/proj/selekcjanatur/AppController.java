@@ -88,17 +88,7 @@ public class AppController {
         }
 
         try {
-            symulacja = PLIK ? new SymulacjaPlik("dziennik_zdarzen.txt") {
-                @Override
-                public boolean czySymulacjaZakonczena() {
-                    return false;
-                }
-            } : new Symulacja(KOLUMNY, WIERSZE) {
-                @Override
-                public boolean czySymulacjaZakonczona() {
-                    return false;
-                }
-            };
+            symulacja = PLIK ? new SymulacjaPlik(App.dziennikZdarzen) : new Symulacja(KOLUMNY, WIERSZE);
 
             timeline = new Timeline(
                     new KeyFrame(Duration.millis(250), event -> {
@@ -116,7 +106,8 @@ public class AppController {
         } catch (Exception e) {
             e.printStackTrace();
             var alert = new Alert(Alert.AlertType.ERROR);
-            alert.setTitle("Błąd odczytania pliku dziennik_zdarzen.txt");
+            alert.setHeaderText(null);
+            alert.setTitle("Błąd odczytania pliku " + App.dziennikZdarzen);
             alert.setContentText(e.getMessage());
             alert.showAndWait();
         }
@@ -190,7 +181,7 @@ public class AppController {
                 alert.setContentText("Symulacja zakończyła się, ponieważ liczba ludzi wynosi 0.");
             }
             alert.showAndWait();
-            if (!PLIK) Symulacja.zapiszDziennikDoPliku("dziennik_zdarzen.txt");
+            if (!PLIK) Symulacja.zapiszDziennikDoPliku(App.dziennikZdarzen);
             System.exit(0); // Zakończenie programu
         });
     }

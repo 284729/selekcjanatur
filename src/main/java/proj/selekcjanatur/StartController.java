@@ -6,10 +6,13 @@ import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Label;
 import javafx.scene.control.Slider;
+import javafx.scene.control.TextField;
 import javafx.scene.layout.BorderPane;
+import javafx.stage.FileChooser;
 import javafx.stage.Stage;
 
 import java.io.BufferedReader;
+import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -60,6 +63,9 @@ public class StartController {
     /** @brief Etykieta wyświetlająca ilość jedzenia na cykl */
     @FXML private Label labelFoodPerTick;
 
+    /** @brief Pole tekstowe na ścierzkę prowadzącą do pliku dziennika zdarzeń */
+    @FXML private TextField filePath;
+
     /**
      * @brief Inicjalizacja kontrolera
      * @details Wiąże suwaki z odpowiadającymi im etykietami,
@@ -83,6 +89,16 @@ public class StartController {
         label.setText(String.valueOf((int) slider.getValue()));
         slider.valueProperty().addListener((obs, oldVal, newVal) ->
                 label.setText(String.valueOf(newVal.intValue())));
+    }
+
+    /** @brief Uruchamia dialog wybór pliku */
+    @FXML
+    private void chooseFile() {
+        var fileChooser = new FileChooser();
+        fileChooser.setTitle("Wybierz plik dziennika zdarzeń");
+        fileChooser.setInitialDirectory(new File("."));
+        var file = fileChooser.showOpenDialog(filePath.getScene().getWindow());
+        if (file != null) filePath.setText(file.getAbsolutePath());
     }
 
     /**
@@ -118,6 +134,7 @@ public class StartController {
             return;
         }
 
+        App.dziennikZdarzen = filePath.getText();
         Symulacja.ustawParametry(width, height, people, food, foodPerTick);
 
         try {
@@ -140,12 +157,14 @@ public class StartController {
      */
     @FXML
     private void replayFromFile() {
-        var path = Path.of("dziennik_zdarzen.txt");
+        var dziennikZdarzen = filePath.getText();
+        var path = Path.of(dziennikZdarzen);
         try (BufferedReader reader = Files.newBufferedReader(path)) {
             var linia = reader.readLine();
             var dane = linia == null ? null : linia.split(";");
             if (linia == null || !dane[0].equals("ROZMIAR")) {
                 var alert = new Alert(Alert.AlertType.ERROR);
+                alert.setHeaderText(null);
                 alert.setTitle("Błądny format pliku");
                 alert.setContentText("Plik nie jest poprawnym zapisem symulacji");
                 alert.showAndWait();
@@ -156,6 +175,7 @@ public class StartController {
             var wiersze = Integer.parseInt(dane[2]);
             Symulacja.szerokosc = kolumny;
             Symulacja.wysokosc = wiersze;
+            App.dziennikZdarzen = dziennikZdarzen;
             AppController.PLIK = true;
 
             FXMLLoader loader = new FXMLLoader(getClass().getResource("grid-view.fxml"));
@@ -167,7 +187,8 @@ public class StartController {
         } catch (IOException e) {
             e.printStackTrace();
             var alert = new Alert(Alert.AlertType.ERROR);
-            alert.setTitle("Błąd odczytania pliku dziennik_zdarzen.txt");
+            alert.setHeaderText(null);
+            alert.setTitle("Błąd odczytania pliku " + dziennikZdarzen);
             alert.setContentText(e.getMessage());
             alert.showAndWait();
         }

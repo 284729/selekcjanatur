@@ -74,6 +74,7 @@ Zwraca tylko jedzenie obecne w bieżącym cyklu symulacji. <ref refid="classproj
         <argsstring>()</argsstring>
         <name>czySymulacjaZakonczona</name>
         <qualifiedname>proj.selekcjanatur.InterfejsSymulacji.czySymulacjaZakonczona</qualifiedname>
+        <reimplementedby refid="classproj_1_1selekcjanatur_1_1_symulacja_1a1d8fdf87b1547988f8a889f352cb521d">czySymulacjaZakonczona</reimplementedby>
         <reimplementedby refid="classproj_1_1selekcjanatur_1_1_symulacja_plik_1a794761349d4b40e843b27accf7930a21">czySymulacjaZakonczona</reimplementedby>
         <briefdescription>
 <para>Sprawdza warunki zakończenia symulacji. </para>
@@ -91,21 +92,6 @@ Typowe warunki zakończenia:<itemizedlist>
         <inbodydescription>
         </inbodydescription>
         <location file="src/main/java/proj/selekcjanatur/InterfejsSymulacji.java" line="55" column="13"/>
-      </memberdef>
-      <memberdef kind="function" id="interfaceproj_1_1selekcjanatur_1_1_interfejs_symulacji_1a7e2ab50886fc205455480e6015060caa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>boolean</type>
-        <definition>boolean proj.selekcjanatur.InterfejsSymulacji.czySymulacjaZakonczena</definition>
-        <argsstring>()</argsstring>
-        <name>czySymulacjaZakonczena</name>
-        <qualifiedname>proj.selekcjanatur.InterfejsSymulacji.czySymulacjaZakonczena</qualifiedname>
-        <reimplementedby refid="classproj_1_1selekcjanatur_1_1_symulacja_1a3d0ca8ee0af5090358081f7577c0245f">czySymulacjaZakonczena</reimplementedby>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="src/main/java/proj/selekcjanatur/InterfejsSymulacji.java" line="57" column="13"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -142,10 +128,9 @@ Typowe warunki zakończenia:<itemizedlist>
         <link refid="interfaceproj_1_1selekcjanatur_1_1_interfejs_symulacji"/>
       </node>
     </collaborationgraph>
-    <location file="src/main/java/proj/selekcjanatur/InterfejsSymulacji.java" line="21" column="18" bodyfile="src/main/java/proj/selekcjanatur/InterfejsSymulacji.java" bodystart="21" bodyend="58"/>
+    <location file="src/main/java/proj/selekcjanatur/InterfejsSymulacji.java" line="21" column="18" bodyfile="src/main/java/proj/selekcjanatur/InterfejsSymulacji.java" bodystart="21" bodyend="56"/>
     <listofallmembers>
       <member refid="interfaceproj_1_1selekcjanatur_1_1_interfejs_symulacji_1abd9c98677e97fa36f0126a04bb0baeba" prot="public" virt="non-virtual"><scope>proj::selekcjanatur::InterfejsSymulacji</scope><name>aktualizuj</name></member>
-      <member refid="interfaceproj_1_1selekcjanatur_1_1_interfejs_symulacji_1a7e2ab50886fc205455480e6015060caa" prot="public" virt="non-virtual"><scope>proj::selekcjanatur::InterfejsSymulacji</scope><name>czySymulacjaZakonczena</name></member>
       <member refid="interfaceproj_1_1selekcjanatur_1_1_interfejs_symulacji_1a4537fd530e9fb26e34a029f9de374f9e" prot="public" virt="non-virtual"><scope>proj::selekcjanatur::InterfejsSymulacji</scope><name>czySymulacjaZakonczona</name></member>
       <member refid="interfaceproj_1_1selekcjanatur_1_1_interfejs_symulacji_1aa64fcf541377293e9ace7cbabb3f5c62" prot="public" virt="non-virtual"><scope>proj::selekcjanatur::InterfejsSymulacji</scope><name>getJedzenie</name></member>
       <member refid="interfaceproj_1_1selekcjanatur_1_1_interfejs_symulacji_1a42c8bbee1a48204a12ea333621bca0d5" prot="public" virt="non-virtual"><scope>proj::selekcjanatur::InterfejsSymulacji</scope><name>getLudzie</name></member>

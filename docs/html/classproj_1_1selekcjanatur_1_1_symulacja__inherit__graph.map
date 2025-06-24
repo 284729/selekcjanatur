@@ -1,5 +1,5 @@
 <map id="proj.selekcjanatur.Symulacja" name="proj.selekcjanatur.Symulacja">
-<area shape="rect" id="Node000001" title="Implementacja symulacji ewolucyjnej z dziedziczeniem cech." alt="" coords="5,224,239,1131"/>
-<area shape="rect" id="Node000002" href="$interfaceproj_1_1selekcjanatur_1_1_interfejs_symulacji.html" title="Główny interfejs systemu symulacji ewolucyjnej." alt="" coords="5,5,239,176"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="125,191,125,224,120,224,120,191"/>
+<area shape="rect" id="Node000001" title="Implementacja symulacji ewolucyjnej z dziedziczeniem cech." alt="" coords="5,203,239,1109"/>
+<area shape="rect" id="Node000002" href="$interfaceproj_1_1selekcjanatur_1_1_interfejs_symulacji.html" title="Główny interfejs systemu symulacji ewolucyjnej." alt="" coords="5,5,239,155"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="125,170,125,203,120,203,120,170"/>
 </map>

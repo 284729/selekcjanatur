@@ -3,7 +3,7 @@ var classproj_1_1selekcjanatur_1_1_symulacja =
     [ "Symulacja", "classproj_1_1selekcjanatur_1_1_symulacja.html#a41de65a2199621bc5386131e337629f5", null ],
     [ "aktualizuj", "classproj_1_1selekcjanatur_1_1_symulacja.html#adec9a02326fa916fa822eddad509050f", null ],
     [ "aktualizujStan", "classproj_1_1selekcjanatur_1_1_symulacja.html#af140417936a5d3f7ca9c02af9dbb2814", null ],
-    [ "czySymulacjaZakonczena", "classproj_1_1selekcjanatur_1_1_symulacja.html#a3d0ca8ee0af5090358081f7577c0245f", null ],
+    [ "czySymulacjaZakonczona", "classproj_1_1selekcjanatur_1_1_symulacja.html#a1d8fdf87b1547988f8a889f352cb521d", null ],
     [ "dodajDoDziennika", "classproj_1_1selekcjanatur_1_1_symulacja.html#adca30037183a0fade601724dd9b8f1bd", null ],
     [ "dodajLosoweJedzenie", "classproj_1_1selekcjanatur_1_1_symulacja.html#ab361a78b8ca5a29d85b023553d4490f5", null ],
     [ "dodajLosowychLudzi", "classproj_1_1selekcjanatur_1_1_symulacja.html#a2728068a09ceb38515acafb5547d86b3", null ],

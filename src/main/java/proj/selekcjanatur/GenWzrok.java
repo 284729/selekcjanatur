@@ -37,7 +37,7 @@ public class GenWzrok implements Gen {
      * @brief Prywatny konstruktor do tworzenia genów potomnych
      * @param wartosc Określona wartość genu (zostanie ograniczona do 1-10)
      */
-    private GenWzrok(float wartosc) {
+    public GenWzrok(float wartosc) {
         this.wartosc = wartosc;
     }
 

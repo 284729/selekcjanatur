@@ -18,7 +18,7 @@ import java.util.*;
  * odtwarza je sekwencyjnie z pliku. Pozwala to na odtworzenie przebiegu
  * wcześniejszej symulacji krok po kroku.
  */
-public abstract class SymulacjaPlik implements InterfejsSymulacji {
+public class SymulacjaPlik implements InterfejsSymulacji {
     /** @brief Lista wczytanych zdarzeń z pliku */
     private final List<String> zdarzenia;
 

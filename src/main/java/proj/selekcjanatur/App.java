@@ -31,6 +31,9 @@ public class App extends Application {
      */
     public static Random random = new Random();
 
+    /** @brief Nazwa pliku dziennika zdarzeń */
+    public static String dziennikZdarzen = "dziennik_zdarzen.txt";
+
     /**
      * @brief   Metoda startująca aplikację JavaFX.
      * @param   stage Główny kontener okna aplikacji.
@@ -57,6 +60,6 @@ public class App extends Application {
      */
     public static void main(String[] args) {
         launch(args);
-        if (!AppController.PLIK) Symulacja.zapiszDziennikDoPliku("dziennik_zdarzen.txt");
+        if (!AppController.PLIK) Symulacja.zapiszDziennikDoPliku(dziennikZdarzen);
     }
 }

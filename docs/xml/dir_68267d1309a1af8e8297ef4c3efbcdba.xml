@@ -3,6 +3,7 @@
   <compounddef id="dir_68267d1309a1af8e8297ef4c3efbcdba" kind="dir">
     <compoundname>src</compoundname>
     <innerdir refid="dir_5eb159725f84c66aafd839904a4acdd0">src/main</innerdir>
+    <innerdir refid="dir_120ed4da3e3217b1e7fc0b4f48568e79">src/test</innerdir>
     <briefdescription>
     </briefdescription>
     <detaileddescription>

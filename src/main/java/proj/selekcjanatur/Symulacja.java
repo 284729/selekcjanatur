@@ -21,7 +21,7 @@ import java.nio.file.Path;
  * - Systemem dziennika zdarzeń
  * - Warunkami zakończenia symulacji
  */
-public abstract class Symulacja implements InterfejsSymulacji {
+public class Symulacja implements InterfejsSymulacji {
     /** @brief Statyczne parametry symulacji - szerokość planszy */
     public static int szerokosc;
 
@@ -360,7 +360,7 @@ public abstract class Symulacja implements InterfejsSymulacji {
      * @return true jeśli nie ma żywych ludzi
      */
     @Override
-    public boolean czySymulacjaZakonczena() {
+    public boolean czySymulacjaZakonczona() {
         return ludzie.isEmpty();
     }
 }

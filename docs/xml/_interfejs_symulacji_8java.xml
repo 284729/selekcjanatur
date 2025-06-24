@@ -42,9 +42,7 @@
 <codeline lineno="45" refid="interfaceproj_1_1selekcjanatur_1_1_interfejs_symulacji_1aa64fcf541377293e9ace7cbabb3f5c62" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>Set&lt;Jedzenie&gt;<sp/><ref refid="interfaceproj_1_1selekcjanatur_1_1_interfejs_symulacji_1aa64fcf541377293e9ace7cbabb3f5c62" kindref="member">getJedzenie</ref>();</highlight></codeline>
 <codeline lineno="46"><highlight class="normal"></highlight></codeline>
 <codeline lineno="55" refid="interfaceproj_1_1selekcjanatur_1_1_interfejs_symulacji_1a4537fd530e9fb26e34a029f9de374f9e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">boolean</highlight><highlight class="normal"><sp/><ref refid="interfaceproj_1_1selekcjanatur_1_1_interfejs_symulacji_1a4537fd530e9fb26e34a029f9de374f9e" kindref="member">czySymulacjaZakonczona</ref>();</highlight></codeline>
-<codeline lineno="56"><highlight class="normal"></highlight></codeline>
-<codeline lineno="57" refid="interfaceproj_1_1selekcjanatur_1_1_interfejs_symulacji_1a7e2ab50886fc205455480e6015060caa" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">boolean</highlight><highlight class="normal"><sp/><ref refid="interfaceproj_1_1selekcjanatur_1_1_interfejs_symulacji_1a7e2ab50886fc205455480e6015060caa" kindref="member">czySymulacjaZakonczena</ref>();</highlight></codeline>
-<codeline lineno="58"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="56"><highlight class="normal">}</highlight></codeline>
     </programlisting>
     <location file="src/main/java/proj/selekcjanatur/InterfejsSymulacji.java"/>
   </compounddef>

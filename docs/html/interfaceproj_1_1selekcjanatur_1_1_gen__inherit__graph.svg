@@ -70,11 +70,11 @@
 <text xml:space="preserve" text-anchor="start" x="170.19" y="-66.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
 <text xml:space="preserve" text-anchor="start" x="182" y="-66.5" font-family="Helvetica,sans-Serif" font-size="10.00">GenWzrok()</text>
 <text xml:space="preserve" text-anchor="start" x="170.19" y="-50.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text xml:space="preserve" text-anchor="start" x="182" y="-50.5" font-family="Helvetica,sans-Serif" font-size="10.00">float wartosc()</text>
+<text xml:space="preserve" text-anchor="start" x="182" y="-50.5" font-family="Helvetica,sans-Serif" font-size="10.00">GenWzrok(float wartosc)</text>
 <text xml:space="preserve" text-anchor="start" x="170.19" y="-34.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text xml:space="preserve" text-anchor="start" x="182" y="-34.5" font-family="Helvetica,sans-Serif" font-size="10.00">Gen odziedzicz()</text>
-<text xml:space="preserve" text-anchor="start" x="171.69" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text xml:space="preserve" text-anchor="start" x="182" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">GenWzrok(float wartosc)</text>
+<text xml:space="preserve" text-anchor="start" x="182" y="-34.5" font-family="Helvetica,sans-Serif" font-size="10.00">float wartosc()</text>
+<text xml:space="preserve" text-anchor="start" x="170.19" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text xml:space="preserve" text-anchor="start" x="182" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">Gen odziedzicz()</text>
 <polygon fill="#666666" stroke="#666666" points="164.38,-94 164.38,-94 298.38,-94 298.38,-94 164.38,-94"/>
 <polygon fill="#666666" stroke="#666666" points="164.38,-78 164.38,-78 180,-78 180,-78 164.38,-78"/>
 <polygon fill="#666666" stroke="#666666" points="180,-78 180,-78 298.38,-78 298.38,-78 180,-78"/>

@@ -50,15 +50,22 @@
             showTickLabels="true" showTickMarks="true" majorTickUnit="10"/>
     <Label fx:id="labelFoodPerTick" text="5"/>
 
+    <!-- Sekcja wyboru pliku -->
+    <Label text="Plik dziennika zdarzeń" />
+    <HBox alignment="TOP_CENTER" spacing="15">
+        <TextField fx:id="filePath" text="dziennik_zdarzen.txt" HBox.hgrow="ALWAYS" />
+        <Button onAction="#chooseFile" text="Wybierz plik" />
+    </HBox>
+
     <!--
     @container HBox
     @brief Kontener przycisków akcji
     -->
-    <HBox spacing="15">
+    <HBox alignment="TOP_CENTER" spacing="15">
         <!-- Przycisk uruchamiający nową symulację -->
-        <Button text="Start symulacji" onAction="#startSimulation"/>
+        <Button onAction="#startSimulation" text="Start symulacji" />
 
         <!-- Przycisk wczytujący zapisaną symulację -->
-        <Button text="Odtwórz z pliku" onAction="#replayFromFile"/>
+        <Button onAction="#replayFromFile" text="Odtwórz z pliku" />
     </HBox>
 </VBox>

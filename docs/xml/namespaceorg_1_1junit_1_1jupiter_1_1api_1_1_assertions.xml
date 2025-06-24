@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="pl">
+  <compounddef id="namespaceorg_1_1junit_1_1jupiter_1_1api_1_1_assertions" kind="namespace" language="Java">
+    <compoundname>org::junit::jupiter::api::Assertions</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/test/java/proj/selekcjanatur/GenPredkoscChodzeniaTest.java" line="1" column="1"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="pl">
+  <compounddef id="classproj_1_1selekcjanatur_1_1_gen_zapotrzebowanie_energetyczne_test" kind="class" language="Java" prot="package">
+    <compoundname>proj::selekcjanatur::GenZapotrzebowanieEnergetyczneTest</compoundname>
+    <sectiondef kind="package-func">
+      <memberdef kind="function" id="classproj_1_1selekcjanatur_1_1_gen_zapotrzebowanie_energetyczne_test_1a181279fa4f09e2c1b7cd6bcf3b818f8d" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void proj.selekcjanatur.GenZapotrzebowanieEnergetyczneTest.konstruktorZParametremDzialaPoprawnie</definition>
+        <argsstring>()</argsstring>
+        <name>konstruktorZParametremDzialaPoprawnie</name>
+        <qualifiedname>proj.selekcjanatur.GenZapotrzebowanieEnergetyczneTest.konstruktorZParametremDzialaPoprawnie</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/test/java/proj/selekcjanatur/GenZapotrzebowanieEnergetyczneTest.java" line="9" column="10" bodyfile="src/test/java/proj/selekcjanatur/GenZapotrzebowanieEnergetyczneTest.java" bodystart="9" bodyend="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classproj_1_1selekcjanatur_1_1_gen_zapotrzebowanie_energetyczne_test_1a7f25f5d01ba3abe6448297d29fe10e70" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void proj.selekcjanatur.GenZapotrzebowanieEnergetyczneTest.odziedziczNiePrzekraczaGornegoLimitu</definition>
+        <argsstring>()</argsstring>
+        <name>odziedziczNiePrzekraczaGornegoLimitu</name>
+        <qualifiedname>proj.selekcjanatur.GenZapotrzebowanieEnergetyczneTest.odziedziczNiePrzekraczaGornegoLimitu</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/test/java/proj/selekcjanatur/GenZapotrzebowanieEnergetyczneTest.java" line="16" column="10" bodyfile="src/test/java/proj/selekcjanatur/GenZapotrzebowanieEnergetyczneTest.java" bodystart="16" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="function" id="classproj_1_1selekcjanatur_1_1_gen_zapotrzebowanie_energetyczne_test_1a9350377f743797d854d30675e01f0218" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void proj.selekcjanatur.GenZapotrzebowanieEnergetyczneTest.odziedziczTworzyNowyObiekt</definition>
+        <argsstring>()</argsstring>
+        <name>odziedziczTworzyNowyObiekt</name>
+        <qualifiedname>proj.selekcjanatur.GenZapotrzebowanieEnergetyczneTest.odziedziczTworzyNowyObiekt</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/test/java/proj/selekcjanatur/GenZapotrzebowanieEnergetyczneTest.java" line="24" column="10" bodyfile="src/test/java/proj/selekcjanatur/GenZapotrzebowanieEnergetyczneTest.java" bodystart="24" bodyend="28"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>proj.selekcjanatur.GenZapotrzebowanieEnergetyczneTest</label>
+      </node>
+    </collaborationgraph>
+    <location file="src/test/java/proj/selekcjanatur/GenZapotrzebowanieEnergetyczneTest.java" line="6" column="1" bodyfile="src/test/java/proj/selekcjanatur/GenZapotrzebowanieEnergetyczneTest.java" bodystart="6" bodyend="29"/>
+    <listofallmembers>
+      <member refid="classproj_1_1selekcjanatur_1_1_gen_zapotrzebowanie_energetyczne_test_1a181279fa4f09e2c1b7cd6bcf3b818f8d" prot="package" virt="non-virtual"><scope>proj::selekcjanatur::GenZapotrzebowanieEnergetyczneTest</scope><name>konstruktorZParametremDzialaPoprawnie</name></member>
+      <member refid="classproj_1_1selekcjanatur_1_1_gen_zapotrzebowanie_energetyczne_test_1a7f25f5d01ba3abe6448297d29fe10e70" prot="package" virt="non-virtual"><scope>proj::selekcjanatur::GenZapotrzebowanieEnergetyczneTest</scope><name>odziedziczNiePrzekraczaGornegoLimitu</name></member>
+      <member refid="classproj_1_1selekcjanatur_1_1_gen_zapotrzebowanie_energetyczne_test_1a9350377f743797d854d30675e01f0218" prot="package" virt="non-virtual"><scope>proj::selekcjanatur::GenZapotrzebowanieEnergetyczneTest</scope><name>odziedziczTworzyNowyObiekt</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

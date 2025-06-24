@@ -53,6 +53,4 @@ public interface InterfejsSymulacji {
      * - Odtworzenie wszystkich zdarzeń z pliku (w trybie odtwarzania)
      */
     boolean czySymulacjaZakonczona();
-
-    boolean czySymulacjaZakonczena();
 }

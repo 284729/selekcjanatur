@@ -1,9 +1,11 @@
 var classproj_1_1selekcjanatur_1_1_start_controller =
 [
     [ "bindSliderLabel", "classproj_1_1selekcjanatur_1_1_start_controller.html#ac32fa03ada58f71a3cbc379ea17cd8e3", null ],
+    [ "chooseFile", "classproj_1_1selekcjanatur_1_1_start_controller.html#a4e63103222cc89ef308d43ff5983193d", null ],
     [ "initialize", "classproj_1_1selekcjanatur_1_1_start_controller.html#a454899066792549fb6dd082733f7e7da", null ],
     [ "replayFromFile", "classproj_1_1selekcjanatur_1_1_start_controller.html#a4ac0a2be052eb17c702f3b5e730d9ca5", null ],
     [ "startSimulation", "classproj_1_1selekcjanatur_1_1_start_controller.html#adef8290b0feaebf73d01894af5e102e3", null ],
+    [ "filePath", "classproj_1_1selekcjanatur_1_1_start_controller.html#ae45b5bee88e1ac2109756749bcbd2836", null ],
     [ "labelFood", "classproj_1_1selekcjanatur_1_1_start_controller.html#aa97667419de3f51733fff36d81848010", null ],
     [ "labelFoodPerTick", "classproj_1_1selekcjanatur_1_1_start_controller.html#a7f288e985f51623326ee61dba06b8396", null ],
     [ "labelHeight", "classproj_1_1selekcjanatur_1_1_start_controller.html#a598d8ff12ad77fab756529358cf46cda", null ],

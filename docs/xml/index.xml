@@ -2,6 +2,7 @@
 <doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.14.0" xml:lang="pl">
   <compound refid="classproj_1_1selekcjanatur_1_1_app" kind="class"><name>proj::selekcjanatur::App</name>
     <member refid="classproj_1_1selekcjanatur_1_1_app_1ad267df574f9f99d0adf41d333bf4823a" kind="variable"><name>random</name></member>
+    <member refid="classproj_1_1selekcjanatur_1_1_app_1aee0b3631bd9c03b80b29ac667fe73734" kind="variable"><name>dziennikZdarzen</name></member>
     <member refid="classproj_1_1selekcjanatur_1_1_app_1ae2849dc6abb758adce6cf1f28cd43d40" kind="function"><name>start</name></member>
     <member refid="classproj_1_1selekcjanatur_1_1_app_1a5b449f0612c86ffe7eaa088a307e9a3b" kind="function"><name>main</name></member>
   </compound>
@@ -55,12 +56,22 @@
     <member refid="classproj_1_1selekcjanatur_1_1_gen_predkosc_chodzenia_1a5a2e8c5c92648cd0fbd48ed3b3e79d48" kind="function"><name>wartosc</name></member>
     <member refid="classproj_1_1selekcjanatur_1_1_gen_predkosc_chodzenia_1ac1c84739c1c813099f3d0b351c9a6487" kind="function"><name>odziedzicz</name></member>
   </compound>
+  <compound refid="classproj_1_1selekcjanatur_1_1_gen_predkosc_chodzenia_test" kind="class"><name>proj::selekcjanatur::GenPredkoscChodzeniaTest</name>
+    <member refid="classproj_1_1selekcjanatur_1_1_gen_predkosc_chodzenia_test_1a3cd0886bee9bae87f1b098ea8898d4bf" kind="function"><name>konstruktorZWartosciaDzialaPoprawnie</name></member>
+    <member refid="classproj_1_1selekcjanatur_1_1_gen_predkosc_chodzenia_test_1ace6be20f94ee7d9d118b6a259cb5d0f3" kind="function"><name>odziedziczGenerujeNowyObiektWZakresie</name></member>
+    <member refid="classproj_1_1selekcjanatur_1_1_gen_predkosc_chodzenia_test_1a0fcd55ec6b7ca876b028074517c73c15" kind="function"><name>odziedziczNieZwracaTegoSamegoObiektu</name></member>
+  </compound>
   <compound refid="classproj_1_1selekcjanatur_1_1_gen_wzrok" kind="class"><name>proj::selekcjanatur::GenWzrok</name>
     <member refid="classproj_1_1selekcjanatur_1_1_gen_wzrok_1aa3a11ccae78812a5d7aaaf4f82558090" kind="variable"><name>wartosc</name></member>
     <member refid="classproj_1_1selekcjanatur_1_1_gen_wzrok_1ae792ef922168b72adacb551ee3163a8b" kind="function"><name>GenWzrok</name></member>
+    <member refid="classproj_1_1selekcjanatur_1_1_gen_wzrok_1aeff8627865c75ff56b4e95a81518354f" kind="function"><name>GenWzrok</name></member>
     <member refid="classproj_1_1selekcjanatur_1_1_gen_wzrok_1a2c2e4e3feabb475013319b27f6af596a" kind="function"><name>wartosc</name></member>
     <member refid="classproj_1_1selekcjanatur_1_1_gen_wzrok_1a78a8ef7be1ae0cbe718d1428e44f639c" kind="function"><name>odziedzicz</name></member>
-    <member refid="classproj_1_1selekcjanatur_1_1_gen_wzrok_1aeff8627865c75ff56b4e95a81518354f" kind="function"><name>GenWzrok</name></member>
+  </compound>
+  <compound refid="classproj_1_1selekcjanatur_1_1_gen_wzrok_test" kind="class"><name>proj::selekcjanatur::GenWzrokTest</name>
+    <member refid="classproj_1_1selekcjanatur_1_1_gen_wzrok_test_1a792a09b4ad38a33c679861d13ece1b53" kind="function"><name>odziedziczZwracaNowyObiektWZakresie</name></member>
+    <member refid="classproj_1_1selekcjanatur_1_1_gen_wzrok_test_1acb337ff32eeec49c8e0fdcf4cfdfa49e" kind="function"><name>wartoscZwracaPoprawnaWartosc</name></member>
+    <member refid="classproj_1_1selekcjanatur_1_1_gen_wzrok_test_1a5c99050b855fe5972788a0afd26e6b0e" kind="function"><name>odziedziczTworzyNowyObiekt</name></member>
   </compound>
   <compound refid="classproj_1_1selekcjanatur_1_1_gen_zapotrzebowanie_energetyczne" kind="class"><name>proj::selekcjanatur::GenZapotrzebowanieEnergetyczne</name>
     <member refid="classproj_1_1selekcjanatur_1_1_gen_zapotrzebowanie_energetyczne_1a6f92daa3d49d10ca3b4dae6f11e52a36" kind="variable"><name>wartosc</name></member>
@@ -69,18 +80,26 @@
     <member refid="classproj_1_1selekcjanatur_1_1_gen_zapotrzebowanie_energetyczne_1afd421547690d3ea2c7a15eaea3cf1e08" kind="function"><name>wartosc</name></member>
     <member refid="classproj_1_1selekcjanatur_1_1_gen_zapotrzebowanie_energetyczne_1a283348bd55e17df0fe1345785d138c95" kind="function"><name>odziedzicz</name></member>
   </compound>
+  <compound refid="classproj_1_1selekcjanatur_1_1_gen_zapotrzebowanie_energetyczne_test" kind="class"><name>proj::selekcjanatur::GenZapotrzebowanieEnergetyczneTest</name>
+    <member refid="classproj_1_1selekcjanatur_1_1_gen_zapotrzebowanie_energetyczne_test_1a181279fa4f09e2c1b7cd6bcf3b818f8d" kind="function"><name>konstruktorZParametremDzialaPoprawnie</name></member>
+    <member refid="classproj_1_1selekcjanatur_1_1_gen_zapotrzebowanie_energetyczne_test_1a7f25f5d01ba3abe6448297d29fe10e70" kind="function"><name>odziedziczNiePrzekraczaGornegoLimitu</name></member>
+    <member refid="classproj_1_1selekcjanatur_1_1_gen_zapotrzebowanie_energetyczne_test_1a9350377f743797d854d30675e01f0218" kind="function"><name>odziedziczTworzyNowyObiekt</name></member>
+  </compound>
   <compound refid="interfaceproj_1_1selekcjanatur_1_1_interfejs_symulacji" kind="interface"><name>proj::selekcjanatur::InterfejsSymulacji</name>
     <member refid="interfaceproj_1_1selekcjanatur_1_1_interfejs_symulacji_1abd9c98677e97fa36f0126a04bb0baeba" kind="function"><name>aktualizuj</name></member>
     <member refid="interfaceproj_1_1selekcjanatur_1_1_interfejs_symulacji_1a42c8bbee1a48204a12ea333621bca0d5" kind="function"><name>getLudzie</name></member>
     <member refid="interfaceproj_1_1selekcjanatur_1_1_interfejs_symulacji_1aa64fcf541377293e9ace7cbabb3f5c62" kind="function"><name>getJedzenie</name></member>
     <member refid="interfaceproj_1_1selekcjanatur_1_1_interfejs_symulacji_1a4537fd530e9fb26e34a029f9de374f9e" kind="function"><name>czySymulacjaZakonczona</name></member>
-    <member refid="interfaceproj_1_1selekcjanatur_1_1_interfejs_symulacji_1a7e2ab50886fc205455480e6015060caa" kind="function"><name>czySymulacjaZakonczena</name></member>
   </compound>
   <compound refid="classproj_1_1selekcjanatur_1_1_jedzenie" kind="class"><name>proj::selekcjanatur::Jedzenie</name>
     <member refid="classproj_1_1selekcjanatur_1_1_jedzenie_1a3d5d2ca6e17c0c4256361d91f0960348" kind="variable"><name>x</name></member>
     <member refid="classproj_1_1selekcjanatur_1_1_jedzenie_1a4efa742917f66b6c29735d90a2104683" kind="variable"><name>y</name></member>
     <member refid="classproj_1_1selekcjanatur_1_1_jedzenie_1aba56f863335ddaf87115729096d41bb0" kind="variable"><name>wartosc</name></member>
     <member refid="classproj_1_1selekcjanatur_1_1_jedzenie_1a0a32d35b4201fd65bcde3ecadae055cf" kind="function"><name>Jedzenie</name></member>
+  </compound>
+  <compound refid="classproj_1_1selekcjanatur_1_1_jedzenie_test" kind="class"><name>proj::selekcjanatur::JedzenieTest</name>
+    <member refid="classproj_1_1selekcjanatur_1_1_jedzenie_test_1a83ae43aba74d2a4a5db3b500d3e71195" kind="function"><name>konstruktorPoprawnieUstawiaPozycje</name></member>
+    <member refid="classproj_1_1selekcjanatur_1_1_jedzenie_test_1a696810ddfe2c75e83bcaf8f6b55f1147" kind="function"><name>wartoscJestWZakresie</name></member>
   </compound>
   <compound refid="classproj_1_1selekcjanatur_1_1_kobieta" kind="class"><name>proj::selekcjanatur::Kobieta</name>
     <member refid="classproj_1_1selekcjanatur_1_1_kobieta_1ab20a08ab86b96cb78f5163a71e06c49c" kind="function"><name>Kobieta</name></member>
@@ -103,8 +122,10 @@
     <member refid="classproj_1_1selekcjanatur_1_1_start_controller_1a22fde975baf4d84eebb6565298af670b" kind="variable"><name>labelPeople</name></member>
     <member refid="classproj_1_1selekcjanatur_1_1_start_controller_1aa97667419de3f51733fff36d81848010" kind="variable"><name>labelFood</name></member>
     <member refid="classproj_1_1selekcjanatur_1_1_start_controller_1a7f288e985f51623326ee61dba06b8396" kind="variable"><name>labelFoodPerTick</name></member>
+    <member refid="classproj_1_1selekcjanatur_1_1_start_controller_1ae45b5bee88e1ac2109756749bcbd2836" kind="variable"><name>filePath</name></member>
     <member refid="classproj_1_1selekcjanatur_1_1_start_controller_1a454899066792549fb6dd082733f7e7da" kind="function"><name>initialize</name></member>
     <member refid="classproj_1_1selekcjanatur_1_1_start_controller_1ac32fa03ada58f71a3cbc379ea17cd8e3" kind="function"><name>bindSliderLabel</name></member>
+    <member refid="classproj_1_1selekcjanatur_1_1_start_controller_1a4e63103222cc89ef308d43ff5983193d" kind="function"><name>chooseFile</name></member>
     <member refid="classproj_1_1selekcjanatur_1_1_start_controller_1adef8290b0feaebf73d01894af5e102e3" kind="function"><name>startSimulation</name></member>
     <member refid="classproj_1_1selekcjanatur_1_1_start_controller_1a4ac0a2be052eb17c702f3b5e730d9ca5" kind="function"><name>replayFromFile</name></member>
   </compound>
@@ -129,7 +150,7 @@
     <member refid="classproj_1_1selekcjanatur_1_1_symulacja_1a259b1b62d8f3116eefdc1b6e503ccd35" kind="function"><name>getLudzie</name></member>
     <member refid="classproj_1_1selekcjanatur_1_1_symulacja_1ae3205b15a5c36425e97c6c1327c9f9eb" kind="function"><name>getJedzenie</name></member>
     <member refid="classproj_1_1selekcjanatur_1_1_symulacja_1adec9a02326fa916fa822eddad509050f" kind="function"><name>aktualizuj</name></member>
-    <member refid="classproj_1_1selekcjanatur_1_1_symulacja_1a3d0ca8ee0af5090358081f7577c0245f" kind="function"><name>czySymulacjaZakonczena</name></member>
+    <member refid="classproj_1_1selekcjanatur_1_1_symulacja_1a1d8fdf87b1547988f8a889f352cb521d" kind="function"><name>czySymulacjaZakonczona</name></member>
     <member refid="classproj_1_1selekcjanatur_1_1_symulacja_1adca30037183a0fade601724dd9b8f1bd" kind="function"><name>dodajDoDziennika</name></member>
     <member refid="classproj_1_1selekcjanatur_1_1_symulacja_1a2728068a09ceb38515acafb5547d86b3" kind="function"><name>dodajLosowychLudzi</name></member>
     <member refid="classproj_1_1selekcjanatur_1_1_symulacja_1ab361a78b8ca5a29d85b023553d4490f5" kind="function"><name>dodajLosoweJedzenie</name></member>
@@ -156,11 +177,20 @@
     <member refid="classproj_1_1selekcjanatur_1_1_symulacja_plik_1a5fd6171c7fa48a7581c013b7a852550d" kind="function"><name>usunJedzenie</name></member>
     <member refid="classproj_1_1selekcjanatur_1_1_symulacja_plik_1a50a8cd7b56c409d4f312d49ed30bd42f" kind="function"><name>usunCzlowieka</name></member>
   </compound>
+  <compound refid="classproj_1_1selekcjanatur_1_1_symulacja_test" kind="class"><name>proj::selekcjanatur::SymulacjaTest</name>
+    <member refid="classproj_1_1selekcjanatur_1_1_symulacja_test_1a7c1a6bbd56a4072f67cd6b1af514feff" kind="function"><name>testUstawParametry</name></member>
+    <member refid="classproj_1_1selekcjanatur_1_1_symulacja_test_1a003db0726ebe37afd25bf455fda97bd6" kind="function"><name>testSymulacjaConstructor</name></member>
+    <member refid="classproj_1_1selekcjanatur_1_1_symulacja_test_1ae00ffd68f199fce464caecea647b8975" kind="function"><name>testDodanieLudziIJedzenia</name></member>
+    <member refid="classproj_1_1selekcjanatur_1_1_symulacja_test_1aeb9a107ccaf4b807c4d3880e384bebd9" kind="function"><name>testAktualizacjiSymulacji</name></member>
+    <member refid="classproj_1_1selekcjanatur_1_1_symulacja_test_1a758882ce3fdc0ce3c88ddba4c13766eb" kind="function"><name>testCzySymulacjaZakonczonaGdyBrakLudzi</name></member>
+  </compound>
   <compound refid="namespacejava_1_1lang" kind="namespace"><name>java::lang</name>
   </compound>
   <compound refid="namespacejava_1_1util" kind="namespace"><name>java::util</name>
   </compound>
   <compound refid="namespacejavafx_1_1scene_1_1layout" kind="namespace"><name>javafx::scene::layout</name>
+  </compound>
+  <compound refid="namespaceorg_1_1junit_1_1jupiter_1_1api_1_1_assertions" kind="namespace"><name>org::junit::jupiter::api::Assertions</name>
   </compound>
   <compound refid="namespaceproj" kind="namespace"><name>proj</name>
   </compound>
@@ -169,6 +199,7 @@
   <compound refid="module-info_8java" kind="file"><name>module-info.java</name>
     <member refid="module-info_8java_1add25d10e8a75b66efa64df2e17590256" kind="variable"><name>selekcjanatur</name></member>
     <member refid="module-info_8java_1a117eda8ba0873252e84664f43161eb62" kind="variable"><name>fxml</name></member>
+    <member refid="module-info_8java_1a8bad16a78e8ac60c68ba88e3cedd8ae7" kind="variable"><name>desktop</name></member>
   </compound>
   <compound refid="_app_8java" kind="file"><name>App.java</name>
   </compound>
@@ -202,7 +233,19 @@
   </compound>
   <compound refid="start-view_8fxml" kind="file"><name>start-view.fxml</name>
   </compound>
+  <compound refid="_gen_predkosc_chodzenia_test_8java" kind="file"><name>GenPredkoscChodzeniaTest.java</name>
+  </compound>
+  <compound refid="_gen_wzrok_test_8java" kind="file"><name>GenWzrokTest.java</name>
+  </compound>
+  <compound refid="_gen_zapotrzebowanie_energetyczne_test_8java" kind="file"><name>GenZapotrzebowanieEnergetyczneTest.java</name>
+  </compound>
+  <compound refid="_jedzenie_test_8java" kind="file"><name>JedzenieTest.java</name>
+  </compound>
+  <compound refid="_symulacja_test_8java" kind="file"><name>SymulacjaTest.java</name>
+  </compound>
   <compound refid="dir_fd3f6763802dee1ad875f6c80eac0bda" kind="dir"><name>src/main/java</name>
+  </compound>
+  <compound refid="dir_97debbc39e3b917fca663601bb2b0709" kind="dir"><name>src/test/java</name>
   </compound>
   <compound refid="dir_5eb159725f84c66aafd839904a4acdd0" kind="dir"><name>src/main</name>
   </compound>
@@ -210,12 +253,18 @@
   </compound>
   <compound refid="dir_36046fb7ab089d356d5e621a087cd51d" kind="dir"><name>src/main/resources/proj</name>
   </compound>
+  <compound refid="dir_75402152c6231188f30858b6e2c5a96b" kind="dir"><name>src/test/java/proj</name>
+  </compound>
   <compound refid="dir_6bfaacbfa58826360c75a979f1bd52ac" kind="dir"><name>src/main/resources</name>
   </compound>
   <compound refid="dir_7e66381ed7cbf1db0c622dca65685572" kind="dir"><name>src/main/java/proj/selekcjanatur</name>
   </compound>
   <compound refid="dir_e2770082773a9212f1ab93d6b3059d3d" kind="dir"><name>src/main/resources/proj/selekcjanatur</name>
   </compound>
+  <compound refid="dir_ec0edd1a9cf3247c9d9e3d7acef273dd" kind="dir"><name>src/test/java/proj/selekcjanatur</name>
+  </compound>
   <compound refid="dir_68267d1309a1af8e8297ef4c3efbcdba" kind="dir"><name>src</name>
+  </compound>
+  <compound refid="dir_120ed4da3e3217b1e7fc0b4f48568e79" kind="dir"><name>src/test</name>
   </compound>
 </doxygenindex>

@@ -98,7 +98,7 @@ $(function(){initNavTree('classproj_1_1selekcjanatur_1_1_start_controller.html',
 <div class="dynheader">
 Diagram współpracy dla proj.selekcjanatur.StartController:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classproj_1_1selekcjanatur_1_1_start_controller__coll__graph.svg" width="178" height="384"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classproj_1_1selekcjanatur_1_1_start_controller__coll__graph.svg" width="178" height="427"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
@@ -110,6 +110,8 @@ Metody publiczne</h2></td></tr>
 Metody prywatne</h2></td></tr>
 <tr class="memitem:ac32fa03ada58f71a3cbc379ea17cd8e3" id="r_ac32fa03ada58f71a3cbc379ea17cd8e3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac32fa03ada58f71a3cbc379ea17cd8e3">bindSliderLabel</a> (Slider slider, Label label)</td></tr>
 <tr class="memdesc:ac32fa03ada58f71a3cbc379ea17cd8e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wiąże suwak z etykietą wyświetlającą jego wartość  <br /></td></tr>
+<tr class="memitem:a4e63103222cc89ef308d43ff5983193d" id="r_a4e63103222cc89ef308d43ff5983193d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4e63103222cc89ef308d43ff5983193d">chooseFile</a> ()</td></tr>
+<tr class="memdesc:a4e63103222cc89ef308d43ff5983193d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Uruchamia dialog wybór pliku.  <br /></td></tr>
 <tr class="memitem:adef8290b0feaebf73d01894af5e102e3" id="r_adef8290b0feaebf73d01894af5e102e3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adef8290b0feaebf73d01894af5e102e3">startSimulation</a> ()</td></tr>
 <tr class="memdesc:adef8290b0feaebf73d01894af5e102e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Uruchamia nową symulację z wybranymi parametrami.  <br /></td></tr>
 <tr class="memitem:a4ac0a2be052eb17c702f3b5e730d9ca5" id="r_a4ac0a2be052eb17c702f3b5e730d9ca5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4ac0a2be052eb17c702f3b5e730d9ca5">replayFromFile</a> ()</td></tr>
@@ -137,6 +139,8 @@ Atrybuty prywatne</h2></td></tr>
 <tr class="memdesc:aa97667419de3f51733fff36d81848010"><td class="mdescLeft">&#160;</td><td class="mdescRight">Etykieta wyświetlająca ilość jedzenia.  <br /></td></tr>
 <tr class="memitem:a7f288e985f51623326ee61dba06b8396" id="r_a7f288e985f51623326ee61dba06b8396"><td class="memItemLeft" align="right" valign="top">Label&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7f288e985f51623326ee61dba06b8396">labelFoodPerTick</a></td></tr>
 <tr class="memdesc:a7f288e985f51623326ee61dba06b8396"><td class="mdescLeft">&#160;</td><td class="mdescRight">Etykieta wyświetlająca ilość jedzenia na cykl.  <br /></td></tr>
+<tr class="memitem:ae45b5bee88e1ac2109756749bcbd2836" id="r_ae45b5bee88e1ac2109756749bcbd2836"><td class="memItemLeft" align="right" valign="top">TextField&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae45b5bee88e1ac2109756749bcbd2836">filePath</a></td></tr>
+<tr class="memdesc:ae45b5bee88e1ac2109756749bcbd2836"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pole tekstowe na ścierzkę prowadzącą do pliku dziennika zdarzeń  <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Opis szczegółowy</h2>
 <div class="textblock"><p>Kontroler GUI dla ekranu konfiguracji symulacji. </p>
@@ -187,6 +191,33 @@ Oto graf wywoływań tej funkcji:</div>
 <div class="dyncontent">
 <div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classproj_1_1selekcjanatur_1_1_start_controller_ac32fa03ada58f71a3cbc379ea17cd8e3_icgraph.svg" width="384" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
+
+</div>
+</div>
+<a id="a4e63103222cc89ef308d43ff5983193d" name="a4e63103222cc89ef308d43ff5983193d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e63103222cc89ef308d43ff5983193d">&#9670;&#160;</a></span>chooseFile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void proj.selekcjanatur.StartController.chooseFile </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Uruchamia dialog wybór pliku. </p>
 
 </div>
 </div>
@@ -277,6 +308,30 @@ Oto graf wywołań dla tej funkcji:</div>
 </div>
 </div>
 <a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Dokumentacja atrybutów składowych</h2>
+<a id="ae45b5bee88e1ac2109756749bcbd2836" name="ae45b5bee88e1ac2109756749bcbd2836"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae45b5bee88e1ac2109756749bcbd2836">&#9670;&#160;</a></span>filePath</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">TextField proj.selekcjanatur.StartController.filePath</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Pole tekstowe na ścierzkę prowadzącą do pliku dziennika zdarzeń </p>
+
+</div>
+</div>
 <a id="aa97667419de3f51733fff36d81848010" name="aa97667419de3f51733fff36d81848010"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa97667419de3f51733fff36d81848010">&#9670;&#160;</a></span>labelFood</h2>
 

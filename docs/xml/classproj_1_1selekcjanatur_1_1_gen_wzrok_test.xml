@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="pl">
+  <compounddef id="classproj_1_1selekcjanatur_1_1_gen_wzrok_test" kind="class" language="Java" prot="package">
+    <compoundname>proj::selekcjanatur::GenWzrokTest</compoundname>
+    <sectiondef kind="package-func">
+      <memberdef kind="function" id="classproj_1_1selekcjanatur_1_1_gen_wzrok_test_1a792a09b4ad38a33c679861d13ece1b53" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void proj.selekcjanatur.GenWzrokTest.odziedziczZwracaNowyObiektWZakresie</definition>
+        <argsstring>()</argsstring>
+        <name>odziedziczZwracaNowyObiektWZakresie</name>
+        <qualifiedname>proj.selekcjanatur.GenWzrokTest.odziedziczZwracaNowyObiektWZakresie</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/test/java/proj/selekcjanatur/GenWzrokTest.java" line="9" column="10" bodyfile="src/test/java/proj/selekcjanatur/GenWzrokTest.java" bodystart="9" bodyend="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classproj_1_1selekcjanatur_1_1_gen_wzrok_test_1acb337ff32eeec49c8e0fdcf4cfdfa49e" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void proj.selekcjanatur.GenWzrokTest.wartoscZwracaPoprawnaWartosc</definition>
+        <argsstring>()</argsstring>
+        <name>wartoscZwracaPoprawnaWartosc</name>
+        <qualifiedname>proj.selekcjanatur.GenWzrokTest.wartoscZwracaPoprawnaWartosc</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/test/java/proj/selekcjanatur/GenWzrokTest.java" line="18" column="10" bodyfile="src/test/java/proj/selekcjanatur/GenWzrokTest.java" bodystart="18" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classproj_1_1selekcjanatur_1_1_gen_wzrok_test_1a5c99050b855fe5972788a0afd26e6b0e" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void proj.selekcjanatur.GenWzrokTest.odziedziczTworzyNowyObiekt</definition>
+        <argsstring>()</argsstring>
+        <name>odziedziczTworzyNowyObiekt</name>
+        <qualifiedname>proj.selekcjanatur.GenWzrokTest.odziedziczTworzyNowyObiekt</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/test/java/proj/selekcjanatur/GenWzrokTest.java" line="25" column="10" bodyfile="src/test/java/proj/selekcjanatur/GenWzrokTest.java" bodystart="25" bodyend="29"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>proj.selekcjanatur.GenWzrokTest</label>
+      </node>
+    </collaborationgraph>
+    <location file="src/test/java/proj/selekcjanatur/GenWzrokTest.java" line="6" column="1" bodyfile="src/test/java/proj/selekcjanatur/GenWzrokTest.java" bodystart="6" bodyend="30"/>
+    <listofallmembers>
+      <member refid="classproj_1_1selekcjanatur_1_1_gen_wzrok_test_1a5c99050b855fe5972788a0afd26e6b0e" prot="package" virt="non-virtual"><scope>proj::selekcjanatur::GenWzrokTest</scope><name>odziedziczTworzyNowyObiekt</name></member>
+      <member refid="classproj_1_1selekcjanatur_1_1_gen_wzrok_test_1a792a09b4ad38a33c679861d13ece1b53" prot="package" virt="non-virtual"><scope>proj::selekcjanatur::GenWzrokTest</scope><name>odziedziczZwracaNowyObiektWZakresie</name></member>
+      <member refid="classproj_1_1selekcjanatur_1_1_gen_wzrok_test_1acb337ff32eeec49c8e0fdcf4cfdfa49e" prot="package" virt="non-virtual"><scope>proj::selekcjanatur::GenWzrokTest</scope><name>wartoscZwracaPoprawnaWartosc</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

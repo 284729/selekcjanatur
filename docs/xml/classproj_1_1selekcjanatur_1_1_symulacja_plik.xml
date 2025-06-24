@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="pl">
-  <compounddef id="classproj_1_1selekcjanatur_1_1_symulacja_plik" kind="class" language="Java" prot="public" abstract="yes">
+  <compounddef id="classproj_1_1selekcjanatur_1_1_symulacja_plik" kind="class" language="Java" prot="public">
     <compoundname>proj::selekcjanatur::SymulacjaPlik</compoundname>
     <basecompoundref refid="interfaceproj_1_1selekcjanatur_1_1_interfejs_symulacji" prot="public" virt="non-virtual">proj.selekcjanatur.InterfejsSymulacji</basecompoundref>
     <sectiondef kind="private-attrib">
@@ -418,10 +418,9 @@
         <link refid="interfaceproj_1_1selekcjanatur_1_1_interfejs_symulacji"/>
       </node>
     </collaborationgraph>
-    <location file="src/main/java/proj/selekcjanatur/SymulacjaPlik.java" line="21" column="17" bodyfile="src/main/java/proj/selekcjanatur/SymulacjaPlik.java" bodystart="21" bodyend="178"/>
+    <location file="src/main/java/proj/selekcjanatur/SymulacjaPlik.java" line="21" column="7" bodyfile="src/main/java/proj/selekcjanatur/SymulacjaPlik.java" bodystart="21" bodyend="178"/>
     <listofallmembers>
       <member refid="classproj_1_1selekcjanatur_1_1_symulacja_plik_1a51c0e6b4a307749c4746a70c5e624f15" prot="public" virt="non-virtual"><scope>proj::selekcjanatur::SymulacjaPlik</scope><name>aktualizuj</name></member>
-      <member refid="interfaceproj_1_1selekcjanatur_1_1_interfejs_symulacji_1a7e2ab50886fc205455480e6015060caa" prot="public" virt="non-virtual"><scope>proj::selekcjanatur::SymulacjaPlik</scope><name>czySymulacjaZakonczena</name></member>
       <member refid="classproj_1_1selekcjanatur_1_1_symulacja_plik_1a794761349d4b40e843b27accf7930a21" prot="public" virt="non-virtual"><scope>proj::selekcjanatur::SymulacjaPlik</scope><name>czySymulacjaZakonczona</name></member>
       <member refid="classproj_1_1selekcjanatur_1_1_symulacja_plik_1ac2f0839c0c8670ed3801690546d03d23" prot="private" virt="non-virtual"><scope>proj::selekcjanatur::SymulacjaPlik</scope><name>dodajCzlowieka</name></member>
       <member refid="classproj_1_1selekcjanatur_1_1_symulacja_plik_1ac529b5c1f654f9cc5a6c727fd029f342" prot="private" virt="non-virtual"><scope>proj::selekcjanatur::SymulacjaPlik</scope><name>dodajCzlowieka</name></member>

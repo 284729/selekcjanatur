@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['y_0',['y',['../classproj_1_1selekcjanatur_1_1_czlowiek.html#a59322ad4d7324f586e2acd03edd858ce',1,'proj.selekcjanatur.Czlowiek.y'],['../classproj_1_1selekcjanatur_1_1_jedzenie.html#a4efa742917f66b6c29735d90a2104683',1,'proj.selekcjanatur.Jedzenie.y']]]
+  ['x_0',['x',['../classproj_1_1selekcjanatur_1_1_czlowiek.html#ac4d6409fa9719e64741b67bbfcdaf573',1,'proj.selekcjanatur.Czlowiek.x'],['../classproj_1_1selekcjanatur_1_1_jedzenie.html#a3d5d2ca6e17c0c4256361d91f0960348',1,'proj.selekcjanatur.Jedzenie.x']]]
 ];
